@@ -93,7 +93,7 @@ For the final version of the assignment, the corpus will be expanded to 30 paper
 ## Group Members
 
 - Esteban Moreno Mendoza
-- Ignacio Diaz 
+- Ignacio Díaz Hernanz
 - Mendo Urraca Torrijos
 - Juan Manuel Novoa Guevara
 
