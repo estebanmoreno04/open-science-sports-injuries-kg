@@ -1,0 +1,25 @@
+GitHub repository:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg
+
+Use case explanation:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/docs/use_case.md
+
+Selected sources:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/docs/sources.md
+
+Ontology description:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/docs/ontology.md
+
+Ontology diagram:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/docs/ontology_diagram.png
+
+Mermaid source of the ontology diagram:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/docs/ontology_diagram.mmd
+
+Initial corpus metadata template:
+https://github.com/estebanmoreno04/open-science-sports-injuries-kg/blob/main/data/metadata/papers.csv
+
+Questions for feedback:
+- Is the current scope of lower-limb sports injuries appropriate for the final Scholarly Knowledge Graph?
+- Is the distinction between Injury, BodyPart and TreatmentMethod clear enough?
+- Is the direct property focusesOnBodyPart acceptable as a shortcut for queries, even though it can also be inferred through Paper -> Injury -> BodyPart?

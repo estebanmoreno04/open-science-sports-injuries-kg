@@ -1,0 +1,97 @@
+erDiagram
+
+    PAPER {
+        string title
+        string abstractText
+        string doi
+        int publicationYear
+        string paperURL
+        string keyword
+        string openAlexId
+        float similarityScore
+    }
+
+    PERSON {
+        string name
+        string orcid
+        string givenName
+        string familyName
+    }
+
+    ORGANIZATION {
+        string name
+        string countryName
+        string countryCode
+        string organizationType
+        string openAlexId
+    }
+
+    PROJECT {
+        string projectName
+        string grantId
+    }
+
+    TOPIC {
+        string topicName
+        string topicDescription
+        string topTerms
+    }
+
+    BODYPART {
+        string bodyPartName
+        string bodyRegion
+        string synonymLabel
+    }
+
+    INJURY {
+        string injuryName
+        string injuryCategory
+        string injuryDescription
+    }
+
+    TREATMENTMETHOD {
+        string treatmentName
+        string treatmentType
+        string treatmentDescription
+    }
+
+    VENUE {
+        string venueName
+        string venueType
+    }
+
+    SPORT {
+        string sportName
+    }
+
+    CLINICALMEASURE {
+        string measureName
+        string measureUnit
+    }
+
+    EXTERNALRESOURCE {
+        string uri
+        string sourceName
+    }
+
+    PAPER ||--o{ PERSON : hasAuthor
+    PERSON }o--|| ORGANIZATION : affiliatedWith
+    PAPER }o--o{ TOPIC : belongsToTopic
+    PAPER }o--o{ PAPER : similarTo
+    PAPER }o--o{ PERSON : acknowledges
+    PAPER }o--o{ ORGANIZATION : acknowledges
+    PAPER }o--o{ PROJECT : relatedToProject
+
+    PAPER }o--o{ INJURY : studiesInjury
+    INJURY }o--|| BODYPART : affectsBodyPart
+    PAPER }o--o{ BODYPART : focusesOnBodyPart
+    PAPER }o--o{ TREATMENTMETHOD : describesTreatment
+    TREATMENTMETHOD }o--o{ INJURY : appliedToInjury
+    PAPER }o--o{ SPORT : evaluatedInSport
+    PAPER }o--|| VENUE : publishedIn
+    PAPER }o--o{ CLINICALMEASURE : reportsMeasure
+
+    PAPER }o--o{ EXTERNALRESOURCE : sameAsExternal
+    PERSON }o--o{ EXTERNALRESOURCE : sameAsExternal
+    ORGANIZATION }o--o{ EXTERNALRESOURCE : sameAsExternal
+    TOPIC }o--o{ EXTERNALRESOURCE : sameAsExternal
