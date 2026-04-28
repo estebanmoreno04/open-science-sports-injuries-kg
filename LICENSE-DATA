@@ -1,0 +1,72 @@
+Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 OSAI_RSE project contributors
+
+The data files in this repository — including but not limited to the paper
+metadata manifest (`data/papers/manifest.csv`), enrichment metadata derived
+from external sources (OpenAlex, ROR, ORCID, OpenAIRE, Wikidata), topic
+modelling outputs, similarity scores, and any other dataset produced by the
+project's analysis pipeline — are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+The full text of the license is available at:
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to:
+
+  * Share — copy and redistribute the material in any medium or format.
+  * Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  * No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+Suggested citation when reusing the manifest or derived data:
+
+    OSAI_RSE project (2026). Sports leg-injury Scholarly Knowledge Graph —
+    paper manifest and derived metadata. Available under CC BY 4.0.
+    [Repository URL]
+
+================================================================================
+SCOPE AND EXCLUSIONS
+================================================================================
+
+This CC BY 4.0 license applies ONLY to the metadata, manifest, and analytical
+outputs produced by the project (collectively, the "Project Data"). It does
+NOT apply to:
+
+1. Source code, scripts, notebooks, configuration files, and documentation
+   text in this repository, which are licensed separately under the Apache
+   License 2.0 (see the `LICENSE` file).
+
+2. The full text or PDF files of the scientific articles (papers) referenced
+   by the manifest. Each referenced paper retains the copyright and license
+   terms set by its publisher and authors. This repository deliberately does
+   NOT redistribute the original paper PDFs. Users wishing to access the
+   full text must follow the canonical links recorded in the manifest
+   (`doi_url`, `publisher_url`, `pmc_url`, `pubmed_url`) and comply with
+   the terms of each paper's individual license.
+
+3. Third-party data fetched at runtime from external services (OpenAlex,
+   ROR, ORCID, OpenAIRE, Wikidata, ORKG). The original terms of those
+   services apply to that data. See the `NOTICE` file for attributions
+   and links to each source's license.
+
+================================================================================
+NO WARRANTY
+================================================================================
+
+The Project Data is provided "as is", without warranty of any kind, express
+or implied, including but not limited to the warranties of accuracy,
+completeness, non-infringement, or fitness for a particular purpose. The
+manifest is intended for scholarly exploration and Knowledge Graph
+construction; it must not be used as a clinical, diagnostic, or therapeutic
+reference.

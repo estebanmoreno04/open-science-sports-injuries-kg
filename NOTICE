@@ -1,0 +1,80 @@
+OSAI_RSE — Sports Leg-Injury Scholarly Knowledge Graph
+Copyright 2026 OSAI_RSE project contributors
+
+This product includes software developed by the OSAI_RSE project
+contributors and is licensed under the Apache License, Version 2.0
+(see the LICENSE file).
+
+The data files (paper metadata manifest and derived datasets) are
+licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0); see the LICENSE-DATA file.
+
+================================================================================
+THIRD-PARTY CONTENT REFERENCED BY THE MANIFEST
+================================================================================
+
+The manifest at `data/papers/manifest.csv` references scientific articles
+that are NOT redistributed in this repository. Each article remains the
+property of its respective copyright holders and is governed by the license
+declared by its publisher. Canonical access links are recorded in the
+manifest columns `doi_url`, `publisher_url`, `pmc_url`, and `pubmed_url`.
+
+Users of this repository who want to access the full text of any referenced
+paper MUST do so directly through those links and comply with the licensing
+terms set by the publisher.
+
+================================================================================
+THIRD-PARTY DATA SOURCES (FOR ENRICHMENT AT RUNTIME)
+================================================================================
+
+This project uses metadata fetched from the following open scholarly
+infrastructure services. We acknowledge and credit each source:
+
+* OpenAlex — https://openalex.org/
+  Bibliographic metadata for papers, authors, institutions, and concepts.
+  Data dedicated to the public domain (CC0 1.0).
+  Citation: Priem, J., Piwowar, H., & Orr, R. (2022). OpenAlex: A
+  fully-open index of scholarly works, authors, venues, institutions,
+  and concepts. arXiv:2205.01833.
+
+* ROR (Research Organization Registry) — https://ror.org/
+  Persistent identifiers and metadata for research organizations.
+  Released under CC0 1.0.
+
+* ORCID — https://orcid.org/
+  Persistent identifiers for researchers and public profile data,
+  released by ORCID under CC0 for the public data file. Individual
+  ORCID record content is published under the terms chosen by the
+  record holder; respect each researcher's privacy settings.
+
+* OpenAIRE — https://www.openaire.eu/
+  Metadata about research projects, software, datasets, and funding.
+  Most metadata is released under CC BY or CC0; check per-record terms.
+
+* Wikidata — https://www.wikidata.org/
+  Structured open knowledge base. Data licensed under CC0 1.0.
+
+* ORKG (Open Research Knowledge Graph) — https://orkg.org/
+  Structured descriptions and comparisons of research contributions.
+  Most content licensed under CC BY-SA 4.0 unless stated otherwise.
+
+================================================================================
+THIRD-PARTY SOFTWARE
+================================================================================
+
+This project relies on the following third-party software components.
+Each component is used under its own license terms; this NOTICE file
+acknowledges their use without modifying those licenses.
+
+* GROBID — https://github.com/kermitt2/grobid (Apache License 2.0)
+
+(Add additional libraries used by the pipeline here as the project
+evolves, e.g. spaCy, scikit-learn, transformers, rdflib, etc.)
+
+================================================================================
+ATTRIBUTION REQUIREMENT
+================================================================================
+
+When you redistribute or build upon this work, please retain this NOTICE
+file (per Section 4(d) of the Apache License 2.0) and provide attribution
+to the OSAI_RSE project for the data licensed under CC BY 4.0.
