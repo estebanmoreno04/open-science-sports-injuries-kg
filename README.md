@@ -95,6 +95,7 @@ For the final version of the assignment, the corpus will be expanded to 30 paper
 - Esteban Moreno Mendoza
 - Ignacio Diaz 
 - Mendo Urraca Torrijos
+- Juan Manuel Novoa Guevara
 
 ## License
 
