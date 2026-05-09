@@ -1,97 +1,109 @@
-erDiagram
+classDiagram
 
-    PAPER {
-        string title
-        string abstractText
-        string doi
+    class Paper {
+        String title
+        String abstractText
+        String doi
         int publicationYear
-        string paperURL
-        string keyword
-        string openAlexId
+        String paperURL
+        String openAlexId
+        String externalKeyword
+    }
+
+    class Person {
+        String name
+        String orcid
+        String givenName
+        String familyName
+    }
+
+    class Organization {
+        String name
+        String countryName
+        String countryCode
+        String organizationType
+        String openAlexId
+    }
+
+    class Project {
+        String projectName
+        String grantId
+    }
+
+    class Venue {
+        String venueName
+        String venueType
+    }
+
+    Paper --> Person : hasAuthor
+    Person --> Organization : affiliatedWith
+    Paper --> Person : acknowledges
+    Paper --> Organization : acknowledges
+    Paper --> Project : relatedToProject
+    Paper --> Venue : publishedIn
+
+    note for Paper "owl:sameAs links to SemOpenAlex work URI\n(W3C standard property, not defined here)"
+    note for Person "owl:sameAs links to SemOpenAlex author URI"
+    note for Organization "owl:sameAs links to SemOpenAlex institution URI"
+
+    class TopicAssignment {
+        <<N-ary>>
+        float confidenceScore
+        float topicThreshold
+        String assignmentDate
+        String modelUsed
+    }
+
+    class SimilarityLink {
+        <<N-ary>>
         float similarityScore
+        float similarityThreshold
+        String calculationDate
+        String modelUsed
     }
 
-    PERSON {
-        string name
-        string orcid
-        string givenName
-        string familyName
+    class Topic {
+        String topicName
+        String topicDescription
+        String topTerms
     }
 
-    ORGANIZATION {
-        string name
-        string countryName
-        string countryCode
-        string organizationType
-        string openAlexId
+    Paper --> TopicAssignment : hasTopicAssignment
+    TopicAssignment --> Topic : assignedToTopic
+    Paper --> SimilarityLink : hasSimilarity
+    SimilarityLink --> Paper : isSimilarToPaper
+
+    class BodyPart {
+        String bodyPartName
+        String bodyRegion
+        String synonymLabel
     }
 
-    PROJECT {
-        string projectName
-        string grantId
+    class Injury {
+        String injuryName
+        String injuryCategory
+        String injuryDescription
     }
 
-    TOPIC {
-        string topicName
-        string topicDescription
-        string topTerms
+    class TreatmentMethod {
+        String treatmentName
+        String treatmentType
+        String treatmentDescription
     }
 
-    BODYPART {
-        string bodyPartName
-        string bodyRegion
-        string synonymLabel
+    class Sport {
+        String sportName
     }
 
-    INJURY {
-        string injuryName
-        string injuryCategory
-        string injuryDescription
+    class ClinicalMeasure {
+        String measureName
+        String measureUnit
     }
 
-    TREATMENTMETHOD {
-        string treatmentName
-        string treatmentType
-        string treatmentDescription
-    }
-
-    VENUE {
-        string venueName
-        string venueType
-    }
-
-    SPORT {
-        string sportName
-    }
-
-    CLINICALMEASURE {
-        string measureName
-        string measureUnit
-    }
-
-    EXTERNALRESOURCE {
-        string uri
-        string sourceName
-    }
-
-    PAPER ||--o{ PERSON : hasAuthor
-    PERSON }o--|| ORGANIZATION : affiliatedWith
-    PAPER }o--o{ TOPIC : belongsToTopic
-    PAPER }o--o{ PAPER : similarTo
-    PAPER }o--o{ PERSON : acknowledges
-    PAPER }o--o{ ORGANIZATION : acknowledges
-    PAPER }o--o{ PROJECT : relatedToProject
-
-    PAPER }o--o{ INJURY : studiesInjury
-    INJURY }o--|| BODYPART : affectsBodyPart
-    PAPER }o--o{ BODYPART : focusesOnBodyPart
-    PAPER }o--o{ TREATMENTMETHOD : describesTreatment
-    TREATMENTMETHOD }o--o{ INJURY : appliedToInjury
-    PAPER }o--o{ SPORT : evaluatedInSport
-    PAPER }o--|| VENUE : publishedIn
-    PAPER }o--o{ CLINICALMEASURE : reportsMeasure
-
-    PAPER }o--o{ EXTERNALRESOURCE : sameAsExternal
-    PERSON }o--o{ EXTERNALRESOURCE : sameAsExternal
-    ORGANIZATION }o--o{ EXTERNALRESOURCE : sameAsExternal
-    TOPIC }o--o{ EXTERNALRESOURCE : sameAsExternal
+    Paper --> Injury : studiesInjury
+    Injury --> BodyPart : affectsBodyPart
+    Paper --> BodyPart : focusesOnBodyPart
+    Paper --> TreatmentMethod : describesTreatment
+    TreatmentMethod --> Injury : appliedToInjury
+    Paper --> Sport : evaluatedInSport
+    Paper --> ClinicalMeasure : reportsMeasure

@@ -51,14 +51,14 @@ The injury types considered include:
 
 ## Selected Sources
 
-The project will use two main external sources:
+The project will use two distinct external sources to satisfy the assignment requirements:
 
 | Source | Type | Purpose |
 |---|---|---|
-| OpenAlex | REST API | Retrieve metadata about papers, authors, organizations, venues and publication years |
-| SemOpenAlex | SPARQL/RDF | Link selected scholarly entities to RDF resources and query OpenAlex data as a knowledge graph |
+| SemOpenAlex | SPARQL/RDF | Primary source for scholarly entities (papers, authors, organizations, venues). It provides the core RDF structure for our Knowledge Graph. |
+| OpenAIRE | API / Graph | Secondary source used specifically to extract and enrich the **keywords** of the papers and retrieve additional project/funding information. |
 
-OpenAlex will provide the initial metadata for the corpus of scientific papers. SemOpenAlex will be used to enrich and align the local Scholarly Knowledge Graph with external RDF resources.
+SemOpenAlex will provide the backbone of our graph, while OpenAIRE will be used to complement the metadata, specifically focusing on the thematic keywords that are essential for our topic exploration tool.
 
 ## Repository Structure
 
@@ -89,6 +89,13 @@ data/metadata/papers.csv
 ```
 
 For the final version of the assignment, the corpus will be expanded to 30 papers, following the scope defined in this use case.
+
+## AI Usage Declaration
+
+In accordance with Open Science best practices and the requirements of this assignment, we declare the use of Artificial Intelligence tools during the development of this project:
+
+- **Conceptualization and Knowledge Engineering:** Large Language Models (LLMs) were used as an assistant to brainstorm domain-specific keywords for data extraction, debug code, and assist in formatting the ontology documentation and Mermaid.js diagrams. All AI-generated suggestions were strictly reviewed, contrasted with the course theory, and manually modified by the group members to ensure architectural correctness.
+- **Data Processing and Machine Learning (Future Milestones):** As required by the project scope, AI models from platforms like Hugging Face will be utilized to perform Natural Language Processing tasks over the text corpus. This includes calculating embedding similarities between papers, generating topic models (e.g., via BERTopic/LDA), and applying Named Entity Recognition (NER) to process text sections and extract domain entities (Injuries, Body Parts, Treatments).
 
 ## Group Members
 
