@@ -1,0 +1,26 @@
+============================================================
+        ABSTRACT SIMILARITY — RUN INFO
+============================================================
+
+Fecha y hora de ejecución : 2026-05-25 20:25:15
+Modelo usado              : sentence-transformers/all-MiniLM-L6-v2
+Archivo de entrada        : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\data\metadata\papers.csv
+Directorio de salida      : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\results\similarity
+Papers procesados (válidos): 30
+Top-K                     : 3
+
+Notas sobre la limpieza de datos:
+  - Filas eliminadas por abstract vacío/nulo : 0
+  - Filas eliminadas por paper_id duplicado  : 0
+
+Estrategia de prefijo para E5:
+  No se aplicó ningún prefijo (modelo no-E5).
+
+Normalización:
+  Los embeddings se normalizaron a norma L2 unitaria antes
+  del cálculo de similitud coseno.
+
+Archivos generados:
+  - similarity_matrix_sentence_transformers_all_MiniLM_L6_v2.csv
+  - top3_similar_sentence_transformers_all_MiniLM_L6_v2.csv
+  - run_info_sentence_transformers_all_MiniLM_L6_v2.txt

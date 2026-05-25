@@ -1,2 +1,8 @@
 pandas
 rdflib
+
+# --- Dependencias para abstract_similarity.py ---
+sentence-transformers
+scikit-learn
+numpy
+torch

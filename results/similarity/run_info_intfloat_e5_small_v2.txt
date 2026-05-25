@@ -1,0 +1,27 @@
+============================================================
+        ABSTRACT SIMILARITY — RUN INFO
+============================================================
+
+Fecha y hora de ejecución : 2026-05-25 20:19:01
+Modelo usado              : intfloat/e5-small-v2
+Archivo de entrada        : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\data\metadata\papers.csv
+Directorio de salida      : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\results\similarity
+Papers procesados (válidos): 30
+Top-K                     : 3
+
+Notas sobre la limpieza de datos:
+  - Filas eliminadas por abstract vacío/nulo : 0
+  - Filas eliminadas por paper_id duplicado  : 0
+
+Estrategia de prefijo para E5:
+  Se usó el prefijo 'passage: ' para todos los abstracts,
+  ya que todos actúan como textos a indexar/comparar entre sí.
+
+Normalización:
+  Los embeddings se normalizaron a norma L2 unitaria antes
+  del cálculo de similitud coseno.
+
+Archivos generados:
+  - similarity_matrix_intfloat_e5_small_v2.csv
+  - top3_similar_intfloat_e5_small_v2.csv
+  - run_info_intfloat_e5_small_v2.txt
