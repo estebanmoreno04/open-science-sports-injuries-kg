@@ -87,6 +87,47 @@ Expected properties from this source:
 | `projectName` | data | Name of the project. |
 | `grantId` | data | Grant identifier as provided by OpenAIRE. |
 
+## 3. PubMed Central (PMC) and Grobid
+
+**Type:** REST API (PMC) + Local tool (Grobid)  
+**PMC API URL:** https://www.ncbi.nlm.nih.gov/pmc/tools/oa-service/  
+**Grobid:** https://github.com/kermitt2/grobid  
+
+These two tools are used together to extract the full text of papers,
+specifically the Acknowledgements section, which is required as input
+for the NER pipeline.
+
+### Strategy
+
+- **Papers with `pmc_url`** (17 out of 30): full text is retrieved
+  directly from the PMC Open Access API in structured XML format.
+  The acknowledgements section is extracted as a clean text field
+  without requiring PDF parsing.
+
+- **Papers without `pmc_url`** (remaining papers): PDFs are downloaded
+  from the publisher URL and processed locally with Grobid, which
+  parses the PDF structure and extracts named sections including
+  acknowledgements.
+
+### Coverage limitation
+
+Several papers in the corpus are published in restricted-access journals
+(e.g. JOSPT, JBJS Reviews) and do not have a PMC URL. For these, Grobid
+is used as a fallback. If neither source provides accessible full text,
+the paper will have no `acknowledges` triples in the Knowledge Graph.
+This limitation is recorded in the PROV trace of the NER experiment.
+
+### What this source enriches
+
+This source does not add new classes to the ontology. It provides the
+raw text that the NER model processes to populate the following
+properties:
+
+| Property | Description |
+|---|---|
+| `acknowledges` | Links a paper to acknowledged persons or organizations extracted from the acknowledgements section. |
+| `relatedToProject` | Complements OpenAIRE data with project mentions found in the acknowledgements text. |
+
 ## Important distinctions
 
 **OpenAlex vs SemOpenAlex**: these are not two separate sources.
