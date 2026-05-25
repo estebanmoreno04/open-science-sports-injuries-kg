@@ -1,0 +1,1492 @@
+@prefix ont: <http://kg.sports-injuries.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kg.sports-injuries.org/paper/P14> a ont:Paper ;
+    ont:abstractText "»: Calf strain is a common condition. In high-performance athletes, calf strain contributes to a substantial absence from competition. »: Player age and history of a calf strain or other leg injury are the strongest risk factors for calf strain injury and reinjury. »: Although the diagnosis is often clinical, magnetic resonance imaging and ultrasound are valuable to confirm the location of the strain and the grade of injury. »: Nonoperative treatment is effective for most calf strain injuries. Operative management, although rarely indicated, may be appropriate for severe cases with grade-III rupture or complications. »: Further investigation is necessary to elucidate the benefits of blood flow restriction therapy, deep water running, lower-body positive pressure therapy, platelet-rich plasma, and stem cell therapy for calf strain rehabilitation."^^xsd:string ;
+    ont:doi "10.2106/JBJS.RVW.21.00183"^^xsd:string ;
+    ont:openAlexId "W4220766688"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4220766688> .
+
+<http://kg.sports-injuries.org/paper/P22> a ont:Paper ;
+    ont:abstractText "Regular physical activity confers numerous health and social benefits; however, activity-related lower-limb overuse injuries are prevalent. Medial tibial stress syndrome (MTSS) is a common overuse injury of the lower extremity. It is frequently observed in athletes and in military personnel. It involves exercise-induced pain over the anterior tibia and is an early stress injury in the continuum of tibial stress fractures (TSF). This scoping review aims to synthesize and characterize the literature on MTSS, identify knowledge gaps, and propose future research directions. We conducted a scoping review of the literature, which was informed by the Joanna Briggs Institute and the Arksey and O'Malley methodology, by searching four databases until December 31, 2023. The references were screened by two authors based on their titles, abstracts, and full texts to ensure that they met the inclusion criteria. Data related to the research objectives were extracted, analyzed, and reported numerically and descriptively. Thirty-seven studies were included in the current review, most of which recruited athletes as the study participants (67.6%). This was followed by articles about military members (16.2%). The highest prevalence of MTSS has been reported among recreational marathon runners in India (69.5%). The highest incidence of MTSS was reported in a German study (35.7%). Two studies reported that participants with MTSS had a higher body mass index (BMI) than those without MTSS, and one study found a significant correlation between BMI and the time required for complete recovery. Two studies reported that individuals with greater experience in athletic activities were at a lower risk of developing MTSS later in their careers. In contrast, another study reported that ultramarathon running increases the incidence of MTSS overuse injuries. Traction theory as a cause of MTSS was examined in five studies, and the mean navicular drop test (NDT) score was assessed in three studies. Biomechanical evaluation of ankle disorders and MTSS was performed in five articles and hip abnormalities in four articles. This review identifies research areas on the influence of epidemiological, risk, and biomechanical factors on MTSS development. Such research could inform counseling for patients concerned about MTSS risk factors and curative measures, as well as optimize surveillance and subsequent management of MTSS outcomes."^^xsd:string ;
+    ont:doi "10.7759/cureus.81463"^^xsd:string ;
+    ont:openAlexId "W4408976458"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4408976458> .
+
+<http://kg.sports-injuries.org/paper/P15> a ont:Paper ;
+    ont:abstractText "OBJECTIVE: To identify risk factors for quadriceps muscle strain injury in sport. DESIGN: Risk factor systematic review. LITERATURE SEARCH: A systematic search was conducted in the MEDLINECINAHL, Embase, AMED, AUSPORT, SPORTDiscus, PEDro, and Cochrane Library databases (from inception to September 2021). STUDY SELECTION CRITERIA: Studies reporting prospective data to evaluate risk factors related to index and/or recurrent quadriceps muscle strain injury. DATA SYNTHESIS: A risk-of-bias assessment (using a modified Quality in Prognosis Studies tool) was performed, and we used best-evidence synthesis to qualitatively synthesize the data to quantify relationships between risk factors and quadriceps muscle injury. RESULTS: Sixteen studies were included, capturing 2408 quadriceps injuries in 11 719 athletes. Meta-analyses were not performed due to clinical heterogeneity. The dominant kicking leg (over 3154 individuals, 1055 injuries), a previous history of quadriceps muscle injury (6208 individuals, 975 injuries), and a recent history of hamstring strain (4087 individuals, 581 injuries) were intrinsic factors associated with quadriceps injury. Extrinsic factors relating to the preseason period and competitive match play increased quadriceps injury risk; participating at higher levels of competition decreased quadriceps injury risk. Age, weight, and flexibility (intrinsic factors) had no association with quadriceps injury. CONCLUSION: ."^^xsd:string ;
+    ont:doi "10.2519/jospt.2022.10870"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5012447852>,
+        <https://semopenalex.org/author/A5050986429> ;
+    ont:openAlexId "W4281625619"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4281625619> .
+
+<https://semopenalex.org/author/A5002727818> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I108103353> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "Alfredo Córdova"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5002727818> .
+
+<https://semopenalex.org/author/A5003516696> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I189158943> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "W. Albisetti"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5003516696> .
+
+<https://semopenalex.org/author/A5003922575> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210136471> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Javier Yanguas"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5003922575> .
+
+<https://semopenalex.org/author/A5004808487> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210119109> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P28> ;
+    ont:name "Brent I. Smith"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5004808487> .
+
+<https://semopenalex.org/author/A5005946491> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I887968799> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Filippo Migliorini"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5005946491> .
+
+<https://semopenalex.org/author/A5006356155> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210138767> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Aleksander Jurek"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5006356155> .
+
+<https://semopenalex.org/author/A5006914699> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I861853513> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "Emanuela Camerucci"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5006914699> .
+
+<https://semopenalex.org/author/A5007394741> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I54459138> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P13> ;
+    ont:name "Christopher Bramah"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5007394741> .
+
+<https://semopenalex.org/author/A5008239756> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Robert C. Manske"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5008239756> .
+
+<https://semopenalex.org/author/A5008496667> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Bartosz Kostecki"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5008496667> .
+
+<https://semopenalex.org/author/A5008684174> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210119109> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P28> ;
+    ont:name "Janet E. Simon"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5008684174> .
+
+<https://semopenalex.org/author/A5009821898> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I108103353> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "Alberto Caballero-García"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5009821898> .
+
+<https://semopenalex.org/author/A5012447852> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P15> ;
+    ont:name "Samuel Pietsch"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5012447852> .
+
+<https://semopenalex.org/author/A5013860873> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "Alejandro León"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5013860873> .
+
+<https://semopenalex.org/author/A5014537370> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I3018483916> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Frank Backx"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5014537370> .
+
+<https://semopenalex.org/author/A5014749662> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I887968799> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Frank Hildebrand"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5014749662> .
+
+<https://semopenalex.org/author/A5015905715> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210119109> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P28> ;
+    ont:name "Carrie L. Docherty"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5015905715> .
+
+<https://semopenalex.org/author/A5017000666> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Shizuka Sasaki"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5017000666> .
+
+<https://semopenalex.org/author/A5017583039> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "Ángel Cristo"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5017583039> .
+
+<https://semopenalex.org/author/A5018431687> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210099813> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Konrad Klocek"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5018431687> .
+
+<https://semopenalex.org/author/A5018693516> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I3018483916> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Bionka M.A. Huisstede"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5018693516> .
+
+<https://semopenalex.org/author/A5018752877> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2802811225> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Niels de Vries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5018752877> .
+
+<https://semopenalex.org/author/A5019238120> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210136471> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Xavier Valle"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5019238120> .
+
+<https://semopenalex.org/author/A5019878503> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I5388228> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17> ;
+    ont:name "Jeff Houck"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5019878503> .
+
+<https://semopenalex.org/author/A5020010475> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I188329596> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P27> ;
+    ont:name "Gordon Waddington"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5020010475> .
+
+<https://semopenalex.org/author/A5021406690> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Yuji Yamamoto"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5021406690> .
+
+<https://semopenalex.org/author/A5021770163> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I155660961> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Lasse Lempainen"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5021770163> .
+
+<https://semopenalex.org/author/A5022663425> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I189158943> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "L. Tagliabue"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5022663425> .
+
+<https://semopenalex.org/author/A5022848967> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P24> ;
+    ont:name "Michelle E. Kew"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5022848967> .
+
+<https://semopenalex.org/author/A5024159880> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I131729948> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Nicola Maffulli"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5024159880> .
+
+<https://semopenalex.org/author/A5024571463> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I39854758> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P21> ;
+    ont:name "Kelly Sheerin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5024571463> .
+
+<https://semopenalex.org/author/A5024680072> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I18925743> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P27> ;
+    ont:name "Jia Han"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5024680072> .
+
+<https://semopenalex.org/author/A5027231569> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Lori A. Bolgla"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5027231569> .
+
+<https://semopenalex.org/author/A5028065058> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Eiichi Tsuda"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5028065058> .
+
+<https://semopenalex.org/author/A5028205354> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I108103353> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "David C. Noriega"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5028205354> .
+
+<https://semopenalex.org/author/A5029865714> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1304196042> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P03> ;
+    ont:name "Nathaniel S. Jones"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5029865714> .
+
+<https://semopenalex.org/author/A5029957084> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210129524> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P08> ;
+    ont:name "Ross S. Chafetz"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5029957084> .
+
+<https://semopenalex.org/author/A5030030035> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2802811225> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Edwin A. Goedhart"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5030030035> .
+
+<https://semopenalex.org/author/A5030668493> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I176453806> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P10> ;
+    ont:name "Frank Mayer"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5030668493> .
+
+<https://semopenalex.org/author/A5031484639> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I8204097> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Felix Kurt Maßen"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5031484639> .
+
+<https://semopenalex.org/author/A5031785334> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I126307644> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17> ;
+    ont:name "Ruth L. Chimenti"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5031785334> .
+
+<https://semopenalex.org/author/A5032300797> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P24> ;
+    ont:name "John T. Cavanaugh"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5032300797> .
+
+<https://semopenalex.org/author/A5032316254> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210165259> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P30> ;
+    ont:name "Alain Saraux"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5032316254> .
+
+<https://semopenalex.org/author/A5032377380> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210165259> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P30> ;
+    ont:name "Y. Guillodo"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5032377380> .
+
+<https://semopenalex.org/author/A5033221732> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Leigh Weiss"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5033221732> .
+
+<https://semopenalex.org/author/A5033786903> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127572> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "Ronny Lopes"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5033786903> .
+
+<https://semopenalex.org/author/A5034252252> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I13469542> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "Bruno Tassignon"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5034252252> .
+
+<https://semopenalex.org/author/A5035214950> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Filippo Vittadini"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5035214950> .
+
+<https://semopenalex.org/author/A5036694526> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P24> ;
+    ont:name "William G. Elnemer"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5036694526> .
+
+<https://semopenalex.org/author/A5036945785> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210088053> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Marcel Betsch"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5036945785> .
+
+<https://semopenalex.org/author/A5037340459> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Xiaobing Ma"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5037340459> .
+
+<https://semopenalex.org/author/A5037345718> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Maciej Zwolski"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5037345718> .
+
+<https://semopenalex.org/author/A5038001798> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210119109> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P28> ;
+    ont:name "Joanne Klossner"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5038001798> .
+
+<https://semopenalex.org/author/A5039699952> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210129524> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P08> ;
+    ont:name "Michael Boniello"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5039699952> .
+
+<https://semopenalex.org/author/A5039734821> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210098293> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P09> ;
+    ont:name "Pieter D’Hooghe"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5039734821> .
+
+<https://semopenalex.org/author/A5041805052> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210098293> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P09> ;
+    ont:name "Khalid Alkhelaifi"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5041805052> .
+
+<https://semopenalex.org/author/A5042101623> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210134082> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Łukasz MROZEK"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5042101623> .
+
+<https://semopenalex.org/author/A5042727391> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210136471> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Ricard Pruna"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5042727391> .
+
+<https://semopenalex.org/author/A5043697947> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I189158943> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "Giorgio Maria Calori"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5043697947> .
+
+<https://semopenalex.org/author/A5044310764> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Yuka Kimura"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5044310764> .
+
+<https://semopenalex.org/author/A5046005806> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "John J. Christoforetti"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5046005806> .
+
+<https://semopenalex.org/author/A5046858092> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I887968799> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Jörg Eschweiler"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5046858092> .
+
+<https://semopenalex.org/author/A5048995977> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I100532134> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P13> ;
+    ont:name "Jean‐Benoît Morin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5048995977> .
+
+<https://semopenalex.org/author/A5049892771> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I75124487> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P05> ;
+    ont:name "Bartosz Wilczyński"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5049892771> .
+
+<https://semopenalex.org/author/A5050259451> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210119109> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P28> ;
+    ont:name "John W. Schrader"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5050259451> .
+
+<https://semopenalex.org/author/A5050499253> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I75124487> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P05> ;
+    ont:name "Katarzyna Zorena"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5050499253> .
+
+<https://semopenalex.org/author/A5050986429> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P15> ;
+    ont:name "Tania Pizzari"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5050986429> .
+
+<https://semopenalex.org/author/A5051384057> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I8204097> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Hans Polzer"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5051384057> .
+
+<https://semopenalex.org/author/A5051429657> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1304196042> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P03> ;
+    ont:name "Aaron D. Lee"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5051429657> .
+
+<https://semopenalex.org/author/A5051886581> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210136471> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Sandra Mechó"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5051886581> .
+
+<https://semopenalex.org/author/A5053871615> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210123655> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Pavel Pleshkov"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5053871615> .
+
+<https://semopenalex.org/author/A5055446647> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210165259> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P30> ;
+    ont:name "Ronan Bouttier"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5055446647> .
+
+<https://semopenalex.org/author/A5056180169> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I268303160> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Aleksandra HAJDUK"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5056180169> .
+
+<https://semopenalex.org/author/A5056935954> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Stefano Mazzoni"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5056935954> .
+
+<https://semopenalex.org/author/A5057407374> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P25> ;
+    ont:name "Belén García-Medrano"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5057407374> .
+
+<https://semopenalex.org/author/A5057817086> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Bryan C. Heiderscheit"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5057817086> .
+
+<https://semopenalex.org/author/A5057859275> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Eiji Sasaki"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5057859275> .
+
+<https://semopenalex.org/author/A5058818184> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2802928900> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Vincent Gouttebarge"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5058818184> .
+
+<https://semopenalex.org/author/A5058924817> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1304196042> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P03> ;
+    ont:name "Haemi Choi"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5058924817> .
+
+<https://semopenalex.org/author/A5059907955> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P13> ;
+    ont:name "Jurdan Mendiguchía"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5059907955> .
+
+<https://semopenalex.org/author/A5060827806> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I105086349> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Chenfei Yang"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5060827806> .
+
+<https://semopenalex.org/author/A5060875085> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I176453806> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P10> ;
+    ont:name "Pia‐Maria Wippert"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5060875085> .
+
+<https://semopenalex.org/author/A5062183401> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I155660961> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Jussi Kosola"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5062183401> .
+
+<https://semopenalex.org/author/A5063311166> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I189158943> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "O. De Bartolomeo"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5063311166> .
+
+<https://semopenalex.org/author/A5063311766> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P23> ;
+    ont:name "Scott A. Rodeo"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5063311766> .
+
+<https://semopenalex.org/author/A5065442703> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2799503643> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "John Usseglio"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5065442703> .
+
+<https://semopenalex.org/author/A5065624546> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I11983389> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P13> ;
+    ont:name "Thomas Dos’Santos"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5065624546> .
+
+<https://semopenalex.org/author/A5066453991> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I188329596> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P27> ;
+    ont:name "Judith Anson"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5066453991> .
+
+<https://semopenalex.org/author/A5067519537> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2800006345> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Maarten van Smeden"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5067519537> .
+
+<https://semopenalex.org/author/A5067709064> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Michael T. Cibulka"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5067709064> .
+
+<https://semopenalex.org/author/A5068313976> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I146516829> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P02> ;
+    ont:name "Yasuyuki Ishibashi"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5068313976> .
+
+<https://semopenalex.org/author/A5068639246> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I100532134> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "Brice Picot"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5068639246> .
+
+<https://semopenalex.org/author/A5068879480> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I3018483916> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Sander van de Hoef"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5068879480> .
+
+<https://semopenalex.org/author/A5070040415> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I39854758> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P21> ;
+    ont:name "Duncan Reid"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5070040415> .
+
+<https://semopenalex.org/author/A5070194646> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210146710> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P23> ;
+    ont:name "Erick M. Marigi"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5070194646> .
+
+<https://semopenalex.org/author/A5070391620> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I78577930> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Weija Fan"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5070391620> .
+
+<https://semopenalex.org/author/A5070714771> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Qian Hou"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5070714771> .
+
+<https://semopenalex.org/author/A5072497003> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2799503643> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "J. Turner Vosseller"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5072497003> .
+
+<https://semopenalex.org/author/A5072684185> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I75124487> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P05> ;
+    ont:name "Daniel Ślęzak"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5072684185> .
+
+<https://semopenalex.org/author/A5074851362> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2799503643> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Seth C. Shoap"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5074851362> .
+
+<https://semopenalex.org/author/A5076058014> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17> ;
+    ont:name "Tyler Cuddeford"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5076058014> .
+
+<https://semopenalex.org/author/A5077665037> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I76214153> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Zhiwei Feng"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5077665037> .
+
+<https://semopenalex.org/author/A5078351170> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210129524> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P08> ;
+    ont:name "Corinna C. Franklin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5078351170> .
+
+<https://semopenalex.org/author/A5079613236> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I72816309> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P08> ;
+    ont:name "Conrad Stoy"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5079613236> .
+
+<https://semopenalex.org/author/A5080101742> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I176453806> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P10> ;
+    ont:name "Sanne Houtenbos"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5080101742> .
+
+<https://semopenalex.org/author/A5081116845> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I76214153> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Yayi Xia"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5081116845> .
+
+<https://semopenalex.org/author/A5081488709> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I39854758> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P21> ;
+    ont:name "Esther R. M. George"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5081488709> .
+
+<https://semopenalex.org/author/A5082907300> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "Christine M. McDonough"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5082907300> .
+
+<https://semopenalex.org/author/A5083510059> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1304196042> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P03> ;
+    ont:name "Eliza J. Pierko"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5083510059> .
+
+<https://semopenalex.org/author/A5084322957> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Xuehua Zhan"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5084322957> .
+
+<https://semopenalex.org/author/A5084594257> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I124601658> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Giulio Pasta"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5084594257> .
+
+<https://semopenalex.org/author/A5084769047> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I8204097> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Sebastian Felix Baumbach"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5084769047> .
+
+<https://semopenalex.org/author/A5084772398> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P23> ;
+    ont:name "Riley J. Williams"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5084772398> .
+
+<https://semopenalex.org/author/A5085330293> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2801227293> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Álvaro García-Romero-Pérez"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5085330293> .
+
+<https://semopenalex.org/author/A5085719819> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I176453806> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P10> ;
+    ont:name "Chiao‐I Lin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5085719819> .
+
+<https://semopenalex.org/author/A5086867863> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Zuzanna SZUMLAS"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5086867863> .
+
+<https://semopenalex.org/author/A5087514144> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I8204097> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P18> ;
+    ont:name "Wolfgang Boecker"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5087514144> .
+
+<https://semopenalex.org/author/A5088828476> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I155660961> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P16> ;
+    ont:name "Aleksi Jokela"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5088828476> .
+
+<https://semopenalex.org/author/A5088845952> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12> ;
+    ont:name "Janice K. Loudon"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5088845952> .
+
+<https://semopenalex.org/author/A5089587833> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I72816309> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P08> ;
+    ont:name "Joseph Larwa"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5089587833> .
+
+<https://semopenalex.org/author/A5089820312> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I3018483916> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P29> ;
+    ont:name "Michel S. Brink"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5089820312> .
+
+<https://semopenalex.org/author/A5090424447> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I188329596> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P27> ;
+    ont:name "Roger Adams"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5090424447> .
+
+<https://semopenalex.org/author/A5091115783> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I861853513> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P26> ;
+    ont:name "Dario Perugia"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5091115783> .
+
+<https://semopenalex.org/author/A5091768873> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I76214153> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Zhongcheng Liu"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5091768873> .
+
+<https://semopenalex.org/author/A5093108892> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I111979921> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P19> ;
+    ont:name "Frank Woo"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5093108892> .
+
+<https://semopenalex.org/author/A5100345615> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I18925743> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P27> ;
+    ont:name "Yu Liu"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5100345615> .
+
+<https://semopenalex.org/author/A5100709608> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Xusheng Li"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5100709608> .
+
+<https://semopenalex.org/author/A5101407489> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210110720> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "Alexandre Hardy"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5101407489> .
+
+<https://semopenalex.org/author/A5101538561> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P23> ;
+    ont:name "Michael Davies"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5101538561> .
+
+<https://semopenalex.org/author/A5101671027> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I76214153> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Ming Ma"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5101671027> .
+
+<https://semopenalex.org/author/A5101755245> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Haifeng Yuan"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5101755245> .
+
+<https://semopenalex.org/author/A5102099698> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I111979921> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P19> ;
+    ont:name "John N. Walton"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5102099698> .
+
+<https://semopenalex.org/author/A5102715387> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "Christopher G. Bise"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5102715387> .
+
+<https://semopenalex.org/author/A5102896717> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I76214153> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P06> ;
+    ont:name "Yaobin Wang"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5102896717> .
+
+<https://semopenalex.org/author/A5103234101> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P04> ;
+    ont:name "Krzysztof Puchalski"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5103234101> .
+
+<https://semopenalex.org/author/A5103974633> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I177725633> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P10> ;
+    ont:name "Yu‐Hsien Lu"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5103974633> .
+
+<https://semopenalex.org/author/A5104027065> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210134769> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17> ;
+    ont:name "Robroy L. Martin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5104027065> .
+
+<https://semopenalex.org/author/A5104384198> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210098293> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P09> ;
+    ont:name "Filomena Cruz"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5104384198> .
+
+<https://semopenalex.org/author/A5108123737> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210094075> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P07> ;
+    ont:name "Christian Götze"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5108123737> .
+
+<https://semopenalex.org/author/A5108718382> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I100532134> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "Romain Terrier"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5108718382> .
+
+<https://semopenalex.org/author/A5111285749> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210154270> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P11> ;
+    ont:name "François Fourchet"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5111285749> .
+
+<https://semopenalex.org/author/A5113029314> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I111979921> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P19> ;
+    ont:name "Erik Kozina"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5113029314> .
+
+<https://semopenalex.org/author/A5113222206> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I4210127460> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P01> ;
+    ont:name "Long Chang"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5113222206> .
+
+<https://semopenalex.org/institution/I105086349> a ont:Organization ;
+    ont:name "North Sichuan Medical University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I105086349> .
+
+<https://semopenalex.org/institution/I11983389> a ont:Organization ;
+    ont:name "Manchester Metropolitan University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I11983389> .
+
+<https://semopenalex.org/institution/I124601658> a ont:Organization ;
+    ont:name "University of Parma"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I124601658> .
+
+<https://semopenalex.org/institution/I126307644> a ont:Organization ;
+    ont:name "University of Iowa"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I126307644> .
+
+<https://semopenalex.org/institution/I131729948> a ont:Organization ;
+    ont:name "University of Salerno"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I131729948> .
+
+<https://semopenalex.org/institution/I13469542> a ont:Organization ;
+    ont:name "Vrije Universiteit Brussel"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I13469542> .
+
+<https://semopenalex.org/institution/I177725633> a ont:Organization ;
+    ont:name "Chinese University of Hong Kong"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I177725633> .
+
+<https://semopenalex.org/institution/I20388574> a ont:Organization ;
+    ont:name "SUNY Upstate Medical University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I20388574> .
+
+<https://semopenalex.org/institution/I268303160> a ont:Organization ;
+    ont:name "Medical University of Warsaw"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I268303160> .
+
+<https://semopenalex.org/institution/I2800006345> a ont:Organization ;
+    ont:name "Leiden University Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2800006345> .
+
+<https://semopenalex.org/institution/I2801227293> a ont:Organization ;
+    ont:name "Watford General Hospital"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2801227293> .
+
+<https://semopenalex.org/institution/I2802161965> a ont:Organization ;
+    ont:name "Edward Hospital"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2802161965> .
+
+<https://semopenalex.org/institution/I2802928900> a ont:Organization ;
+    ont:name "Academic Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2802928900> .
+
+<https://semopenalex.org/institution/I2803053409> a ont:Organization ;
+    ont:name "Atlanta Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2803053409> .
+
+<https://semopenalex.org/institution/I4210088053> a ont:Organization ;
+    ont:name "Universitätsklinikum Erlangen"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210088053> .
+
+<https://semopenalex.org/institution/I4210094075> a ont:Organization ;
+    ont:name "Auguste-Viktoria-Klinik"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210094075> .
+
+<https://semopenalex.org/institution/I4210099813> a ont:Organization ;
+    ont:name "Górnośląskie Centrum Medyczne"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210099813> .
+
+<https://semopenalex.org/institution/I4210110720> a ont:Organization ;
+    ont:name "Clinique du Sport"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210110720> .
+
+<https://semopenalex.org/institution/I4210123655> a ont:Organization ;
+    ont:name "Zenit Trading (Russia)"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210123655> .
+
+<https://semopenalex.org/institution/I4210127572> a ont:Organization ;
+    ont:name "IMT Atlantique"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210127572> .
+
+<https://semopenalex.org/institution/I4210134082> a ont:Organization ;
+    ont:name "Samodzielny Publiczny Szpital Specjalistyczny Chorób Płuc im. dr O. Sokołowskiego"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210134082> .
+
+<https://semopenalex.org/institution/I4210134769> a ont:Organization ;
+    ont:name "University of Pittsburgh Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210134769> .
+
+<https://semopenalex.org/institution/I4210138767> a ont:Organization ;
+    ont:name "Szpital Kliniczny Dzieciątka Jezus"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210138767> .
+
+<https://semopenalex.org/institution/I4210146710> a ont:Organization ;
+    ont:name "Mayo Clinic in Florida"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210146710> .
+
+<https://semopenalex.org/institution/I4210154270> a ont:Organization ;
+    ont:name "Hôpital de la Tour"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210154270> .
+
+<https://semopenalex.org/institution/I5388228> a ont:Organization ;
+    ont:name "University of Rochester"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I5388228> .
+
+<https://semopenalex.org/institution/I54459138> a ont:Organization ;
+    ont:name "University of Salford"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I54459138> .
+
+<https://semopenalex.org/institution/I78577930> a ont:Organization ;
+    ont:name "Columbia University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I78577930> .
+
+<http://kg.sports-injuries.org/paper/P05> a ont:Paper ;
+    ont:abstractText "Dynamic knee valgus (DKV) as an incorrect movement pattern is recognized as a risk factor for lower limb injuries. Therefore, it is important to find the reasons behind this movement to select effective preventive procedures. There is a limited number of publications focusing on specific tasks, separating the double-leg from the single-leg tasks. Test patterns commonly used for DKV assessment, such as single-leg squat (SLS) or single leg landings (SLL), may show different results. The current review presents the modifiable factors of knee valgus in squat and landing single-leg tests in healthy people, as well as exercise training options. The authors used the available literature from PubMed, Scopus, PEDro and clinicaltrials.gov databases, and reviewed physiotherapy journals and books. For the purpose of the review, studies were searched for using 2D or 3D motion analysis methods only in the SLL and SLS tasks among healthy active people. Strengthening and activating gluteal muscles, improving trunk lateral flexion strength, increasing ROM dorsiflexion ankle and midfoot mobility should be taken into account when planning training programs aimed at reducing DKV occurring in SLS. In addition, knee valgus during SLL may occur due to decreased hip abductors, extensors, external rotators strength and higher midfoot mobility. Evidence from several studies supports the addition of biofeedback training exercises to reduce the angles of DKV."^^xsd:string ;
+    ont:doi "10.3390/ijerph17218208"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5049892771>,
+        <https://semopenalex.org/author/A5050499253>,
+        <https://semopenalex.org/author/A5072684185> ;
+    ont:openAlexId "W3096828126"^^xsd:string ;
+    ont:publicationYear 2020 ;
+    ont:title "Dynamic Knee Valgus in Single-Leg Movement Tasks. Potentially Modifiable Factors and Exercise Training Options. A Literature Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3096828126> .
+
+<http://kg.sports-injuries.org/paper/P09> a ont:Paper ;
+    ont:abstractText "PURPOSE OF REVIEW: The purpose of this review is to describe the current evidence on the most common sports-related ankle injuries. Joint anatomy, epidemiology, clinical findings, diagnostic approach, and treatment are presented with a specific focus on the available evidence towards return to play. RECENT FINDINGS: Recent findings show that ankle sprain is the most common injury in the world of sports. Bony fractures, cartilage defects, and syndesmotic lesions are frequently seen in association with the more severe type of ankle sprains. In summary, the majority of the athletes' ankle sprains are managed conservatively with excellent outcomes and full return to their pre-injury level of play. However, it is essential to differentiate the single ligament sprain from a more complex injury to the ankle joint. The evidence-based treatment and rehabilitation programmes are associated with a better prognosis and a faster time to return to sport participation."^^xsd:string ;
+    ont:doi "10.1007/s12178-020-09631-1"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5039734821>,
+        <https://semopenalex.org/author/A5041805052>,
+        <https://semopenalex.org/author/A5104384198> ;
+    ont:openAlexId "W3023690833"^^xsd:string ;
+    ont:publicationYear 2020 ;
+    ont:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3023690833> .
+
+<http://kg.sports-injuries.org/paper/P21> a ont:Paper ;
+    ont:abstractText "Tibial bone stress injuries (BSIs) are common among long-distance runners. They have a high recurrence rate, and complexity emerges in the wider management and successful return to running. Following a tibial BSI, a critical component of complete rehabilitation is the successful return to running, and there is a lack of consistency or strong evidence to guide this process. The objectives of this review were to outline the criteria used in clinical decision-making prior to resuming running, and to establish evidence-based guidelines for the return to running process following a tibial BSI. Electronic databases including MEDLINE, CINAHL, Scopus, SPORTDiscus and AMED were searched for studies that stated criteria or provided guidelines on the objectives above. Fifty studies met the inclusion criteria and were included. Thirty-nine were reviews or clinical commentaries, three were retrospective cohort studies, two were randomised controlled trials, two were pilot studies, one was a prospective observational study, and three were case studies. Therefore, the recommendations that have been surmised are based on level IV evidence. Decisions on when an athlete should return to running should be shared between clinicians, coaches and the athlete. There are five important components to address prior to introducing running, which are: the resolution of bony tenderness, pain-free walking, evidence of radiological healing in high-risk BSIs, strength, functional and loading tests, and the identification of contributing factors. Effective return to running planning should address the athlete's risk profile and manage the risk by balancing the athlete's interests and reinjury prevention. An individualised graduated return to running programme should be initiated, often starting with walk-run intervals, progressing running distance ahead of speed and intensity, with symptom provocation a key consideration. Contributing factors to the initial injury should be addressed throughout the return to run process."^^xsd:string ;
+    ont:doi "10.1007/s40279-024-02051-y"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5024571463>,
+        <https://semopenalex.org/author/A5070040415>,
+        <https://semopenalex.org/author/A5081488709> ;
+    ont:openAlexId "W4401591056"^^xsd:string ;
+    ont:publicationYear 2024 ;
+    ont:title "Criteria and Guidelines for Returning to Running Following a Tibial Bone Stress Injury: A Scoping Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4401591056> .
+
+<http://kg.sports-injuries.org/paper/P30> a ont:Paper ;
+    ont:abstractText "CONTEXT: Predicting when an athlete can return to sport after muscle injury is a major concern. OBJECTIVE: To determine whether combining objective clinical and ultrasound findings at presentation accurately predicted time to sport resumption in athletes with muscle injuries. DESIGN: Cohort study. SETTING: Sports medicine clinic. PATIENTS OR OTHER PARTICIPANTS: A total of 93 consecutive patients, 87 male and 6 female, were seen over a 1-year period for sudden-onset muscle pain while engaging in a sporting activity within the last 5 days and inability to continue the training session or game. INTERVENTION(S): Standardized physical examination and sonogram. MAIN OUTCOME MEASURE(S): Statistical associations between clinical and sonographic features at presentation and time to sport resumption (<40 days or ≥ 40 days) were evaluated using multivariate models. Correlations between time to sport resumption predicted by a sports medicine specialist and actual time to sport resumption were evaluated using the Spearman rank correlation coefficient. RESULTS: The 93 patients had 95 injuries, caused by muscle contraction in 86 cases and impact in 9 cases. Only 7 injuries had normal sonogram findings. Late sport resumption was associated with 4 clinical criteria (bruising, tenderness to palpation, range-of-motion limitation compared with the other limb, and increased pain with isometric contraction during passive limb straightening) and 4 sonographic criteria (disorganized fibrous tissue, intramuscular hematoma, intermuscular hematoma, and power Doppler signal). The Spearman rank correlation coefficient between predicted and actual times was 0.669 (P < .0001) for mild exercise resumption and 0.804 (P < .0001) for full sport resumption. CONCLUSION: A combination of physical and sonographic data collected during the acute phase of sport-related muscle injury was effective in predicting time to sport resumption."^^xsd:string ;
+    ont:doi "10.4085/1062-6050-46.5.500"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5032316254>,
+        <https://semopenalex.org/author/A5032377380>,
+        <https://semopenalex.org/author/A5055446647> ;
+    ont:openAlexId "W2109374215"^^xsd:string ;
+    ont:publicationYear 2016 ;
+    ont:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W2109374215> .
+
+<https://semopenalex.org/author/A5053622290> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I2803053409> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17>,
+        <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "Dominic S. Carreira"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5053622290> .
+
+<https://semopenalex.org/author/A5068287478> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12>,
+        <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "Thomas Koc"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5068287478> .
+
+<https://semopenalex.org/author/A5075573192> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I20388574> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P17>,
+        <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "Christopher Neville"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5075573192> .
+
+<https://semopenalex.org/author/A5079064872> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I111979921>,
+        <https://semopenalex.org/institution/I2802161965> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P03>,
+        <http://kg.sports-injuries.org/paper/P19> ;
+    ont:name "Shaheen Jadidi"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5079064872> .
+
+<https://semopenalex.org/author/A5090977175> a ont:Person ;
+    ont:affiliatedWith <https://semopenalex.org/institution/I1281539108> ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P23>,
+        <http://kg.sports-injuries.org/paper/P24> ;
+    ont:name "Robert G. Marx"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5090977175> .
+
+<https://semopenalex.org/author/A5101577964> a ont:Person ;
+    ont:authorOf <http://kg.sports-injuries.org/paper/P12>,
+        <http://kg.sports-injuries.org/paper/P20> ;
+    ont:name "RobRoy L. Martin"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/author/A5101577964> .
+
+<https://semopenalex.org/institution/I18925743> a ont:Organization ;
+    ont:name "Shanghai University of Sport"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I18925743> .
+
+<https://semopenalex.org/institution/I2802811225> a ont:Organization ;
+    ont:name "Royal Dutch Football Association"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2802811225> .
+
+<https://semopenalex.org/institution/I72816309> a ont:Organization ;
+    ont:name "Drexel University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I72816309> .
+
+<https://semopenalex.org/institution/I861853513> a ont:Organization ;
+    ont:name "Sapienza University of Rome"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I861853513> .
+
+<http://kg.sports-injuries.org/paper/P13> a ont:Paper ;
+    ont:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
+    ont:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5007394741>,
+        <https://semopenalex.org/author/A5048995977>,
+        <https://semopenalex.org/author/A5059907955>,
+        <https://semopenalex.org/author/A5065624546> ;
+    ont:openAlexId "W4386845470"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4386845470> .
+
+<http://kg.sports-injuries.org/paper/P19> a ont:Paper ;
+    ont:abstractText "This review article discusses the anatomy and histopathology of the patellar tendon, as well as the risk factors and common interventions for patellar tendinopathy (PT) with a view to guide clinicians in treating athletes with patellar tendon pain. PT, or jumper's knee, refers to a chronic injury to the patellar tendon that affects athletes who engage in jumping and explosive movements. The condition is characterized by degeneration and disorganization of the collagen fibers in the tendon, an increase in mucoid ground substance, and fibroblast proliferation. Risk factors for patellar tendinopathy include participation in jumping sports, a greater counter-movement jump height, and training on hard surfaces. Nonoperative treatments for patellar tendinopathy include relative rest, stretching and strengthening exercises, and correction of biomechanical abnormalities. Surgery and other procedures, such as extracorporeal shockwave therapy (ESWT) and injection therapies, may be considered for patients who do not respond to conservative measures."^^xsd:string ;
+    ont:doi "10.7759/cureus.47459"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5079064872>,
+        <https://semopenalex.org/author/A5093108892>,
+        <https://semopenalex.org/author/A5102099698>,
+        <https://semopenalex.org/author/A5113029314> ;
+    ont:openAlexId "W4387859971"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4387859971> .
+
+<http://kg.sports-injuries.org/paper/P24> a ont:Paper ;
+    ont:abstractText "Posterior cruciate ligament injuries can be treated conservatively with a structured rehabilitation program or with surgical reconstruction. Treatment algorithms are based on a variety of factors including the patient's presentation, physical exam, and desired level of activity. The goal is to return the patient to their athletic pursuits with a stable and pain-free knee. Return to play and activities should be individualized based on the patient's injury and progression through rehabilitation. This article provides a review of the current treatments for posterior cruciate ligament injuries and the respective rehabilitation protocols, outcomes after each treatment option, and specific return to play criteria. Current research shows excellent outcomes and return to play with conservative treatment of isolated posterior cruciate ligament injuries. Return to play algorithms stress the importance of quadriceps strengthening throughout the recovery process and emphasize inclusion of plyometrics and sport-specific training. Rehabilitation plays a critical role in the outcome after posterior cruciate ligament injury and the ability to return to athletics. The primary focus of post-injury or post-operative rehabilitation is to restore function, as it relates to range of motion, strength, and proprioception, while mitigating swelling and pain. The patients' desired sport and level of play dictate return to play timelines. The literature supports the use of non-operative management of isolated PCL injuries in athletes and non-athletes with excellent functional and patient-reported outcomes."^^xsd:string ;
+    ont:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5022848967>,
+        <https://semopenalex.org/author/A5032300797>,
+        <https://semopenalex.org/author/A5036694526>,
+        <https://semopenalex.org/author/A5090977175> ;
+    ont:openAlexId "W4310462146"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4310462146> .
+
+<https://semopenalex.org/institution/I100532134> a ont:Organization ;
+    ont:name "Université Claude Bernard Lyon 1"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I100532134> .
+
+<https://semopenalex.org/institution/I108103353> a ont:Organization ;
+    ont:name "Universidad de Valladolid"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I108103353> .
+
+<https://semopenalex.org/institution/I155660961> a ont:Organization ;
+    ont:name "University of Turku"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I155660961> .
+
+<https://semopenalex.org/institution/I188329596> a ont:Organization ;
+    ont:name "University of Canberra"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I188329596> .
+
+<https://semopenalex.org/institution/I2799503643> a ont:Organization ;
+    ont:name "Columbia University Irving Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I2799503643> .
+
+<https://semopenalex.org/institution/I39854758> a ont:Organization ;
+    ont:name "Auckland University of Technology"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I39854758> .
+
+<https://semopenalex.org/institution/I4210098293> a ont:Organization ;
+    ont:name "Qatar Orthopaedic and Sports Medicine Hospital"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210098293> .
+
+<https://semopenalex.org/institution/I4210129524> a ont:Organization ;
+    ont:name "Shriners Hospitals for Children - Philadelphia"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210129524> .
+
+<https://semopenalex.org/institution/I4210165259> a ont:Organization ;
+    ont:name "Hôpital Maison Blanche"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210165259> .
+
+<https://semopenalex.org/institution/I75124487> a ont:Organization ;
+    ont:name "Gdańsk Medical University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I75124487> .
+
+<https://semopenalex.org/institution/I887968799> a ont:Organization ;
+    ont:name "RWTH Aachen University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I887968799> .
+
+<http://kg.sports-injuries.org/paper/P03> a ont:Paper ;
+    ont:abstractText "Acute knee injuries are commonly encountered in both the clinical and sideline setting and may be treated operatively or non-operatively. This article describes an evidence-based approach to non-operative acute knee injury. This includes history, physical exam, imaging, and initial management. In addition, the non-operative management of three such injuries—ligament injury, meniscus injury, and patellar dislocation injury—will be discussed via a case-based practical approach. Aside from grade III ACL tears, most acute knee ligament injuries, especially in the absence of other concurrent injuries, can be treated non-operatively. There is new evidence that acute traumatic meniscus tears in those younger than 40 can be successfully treated non-operatively and can do equally, as well as those that undergo surgery, at 1 year out from injury. Based on the current literature, a short period of knee bracing in extension with progression to weightbearing to tolerance is recommended after initial patellar dislocation. Many of the most common acute knee injuries, including MCL tears, meniscus tears, and patellar dislocations, can be managed non-operatively."^^xsd:string ;
+    ont:doi "10.1007/s12178-023-09875-7"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5029865714>,
+        <https://semopenalex.org/author/A5051429657>,
+        <https://semopenalex.org/author/A5058924817>,
+        <https://semopenalex.org/author/A5079064872>,
+        <https://semopenalex.org/author/A5083510059> ;
+    ont:openAlexId "W4389738638"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4389738638> .
+
+<http://kg.sports-injuries.org/paper/P08> a ont:Paper ;
+    ont:abstractText "Anterior cruciate ligament (ACL) injuries are the most common ligament injury of the knee, accounting for between 100,000 and 200,000 injuries among athletes per year. ACL injuries occur via contact and non-contact mechanisms, with the former being more common in males and the later being more common in females. These injuries typically require surgical repair and have relatively high re-rupture rates, resulting in a significant psychological burden for these individuals and long rehabilitation times. Numerous studies have attempted to determine risk factors for ACL rupture, including hormonal, biomechanical, and sport- and gender-specific factors. However, the incidence of ACL injuries continues to rise. Therefore, we performed a systematic review analyzing both ACL injury video analysis studies and studies on athletes who were pre-screened with eventual ACL injury. We investigated biomechanical mechanisms contributing to ACL injury and considered male and female differences. Factors such as hip angle and strength, knee movement, trunk stability, and ankle motion were considered to give a comprehensive, joint by joint analysis of injury risk and possible roles of prevention. Our review demonstrated that poor core stability, landing with heel strike, weak hip abduction strength, and increased knee valgus may contribute to increased ACL injury risk in young athletes."^^xsd:string ;
+    ont:doi "10.3390/ijerph18073826"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5029957084>,
+        <https://semopenalex.org/author/A5039699952>,
+        <https://semopenalex.org/author/A5078351170>,
+        <https://semopenalex.org/author/A5079613236>,
+        <https://semopenalex.org/author/A5089587833> ;
+    ont:openAlexId "W3151246717"^^xsd:string ;
+    ont:publicationYear 2021 ;
+    ont:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented Anterior Cruciate Ligament Ruptures in Male and Female Athletes"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3151246717> .
+
+<http://kg.sports-injuries.org/paper/P10> a ont:Paper ;
+    ont:abstractText "BACKGROUND: Chronic ankle instability, developing from ankle sprain, is one of the most common sports injuries. Besides it being an ankle issue, chronic ankle instability can also cause additional injuries. Investigating the epidemiology of chronic ankle instability is an essential step to develop an adequate injury prevention strategy. However, the epidemiology of chronic ankle instability remains unknown. Therefore, the purpose of this study was to investigate the epidemiology of chronic ankle instability through valid and reliable self-reported tools in active populations. METHODS: An electronic search was performed on PubMed and Web of Science in July 2020. The inclusion criteria for articles were peer-reviewed, published between 2006 and 2020, using one of the valid and reliable tools to evaluate ankle instability, determining chronic ankle instability based on the criteria of the International Ankle Consortium, and including the outcome of epidemiology of chronic ankle instability. The risk of bias of the included studies was evaluated with an adapted tool for the sports injury review method. RESULTS: After removing duplicated studies, 593 articles were screened for eligibility. Twenty full-texts were screened and finally nine studies were included, assessing 3804 participants in total. The participants were between 15 and 32 years old and represented soldiers, students, athletes and active individuals with a history of ankle sprain. The prevalence of chronic ankle instability was 25%, ranging between 7 and 53%. The prevalence of chronic ankle instability within participants with a history of ankle sprains was 46%, ranging between 9 and 76%. Five included studies identified chronic ankle instability based on the standard criteria, and four studies applied adapted exclusion criteria to conduct the study. Five out of nine included studies showed a low risk of bias. CONCLUSIONS: The prevalence of chronic ankle instability shows a wide range. This could be due to the different exclusion criteria, age, sports discipline, or other factors among the included studies. For future studies, standardized criteria to investigate the epidemiology of chronic ankle instability are required. The epidemiology of CAI should be prospective. Factors affecting the prevalence of chronic ankle instability should be investigated and clearly described."^^xsd:string ;
+    ont:doi "10.1186/s13047-021-00480-w"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5030668493>,
+        <https://semopenalex.org/author/A5060875085>,
+        <https://semopenalex.org/author/A5080101742>,
+        <https://semopenalex.org/author/A5085719819>,
+        <https://semopenalex.org/author/A5103974633> ;
+    ont:openAlexId "W3164001868"^^xsd:string ;
+    ont:publicationYear 2021 ;
+    ont:title "The epidemiology of chronic ankle instability with perceived ankle instability‐ a systematic review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3164001868> .
+
+<http://kg.sports-injuries.org/paper/P23> a ont:Paper ;
+    ont:abstractText "Management of meniscal injuries in the elite athlete is a difficult problem secondary to the high demands of athletic competition, the need for a timely return to sport, and the desire to maximize performance over time. The purpose of this review is to provide an up-to-date summary on the current literature and trends regarding the management of meniscus injuries with a special consideration for elite athletes. Historically, partial meniscectomy has been the primary treatment option for meniscus injuries. However, in recent years there has been an increased emphasis on meniscus preservation due to the increased risk of cartilage degeneration over time. Moreover, while partial meniscectomy still provides a quicker return to sport, recent literature has demonstrated similar rates of RTS and return to pre-injury levels between partial meniscectomy and meniscus repair. In the setting of symptomatic meniscal deficiency, meniscus allograft transplantation has become an increasingly utilized salvage procedure with promising yet variable outcomes on the ability to withstand elite competition. Currently, there is no uniform approach to treating meniscal injuries in elite athletes. Therefore, an individualized approach is required with consideration of the meniscus tear type, location, concomitant injuries, athlete expectations, rehabilitation timeline, and desire to prevent or delay knee osteoarthritis. In athletes with anatomically repairable tears, meniscus repair should be performed given the ability to restore native anatomy, provide high rates of RTS, and mitigate long-term chondral damage. However, partial meniscectomy can be indicated for unrepairable tears."^^xsd:string ;
+    ont:doi "10.1007/s12178-024-09907-w"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5063311766>,
+        <https://semopenalex.org/author/A5070194646>,
+        <https://semopenalex.org/author/A5084772398>,
+        <https://semopenalex.org/author/A5090977175>,
+        <https://semopenalex.org/author/A5101538561> ;
+    ont:openAlexId "W4399326598"^^xsd:string ;
+    ont:publicationYear 2024 ;
+    ont:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4399326598> .
+
+<http://kg.sports-injuries.org/paper/P27> a ont:Paper ;
+    ont:abstractText "Balance control improvement is one of the most important goals in sports and exercise. Better balance is strongly positively associated with enhanced athletic performance and negatively associated with lower limb sports injuries. Proprioception plays an essential role in balance control, and ankle proprioception is arguably the most important. This paper reviews ankle proprioception and explores synergies with balance control, specifically in a sporting context. Central processing of ankle proprioceptive information, along with other sensory information, enables integration for balance control. When assessing ankle proprioception, the most generalizable findings arise from methods that are ecologically valid, allow proprioceptive signals to be integrated with general vision in the central nervous system, and reflect the signal-in-noise nature of central processing. Ankle proprioceptive intervention concepts driven by such a central processing theory are further proposed and discussed for the improvement of balance control in sport."^^xsd:string ;
+    ont:doi "10.1155/2015/842804"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5020010475>,
+        <https://semopenalex.org/author/A5024680072>,
+        <https://semopenalex.org/author/A5066453991>,
+        <https://semopenalex.org/author/A5090424447>,
+        <https://semopenalex.org/author/A5100345615> ;
+    ont:openAlexId "W1851010948"^^xsd:string ;
+    ont:publicationYear 2016 ;
+    ont:title "The Role of Ankle Proprioception for Balance Control in relation to Sports Performance and Injury"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W1851010948> .
+
+<http://kg.sports-injuries.org/paper/P28> a ont:Paper ;
+    ont:abstractText "CONTEXT: Although strength training is commonly used to rehabilitate ankle injuries, studies investigating the effects of strength training on proprioception have shown conflicting results. OBJECTIVE: To determine the effects of a 6-week strength-training protocol on force sense and strength development in participants with functional ankle instability. DESIGN: Randomized controlled clinical trial. SETTING: University athletic training research laboratory. PATIENTS OR OTHER PARTICIPANTS: A total of 40 participants with functional ankle instability were recruited. They were randomly placed into a training group (10 men, 10 women: age = 20.9 ± 2.2 years, height = 76.4 ± 16.1 cm, mass = 173.0 ± 7.9 kg) or control group (10 men, 10 women: age = 20.2 ± 2.1 years, height = 78.8 ± 24.5 cm, mass = 173.7 ± 8.2 kg). INTERVENTION(S): Participants in the training group performed strength exercises with the injured ankle 3 times per week for 6 weeks. The protocol consisted of a combination of rubber exercise bands and the Multiaxial Ankle Exerciser, both clinically accepted strengthening methods for ankle rehabilitation. The progression of this protocol provided increasingly resistive exercise as participants changed either the number of sets or resistance of the Thera-Band or Multiaxial Ankle Exerciser. Main Outcome Measure(s): A load cell was used to measure strength and force sense. Inversion and eversion strength was recorded to the nearest 0.01 N. Force-sense reproduction was measured at 2 loads: 20% and 30% of maximal voluntary isometric contraction. RESULTS: Increases in inversion (F(1,38) = 11.59, P < 0.01, η(p)(2) = 0.23, power = 0.91) and eversion (F(1,38) = 57.68, P < .01, η(p)(2) = 0.60, power = 0.99) strength were found in the training group at the posttest when compared with the control group. No significant improvements were noted in force-sense reproduction for either group. CONCLUSIONS: Strength training at the ankle increased strength but did not improve force sense."^^xsd:string ;
+    ont:doi "10.4085/1062-6050-47.3.06"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5004808487>,
+        <https://semopenalex.org/author/A5008684174>,
+        <https://semopenalex.org/author/A5015905715>,
+        <https://semopenalex.org/author/A5038001798>,
+        <https://semopenalex.org/author/A5050259451> ;
+    ont:openAlexId "W1854658087"^^xsd:string ;
+    ont:publicationYear 2016 ;
+    ont:title "Ankle Strength and Force Sense After a Progressive, 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W1854658087> .
+
+<https://semopenalex.org/institution/I111979921> a ont:Organization ;
+    ont:name "Northwestern University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I111979921> .
+
+<https://semopenalex.org/institution/I1304196042> a ont:Organization ;
+    ont:name "Loyola University Medical Center"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I1304196042> .
+
+<https://semopenalex.org/institution/I176453806> a ont:Organization ;
+    ont:name "University of Potsdam"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I176453806> .
+
+<https://semopenalex.org/institution/I189158943> a ont:Organization ;
+    ont:name "University of Milan"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I189158943> .
+
+<https://semopenalex.org/institution/I3018483916> a ont:Organization ;
+    ont:name "University Medical Center Utrecht"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I3018483916> .
+
+<https://semopenalex.org/institution/I4210136471> a ont:Organization ;
+    ont:name "FC Barcelona"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210136471> .
+
+<https://semopenalex.org/institution/I8204097> a ont:Organization ;
+    ont:name "Ludwig-Maximilians-Universität München"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I8204097> .
+
+<http://kg.sports-injuries.org/paper/P01> a ont:Paper ;
+    ont:abstractText "BACKGROUND: Magnetic resonance imaging (MRI) is widely used for the evaluation of knee injuries, however, the accuracy of MRI in classifying multiple ligament knee injuries (MLKIs) remains unknown. This study aimed to investigate the accuracy of MRI in diagnosing and classifying acute traumatic MLKIs, we hypothesize that MRI had high accuracy in detecting and classifying MLKIs. METHODS: The clinical data of 97 patients who were diagnosed with acute traumatic MLKIs and managed by multi-ligament reconstruction between 2012 and 2020 were retrospectively reviewed. The MR images were read by two experienced radiologists and results were compared with intraoperative findings, which were considered as the reference for the identification of injured structures. The value of MRI in detecting injuries of anterior cruciate ligament (ACL), posterior cruciate ligament (PCL), medial collateral ligament (MCL), lateral collateral ligament (LCL), and meniscus was evaluated by calculating the sensitivity, specificity, positive predictive value, negative predictive value, positive likelihood ratio, negative likelihood ratio, and kappa coefficients analysis. The value of MRI in classifying MLKIs was evaluated by calculating the agreement between MRI and intraoperative findings. RESULTS: For detecting the specific injured structures in MLKIs, MRI had high sensitivity (90.7% for ACL, 90.4% for PCL, and moderate specificity (63.6% for ACL, 50% for PCL) in detecting cruciate ligament injuries, moderate sensitivity (79.1% for MCL, 55.6% for LCL) and specificity (46.7% for MCL, 68.4% for LCL) in detecting collateral ligament injuries, fair sensitivity (61.5%) and low specificity (39.4%) in the diagnosis of injuries to the meniscus. For classifying the MIKIs, MRI had a moderate agreement with intraoperative findings in classifying KD-V (kappa value = 0.57), poor agreement in the KD-I (kappa value = 0.39) and KD-IIIM (kappa value = 0.31), meaningless in the KD-II and KD-IIIL (kappa value < 0). The overall agreement between MRI and intraoperative findings in classifying MLKIs was poor (kappa value = 0.23). CONCLUSIONS: MRI is valuable in early detection and diagnosis of acute MLKIs, however, the accuracy of MRI in classifying MLKIs is limited. The management of MLKIs should be based on intraoperative findings, physical examinations, and comprehensive imaging results."^^xsd:string ;
+    ont:doi "10.1186/s12891-021-04976-1"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5037340459>,
+        <https://semopenalex.org/author/A5070714771>,
+        <https://semopenalex.org/author/A5084322957>,
+        <https://semopenalex.org/author/A5100709608>,
+        <https://semopenalex.org/author/A5101755245>,
+        <https://semopenalex.org/author/A5113222206> ;
+    ont:openAlexId "W4205961923"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "The accuracy of MRI in diagnosing and classifying acute traumatic multiple ligament knee injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4205961923> .
+
+<http://kg.sports-injuries.org/paper/P02> a ont:Paper ;
+    ont:abstractText "BACKGROUND: The purpose of this study is to compare the outcomes of acute primary repair of extraarticular ligaments with staged surgery for acute knee dislocations (KDs) and multiligament knee injuries (MLKIs). MATERIALS AND METHODS: Between January 2005 and May 2018, 61 consecutive patients diagnosed with MLKI or KD were referred to or visited our institution. Of these, 31 patients who underwent acute repair of extraarticular ligaments within 3 weeks of injury were included in this study. These patients were retrospectively classified into two groups: those who underwent only primary repair (repair group) and those who underwent staged reconstructive surgery (staged group). Follow-up examination included range of motion (ROM), knee joint stability (Lachman test, posterior drawer test, and varus and valgus stress test), Lysholm knee score, Tegner activity scale, and Knee Injury and Osteoarthritis and Outcome Score (KOOS). RESULTS: Twelve of the 31 patients did not need or desire further surgery and were included in the repair group. No significant difference was observed in demographic data between the repair and staged groups. Although staged surgery decreased positive posterior drawer test results, no significant difference was observed between the two groups regarding ROM, other knee joint stability tests, Lysholm scores, Tegner scale, or KOOS. CONCLUSIONS: In this series, all patients returned to their activities of daily living and preinjury occupation levels. Acute primary repair of extraarticular ligaments provides essential knee stability without varus/valgus instability and may reduce the need for subsequent cruciate ligament reconstruction. LEVEL OF EVIDENCE: Level IV, retrospective observational study."^^xsd:string ;
+    ont:doi "10.1186/s10195-020-00557-5"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5017000666>,
+        <https://semopenalex.org/author/A5021406690>,
+        <https://semopenalex.org/author/A5028065058>,
+        <https://semopenalex.org/author/A5044310764>,
+        <https://semopenalex.org/author/A5057859275>,
+        <https://semopenalex.org/author/A5068313976> ;
+    ont:openAlexId "W3092300428"^^xsd:string ;
+    ont:publicationYear 2020 ;
+    ont:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3092300428> .
+
+<http://kg.sports-injuries.org/paper/P06> a ont:Paper ;
+    ont:abstractText "Background: Arthritis with severe varus deformity remains a challenge in total knee arthroplasty (TKA). Until recently, surgeons aimed at a neutral lower limb alignment when performing a TKA. However, the impact of TKA on the ankle joint has been ignored. Therefore, we conducted a systematic review to assess the clinical and radiological changes in the ankle joint after TKA on knees with severe varus deformity. Methods: A systematic search was conducted in four English (PubMed, Embase, Cochrane Library, and Web of Science) and four Chinese (CBM, VIP, CNKI, and Wan Fang Database) databases. Screening of literature and extraction of data were independently performed by two researchers. The modified methodological index for non-randomized studies (MINORS) was used to assess the quality. Results: A total of eight studies were eligible, namely, four prospective and four retrospective studies. TKA resulted in a negative clinical effect in the ankle joint in patients with ankle osteoarthritis. Seven studies reported changes in the mechanical tibiofemoral angle, and four studies reported radiological changes in the hindfoot. The mean score of the MINORS was 9.8 out of eight (9–11). Conclusion: As a result of the correction of the knee osteoarthritis with severe varus deformity following mechanically aligned TKA, the radiological malalignment of the ankle joint was improved. However, some patients experience increased ankle pain after undergoing TKA, especially, if there was a residual knee varus deformity, a stiff hindfoot with varus deformity, or ankle arthritis."^^xsd:string ;
+    ont:doi "10.3389/fsurg.2021.713055"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5060827806>,
+        <https://semopenalex.org/author/A5077665037>,
+        <https://semopenalex.org/author/A5081116845>,
+        <https://semopenalex.org/author/A5091768873>,
+        <https://semopenalex.org/author/A5101671027>,
+        <https://semopenalex.org/author/A5102896717> ;
+    ont:openAlexId "W3198385968"^^xsd:string ;
+    ont:publicationYear 2021 ;
+    ont:title "Clinical and Radiological Changes of Ankle in Knee Osteoarthritis With Varus After Total Knee Arthroplasty: A Systematic Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3198385968> .
+
+<http://kg.sports-injuries.org/paper/P07> a ont:Paper ;
+    ont:abstractText "PURPOSE: Different surgical techniques to manage cartilage defects are available, including microfracture (MFx), autologous chondrocyte implantation (ACI), osteoarticular auto- or allograft transplantation (OAT), autologous matrix-induced chondrogenesis (AMIC). This study investigated the patient-related prognostic factors on the clinical outcomes of surgically treated knee and ankle cartilage defects. METHODS: This study followed the PRISMA statement. In May 2022, the following databases were accessed: PubMed, Google Scholar, Embase, and Scopus. All the studies investigating the outcomes of surgical management for knee and/or talus chondral defects were accessed. Only studies performing mesenchymal stem cells transplantation, OAT, MFx, ACI, and AMIC were considered. A multiple linear model regression analysis through the Pearson Product-Moment Correlation Coefficient was used. RESULTS: Data from 184 articles (8905 procedures) were retrieved. Female sex showed a positive moderate association with visual analogue scale at last follow-up (P = 0.02). Patient age had a negative association with the American Orthopaedic Foot and Ankle Score (P = 0.04) and Lysholm Knee Scoring Scale (P = 0.03). BMI was strongly associated with graft hypertrophy (P = 0.01). Greater values of VAS at baseline negatively correlate with lower values of Tegner Activity Scale at last follow-up (P < 0.0001). CONCLUSION: The clinical outcomes were mostly related to the patients' performance status prior surgery. A greater BMI was associated with greater rate of hypertrophy. Female sex and older age evidenced fair influence, while symptom duration prior to the surgical intervention and cartilage defect size evidenced no association with the surgical outcome. Lesion size and symptom duration did not evidence any association with the surgical outcome."^^xsd:string ;
+    ont:doi "10.1007/s00068-022-02155-y"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5005946491>,
+        <https://semopenalex.org/author/A5014749662>,
+        <https://semopenalex.org/author/A5024159880>,
+        <https://semopenalex.org/author/A5036945785>,
+        <https://semopenalex.org/author/A5046858092>,
+        <https://semopenalex.org/author/A5108123737> ;
+    ont:openAlexId "W4308462604"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Prognostic factors for the management of chondral defects of the knee and ankle joint: a systematic review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4308462604> .
+
+<http://kg.sports-injuries.org/paper/P11> a ont:Paper ;
+    ont:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
+    ont:doi "10.3389/fspor.2022.902886"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5033786903>,
+        <https://semopenalex.org/author/A5034252252>,
+        <https://semopenalex.org/author/A5068639246>,
+        <https://semopenalex.org/author/A5101407489>,
+        <https://semopenalex.org/author/A5108718382>,
+        <https://semopenalex.org/author/A5111285749> ;
+    ont:openAlexId "W4281691142"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4281691142> .
+
+<http://kg.sports-injuries.org/paper/P17> a ont:Paper ;
+    ont:abstractText "The Academy of Orthopaedic Physical Therapy (AOPT) has an ongoing effort to create evidence-based clinical practice guidelines (CPG) for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization’s International Classification of Functioning, Disability, and Health (ICF). The 2024 Achilles Pain, Stiffness, and Muscle Power Deficit: Midportion Achilles Tendinopathy Clinical Practice Guideline (CPG) is a revision of the 2018 CPG and represents the third CPG from AOPT on this topic. The goals of the revision were to provide a concise summary of the contemporary evidence and to develop new recommendations or revise previously published recommendations to support evidence-based practice. This current CPG covers prevalence, pathoanatomical features, risk factors, clinical course, diagnosis, examination, imaging, and physical therapy interventions for the management of midportion Achilles tendinopathy. J Orthop Sports Phys Ther 2024;54(12):CPG1-CPG32. Epub 27 November 2024. doi:10.2519/jospt.2024.0302"^^xsd:string ;
+    ont:doi "10.2519/jospt.2024.0302"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5019878503>,
+        <https://semopenalex.org/author/A5031785334>,
+        <https://semopenalex.org/author/A5053622290>,
+        <https://semopenalex.org/author/A5075573192>,
+        <https://semopenalex.org/author/A5076058014>,
+        <https://semopenalex.org/author/A5104027065> ;
+    ont:openAlexId "W4404768718"^^xsd:string ;
+    ont:publicationYear 2024 ;
+    ont:title "Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision – 2024"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4404768718> .
+
+<http://kg.sports-injuries.org/paper/P20> a ont:Paper ;
+    ont:abstractText "The Orthopaedic Section of the American Physical Therapy Association (APTA) has an ongoing effort to create evidence-based practice guidelines for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization's International Classification of Functioning, Disability, and Health (ICF). The purpose of these revised clinical practice guidelines is to review recent peer-reviewed literature and make recommendations related to nonarthritic heel pain. J Orthop Sports Phys Ther 2023;53(12):CPG1–CPG39. doi:10.2519/jospt.2023.0303"^^xsd:string ;
+    ont:doi "10.2519/jospt.2023.0303"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5053622290>,
+        <https://semopenalex.org/author/A5068287478>,
+        <https://semopenalex.org/author/A5075573192>,
+        <https://semopenalex.org/author/A5082907300>,
+        <https://semopenalex.org/author/A5101577964>,
+        <https://semopenalex.org/author/A5102715387> ;
+    ont:openAlexId "W4389226948"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "Heel Pain – Plantar Fasciitis: Revision 2023"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4389226948> .
+
+<http://kg.sports-injuries.org/paper/P25> a ont:Paper ;
+    ont:abstractText "Soccer is one of the most popular sports in the world. Players often suffer a variety of injuries, the most common being injuries to muscles and tendons. It is striking that with soccer, being the most practiced sport, and considering that most injuries occur in the lower extremities, plantar fasciitis (PF) is not one of the most frequent injuries (at least in terms of clinical data collected). The purpose of this review was to provide a comprehensive update of the topic \"plantar fasciitis\" focusing on soccer players. The review was conducted in accordance with the PRISMA (Preferred Reportiog ltems for Systmiatic reviews and Meta-Analyses) statement. PubMed, Cochrane Library and Scopus were researched. PICO (Patient, Population or Problem; Intervention; Comparison; and Outcome) components were identified. The keywords used were \"plantar fasciitis\", \"plantar fasciitis and sport\", \"plantar fasciitis risk factors\", \"plantar fasciitis soccer\" and \"plantar fasciitis football players\". With respect to the objective proposed for the research, we found eight specific articles focused on soccer. Of these, five were general reviews discussing the different methods of treatment of this pathology, and we have only found three studies that focused on PF in soccer, with two of them referring to a clinical case whereby the report and discussion only dealt with the specific treatment followed by the soccer player. After reviewing the manuscripts included in this work, we were surprised that there is no data in which the Silfverskiöld test was performed, as this test explores the passive mobility of the ankle and the degree of dorsiflexion in the supine position. We concluded that soccer players suffer pain in the sole of the foot compatible with plantar fasciitis; however, as indicated by Suzue et al., it is often not diagnosed because the athlete does not consider performing the clinical examinations necessary for its diagnosis. The shortage of reported publications in soccer may mask other PF-associated injuries."^^xsd:string ;
+    ont:doi "10.3390/ijerph192114426"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5002727818>,
+        <https://semopenalex.org/author/A5009821898>,
+        <https://semopenalex.org/author/A5013860873>,
+        <https://semopenalex.org/author/A5017583039>,
+        <https://semopenalex.org/author/A5028205354>,
+        <https://semopenalex.org/author/A5057407374> ;
+    ont:openAlexId "W4308331395"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Plantar Fasciitis in Soccer Players—A Systemic Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4308331395> .
+
+<http://kg.sports-injuries.org/paper/P26> a ont:Paper ;
+    ont:abstractText "Classical ballet is an art form requiring extraordinary physical activity, characterised by rigorous training. These can lead to many overuse injuries arising from repetitive minor trauma. The purpose of this paper is to report our experience in the diagnosis and treatment of stress fractures at the base of the second and third metatarsal bones in young ballet dancers. We considered 150 trainee ballet dancers from the Ballet Schools of Teatro Alla Scala of Milan from 2005 to 2007. Nineteen of them presented with stress fractures of the base of the metatarsal bones. We treated 18 dancers with external shockwave therapy and one with pulsed electromagnetic fields and low-intensity ultrasound and all patients were recommended rest. In all cases good results were obtained. The best approach to metatarsal stress fractures is to diagnose them early through clinical examination and then through X-ray and MRI. ESWT gave good results with a relatively short time of rest from the patients' activities and a return to dancing without pain."^^xsd:string ;
+    ont:doi "10.1007/s00264-009-0784-3"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5003516696>,
+        <https://semopenalex.org/author/A5006914699>,
+        <https://semopenalex.org/author/A5022663425>,
+        <https://semopenalex.org/author/A5043697947>,
+        <https://semopenalex.org/author/A5063311166>,
+        <https://semopenalex.org/author/A5091115783> ;
+    ont:openAlexId "W2018934852"^^xsd:string ;
+    ont:publicationYear 2016 ;
+    ont:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W2018934852> .
+
+<https://semopenalex.org/institution/I4210119109> a ont:Organization ;
+    ont:name "Indiana University Bloomington"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210119109> .
+
+<https://semopenalex.org/institution/I76214153> a ont:Organization ;
+    ont:name "Lanzhou University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I76214153> .
+
+<https://semopenalex.org/institution/I146516829> a ont:Organization ;
+    ont:name "Hirosaki University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I146516829> .
+
+<https://semopenalex.org/institution/I4210127460> a ont:Organization ;
+    ont:name "Ningxia Medical University"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I4210127460> .
+
+<http://kg.sports-injuries.org/paper/P04> a ont:Paper ;
+    ont:abstractText "Introduction and purpose: The aim of this study is to review and analyze scientific research on the topic of volleyball injuries. We attempt to identify the types of injuries that are characterized by increased frequency, diagnostic possibilities, and treatment methods. We believe that this work can support individuals involved in sports and sports medicine personnel in accessing information more quickly and facilitate the direction of further research into preventing injuries among volleyball players. State of Knowledge: Knee injuries are divided into overload and acute injuries. Overload syndromes include degenerative changes to the patellar ligament. Medical history and physical exam suffice for accurate diagnosis. Treatment for jumper’s knee is based mostly on conservative treatment. Meniscus injuries are equally common such as ACL rupture. Not all meniscus injuries require surgery, and the key factor in making a decision is the pattern of tearing and the presence of appropriate vascularization. Conclusions: Based on analyzed studies we assumed that every third serious injury among volleyball players is the knee injury. There is no single preferred method of treatment. Early diagnosis and intervention are crucial to prevent the progression of the disease. Stretching and eccentric strengthening exercises are recommended in the early stages. Efficiency of platelet-rich plasma injections remains uncertain. Further research is needed to determine the most effective treatment. In acute knee injuries, ACL damage often coexists. Treatment for such injuries typically involves surgical intervention. Arthroscopy is the preferred method. Meniscus repair has a high success rate and enables a rapid return to physical fitness."^^xsd:string ;
+    ont:doi "10.12775/JEHS.2023.38.01.006"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5006356155>,
+        <https://semopenalex.org/author/A5008496667>,
+        <https://semopenalex.org/author/A5018431687>,
+        <https://semopenalex.org/author/A5037345718>,
+        <https://semopenalex.org/author/A5042101623>,
+        <https://semopenalex.org/author/A5056180169>,
+        <https://semopenalex.org/author/A5086867863>,
+        <https://semopenalex.org/author/A5103234101> ;
+    ont:openAlexId "W4379548885"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4379548885> .
+
+<http://kg.sports-injuries.org/paper/P18> a ont:Paper ;
+    ont:abstractText "Purpose: The aim of this systematic review and meta-analysis was to compare re-rupture rates, complication rates, functional outcomes, as well as return to work (RTW)/sport (RTS) among different rehabilitation protocols following operative treatment of acute Achilles tendon ruptures. Methods: Systematic review and meta-analysis was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines. Five databases were searched for randomized controlled trials (RCTs) comparing at least two rehabilitation protocols following surgical repair of acute Achilles tendon ruptures. Rehabilitation protocols were classified as a variation of either non-weightbearing (NWB) or weightbearing (WB) and immobilization (IM) or mobilization (M). The data collection consisted of re-ruptures, complications, and RTW/RTS. Results: Out of 2760 studies screened, 20 RCTs with 1007 patients were eligible. Fourteen studies included a group consisting of WB + M (Group 1), 11 of WB + IM (Group 2), 3 of NWB + M (Group 3), and 13 of NWB + IM (Group 4). Outcome parameters available for a meta-analysis were re-ruptures, complications, RTW, and RTS. Re-ruptures overall occurred in 2.7%, with prevalences ranging between 0.04 and 0.08. Major complications occurred in 2.6%, with prevalences ranging between 0.02 and 0.03. Minor complications occurred in 11.8% with prevalances ranging between 0.04 to 0.17. Comparing the odds-ratios between the four different groups revealed no significant differences with overall favourable results for group 1 (WB+M). Conclusion: Early functional rehabilitation protocols with early ankle M and WB following surgical repair of acute Achilles tendon ruptures are safe and they apparently allow for a quicker RTW and RTS and seem to lead to favourable results."^^xsd:string ;
+    ont:doi "10.1530/EOR-22-0072"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5031484639>,
+        <https://semopenalex.org/author/A5051384057>,
+        <https://semopenalex.org/author/A5065442703>,
+        <https://semopenalex.org/author/A5070391620>,
+        <https://semopenalex.org/author/A5072497003>,
+        <https://semopenalex.org/author/A5074851362>,
+        <https://semopenalex.org/author/A5084769047>,
+        <https://semopenalex.org/author/A5087514144> ;
+    ont:openAlexId "W4307430674"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4307430674> .
+
+<http://kg.sports-injuries.org/paper/P29> a ont:Paper ;
+    ont:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
+    ont:doi "10.1111/sms.13353"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5014537370>,
+        <https://semopenalex.org/author/A5018693516>,
+        <https://semopenalex.org/author/A5018752877>,
+        <https://semopenalex.org/author/A5030030035>,
+        <https://semopenalex.org/author/A5058818184>,
+        <https://semopenalex.org/author/A5067519537>,
+        <https://semopenalex.org/author/A5068879480>,
+        <https://semopenalex.org/author/A5089820312> ;
+    ont:openAlexId "W2904890641"^^xsd:string ;
+    ont:publicationYear 2018 ;
+    ont:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W2904890641> .
+
+<https://semopenalex.org/institution/I1281539108> a ont:Organization ;
+    ont:name "Hospital for Special Surgery"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/institution/I1281539108> .
+
+<http://kg.sports-injuries.org/paper/P12> a ont:Paper ;
+    ont:abstractText "Hamstring strain injury (HSI) may result in considerable impairment, activity limitation, and participation restriction, including time lost from competitive sports. This CPG includes sports-related overloading and overstretching injuries to myofascial or musculotendinous structures in any combination of the 3 hamstring muscles (the semitendinosus, semimembranosus, and biceps femoris). J Orthop Sports Phys Ther 2022;52(3):CPG1–CPG44. doi:10.2519/jospt.2022.0301"^^xsd:string ;
+    ont:doi "10.2519/jospt.2022.0301"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5008239756>,
+        <https://semopenalex.org/author/A5027231569>,
+        <https://semopenalex.org/author/A5033221732>,
+        <https://semopenalex.org/author/A5046005806>,
+        <https://semopenalex.org/author/A5057817086>,
+        <https://semopenalex.org/author/A5067709064>,
+        <https://semopenalex.org/author/A5068287478>,
+        <https://semopenalex.org/author/A5088845952>,
+        <https://semopenalex.org/author/A5101577964> ;
+    ont:openAlexId "W4213258542"^^xsd:string ;
+    ont:publicationYear 2022 ;
+    ont:title "Hamstring Strain Injury in Athletes"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4213258542> .
+
+<http://kg.sports-injuries.org/paper/P16> a ont:Paper ;
+    ont:abstractText "OBJECTIVE: To describe injury mechanisms and magnetic resonance imaging (MRI) findings in acute rectus femoris (RF) injuries of soccer players using a systematic video analysis. DESIGN: Descriptive case series study of consecutive RF injuries from November 2017 to July 2022. SETTING: Two specialized sports medicine hospitals. PARTICIPANTS: Professional male soccer players aged between 18 and 40 years, referred for injury assessment within 7 days after a RF injury, with an available video footage of the injury and a positive finding on an MRI. INDEPENDENT VARIABLES: Rectus femoris injury mechanisms (specific scoring based on standardized models) in relation to RF muscle injury MRI findings. MAIN OUTCOME MEASURES: Rectus femoris injury mechanism (playing situation, player/opponent behavior, movement, and biomechanics), location of injury in MRI. RESULTS: Twenty videos of RF injuries in 19 professional male soccer players were analyzed. Three different injury mechanisms were seen: kicking (80%), sprinting (10%), and change of direction (10%). Isolated single-tendon injuries were found in 60% of the injuries. Of the kicking injuries, 62.5% included complete tendon ruptures, whereas both running injuries and none of the change of direction injuries were complete ruptures. The direct tendon was involved in 33% of the isolated injuries, and the common tendon was affected in all combined injuries. CONCLUSIONS: Rectus femoris injuries typically occur during kicking among football players. Most of the RF injuries involve a complete rupture of at least one tendon. Kicking injuries can also affect the supporting leg, and sprinting can cause a complete tendon rupture, whereas change of direction seems not to lead to complete ruptures."^^xsd:string ;
+    ont:doi "10.1097/JSM.0000000000001131"^^xsd:string ;
+    ont:hasAuthor <https://semopenalex.org/author/A5003922575>,
+        <https://semopenalex.org/author/A5019238120>,
+        <https://semopenalex.org/author/A5021770163>,
+        <https://semopenalex.org/author/A5035214950>,
+        <https://semopenalex.org/author/A5042727391>,
+        <https://semopenalex.org/author/A5051886581>,
+        <https://semopenalex.org/author/A5053871615>,
+        <https://semopenalex.org/author/A5056935954>,
+        <https://semopenalex.org/author/A5062183401>,
+        <https://semopenalex.org/author/A5084594257>,
+        <https://semopenalex.org/author/A5085330293>,
+        <https://semopenalex.org/author/A5088828476> ;
+    ont:openAlexId "W4322616850"^^xsd:string ;
+    ont:publicationYear 2023 ;
+    ont:title "Indirect Rectus Femoris Injury Mechanisms in Professional Soccer Players: Video Analysis and Magnetic Resonance Imaging Findings"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4322616850> .
+
