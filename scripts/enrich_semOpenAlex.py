@@ -22,23 +22,25 @@ import csv
 import time
 import os
 import requests
+import csv as csv_module
 from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, OWL, XSD
+
  
-# ── Paths (relative to repo root) ────────────────────────────────────────────
+
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_CSV  = os.path.join(BASE_DIR, "data/metadata/papers.csv")
 OUTPUT_TTL = os.path.join(BASE_DIR, "data/rdf/semopenalex_enriched.ttl")
  
 SPARQL_ENDPOINT = "https://semopenalex.org/sparql"
-SLEEP = 1.0  # seconds between queries
+SLEEP = 1.0  
  
-# ── Namespaces ────────────────────────────────────────────────────────────────
+
 KG  = Namespace("http://kg.sports-injuries.org/")
 ONT = Namespace("http://kg.sports-injuries.org/ontology/")
 SOA = Namespace("https://semopenalex.org/ontology/")
  
-# ── SPARQL query ──────────────────────────────────────────────────────────────
+
 QUERY_TEMPLATE = """
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX soa:     <https://semopenalex.org/ontology/>
@@ -77,7 +79,7 @@ WHERE {{
 LIMIT 100
 """
  
-# ── Helpers ───────────────────────────────────────────────────────────────────
+
  
 def sparql_query(work_uri: str) -> list:
     query = QUERY_TEMPLATE.format(work_uri=work_uri)
@@ -185,7 +187,7 @@ def build_rdf(g: Graph, paper_id: str, doi: str, abstract: str,
             g.add((author_uri, ONT.affiliatedWith, org_uri))
  
  
-# ── Main ──────────────────────────────────────────────────────────────────────
+
  
 def main():
     os.makedirs(os.path.dirname(OUTPUT_TTL), exist_ok=True)
@@ -242,7 +244,22 @@ def main():
  
     print(f"\nSerializing to {OUTPUT_TTL}...")
     g.serialize(destination=OUTPUT_TTL, format="turtle")
- 
+    processed_dir = os.path.join(BASE_DIR, "data/processed")
+    os.makedirs(processed_dir, exist_ok=True)
+    semoa_csv = os.path.join(processed_dir, "semopenalex_metadata.csv")
+    semoa_rows = []
+    for paper in papers:
+        semoa_rows.append({
+            "paper_id":        (paper.get("paper_id") or "").strip(),
+            "openalex_work_uri": f"https://semopenalex.org/work/{(paper.get('openAlexId') or '').strip()}",
+            "doi":             (paper.get("doi") or "").strip(),
+            "source":          "SemOpenAlex SPARQL",
+        })
+    with open(semoa_csv, "w", encoding="utf-8", newline="") as f:
+        writer = csv_module.DictWriter(f, fieldnames=["paper_id","openalex_work_uri","doi","source"])
+        writer.writeheader()
+        writer.writerows(semoa_rows)
+    print(f"  Intermediate CSV → {semoa_csv}")
     print("\n── Summary ──────────────────────────────────────")
     print(f"  Papers queried:       {len(papers)}")
     print(f"  Found in SemOpenAlex: {found}/{len(papers)}")

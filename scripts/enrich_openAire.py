@@ -26,22 +26,21 @@ from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, OWL, XSD
 from dotenv import load_dotenv
  
-# ── Paths ─────────────────────────────────────────────────────────────────────
+
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_CSV  = os.path.join(BASE_DIR, "data/metadata/papers.csv")
 OUTPUT_TTL = os.path.join(BASE_DIR, "data/rdf/openaire_enriched.ttl")
 ENV_FILE   = os.path.join(BASE_DIR, ".env")
- 
-# ── OpenAIRE endpoints ────────────────────────────────────────────────────────
+
 TOKEN_URL  = "https://aai.openaire.eu/oidc/token"
 API_BASE   = "https://api.openaire.eu"
 SLEEP      = 1.0  # seconds between requests
  
-# ── Namespaces ────────────────────────────────────────────────────────────────
+
 KG  = Namespace("http://kg.sports-injuries.org/")
 ONT = Namespace("http://kg.sports-injuries.org/ontology/")
  
-# ── Auth ──────────────────────────────────────────────────────────────────────
+
  
 def get_token(client_id: str, client_secret: str) -> str:
     """
@@ -64,7 +63,6 @@ def get_token(client_id: str, client_secret: str) -> str:
     return resp.json()["access_token"]
  
  
-# ── API queries ───────────────────────────────────────────────────────────────
  
 def query_openaire(doi: str, token: str) -> dict:
     """
@@ -98,7 +96,6 @@ def query_openaire(doi: str, token: str) -> dict:
         metadata = results[0].get("metadata", {}).get("oaf:entity", {})
         pub = metadata.get("oaf:result", {})
  
-        # ── Keywords ──────────────────────────────────────────────────────────
         subjects = pub.get("subject", [])
         if isinstance(subjects, dict):
             subjects = [subjects]
@@ -107,7 +104,7 @@ def query_openaire(doi: str, token: str) -> dict:
             if val:
                 result["keywords"].append(val)
  
-        # ── Projects / Funding ────────────────────────────────────────────────
+
         rels = metadata.get("oaf:relation", [])
         if isinstance(rels, dict):
             rels = [rels]
@@ -179,7 +176,7 @@ def query_project(project_id: str, token: str) -> dict:
         return {}
  
  
-# ── RDF builder ───────────────────────────────────────────────────────────────
+
  
 def build_rdf(g: Graph, paper_id: str, openaire_data: dict) -> None:
     local_uri = KG[f"paper/{paper_id}"]
@@ -209,7 +206,7 @@ def build_rdf(g: Graph, paper_id: str, openaire_data: dict) -> None:
         g.add((local_uri, ONT.relatedToProject, proj_uri))
  
  
-# ── Main ──────────────────────────────────────────────────────────────────────
+
  
 def main():
     # Load credentials from .env
@@ -277,6 +274,40 @@ def main():
  
     print(f"\nSerializing to {OUTPUT_TTL}...")
     g.serialize(destination=OUTPUT_TTL, format="turtle")
+
+    import csv as csv_module
+    processed_dir = os.path.join(BASE_DIR, "data/processed")
+    os.makedirs(processed_dir, exist_ok=True)
+    openaire_csv = os.path.join(processed_dir, "openaire_enrichment.csv")
+    openaire_rows = []
+    for paper in papers:
+        pid = (paper.get("paper_id") or "").strip()
+        doi = (paper.get("doi") or "").strip()
+        d   = query_openaire(doi, token) if doi else {"keywords": [], "projects": []}
+        kws = "|".join(d["keywords"])
+        for proj in d["projects"] or [{}]:
+            openaire_rows.append({
+                "paper_id":         pid,
+                "doi":              doi,
+                "external_keywords": kws,
+                "funding_project":  proj.get("name", ""),
+                "grant_id":         proj.get("grantId", ""),
+                "source":           "OpenAIRE API",
+            })
+        if not d["projects"]:
+            openaire_rows.append({
+                "paper_id":         pid,
+                "doi":              doi,
+                "external_keywords": kws,
+                "funding_project":  "",
+                "grant_id":         "",
+                "source":           "OpenAIRE API",
+            })
+    with open(openaire_csv, "w", encoding="utf-8", newline="") as f:
+        writer = csv_module.DictWriter(f, fieldnames=["paper_id","doi","external_keywords","funding_project","grant_id","source"])
+        writer.writeheader()
+        writer.writerows(openaire_rows)
+    print(f"  Intermediate CSV → {openaire_csv}")
  
     print("\n── Summary ──────────────────────────────────────")
     print(f"  Papers queried:          {len(papers)}")
