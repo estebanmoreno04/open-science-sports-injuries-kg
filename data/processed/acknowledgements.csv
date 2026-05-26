@@ -1,31 +1,31 @@
 paper_id,acknowledgements,extraction_method,source
-P01,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC8741972/
-P02,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC7567755/
+P01,Acknowledgements None | Funding This study was funded by The Application of Gene X-pert MTB/RIF Technology in the Diagnosis of Spinal Tuberculosis (2019-NW-005); Study on the mechanism of MTHFD2 induced degeneration of lumbar intervertebral disc (2020AAC03393).,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC8756613/
+P02,Acknowledgements We thank Editage ( https://www.editage.com ) for English language editing. | Funding None.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC7541803/
 P03,,none,
 P04,,none,
-P05,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC7664410/
-P06,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC8430343/
-P07,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC10175374/
-P08,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC8038123/
-P09,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC7251017/
-P10,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC8147388/
-P11,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC9174641/
+P05,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC7664395/
+P06,"Funding institutions: Department of Orthopaedics, Lanzhou University Second Hospital; Department of Orthopaedics, Nanchong Central Hospital, The Second Clinical Institute of North Sichuan Medical College; North Sichuan Medical College",PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC8435772/
+P07,Acknowledgements None | Funding Open Access funding enabled and organized by Projekt DEAL. No external source of funding was used.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC10175423/
+P08,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC8038785/
+P09,Funding Information Open Access funding provided by the Qatar National Library.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC7251008/
+P10,Acknowledgements We are thankful for Professor Wippert's research team's support and suggestions for and during this study. | Funding This study was granted by the 2017 Studying Abroad Scholarship from the Taiwan Ministry of Education. Open Access funding enabled and organized by Projekt DEAL.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC8161930/
+P11,"Funding institutions: French Handball Federation; French Society of Sports Physical Therapist (SFMKS Lab); Inter-University Laboratory of Human Movement Biology (LIBM), Savoie Mont-Blanc University; Clinique du Sport Paris; SARL Whergo, Savoie Technolac (BP 80218); Human Physiology and Sports Physiotherapy Research Group, Faculty of Physical Education and Physiotherapy, Vrije Universiteit Brussel; Sant&#233; Atlantique, Pied Cheville Nantes Atlantique; Motion Analysis Lab, Physiotherapy Department, La Tour Hospital, Swiss Olympic Medical Center",PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC9204606/
 P12,,none,
-P13,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC11052868/
+P13,"Funding institutions: School of Health and Society,; University of Salford,; Department of Sport and Exercise Sciences,; Manchester Metropolitan University,; Manchester Institute of Sport,; Metropolitan University,; University Jean Monnet Saint-Etienne, Lyon 1, University Savoie Mont-Blanc, Inter-University Laboratory of Human Movement Biology,",PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC11052868/
 P14,,none,
 P15,,none,
 P16,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC10467807/
 P17,,none,
-P18,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC9619392/
+P18,Funding institutions: Department of Orthopaedics and Trauma Surgery; Trauma Training Center; Department of Orthopaedic Surgery; Mailman School of Public Health; Augustus C. Long Health Sciences Library,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC9619394/
 P19,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC10661584/
 P20,,none,
-P21,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC11393297/
-P22,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC11958822/
+P21,Funding Open Access funding enabled and organized by CAUL and its Member Institutions.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC11393297/
+P22,We would especially like to thank Dr. Hossam Tharwat Ali and Research Yard for Research and Academic Services for their collaboration in designing the study and technical advice on establishing the search strategy and finalizing the manuscript.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC11958822/
 P23,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC11219605/
 P24,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC9789230/
 P25,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC9653655/
 P26,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC2899256/
-P27,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC4637080/
+P27,Acknowledgment This study is sponsored by Shanghai Pujiang Program Grant no. 15PJ1407600.,PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC4637080/
 P28,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC3392158/
-P29,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC6850185/
+P29,"ACKNOWLEDGEMENTS The authors thank the Royal Dutch Football Association (KNVB) and players, coaches and medical staff members of the participating teams for their contribution in this study. We would also like to thank Studio Sterkenburg (Richard Sterkenburg) for taking the photos of the BEP and Sven Brake for being the model in these pictures. Furthermore we would like to thank, Jur Brauers, Esmee de Jong and Rick Nevels for their contributions in this trial.",PMC OAI API,https://pmc.ncbi.nlm.nih.gov/articles/PMC6850185/
 P30,,PMC OAI API (empty),https://pmc.ncbi.nlm.nih.gov/articles/PMC3418956/
