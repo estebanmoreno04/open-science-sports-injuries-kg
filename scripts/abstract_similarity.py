@@ -29,10 +29,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =============================================================================
 
 # Ruta al CSV de entrada (con columnas: paper_id, title, abstract)
-INPUT_CSV = Path("../data/metadata/papers.csv")
+INPUT_CSV = Path("data/metadata/papers.csv")
 
 # Directorio de salida (se crea automáticamente si no existe)
-OUTPUT_DIR = Path("../results/similarity")
+OUTPUT_DIR = Path("results/similarity")
 
 # Número de papers similares a recuperar por cada paper (excluye autocomparación)
 TOP_K = 3
@@ -282,7 +282,7 @@ def save_outputs(
     # 4. Generar similarities.csv para la integración en RDF (build_rdf.py)
     # Se filtran parejas con similitud coseno >= 0.75 (umbral ontológico definido)
     sim_threshold = 0.6
-    processed_dir = Path("../data/processed")
+    processed_dir = Path("data/processed")
     processed_dir.mkdir(parents=True, exist_ok=True)
     similarities_path = processed_dir / "similarities.csv"
 

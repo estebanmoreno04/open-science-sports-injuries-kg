@@ -20,81 +20,12 @@
         "Research"^^xsd:string,
         "Retrospective Studies"^^xsd:string,
         "Value"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P01_P02> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> ;
     sio:paperId "P01"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "The accuracy of MRI in diagnosing and classifying acute traumatic multiple ligament knee injuries"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4205961923> .
-
-<http://kg.sports-injuries.org/resource/paper/P02> a sio:Paper ;
-    sio:abstractText "BACKGROUND: The purpose of this study is to compare the outcomes of acute primary repair of extraarticular ligaments with staged surgery for acute knee dislocations (KDs) and multiligament knee injuries (MLKIs). MATERIALS AND METHODS: Between January 2005 and May 2018, 61 consecutive patients diagnosed with MLKI or KD were referred to or visited our institution. Of these, 31 patients who underwent acute repair of extraarticular ligaments within 3 weeks of injury were included in this study. These patients were retrospectively classified into two groups: those who underwent only primary repair (repair group) and those who underwent staged reconstructive surgery (staged group). Follow-up examination included range of motion (ROM), knee joint stability (Lachman test, posterior drawer test, and varus and valgus stress test), Lysholm knee score, Tegner activity scale, and Knee Injury and Osteoarthritis and Outcome Score (KOOS). RESULTS: Twelve of the 31 patients did not need or desire further surgery and were included in the repair group. No significant difference was observed in demographic data between the repair and staged groups. Although staged surgery decreased positive posterior drawer test results, no significant difference was observed between the two groups regarding ROM, other knee joint stability tests, Lysholm scores, Tegner scale, or KOOS. CONCLUSIONS: In this series, all patients returned to their activities of daily living and preinjury occupation levels. Acute primary repair of extraarticular ligaments provides essential knee stability without varus/valgus instability and may reduce the need for subsequent cruciate ligament reconstruction. LEVEL OF EVIDENCE: Level IV, retrospective observational study."^^xsd:string ;
-    sio:doi "10.1186/s10195-020-00557-5"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "2. Zero hunger"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Adolescent"^^xsd:string,
-        "Adult"^^xsd:string,
-        "Aged"^^xsd:string,
-        "Female"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Knee Dislocation"^^xsd:string,
-        "Knee Injuries"^^xsd:string,
-        "Knee Joint"^^xsd:string,
-        "Knee dislocations"^^xsd:string,
-        "Ligaments"^^xsd:string,
-        "Ligaments, Articular"^^xsd:string,
-        "Male"^^xsd:string,
-        "Middle Aged"^^xsd:string,
-        "Multiligament knee injuries"^^xsd:string,
-        "Original Article"^^xsd:string,
-        "Orthopedic surgery"^^xsd:string,
-        "Plastic Surgery Procedures"^^xsd:string,
-        "Primary repair"^^xsd:string,
-        "RD701-811"^^xsd:string,
-        "Range of Motion, Articular"^^xsd:string,
-        "Retrospective Studies"^^xsd:string,
-        "Soft Tissue Injuries"^^xsd:string,
-        "Staged surgery"^^xsd:string,
-        "Treatment Outcome"^^xsd:string,
-        "Young Adult"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> ;
-    sio:paperId "P02"^^xsd:string ;
-    sio:publicationYear 2020 ;
-    sio:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W3092300428> .
-
-<http://kg.sports-injuries.org/resource/paper/P03> a sio:Paper ;
-    sio:abstractText "Acute knee injuries are commonly encountered in both the clinical and sideline setting and may be treated operatively or non-operatively. This article describes an evidence-based approach to non-operative acute knee injury. This includes history, physical exam, imaging, and initial management. In addition, the non-operative management of three such injuries—ligament injury, meniscus injury, and patellar dislocation injury—will be discussed via a case-based practical approach. Aside from grade III ACL tears, most acute knee ligament injuries, especially in the absence of other concurrent injuries, can be treated non-operatively. There is new evidence that acute traumatic meniscus tears in those younger than 40 can be successfully treated non-operatively and can do equally, as well as those that undergo surgery, at 1 year out from injury. Based on the current literature, a short period of knee bracing in extension with progression to weightbearing to tolerance is recommended after initial patellar dislocation. Many of the most common acute knee injuries, including MCL tears, meniscus tears, and patellar dislocations, can be managed non-operatively."^^xsd:string ;
-    sio:doi "10.1007/s12178-023-09875-7"^^xsd:string ;
-    sio:externalKeyword "3. Good health"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> ;
-    sio:paperId "P03"^^xsd:string ;
-    sio:publicationYear 2024 ;
-    sio:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4389738638> .
-
-<http://kg.sports-injuries.org/resource/paper/P04> a sio:Paper ;
-    sio:abstractText "Introduction and purpose: The aim of this study is to review and analyze scientific research on the topic of volleyball injuries. We attempt to identify the types of injuries that are characterized by increased frequency, diagnostic possibilities, and treatment methods. We believe that this work can support individuals involved in sports and sports medicine personnel in accessing information more quickly and facilitate the direction of further research into preventing injuries among volleyball players. State of Knowledge: Knee injuries are divided into overload and acute injuries. Overload syndromes include degenerative changes to the patellar ligament. Medical history and physical exam suffice for accurate diagnosis. Treatment for jumper’s knee is based mostly on conservative treatment. Meniscus injuries are equally common such as ACL rupture. Not all meniscus injuries require surgery, and the key factor in making a decision is the pattern of tearing and the presence of appropriate vascularization. Conclusions: Based on analyzed studies we assumed that every third serious injury among volleyball players is the knee injury. There is no single preferred method of treatment. Early diagnosis and intervention are crucial to prevent the progression of the disease. Stretching and eccentric strengthening exercises are recommended in the early stages. Efficiency of platelet-rich plasma injections remains uncertain. Further research is needed to determine the most effective treatment. In acute knee injuries, ACL damage often coexists. Treatment for such injuries typically involves surgical intervention. Arthroscopy is the preferred method. Meniscus repair has a high success rate and enables a rapid return to physical fitness."^^xsd:string ;
-    sio:doi "10.12775/JEHS.2023.38.01.006"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "Education"^^xsd:string,
-        "GV557-1198.995"^^xsd:string,
-        "L"^^xsd:string,
-        "Medicine"^^xsd:string,
-        "R"^^xsd:string,
-        "Sports"^^xsd:string,
-        "acute knee injury"^^xsd:string,
-        "jumper's knee"^^xsd:string,
-        "meniscus"^^xsd:string,
-        "patellar ligament"^^xsd:string,
-        "volleyball"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> ;
-    sio:paperId "P04"^^xsd:string ;
-    sio:publicationYear 2023 ;
-    sio:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4379548885> .
 
 <http://kg.sports-injuries.org/resource/paper/P05> a sio:Paper ;
     sio:abstractText "Dynamic knee valgus (DKV) as an incorrect movement pattern is recognized as a risk factor for lower limb injuries. Therefore, it is important to find the reasons behind this movement to select effective preventive procedures. There is a limited number of publications focusing on specific tasks, separating the double-leg from the single-leg tasks. Test patterns commonly used for DKV assessment, such as single-leg squat (SLS) or single leg landings (SLL), may show different results. The current review presents the modifiable factors of knee valgus in squat and landing single-leg tests in healthy people, as well as exercise training options. The authors used the available literature from PubMed, Scopus, PEDro and clinicaltrials.gov databases, and reviewed physiotherapy journals and books. For the purpose of the review, studies were searched for using 2D or 3D motion analysis methods only in the SLL and SLS tasks among healthy active people. Strengthening and activating gluteal muscles, improving trunk lateral flexion strength, increasing ROM dorsiflexion ankle and midfoot mobility should be taken into account when planning training programs aimed at reducing DKV occurring in SLS. In addition, knee valgus during SLL may occur due to decreased hip abductors, extensors, external rotators strength and higher midfoot mobility. Evidence from several studies supports the addition of biofeedback training exercises to reduce the angles of DKV."^^xsd:string ;
@@ -115,6 +46,7 @@
         "knee kinetics"^^xsd:string,
         "single-leg squat"^^xsd:string,
         "sport performance"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P05_P11> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P05_T00> ;
     sio:paperId "P05"^^xsd:string ;
     sio:publicationYear 2020 ;
@@ -168,81 +100,13 @@
     sio:title "Prognostic factors for the management of chondral defects of the knee and ankle joint: a systematic review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4308462604> .
 
-<http://kg.sports-injuries.org/resource/paper/P08> a sio:Paper ;
-    sio:abstractText "Anterior cruciate ligament (ACL) injuries are the most common ligament injury of the knee, accounting for between 100,000 and 200,000 injuries among athletes per year. ACL injuries occur via contact and non-contact mechanisms, with the former being more common in males and the later being more common in females. These injuries typically require surgical repair and have relatively high re-rupture rates, resulting in a significant psychological burden for these individuals and long rehabilitation times. Numerous studies have attempted to determine risk factors for ACL rupture, including hormonal, biomechanical, and sport- and gender-specific factors. However, the incidence of ACL injuries continues to rise. Therefore, we performed a systematic review analyzing both ACL injury video analysis studies and studies on athletes who were pre-screened with eventual ACL injury. We investigated biomechanical mechanisms contributing to ACL injury and considered male and female differences. Factors such as hip angle and strength, knee movement, trunk stability, and ankle motion were considered to give a comprehensive, joint by joint analysis of injury risk and possible roles of prevention. Our review demonstrated that poor core stability, landing with heel strike, weak hip abduction strength, and increased knee valgus may contribute to increased ACL injury risk in young athletes."^^xsd:string ;
-    sio:doi "10.3390/ijerph18073826"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "16. Peace & justice"^^xsd:string,
-        "Anterior Cruciate Ligament"^^xsd:string,
-        "Anterior Cruciate Ligament Injuries"^^xsd:string,
-        "Athletes"^^xsd:string,
-        "Biomechanical Phenomena"^^xsd:string,
-        "Female"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Knee Joint"^^xsd:string,
-        "Male"^^xsd:string,
-        "Review"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> ;
-    sio:paperId "P08"^^xsd:string ;
-    sio:publicationYear 2021 ;
-    sio:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented ACL Ruptures in Male and Female Athletes"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W3151246717> .
-
-<http://kg.sports-injuries.org/resource/paper/P09> a sio:Paper ;
-    sio:abstractText "PURPOSE OF REVIEW: The purpose of this review is to describe the current evidence on the most common sports-related ankle injuries. Joint anatomy, epidemiology, clinical findings, diagnostic approach, and treatment are presented with a specific focus on the available evidence towards return to play. RECENT FINDINGS: Recent findings show that ankle sprain is the most common injury in the world of sports. Bony fractures, cartilage defects, and syndesmotic lesions are frequently seen in association with the more severe type of ankle sprains. In summary, the majority of the athletes' ankle sprains are managed conservatively with excellent outcomes and full return to their pre-injury level of play. However, it is essential to differentiate the single ligament sprain from a more complex injury to the ankle joint. The evidence-based treatment and rehabilitation programmes are associated with a better prognosis and a faster time to return to sport participation."^^xsd:string ;
-    sio:doi "10.1007/s12178-020-09631-1"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Clinical sciences"^^xsd:string,
-        "Management of Ankle Instability (M Hogan, Section Editor)"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> ;
-    sio:paperId "P09"^^xsd:string ;
-    sio:publicationYear 2020 ;
-    sio:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W3023690833> .
-
-<http://kg.sports-injuries.org/resource/paper/P10> a sio:Paper ;
-    sio:abstractText "BACKGROUND: Chronic ankle instability, developing from ankle sprain, is one of the most common sports injuries. Besides it being an ankle issue, chronic ankle instability can also cause additional injuries. Investigating the epidemiology of chronic ankle instability is an essential step to develop an adequate injury prevention strategy. However, the epidemiology of chronic ankle instability remains unknown. Therefore, the purpose of this study was to investigate the epidemiology of chronic ankle instability through valid and reliable self-reported tools in active populations. METHODS: An electronic search was performed on PubMed and Web of Science in July 2020. The inclusion criteria for articles were peer-reviewed, published between 2006 and 2020, using one of the valid and reliable tools to evaluate ankle instability, determining chronic ankle instability based on the criteria of the International Ankle Consortium, and including the outcome of epidemiology of chronic ankle instability. The risk of bias of the included studies was evaluated with an adapted tool for the sports injury review method. RESULTS: After removing duplicated studies, 593 articles were screened for eligibility. Twenty full-texts were screened and finally nine studies were included, assessing 3804 participants in total. The participants were between 15 and 32 years old and represented soldiers, students, athletes and active individuals with a history of ankle sprain. The prevalence of chronic ankle instability was 25%, ranging between 7 and 53%. The prevalence of chronic ankle instability within participants with a history of ankle sprains was 46%, ranging between 9 and 76%. Five included studies identified chronic ankle instability based on the standard criteria, and four studies applied adapted exclusion criteria to conduct the study. Five out of nine included studies showed a low risk of bias. CONCLUSIONS: The prevalence of chronic ankle instability shows a wide range. This could be due to the different exclusion criteria, age, sports discipline, or other factors among the included studies. For future studies, standardized criteria to investigate the epidemiology of chronic ankle instability are required. The epidemiology of CAI should be prospective. Factors affecting the prevalence of chronic ankle instability should be investigated and clearly described."^^xsd:string ;
-    sio:doi "10.1186/s13047-021-00480-w"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "10. No inequality"^^xsd:string,
-        "16. Peace & justice"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "610 Medizin und Gesundheit"^^xsd:string,
-        "Adolescent"^^xsd:string,
-        "Adult"^^xsd:string,
-        "Ankle Injuries"^^xsd:string,
-        "Ankle Joint"^^xsd:string,
-        "Ankle sprain"^^xsd:string,
-        "Athletic Injuries"^^xsd:string,
-        "Chronic Disease"^^xsd:string,
-        "Diseases of the musculoskeletal system"^^xsd:string,
-        "Female"^^xsd:string,
-        "Functional ankle instability"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Joint Instability"^^xsd:string,
-        "Male"^^xsd:string,
-        "Prevalence"^^xsd:string,
-        "RC925-935"^^xsd:string,
-        "Review"^^xsd:string,
-        "Sports injury"^^xsd:string,
-        "Young Adult"^^xsd:string ;
-    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P10_P11> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> ;
-    sio:paperId "P10"^^xsd:string ;
-    sio:publicationYear 2021 ;
-    sio:title "The epidemiology of chronic ankle instability with perceived ankle instability - a systematic review"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W3164001868> .
-
 <http://kg.sports-injuries.org/resource/paper/P12> a sio:Paper ;
     sio:abstractText "Hamstring strain injury (HSI) may result in considerable impairment, activity limitation, and participation restriction, including time lost from competitive sports. This CPG includes sports-related overloading and overstretching injuries to myofascial or musculotendinous structures in any combination of the 3 hamstring muscles (the semitendinosus, semimembranosus, and biceps femoris). J Orthop Sports Phys Ther 2022;52(3):CPG1–CPG44. doi:10.2519/jospt.2022.0301"^^xsd:string ;
     sio:doi "10.2519/jospt.2022.0301"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
-    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P12_P13> ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P12_P13>,
+        <http://kg.sports-injuries.org/resource/similarity/P12_P29> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> ;
     sio:paperId "P12"^^xsd:string ;
     sio:publicationYear 2022 ;
@@ -266,23 +130,6 @@
     sio:title "Calf Strain in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4220766688> .
 
-<http://kg.sports-injuries.org/resource/paper/P15> a sio:Paper ;
-    sio:abstractText "OBJECTIVE: To identify risk factors for quadriceps muscle strain injury in sport. DESIGN: Risk factor systematic review. LITERATURE SEARCH: A systematic search was conducted in the MEDLINECINAHL, Embase, AMED, AUSPORT, SPORTDiscus, PEDro, and Cochrane Library databases (from inception to September 2021). STUDY SELECTION CRITERIA: Studies reporting prospective data to evaluate risk factors related to index and/or recurrent quadriceps muscle strain injury. DATA SYNTHESIS: A risk-of-bias assessment (using a modified Quality in Prognosis Studies tool) was performed, and we used best-evidence synthesis to qualitatively synthesize the data to quantify relationships between risk factors and quadriceps muscle injury. RESULTS: Sixteen studies were included, capturing 2408 quadriceps injuries in 11 719 athletes. Meta-analyses were not performed due to clinical heterogeneity. The dominant kicking leg (over 3154 individuals, 1055 injuries), a previous history of quadriceps muscle injury (6208 individuals, 975 injuries), and a recent history of hamstring strain (4087 individuals, 581 injuries) were intrinsic factors associated with quadriceps injury. Extrinsic factors relating to the preseason period and competitive match play increased quadriceps injury risk; participating at higher levels of competition decreased quadriceps injury risk. Age, weight, and flexibility (intrinsic factors) had no association with quadriceps injury. CONCLUSION: ."^^xsd:string ;
-    sio:doi "10.2519/jospt.2022.10870"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Muscle, Skeletal"^^xsd:string,
-        "Prospective Studies"^^xsd:string,
-        "Quadriceps Muscle"^^xsd:string,
-        "Risk Factors"^^xsd:string,
-        "Sports"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> ;
-    sio:paperId "P15"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4281625619> .
-
 <http://kg.sports-injuries.org/resource/paper/P16> a sio:Paper ;
     sio:abstractText "OBJECTIVE: To describe injury mechanisms and magnetic resonance imaging (MRI) findings in acute rectus femoris (RF) injuries of soccer players using a systematic video analysis. DESIGN: Descriptive case series study of consecutive RF injuries from November 2017 to July 2022. SETTING: Two specialized sports medicine hospitals. PARTICIPANTS: Professional male soccer players aged between 18 and 40 years, referred for injury assessment within 7 days after a RF injury, with an available video footage of the injury and a positive finding on an MRI. INDEPENDENT VARIABLES: Rectus femoris injury mechanisms (specific scoring based on standardized models) in relation to RF muscle injury MRI findings. MAIN OUTCOME MEASURES: Rectus femoris injury mechanism (playing situation, player/opponent behavior, movement, and biomechanics), location of injury in MRI. RESULTS: Twenty videos of RF injuries in 19 professional male soccer players were analyzed. Three different injury mechanisms were seen: kicking (80%), sprinting (10%), and change of direction (10%). Isolated single-tendon injuries were found in 60% of the injuries. Of the kicking injuries, 62.5% included complete tendon ruptures, whereas both running injuries and none of the change of direction injuries were complete ruptures. The direct tendon was involved in 33% of the isolated injuries, and the common tendon was affected in all combined injuries. CONCLUSIONS: Rectus femoris injuries typically occur during kicking among football players. Most of the RF injuries involve a complete rupture of at least one tendon. Kicking injuries can also affect the supporting leg, and sprinting can cause a complete tendon rupture, whereas change of direction seems not to lead to complete ruptures."^^xsd:string ;
     sio:doi "10.1097/JSM.0000000000001131"^^xsd:string ;
@@ -303,6 +150,8 @@
         "Tendon Injuries"^^xsd:string,
         "ta3126"^^xsd:string,
         "ta315"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P16_P25>,
+        <http://kg.sports-injuries.org/resource/similarity/P16_P30> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P16_T01> ;
     sio:paperId "P16"^^xsd:string ;
     sio:publicationYear 2023 ;
@@ -314,35 +163,13 @@
     sio:doi "10.2519/jospt.2024.0302"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
-    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P17_P20> ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P17_P18>,
+        <http://kg.sports-injuries.org/resource/similarity/P17_P20> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> ;
     sio:paperId "P17"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024 - Clinical Practice Guidelines"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4404768718> .
-
-<http://kg.sports-injuries.org/resource/paper/P18> a sio:Paper ;
-    sio:abstractText "Purpose: The aim of this systematic review and meta-analysis was to compare re-rupture rates, complication rates, functional outcomes, as well as return to work (RTW)/sport (RTS) among different rehabilitation protocols following operative treatment of acute Achilles tendon ruptures. Methods: Systematic review and meta-analysis was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines. Five databases were searched for randomized controlled trials (RCTs) comparing at least two rehabilitation protocols following surgical repair of acute Achilles tendon ruptures. Rehabilitation protocols were classified as a variation of either non-weightbearing (NWB) or weightbearing (WB) and immobilization (IM) or mobilization (M). The data collection consisted of re-ruptures, complications, and RTW/RTS. Results: Out of 2760 studies screened, 20 RCTs with 1007 patients were eligible. Fourteen studies included a group consisting of WB + M (Group 1), 11 of WB + IM (Group 2), 3 of NWB + M (Group 3), and 13 of NWB + IM (Group 4). Outcome parameters available for a meta-analysis were re-ruptures, complications, RTW, and RTS. Re-ruptures overall occurred in 2.7%, with prevalences ranging between 0.04 and 0.08. Major complications occurred in 2.6%, with prevalences ranging between 0.02 and 0.03. Minor complications occurred in 11.8% with prevalances ranging between 0.04 to 0.17. Comparing the odds-ratios between the four different groups revealed no significant differences with overall favourable results for group 1 (WB+M). Conclusion: Early functional rehabilitation protocols with early ankle M and WB following surgical repair of acute Achilles tendon ruptures are safe and they apparently allow for a quicker RTW and RTS and seem to lead to favourable results."^^xsd:string ;
-    sio:doi "10.1530/EOR-22-0072"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Foot & Ankle"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> ;
-    sio:paperId "P18"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4307430674> .
-
-<http://kg.sports-injuries.org/resource/paper/P19> a sio:Paper ;
-    sio:abstractText "This review article discusses the anatomy and histopathology of the patellar tendon, as well as the risk factors and common interventions for patellar tendinopathy (PT) with a view to guide clinicians in treating athletes with patellar tendon pain. PT, or jumper's knee, refers to a chronic injury to the patellar tendon that affects athletes who engage in jumping and explosive movements. The condition is characterized by degeneration and disorganization of the collagen fibers in the tendon, an increase in mucoid ground substance, and fibroblast proliferation. Risk factors for patellar tendinopathy include participation in jumping sports, a greater counter-movement jump height, and training on hard surfaces. Nonoperative treatments for patellar tendinopathy include relative rest, stretching and strengthening exercises, and correction of biomechanical abnormalities. Surgery and other procedures, such as extracorporeal shockwave therapy (ESWT) and injection therapies, may be considered for patients who do not respond to conservative measures."^^xsd:string ;
-    sio:doi "10.7759/cureus.47459"^^xsd:string ;
-    sio:externalKeyword "Orthopedics"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> ;
-    sio:paperId "P19"^^xsd:string ;
-    sio:publicationYear 2023 ;
-    sio:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4387859971> .
 
 <http://kg.sports-injuries.org/resource/paper/P21> a sio:Paper ;
     sio:abstractText "Tibial bone stress injuries (BSIs) are common among long-distance runners. They have a high recurrence rate, and complexity emerges in the wider management and successful return to running. Following a tibial BSI, a critical component of complete rehabilitation is the successful return to running, and there is a lack of consistency or strong evidence to guide this process. The objectives of this review were to outline the criteria used in clinical decision-making prior to resuming running, and to establish evidence-based guidelines for the return to running process following a tibial BSI. Electronic databases including MEDLINE, CINAHL, Scopus, SPORTDiscus and AMED were searched for studies that stated criteria or provided guidelines on the objectives above. Fifty studies met the inclusion criteria and were included. Thirty-nine were reviews or clinical commentaries, three were retrospective cohort studies, two were randomised controlled trials, two were pilot studies, one was a prospective observational study, and three were case studies. Therefore, the recommendations that have been surmised are based on level IV evidence. Decisions on when an athlete should return to running should be shared between clinicians, coaches and the athlete. There are five important components to address prior to introducing running, which are: the resolution of bony tenderness, pain-free walking, evidence of radiological healing in high-risk BSIs, strength, functional and loading tests, and the identification of contributing factors. Effective return to running planning should address the athlete's risk profile and manage the risk by balancing the athlete's interests and reinjury prevention. An individualised graduated return to running programme should be initiated, often starting with walk-run intervals, progressing running distance ahead of speed and intensity, with symptom provocation a key consideration. Contributing factors to the initial injury should be addressed throughout the return to run process."^^xsd:string ;
@@ -367,87 +194,12 @@
         "Sport Sciences"^^xsd:string,
         "Tibia"^^xsd:string,
         "Tibial Fractures"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P21_P22> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P21_T01> ;
     sio:paperId "P21"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Criteria and Guidelines for Returning to Running Following a Tibial Bone Stress Injury: A Scoping Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4401591056> .
-
-<http://kg.sports-injuries.org/resource/paper/P22> a sio:Paper ;
-    sio:abstractText "Regular physical activity confers numerous health and social benefits; however, activity-related lower-limb overuse injuries are prevalent. Medial tibial stress syndrome (MTSS) is a common overuse injury of the lower extremity. It is frequently observed in athletes and in military personnel. It involves exercise-induced pain over the anterior tibia and is an early stress injury in the continuum of tibial stress fractures (TSF). This scoping review aims to synthesize and characterize the literature on MTSS, identify knowledge gaps, and propose future research directions. We conducted a scoping review of the literature, which was informed by the Joanna Briggs Institute and the Arksey and O'Malley methodology, by searching four databases until December 31, 2023. The references were screened by two authors based on their titles, abstracts, and full texts to ensure that they met the inclusion criteria. Data related to the research objectives were extracted, analyzed, and reported numerically and descriptively. Thirty-seven studies were included in the current review, most of which recruited athletes as the study participants (67.6%). This was followed by articles about military members (16.2%). The highest prevalence of MTSS has been reported among recreational marathon runners in India (69.5%). The highest incidence of MTSS was reported in a German study (35.7%). Two studies reported that participants with MTSS had a higher body mass index (BMI) than those without MTSS, and one study found a significant correlation between BMI and the time required for complete recovery. Two studies reported that individuals with greater experience in athletic activities were at a lower risk of developing MTSS later in their careers. In contrast, another study reported that ultramarathon running increases the incidence of MTSS overuse injuries. Traction theory as a cause of MTSS was examined in five studies, and the mean navicular drop test (NDT) score was assessed in three studies. Biomechanical evaluation of ankle disorders and MTSS was performed in five articles and hip abnormalities in four articles. This review identifies research areas on the influence of epidemiological, risk, and biomechanical factors on MTSS development. Such research could inform counseling for patients concerned about MTSS risk factors and curative measures, as well as optimize surveillance and subsequent management of MTSS outcomes."^^xsd:string ;
-    sio:doi "10.7759/cureus.81463"^^xsd:string ;
-    sio:externalKeyword "Physical Medicine & Rehabilitation"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> ;
-    sio:paperId "P22"^^xsd:string ;
-    sio:publicationYear 2025 ;
-    sio:title "Medial Tibial Stress Syndrome: A Scoping Review of Epidemiology, Biomechanics, and Risk Factors"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4408976458> .
-
-<http://kg.sports-injuries.org/resource/paper/P23> a sio:Paper ;
-    sio:abstractText "Management of meniscal injuries in the elite athlete is a difficult problem secondary to the high demands of athletic competition, the need for a timely return to sport, and the desire to maximize performance over time. The purpose of this review is to provide an up-to-date summary on the current literature and trends regarding the management of meniscus injuries with a special consideration for elite athletes. Historically, partial meniscectomy has been the primary treatment option for meniscus injuries. However, in recent years there has been an increased emphasis on meniscus preservation due to the increased risk of cartilage degeneration over time. Moreover, while partial meniscectomy still provides a quicker return to sport, recent literature has demonstrated similar rates of RTS and return to pre-injury levels between partial meniscectomy and meniscus repair. In the setting of symptomatic meniscal deficiency, meniscus allograft transplantation has become an increasingly utilized salvage procedure with promising yet variable outcomes on the ability to withstand elite competition. Currently, there is no uniform approach to treating meniscal injuries in elite athletes. Therefore, an individualized approach is required with consideration of the meniscus tear type, location, concomitant injuries, athlete expectations, rehabilitation timeline, and desire to prevent or delay knee osteoarthritis. In athletes with anatomically repairable tears, meniscus repair should be performed given the ability to restore native anatomy, provide high rates of RTS, and mitigate long-term chondral damage. However, partial meniscectomy can be indicated for unrepairable tears."^^xsd:string ;
-    sio:doi "10.1007/s12178-024-09907-w"^^xsd:string ;
-    sio:externalKeyword "610"^^xsd:string,
-        "617"^^xsd:string,
-        "Bioinformatics"^^xsd:string,
-        "Biomedical Informatics"^^xsd:string,
-        "Diseases"^^xsd:string,
-        "Elite athlete"^^xsd:string,
-        "Medical Sciences"^^xsd:string,
-        "Medical Specialties"^^xsd:string,
-        "Medicine and Health Sciences"^^xsd:string,
-        "Meniscus"^^xsd:string,
-        "Meniscus allograft transplantation"^^xsd:string,
-        "Meniscus repair"^^xsd:string,
-        "Meniscus tears"^^xsd:string,
-        "Musculoskeletal Diseases"^^xsd:string,
-        "Oncology"^^xsd:string,
-        "Partial meniscectomy"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> ;
-    sio:paperId "P23"^^xsd:string ;
-    sio:publicationYear 2024 ;
-    sio:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4399326598> .
-
-<http://kg.sports-injuries.org/resource/paper/P24> a sio:Paper ;
-    sio:abstractText "Posterior cruciate ligament injuries can be treated conservatively with a structured rehabilitation program or with surgical reconstruction. Treatment algorithms are based on a variety of factors including the patient's presentation, physical exam, and desired level of activity. The goal is to return the patient to their athletic pursuits with a stable and pain-free knee. Return to play and activities should be individualized based on the patient's injury and progression through rehabilitation. This article provides a review of the current treatments for posterior cruciate ligament injuries and the respective rehabilitation protocols, outcomes after each treatment option, and specific return to play criteria. Current research shows excellent outcomes and return to play with conservative treatment of isolated posterior cruciate ligament injuries. Return to play algorithms stress the importance of quadriceps strengthening throughout the recovery process and emphasize inclusion of plyometrics and sport-specific training. Rehabilitation plays a critical role in the outcome after posterior cruciate ligament injury and the ability to return to athletics. The primary focus of post-injury or post-operative rehabilitation is to restore function, as it relates to range of motion, strength, and proprioception, while mitigating swelling and pain. The patients' desired sport and level of play dictate return to play timelines. The literature supports the use of non-operative management of isolated PCL injuries in athletes and non-athletes with excellent functional and patient-reported outcomes."^^xsd:string ;
-    sio:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> ;
-    sio:paperId "P24"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4310462146> .
-
-<http://kg.sports-injuries.org/resource/paper/P25> a sio:Paper ;
-    sio:abstractText "Soccer is one of the most popular sports in the world. Players often suffer a variety of injuries, the most common being injuries to muscles and tendons. It is striking that with soccer, being the most practiced sport, and considering that most injuries occur in the lower extremities, plantar fasciitis (PF) is not one of the most frequent injuries (at least in terms of clinical data collected). The purpose of this review was to provide a comprehensive update of the topic \"plantar fasciitis\" focusing on soccer players. The review was conducted in accordance with the PRISMA (Preferred Reportiog ltems for Systmiatic reviews and Meta-Analyses) statement. PubMed, Cochrane Library and Scopus were researched. PICO (Patient, Population or Problem; Intervention; Comparison; and Outcome) components were identified. The keywords used were \"plantar fasciitis\", \"plantar fasciitis and sport\", \"plantar fasciitis risk factors\", \"plantar fasciitis soccer\" and \"plantar fasciitis football players\". With respect to the objective proposed for the research, we found eight specific articles focused on soccer. Of these, five were general reviews discussing the different methods of treatment of this pathology, and we have only found three studies that focused on PF in soccer, with two of them referring to a clinical case whereby the report and discussion only dealt with the specific treatment followed by the soccer player. After reviewing the manuscripts included in this work, we were surprised that there is no data in which the Silfverskiöld test was performed, as this test explores the passive mobility of the ankle and the degree of dorsiflexion in the supine position. We concluded that soccer players suffer pain in the sole of the foot compatible with plantar fasciitis; however, as indicated by Suzue et al., it is often not diagnosed because the athlete does not consider performing the clinical examinations necessary for its diagnosis. The shortage of reported publications in soccer may mask other PF-associated injuries."^^xsd:string ;
-    sio:doi "10.3390/ijerph192114426"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "32 Ciencias Médicas"^^xsd:string,
-        "Ankle"^^xsd:string,
-        "Ankle Joint"^^xsd:string,
-        "Article"^^xsd:string,
-        "Biomecánica"^^xsd:string,
-        "Biomechanics"^^xsd:string,
-        "Fasciitis, Plantar"^^xsd:string,
-        "Foot"^^xsd:string,
-        "Foot - Diseases"^^xsd:string,
-        "Football"^^xsd:string,
-        "Futbolistas"^^xsd:string,
-        "Fútbol"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Pie - Enfermedades"^^xsd:string,
-        "Podología"^^xsd:string,
-        "Soccer"^^xsd:string,
-        "Soccer players"^^xsd:string,
-        "Sports"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> ;
-    sio:paperId "P25"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Plantar Fasciitis in Soccer Players - A Systematic Review"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4308331395> .
 
 <http://kg.sports-injuries.org/resource/paper/P26> a sio:Paper ;
     sio:abstractText "Classical ballet is an art form requiring extraordinary physical activity, characterised by rigorous training. These can lead to many overuse injuries arising from repetitive minor trauma. The purpose of this paper is to report our experience in the diagnosis and treatment of stress fractures at the base of the second and third metatarsal bones in young ballet dancers. We considered 150 trainee ballet dancers from the Ballet Schools of Teatro Alla Scala of Milan from 2005 to 2007. Nineteen of them presented with stress fractures of the base of the metatarsal bones. We treated 18 dancers with external shockwave therapy and one with pulsed electromagnetic fields and low-intensity ultrasound and all patients were recommended rest. In all cases good results were obtained. The best approach to metatarsal stress fractures is to diagnose them early through clinical examination and then through X-ray and MRI. ESWT gave good results with a relatively short time of rest from the patients' activities and a return to dancing without pain."^^xsd:string ;
@@ -479,6 +231,210 @@
     sio:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2018934852> .
 
+<http://kg.sports-injuries.org/resource/paper/P02> a sio:Paper ;
+    sio:abstractText "BACKGROUND: The purpose of this study is to compare the outcomes of acute primary repair of extraarticular ligaments with staged surgery for acute knee dislocations (KDs) and multiligament knee injuries (MLKIs). MATERIALS AND METHODS: Between January 2005 and May 2018, 61 consecutive patients diagnosed with MLKI or KD were referred to or visited our institution. Of these, 31 patients who underwent acute repair of extraarticular ligaments within 3 weeks of injury were included in this study. These patients were retrospectively classified into two groups: those who underwent only primary repair (repair group) and those who underwent staged reconstructive surgery (staged group). Follow-up examination included range of motion (ROM), knee joint stability (Lachman test, posterior drawer test, and varus and valgus stress test), Lysholm knee score, Tegner activity scale, and Knee Injury and Osteoarthritis and Outcome Score (KOOS). RESULTS: Twelve of the 31 patients did not need or desire further surgery and were included in the repair group. No significant difference was observed in demographic data between the repair and staged groups. Although staged surgery decreased positive posterior drawer test results, no significant difference was observed between the two groups regarding ROM, other knee joint stability tests, Lysholm scores, Tegner scale, or KOOS. CONCLUSIONS: In this series, all patients returned to their activities of daily living and preinjury occupation levels. Acute primary repair of extraarticular ligaments provides essential knee stability without varus/valgus instability and may reduce the need for subsequent cruciate ligament reconstruction. LEVEL OF EVIDENCE: Level IV, retrospective observational study."^^xsd:string ;
+    sio:doi "10.1186/s10195-020-00557-5"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "2. Zero hunger"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Adolescent"^^xsd:string,
+        "Adult"^^xsd:string,
+        "Aged"^^xsd:string,
+        "Female"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Knee Dislocation"^^xsd:string,
+        "Knee Injuries"^^xsd:string,
+        "Knee Joint"^^xsd:string,
+        "Knee dislocations"^^xsd:string,
+        "Ligaments"^^xsd:string,
+        "Ligaments, Articular"^^xsd:string,
+        "Male"^^xsd:string,
+        "Middle Aged"^^xsd:string,
+        "Multiligament knee injuries"^^xsd:string,
+        "Original Article"^^xsd:string,
+        "Orthopedic surgery"^^xsd:string,
+        "Plastic Surgery Procedures"^^xsd:string,
+        "Primary repair"^^xsd:string,
+        "RD701-811"^^xsd:string,
+        "Range of Motion, Articular"^^xsd:string,
+        "Retrospective Studies"^^xsd:string,
+        "Soft Tissue Injuries"^^xsd:string,
+        "Staged surgery"^^xsd:string,
+        "Treatment Outcome"^^xsd:string,
+        "Young Adult"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P02_P03> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> ;
+    sio:paperId "P02"^^xsd:string ;
+    sio:publicationYear 2020 ;
+    sio:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3092300428> .
+
+<http://kg.sports-injuries.org/resource/paper/P03> a sio:Paper ;
+    sio:abstractText "Acute knee injuries are commonly encountered in both the clinical and sideline setting and may be treated operatively or non-operatively. This article describes an evidence-based approach to non-operative acute knee injury. This includes history, physical exam, imaging, and initial management. In addition, the non-operative management of three such injuries—ligament injury, meniscus injury, and patellar dislocation injury—will be discussed via a case-based practical approach. Aside from grade III ACL tears, most acute knee ligament injuries, especially in the absence of other concurrent injuries, can be treated non-operatively. There is new evidence that acute traumatic meniscus tears in those younger than 40 can be successfully treated non-operatively and can do equally, as well as those that undergo surgery, at 1 year out from injury. Based on the current literature, a short period of knee bracing in extension with progression to weightbearing to tolerance is recommended after initial patellar dislocation. Many of the most common acute knee injuries, including MCL tears, meniscus tears, and patellar dislocations, can be managed non-operatively."^^xsd:string ;
+    sio:doi "10.1007/s12178-023-09875-7"^^xsd:string ;
+    sio:externalKeyword "3. Good health"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P03_P04>,
+        <http://kg.sports-injuries.org/resource/similarity/P03_P08>,
+        <http://kg.sports-injuries.org/resource/similarity/P03_P23> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> ;
+    sio:paperId "P03"^^xsd:string ;
+    sio:publicationYear 2024 ;
+    sio:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4389738638> .
+
+<http://kg.sports-injuries.org/resource/paper/P04> a sio:Paper ;
+    sio:abstractText "Introduction and purpose: The aim of this study is to review and analyze scientific research on the topic of volleyball injuries. We attempt to identify the types of injuries that are characterized by increased frequency, diagnostic possibilities, and treatment methods. We believe that this work can support individuals involved in sports and sports medicine personnel in accessing information more quickly and facilitate the direction of further research into preventing injuries among volleyball players. State of Knowledge: Knee injuries are divided into overload and acute injuries. Overload syndromes include degenerative changes to the patellar ligament. Medical history and physical exam suffice for accurate diagnosis. Treatment for jumper’s knee is based mostly on conservative treatment. Meniscus injuries are equally common such as ACL rupture. Not all meniscus injuries require surgery, and the key factor in making a decision is the pattern of tearing and the presence of appropriate vascularization. Conclusions: Based on analyzed studies we assumed that every third serious injury among volleyball players is the knee injury. There is no single preferred method of treatment. Early diagnosis and intervention are crucial to prevent the progression of the disease. Stretching and eccentric strengthening exercises are recommended in the early stages. Efficiency of platelet-rich plasma injections remains uncertain. Further research is needed to determine the most effective treatment. In acute knee injuries, ACL damage often coexists. Treatment for such injuries typically involves surgical intervention. Arthroscopy is the preferred method. Meniscus repair has a high success rate and enables a rapid return to physical fitness."^^xsd:string ;
+    sio:doi "10.12775/JEHS.2023.38.01.006"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "Education"^^xsd:string,
+        "GV557-1198.995"^^xsd:string,
+        "L"^^xsd:string,
+        "Medicine"^^xsd:string,
+        "R"^^xsd:string,
+        "Sports"^^xsd:string,
+        "acute knee injury"^^xsd:string,
+        "jumper's knee"^^xsd:string,
+        "meniscus"^^xsd:string,
+        "patellar ligament"^^xsd:string,
+        "volleyball"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P04_P08>,
+        <http://kg.sports-injuries.org/resource/similarity/P04_P09>,
+        <http://kg.sports-injuries.org/resource/similarity/P04_P19>,
+        <http://kg.sports-injuries.org/resource/similarity/P04_P23>,
+        <http://kg.sports-injuries.org/resource/similarity/P04_P24> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> ;
+    sio:paperId "P04"^^xsd:string ;
+    sio:publicationYear 2023 ;
+    sio:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4379548885> .
+
+<http://kg.sports-injuries.org/resource/paper/P10> a sio:Paper ;
+    sio:abstractText "BACKGROUND: Chronic ankle instability, developing from ankle sprain, is one of the most common sports injuries. Besides it being an ankle issue, chronic ankle instability can also cause additional injuries. Investigating the epidemiology of chronic ankle instability is an essential step to develop an adequate injury prevention strategy. However, the epidemiology of chronic ankle instability remains unknown. Therefore, the purpose of this study was to investigate the epidemiology of chronic ankle instability through valid and reliable self-reported tools in active populations. METHODS: An electronic search was performed on PubMed and Web of Science in July 2020. The inclusion criteria for articles were peer-reviewed, published between 2006 and 2020, using one of the valid and reliable tools to evaluate ankle instability, determining chronic ankle instability based on the criteria of the International Ankle Consortium, and including the outcome of epidemiology of chronic ankle instability. The risk of bias of the included studies was evaluated with an adapted tool for the sports injury review method. RESULTS: After removing duplicated studies, 593 articles were screened for eligibility. Twenty full-texts were screened and finally nine studies were included, assessing 3804 participants in total. The participants were between 15 and 32 years old and represented soldiers, students, athletes and active individuals with a history of ankle sprain. The prevalence of chronic ankle instability was 25%, ranging between 7 and 53%. The prevalence of chronic ankle instability within participants with a history of ankle sprains was 46%, ranging between 9 and 76%. Five included studies identified chronic ankle instability based on the standard criteria, and four studies applied adapted exclusion criteria to conduct the study. Five out of nine included studies showed a low risk of bias. CONCLUSIONS: The prevalence of chronic ankle instability shows a wide range. This could be due to the different exclusion criteria, age, sports discipline, or other factors among the included studies. For future studies, standardized criteria to investigate the epidemiology of chronic ankle instability are required. The epidemiology of CAI should be prospective. Factors affecting the prevalence of chronic ankle instability should be investigated and clearly described."^^xsd:string ;
+    sio:doi "10.1186/s13047-021-00480-w"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "10. No inequality"^^xsd:string,
+        "16. Peace & justice"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "610 Medizin und Gesundheit"^^xsd:string,
+        "Adolescent"^^xsd:string,
+        "Adult"^^xsd:string,
+        "Ankle Injuries"^^xsd:string,
+        "Ankle Joint"^^xsd:string,
+        "Ankle sprain"^^xsd:string,
+        "Athletic Injuries"^^xsd:string,
+        "Chronic Disease"^^xsd:string,
+        "Diseases of the musculoskeletal system"^^xsd:string,
+        "Female"^^xsd:string,
+        "Functional ankle instability"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Joint Instability"^^xsd:string,
+        "Male"^^xsd:string,
+        "Prevalence"^^xsd:string,
+        "RC925-935"^^xsd:string,
+        "Review"^^xsd:string,
+        "Sports injury"^^xsd:string,
+        "Young Adult"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P10_P11>,
+        <http://kg.sports-injuries.org/resource/similarity/P10_P15>,
+        <http://kg.sports-injuries.org/resource/similarity/P10_P22>,
+        <http://kg.sports-injuries.org/resource/similarity/P10_P28> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> ;
+    sio:paperId "P10"^^xsd:string ;
+    sio:publicationYear 2021 ;
+    sio:title "The epidemiology of chronic ankle instability with perceived ankle instability - a systematic review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3164001868> .
+
+<http://kg.sports-injuries.org/resource/paper/P13> a sio:Paper ;
+    sio:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
+    sio:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
+    sio:externalKeyword "0913 Mechanical Engineering"^^xsd:string,
+        "1106 Human Movement and Sports Sciences"^^xsd:string,
+        "1302 Curriculum and Pedagogy"^^xsd:string,
+        "Athletic Injuries"^^xsd:string,
+        "Biomechanical Phenomena"^^xsd:string,
+        "Current Opinion"^^xsd:string,
+        "Hamstring Muscles"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Running"^^xsd:string,
+        "Sport Sciences"^^xsd:string,
+        "Sprains and Strains"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P13_P15>,
+        <http://kg.sports-injuries.org/resource/similarity/P13_P29> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
+    sio:paperId "P13"^^xsd:string ;
+    sio:publicationYear 2024 ;
+    sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4386845470> .
+
+<http://kg.sports-injuries.org/resource/paper/P18> a sio:Paper ;
+    sio:abstractText "Purpose: The aim of this systematic review and meta-analysis was to compare re-rupture rates, complication rates, functional outcomes, as well as return to work (RTW)/sport (RTS) among different rehabilitation protocols following operative treatment of acute Achilles tendon ruptures. Methods: Systematic review and meta-analysis was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines. Five databases were searched for randomized controlled trials (RCTs) comparing at least two rehabilitation protocols following surgical repair of acute Achilles tendon ruptures. Rehabilitation protocols were classified as a variation of either non-weightbearing (NWB) or weightbearing (WB) and immobilization (IM) or mobilization (M). The data collection consisted of re-ruptures, complications, and RTW/RTS. Results: Out of 2760 studies screened, 20 RCTs with 1007 patients were eligible. Fourteen studies included a group consisting of WB + M (Group 1), 11 of WB + IM (Group 2), 3 of NWB + M (Group 3), and 13 of NWB + IM (Group 4). Outcome parameters available for a meta-analysis were re-ruptures, complications, RTW, and RTS. Re-ruptures overall occurred in 2.7%, with prevalences ranging between 0.04 and 0.08. Major complications occurred in 2.6%, with prevalences ranging between 0.02 and 0.03. Minor complications occurred in 11.8% with prevalances ranging between 0.04 to 0.17. Comparing the odds-ratios between the four different groups revealed no significant differences with overall favourable results for group 1 (WB+M). Conclusion: Early functional rehabilitation protocols with early ankle M and WB following surgical repair of acute Achilles tendon ruptures are safe and they apparently allow for a quicker RTW and RTS and seem to lead to favourable results."^^xsd:string ;
+    sio:doi "10.1530/EOR-22-0072"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Foot & Ankle"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P18_P28> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> ;
+    sio:paperId "P18"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4307430674> .
+
+<http://kg.sports-injuries.org/resource/paper/P19> a sio:Paper ;
+    sio:abstractText "This review article discusses the anatomy and histopathology of the patellar tendon, as well as the risk factors and common interventions for patellar tendinopathy (PT) with a view to guide clinicians in treating athletes with patellar tendon pain. PT, or jumper's knee, refers to a chronic injury to the patellar tendon that affects athletes who engage in jumping and explosive movements. The condition is characterized by degeneration and disorganization of the collagen fibers in the tendon, an increase in mucoid ground substance, and fibroblast proliferation. Risk factors for patellar tendinopathy include participation in jumping sports, a greater counter-movement jump height, and training on hard surfaces. Nonoperative treatments for patellar tendinopathy include relative rest, stretching and strengthening exercises, and correction of biomechanical abnormalities. Surgery and other procedures, such as extracorporeal shockwave therapy (ESWT) and injection therapies, may be considered for patients who do not respond to conservative measures."^^xsd:string ;
+    sio:doi "10.7759/cureus.47459"^^xsd:string ;
+    sio:externalKeyword "Orthopedics"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> ;
+    sio:paperId "P19"^^xsd:string ;
+    sio:publicationYear 2023 ;
+    sio:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4387859971> .
+
+<http://kg.sports-injuries.org/resource/paper/P20> a sio:Paper ;
+    sio:abstractText "The Orthopaedic Section of the American Physical Therapy Association (APTA) has an ongoing effort to create evidence-based practice guidelines for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization's International Classification of Functioning, Disability, and Health (ICF). The purpose of these revised clinical practice guidelines is to review recent peer-reviewed literature and make recommendations related to nonarthritic heel pain. J Orthop Sports Phys Ther 2023;53(12):CPG1–CPG39. doi:10.2519/jospt.2023.0303"^^xsd:string ;
+    sio:doi "10.2519/jospt.2023.0303"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
+    sio:paperId "P20"^^xsd:string ;
+    sio:publicationYear 2023 ;
+    sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4389226948> .
+
+<http://kg.sports-injuries.org/resource/paper/P25> a sio:Paper ;
+    sio:abstractText "Soccer is one of the most popular sports in the world. Players often suffer a variety of injuries, the most common being injuries to muscles and tendons. It is striking that with soccer, being the most practiced sport, and considering that most injuries occur in the lower extremities, plantar fasciitis (PF) is not one of the most frequent injuries (at least in terms of clinical data collected). The purpose of this review was to provide a comprehensive update of the topic \"plantar fasciitis\" focusing on soccer players. The review was conducted in accordance with the PRISMA (Preferred Reportiog ltems for Systmiatic reviews and Meta-Analyses) statement. PubMed, Cochrane Library and Scopus were researched. PICO (Patient, Population or Problem; Intervention; Comparison; and Outcome) components were identified. The keywords used were \"plantar fasciitis\", \"plantar fasciitis and sport\", \"plantar fasciitis risk factors\", \"plantar fasciitis soccer\" and \"plantar fasciitis football players\". With respect to the objective proposed for the research, we found eight specific articles focused on soccer. Of these, five were general reviews discussing the different methods of treatment of this pathology, and we have only found three studies that focused on PF in soccer, with two of them referring to a clinical case whereby the report and discussion only dealt with the specific treatment followed by the soccer player. After reviewing the manuscripts included in this work, we were surprised that there is no data in which the Silfverskiöld test was performed, as this test explores the passive mobility of the ankle and the degree of dorsiflexion in the supine position. We concluded that soccer players suffer pain in the sole of the foot compatible with plantar fasciitis; however, as indicated by Suzue et al., it is often not diagnosed because the athlete does not consider performing the clinical examinations necessary for its diagnosis. The shortage of reported publications in soccer may mask other PF-associated injuries."^^xsd:string ;
+    sio:doi "10.3390/ijerph192114426"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "32 Ciencias Médicas"^^xsd:string,
+        "Ankle"^^xsd:string,
+        "Ankle Joint"^^xsd:string,
+        "Article"^^xsd:string,
+        "Biomecánica"^^xsd:string,
+        "Biomechanics"^^xsd:string,
+        "Fasciitis, Plantar"^^xsd:string,
+        "Foot"^^xsd:string,
+        "Foot - Diseases"^^xsd:string,
+        "Football"^^xsd:string,
+        "Futbolistas"^^xsd:string,
+        "Fútbol"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Pie - Enfermedades"^^xsd:string,
+        "Podología"^^xsd:string,
+        "Soccer"^^xsd:string,
+        "Soccer players"^^xsd:string,
+        "Sports"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> ;
+    sio:paperId "P25"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Plantar Fasciitis in Soccer Players - A Systematic Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4308331395> .
+
 <http://kg.sports-injuries.org/resource/paper/P27> a sio:Paper ;
     sio:abstractText "Balance control improvement is one of the most important goals in sports and exercise. Better balance is strongly positively associated with enhanced athletic performance and negatively associated with lower limb sports injuries. Proprioception plays an essential role in balance control, and ankle proprioception is arguably the most important. This paper reviews ankle proprioception and explores synergies with balance control, specifically in a sporting context. Central processing of ankle proprioceptive information, along with other sensory information, enables integration for balance control. When assessing ankle proprioception, the most generalizable findings arise from methods that are ecologically valid, allow proprioceptive signals to be integrated with general vision in the central nervous system, and reflect the signal-in-noise nature of central processing. Ankle proprioceptive intervention concepts driven by such a central processing theory are further proposed and discussed for the improvement of balance control in sport."^^xsd:string ;
     sio:doi "10.1155/2015/842804"^^xsd:string ;
@@ -492,37 +448,12 @@
         "Postural Balance"^^xsd:string,
         "Proprioception"^^xsd:string,
         "Review Article"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P27_P28> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P27_T00> ;
     sio:paperId "P27"^^xsd:string ;
     sio:publicationYear 2015 ;
     sio:title "The Role of Ankle Proprioception for Balance Control in relation to Sports Performance and Injury"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W1851010948> .
-
-<http://kg.sports-injuries.org/resource/paper/P28> a sio:Paper ;
-    sio:abstractText "CONTEXT: Although strength training is commonly used to rehabilitate ankle injuries, studies investigating the effects of strength training on proprioception have shown conflicting results. OBJECTIVE: To determine the effects of a 6-week strength-training protocol on force sense and strength development in participants with functional ankle instability. DESIGN: Randomized controlled clinical trial. SETTING: University athletic training research laboratory. PATIENTS OR OTHER PARTICIPANTS: A total of 40 participants with functional ankle instability were recruited. They were randomly placed into a training group (10 men, 10 women: age = 20.9 ± 2.2 years, height = 76.4 ± 16.1 cm, mass = 173.0 ± 7.9 kg) or control group (10 men, 10 women: age = 20.2 ± 2.1 years, height = 78.8 ± 24.5 cm, mass = 173.7 ± 8.2 kg). INTERVENTION(S): Participants in the training group performed strength exercises with the injured ankle 3 times per week for 6 weeks. The protocol consisted of a combination of rubber exercise bands and the Multiaxial Ankle Exerciser, both clinically accepted strengthening methods for ankle rehabilitation. The progression of this protocol provided increasingly resistive exercise as participants changed either the number of sets or resistance of the Thera-Band or Multiaxial Ankle Exerciser. Main Outcome Measure(s): A load cell was used to measure strength and force sense. Inversion and eversion strength was recorded to the nearest 0.01 N. Force-sense reproduction was measured at 2 loads: 20% and 30% of maximal voluntary isometric contraction. RESULTS: Increases in inversion (F(1,38) = 11.59, P < 0.01, η(p)(2) = 0.23, power = 0.91) and eversion (F(1,38) = 57.68, P < .01, η(p)(2) = 0.60, power = 0.99) strength were found in the training group at the posttest when compared with the control group. No significant improvements were noted in force-sense reproduction for either group. CONCLUSIONS: Strength training at the ankle increased strength but did not improve force sense."^^xsd:string ;
-    sio:doi "10.4085/1062-6050-47.3.06"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "16. Peace & justice"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Ankle"^^xsd:string,
-        "Ankle Injuries"^^xsd:string,
-        "Ankle Joint"^^xsd:string,
-        "Exercise"^^xsd:string,
-        "Exercise Therapy"^^xsd:string,
-        "Female"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Joint Instability"^^xsd:string,
-        "Male"^^xsd:string,
-        "Muscle Strength"^^xsd:string,
-        "Proprioception"^^xsd:string,
-        "Resistance Training"^^xsd:string,
-        "Young Adult"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> ;
-    sio:paperId "P28"^^xsd:string ;
-    sio:publicationYear 2012 ;
-    sio:title "Ankle Strength and Force Sense After a Progressive 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W1854658087> .
 
 <http://kg.sports-injuries.org/resource/paper/P30> a sio:Paper ;
     sio:abstractText "CONTEXT: Predicting when an athlete can return to sport after muscle injury is a major concern. OBJECTIVE: To determine whether combining objective clinical and ultrasound findings at presentation accurately predicted time to sport resumption in athletes with muscle injuries. DESIGN: Cohort study. SETTING: Sports medicine clinic. PATIENTS OR OTHER PARTICIPANTS: A total of 93 consecutive patients, 87 male and 6 female, were seen over a 1-year period for sudden-onset muscle pain while engaging in a sporting activity within the last 5 days and inability to continue the training session or game. INTERVENTION(S): Standardized physical examination and sonogram. MAIN OUTCOME MEASURE(S): Statistical associations between clinical and sonographic features at presentation and time to sport resumption (<40 days or ≥ 40 days) were evaluated using multivariate models. Correlations between time to sport resumption predicted by a sports medicine specialist and actual time to sport resumption were evaluated using the Spearman rank correlation coefficient. RESULTS: The 93 patients had 95 injuries, caused by muscle contraction in 86 cases and impact in 9 cases. Only 7 injuries had normal sonogram findings. Late sport resumption was associated with 4 clinical criteria (bruising, tenderness to palpation, range-of-motion limitation compared with the other limb, and increased pain with isometric contraction during passive limb straightening) and 4 sonographic criteria (disorganized fibrous tissue, intramuscular hematoma, intermuscular hematoma, and power Doppler signal). The Spearman rank correlation coefficient between predicted and actual times was 0.669 (P < .0001) for mild exercise resumption and 0.804 (P < .0001) for full sport resumption. CONCLUSION: A combination of physical and sonographic data collected during the acute phase of sport-related muscle injury was effective in predicting time to sport resumption."^^xsd:string ;
@@ -573,120 +504,215 @@
     sio:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2109374215> .
 
-<http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
-    sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
-    sio:doi "10.3389/fspor.2022.902886"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "GV557-1198.995"^^xsd:string,
-        "Sports"^^xsd:string,
-        "Sports and Active Living"^^xsd:string,
-        "ankle"^^xsd:string,
-        "instability"^^xsd:string,
-        "psychological readiness"^^xsd:string,
-        "return to sport (RTS)"^^xsd:string,
-        "review (article)"^^xsd:string,
-        "self-reported function"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> ;
-    sio:paperId "P11"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4281691142> .
+<http://kg.sports-injuries.org/resource/similarity/P01_P02> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P02> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.607204"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/paper/P13> a sio:Paper ;
-    sio:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
-    sio:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
-    sio:externalKeyword "0913 Mechanical Engineering"^^xsd:string,
-        "1106 Human Movement and Sports Sciences"^^xsd:string,
-        "1302 Curriculum and Pedagogy"^^xsd:string,
-        "Athletic Injuries"^^xsd:string,
-        "Biomechanical Phenomena"^^xsd:string,
-        "Current Opinion"^^xsd:string,
-        "Hamstring Muscles"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Running"^^xsd:string,
-        "Sport Sciences"^^xsd:string,
-        "Sprains and Strains"^^xsd:string ;
-    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P13_P29> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
-    sio:paperId "P13"^^xsd:string ;
-    sio:publicationYear 2024 ;
-    sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4386845470> .
+<http://kg.sports-injuries.org/resource/similarity/P02_P03> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P03> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.63499"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/paper/P20> a sio:Paper ;
-    sio:abstractText "The Orthopaedic Section of the American Physical Therapy Association (APTA) has an ongoing effort to create evidence-based practice guidelines for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization's International Classification of Functioning, Disability, and Health (ICF). The purpose of these revised clinical practice guidelines is to review recent peer-reviewed literature and make recommendations related to nonarthritic heel pain. J Orthop Sports Phys Ther 2023;53(12):CPG1–CPG39. doi:10.2519/jospt.2023.0303"^^xsd:string ;
-    sio:doi "10.2519/jospt.2023.0303"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
-    sio:paperId "P20"^^xsd:string ;
-    sio:publicationYear 2023 ;
-    sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4389226948> .
+<http://kg.sports-injuries.org/resource/similarity/P03_P04> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P04> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.672785"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/paper/P29> a sio:Paper ;
-    sio:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
-    sio:doi "10.1111/sms.13353"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Adolescent"^^xsd:string,
-        "Adult"^^xsd:string,
-        "Athletes"^^xsd:string,
-        "ENDURANCE PERFORMANCE"^^xsd:string,
-        "Hamstring Muscles"^^xsd:string,
-        "Humans"^^xsd:string,
-        "JUMP"^^xsd:string,
-        "Leg Injuries"^^xsd:string,
-        "MECHANICS"^^xsd:string,
-        "MUSCLES"^^xsd:string,
-        "Male"^^xsd:string,
-        "Original Articles"^^xsd:string,
-        "PATTERNS"^^xsd:string,
-        "PROFESSIONAL FOOTBALL"^^xsd:string,
-        "Plyometric Exercise"^^xsd:string,
-        "RISK-FACTORS"^^xsd:string,
-        "SPORT"^^xsd:string,
-        "SWING PHASE"^^xsd:string,
-        "Soccer"^^xsd:string,
-        "Soft Tissue Injuries"^^xsd:string,
-        "Young Adult"^^xsd:string,
-        "bounding exercise"^^xsd:string,
-        "hamstring injuries"^^xsd:string,
-        "injury prevention"^^xsd:string,
-        "plyometric training"^^xsd:string,
-        "soccer"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> ;
-    sio:paperId "P29"^^xsd:string ;
-    sio:publicationYear 2018 ;
-    sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W2904890641> .
+<http://kg.sports-injuries.org/resource/similarity/P03_P08> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P08> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.631672"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P03_P23> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P23> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.620187"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P04_P08> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P08> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.681603"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P04_P09> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P09> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.696457"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P04_P19> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P19> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.611283"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P04_P23> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P23> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.682145"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P04_P24> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P24> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.609514"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P05_P11> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P11> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.614026"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P08_P09> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P09> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.648798"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P08_P24> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P24> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.640827"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P09_P10> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P10> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.665638"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P09_P11> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P11> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.678023"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P09_P22> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P22> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.600818"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P09_P24> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P24> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.645916"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P10_P11> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P11> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
     sio:similarityScore "0.752022"^^xsd:float ;
-    sio:similarityThreshold "0.75"^^xsd:float .
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P10_P15> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P15> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.624422"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P10_P22> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P22> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.636476"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P10_P28> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.716946"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P11_P27> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P27> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.602368"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P11_P28> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.708575"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P12_P13> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P13> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
     sio:similarityScore "0.786466"^^xsd:float ;
-    sio:similarityThreshold "0.75"^^xsd:float .
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P12_P29> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P29> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.714205"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P13_P15> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P15> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.619483"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P13_P29> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P29> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
     sio:similarityScore "0.771141"^^xsd:float ;
-    sio:similarityThreshold "0.75"^^xsd:float .
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P15_P29> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P29> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.639817"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P16_P25> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P25> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.656525"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P16_P30> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P30> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.603249"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P17_P18> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P18> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.692125"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P17_P20> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P20> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
     sio:similarityScore "0.75886"^^xsd:float ;
-    sio:similarityThreshold "0.75"^^xsd:float .
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P18_P28> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.669787"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P21_P22> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P22> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.737936"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P27_P28> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.617202"^^xsd:float ;
+    sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
@@ -868,13 +894,204 @@
     sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
+<http://kg.sports-injuries.org/resource/paper/P08> a sio:Paper ;
+    sio:abstractText "Anterior cruciate ligament (ACL) injuries are the most common ligament injury of the knee, accounting for between 100,000 and 200,000 injuries among athletes per year. ACL injuries occur via contact and non-contact mechanisms, with the former being more common in males and the later being more common in females. These injuries typically require surgical repair and have relatively high re-rupture rates, resulting in a significant psychological burden for these individuals and long rehabilitation times. Numerous studies have attempted to determine risk factors for ACL rupture, including hormonal, biomechanical, and sport- and gender-specific factors. However, the incidence of ACL injuries continues to rise. Therefore, we performed a systematic review analyzing both ACL injury video analysis studies and studies on athletes who were pre-screened with eventual ACL injury. We investigated biomechanical mechanisms contributing to ACL injury and considered male and female differences. Factors such as hip angle and strength, knee movement, trunk stability, and ankle motion were considered to give a comprehensive, joint by joint analysis of injury risk and possible roles of prevention. Our review demonstrated that poor core stability, landing with heel strike, weak hip abduction strength, and increased knee valgus may contribute to increased ACL injury risk in young athletes."^^xsd:string ;
+    sio:doi "10.3390/ijerph18073826"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "16. Peace & justice"^^xsd:string,
+        "Anterior Cruciate Ligament"^^xsd:string,
+        "Anterior Cruciate Ligament Injuries"^^xsd:string,
+        "Athletes"^^xsd:string,
+        "Biomechanical Phenomena"^^xsd:string,
+        "Female"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Knee Joint"^^xsd:string,
+        "Male"^^xsd:string,
+        "Review"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P08_P09>,
+        <http://kg.sports-injuries.org/resource/similarity/P08_P24> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> ;
+    sio:paperId "P08"^^xsd:string ;
+    sio:publicationYear 2021 ;
+    sio:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented ACL Ruptures in Male and Female Athletes"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3151246717> .
+
+<http://kg.sports-injuries.org/resource/paper/P09> a sio:Paper ;
+    sio:abstractText "PURPOSE OF REVIEW: The purpose of this review is to describe the current evidence on the most common sports-related ankle injuries. Joint anatomy, epidemiology, clinical findings, diagnostic approach, and treatment are presented with a specific focus on the available evidence towards return to play. RECENT FINDINGS: Recent findings show that ankle sprain is the most common injury in the world of sports. Bony fractures, cartilage defects, and syndesmotic lesions are frequently seen in association with the more severe type of ankle sprains. In summary, the majority of the athletes' ankle sprains are managed conservatively with excellent outcomes and full return to their pre-injury level of play. However, it is essential to differentiate the single ligament sprain from a more complex injury to the ankle joint. The evidence-based treatment and rehabilitation programmes are associated with a better prognosis and a faster time to return to sport participation."^^xsd:string ;
+    sio:doi "10.1007/s12178-020-09631-1"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Clinical sciences"^^xsd:string,
+        "Management of Ankle Instability (M Hogan, Section Editor)"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P09_P10>,
+        <http://kg.sports-injuries.org/resource/similarity/P09_P11>,
+        <http://kg.sports-injuries.org/resource/similarity/P09_P22>,
+        <http://kg.sports-injuries.org/resource/similarity/P09_P24> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> ;
+    sio:paperId "P09"^^xsd:string ;
+    sio:publicationYear 2020 ;
+    sio:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W3023690833> .
+
+<http://kg.sports-injuries.org/resource/paper/P15> a sio:Paper ;
+    sio:abstractText "OBJECTIVE: To identify risk factors for quadriceps muscle strain injury in sport. DESIGN: Risk factor systematic review. LITERATURE SEARCH: A systematic search was conducted in the MEDLINECINAHL, Embase, AMED, AUSPORT, SPORTDiscus, PEDro, and Cochrane Library databases (from inception to September 2021). STUDY SELECTION CRITERIA: Studies reporting prospective data to evaluate risk factors related to index and/or recurrent quadriceps muscle strain injury. DATA SYNTHESIS: A risk-of-bias assessment (using a modified Quality in Prognosis Studies tool) was performed, and we used best-evidence synthesis to qualitatively synthesize the data to quantify relationships between risk factors and quadriceps muscle injury. RESULTS: Sixteen studies were included, capturing 2408 quadriceps injuries in 11 719 athletes. Meta-analyses were not performed due to clinical heterogeneity. The dominant kicking leg (over 3154 individuals, 1055 injuries), a previous history of quadriceps muscle injury (6208 individuals, 975 injuries), and a recent history of hamstring strain (4087 individuals, 581 injuries) were intrinsic factors associated with quadriceps injury. Extrinsic factors relating to the preseason period and competitive match play increased quadriceps injury risk; participating at higher levels of competition decreased quadriceps injury risk. Age, weight, and flexibility (intrinsic factors) had no association with quadriceps injury. CONCLUSION: ."^^xsd:string ;
+    sio:doi "10.2519/jospt.2022.10870"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Muscle, Skeletal"^^xsd:string,
+        "Prospective Studies"^^xsd:string,
+        "Quadriceps Muscle"^^xsd:string,
+        "Risk Factors"^^xsd:string,
+        "Sports"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P15_P29> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> ;
+    sio:paperId "P15"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4281625619> .
+
+<http://kg.sports-injuries.org/resource/paper/P23> a sio:Paper ;
+    sio:abstractText "Management of meniscal injuries in the elite athlete is a difficult problem secondary to the high demands of athletic competition, the need for a timely return to sport, and the desire to maximize performance over time. The purpose of this review is to provide an up-to-date summary on the current literature and trends regarding the management of meniscus injuries with a special consideration for elite athletes. Historically, partial meniscectomy has been the primary treatment option for meniscus injuries. However, in recent years there has been an increased emphasis on meniscus preservation due to the increased risk of cartilage degeneration over time. Moreover, while partial meniscectomy still provides a quicker return to sport, recent literature has demonstrated similar rates of RTS and return to pre-injury levels between partial meniscectomy and meniscus repair. In the setting of symptomatic meniscal deficiency, meniscus allograft transplantation has become an increasingly utilized salvage procedure with promising yet variable outcomes on the ability to withstand elite competition. Currently, there is no uniform approach to treating meniscal injuries in elite athletes. Therefore, an individualized approach is required with consideration of the meniscus tear type, location, concomitant injuries, athlete expectations, rehabilitation timeline, and desire to prevent or delay knee osteoarthritis. In athletes with anatomically repairable tears, meniscus repair should be performed given the ability to restore native anatomy, provide high rates of RTS, and mitigate long-term chondral damage. However, partial meniscectomy can be indicated for unrepairable tears."^^xsd:string ;
+    sio:doi "10.1007/s12178-024-09907-w"^^xsd:string ;
+    sio:externalKeyword "610"^^xsd:string,
+        "617"^^xsd:string,
+        "Bioinformatics"^^xsd:string,
+        "Biomedical Informatics"^^xsd:string,
+        "Diseases"^^xsd:string,
+        "Elite athlete"^^xsd:string,
+        "Medical Sciences"^^xsd:string,
+        "Medical Specialties"^^xsd:string,
+        "Medicine and Health Sciences"^^xsd:string,
+        "Meniscus"^^xsd:string,
+        "Meniscus allograft transplantation"^^xsd:string,
+        "Meniscus repair"^^xsd:string,
+        "Meniscus tears"^^xsd:string,
+        "Musculoskeletal Diseases"^^xsd:string,
+        "Oncology"^^xsd:string,
+        "Partial meniscectomy"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> ;
+    sio:paperId "P23"^^xsd:string ;
+    sio:publicationYear 2024 ;
+    sio:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4399326598> .
+
 <http://kg.sports-injuries.org/resource/topic/T00> a sio:Topic ;
     sio:topTerms "ankle, balance, control, leg, single, proprioception, knee, important, training, valgus"^^xsd:string ;
     sio:topicName "Ankle / Balance / Control"^^xsd:string .
 
+<http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
+    sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
+    sio:doi "10.3389/fspor.2022.902886"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "GV557-1198.995"^^xsd:string,
+        "Sports"^^xsd:string,
+        "Sports and Active Living"^^xsd:string,
+        "ankle"^^xsd:string,
+        "instability"^^xsd:string,
+        "psychological readiness"^^xsd:string,
+        "return to sport (RTS)"^^xsd:string,
+        "review (article)"^^xsd:string,
+        "self-reported function"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P11_P27>,
+        <http://kg.sports-injuries.org/resource/similarity/P11_P28> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> ;
+    sio:paperId "P11"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4281691142> .
+
+<http://kg.sports-injuries.org/resource/paper/P22> a sio:Paper ;
+    sio:abstractText "Regular physical activity confers numerous health and social benefits; however, activity-related lower-limb overuse injuries are prevalent. Medial tibial stress syndrome (MTSS) is a common overuse injury of the lower extremity. It is frequently observed in athletes and in military personnel. It involves exercise-induced pain over the anterior tibia and is an early stress injury in the continuum of tibial stress fractures (TSF). This scoping review aims to synthesize and characterize the literature on MTSS, identify knowledge gaps, and propose future research directions. We conducted a scoping review of the literature, which was informed by the Joanna Briggs Institute and the Arksey and O'Malley methodology, by searching four databases until December 31, 2023. The references were screened by two authors based on their titles, abstracts, and full texts to ensure that they met the inclusion criteria. Data related to the research objectives were extracted, analyzed, and reported numerically and descriptively. Thirty-seven studies were included in the current review, most of which recruited athletes as the study participants (67.6%). This was followed by articles about military members (16.2%). The highest prevalence of MTSS has been reported among recreational marathon runners in India (69.5%). The highest incidence of MTSS was reported in a German study (35.7%). Two studies reported that participants with MTSS had a higher body mass index (BMI) than those without MTSS, and one study found a significant correlation between BMI and the time required for complete recovery. Two studies reported that individuals with greater experience in athletic activities were at a lower risk of developing MTSS later in their careers. In contrast, another study reported that ultramarathon running increases the incidence of MTSS overuse injuries. Traction theory as a cause of MTSS was examined in five studies, and the mean navicular drop test (NDT) score was assessed in three studies. Biomechanical evaluation of ankle disorders and MTSS was performed in five articles and hip abnormalities in four articles. This review identifies research areas on the influence of epidemiological, risk, and biomechanical factors on MTSS development. Such research could inform counseling for patients concerned about MTSS risk factors and curative measures, as well as optimize surveillance and subsequent management of MTSS outcomes."^^xsd:string ;
+    sio:doi "10.7759/cureus.81463"^^xsd:string ;
+    sio:externalKeyword "Physical Medicine & Rehabilitation"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> ;
+    sio:paperId "P22"^^xsd:string ;
+    sio:publicationYear 2025 ;
+    sio:title "Medial Tibial Stress Syndrome: A Scoping Review of Epidemiology, Biomechanics, and Risk Factors"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4408976458> .
+
+<http://kg.sports-injuries.org/resource/paper/P24> a sio:Paper ;
+    sio:abstractText "Posterior cruciate ligament injuries can be treated conservatively with a structured rehabilitation program or with surgical reconstruction. Treatment algorithms are based on a variety of factors including the patient's presentation, physical exam, and desired level of activity. The goal is to return the patient to their athletic pursuits with a stable and pain-free knee. Return to play and activities should be individualized based on the patient's injury and progression through rehabilitation. This article provides a review of the current treatments for posterior cruciate ligament injuries and the respective rehabilitation protocols, outcomes after each treatment option, and specific return to play criteria. Current research shows excellent outcomes and return to play with conservative treatment of isolated posterior cruciate ligament injuries. Return to play algorithms stress the importance of quadriceps strengthening throughout the recovery process and emphasize inclusion of plyometrics and sport-specific training. Rehabilitation plays a critical role in the outcome after posterior cruciate ligament injury and the ability to return to athletics. The primary focus of post-injury or post-operative rehabilitation is to restore function, as it relates to range of motion, strength, and proprioception, while mitigating swelling and pain. The patients' desired sport and level of play dictate return to play timelines. The literature supports the use of non-operative management of isolated PCL injuries in athletes and non-athletes with excellent functional and patient-reported outcomes."^^xsd:string ;
+    sio:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> ;
+    sio:paperId "P24"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4310462146> .
+
+<http://kg.sports-injuries.org/resource/paper/P29> a sio:Paper ;
+    sio:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
+    sio:doi "10.1111/sms.13353"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Adolescent"^^xsd:string,
+        "Adult"^^xsd:string,
+        "Athletes"^^xsd:string,
+        "ENDURANCE PERFORMANCE"^^xsd:string,
+        "Hamstring Muscles"^^xsd:string,
+        "Humans"^^xsd:string,
+        "JUMP"^^xsd:string,
+        "Leg Injuries"^^xsd:string,
+        "MECHANICS"^^xsd:string,
+        "MUSCLES"^^xsd:string,
+        "Male"^^xsd:string,
+        "Original Articles"^^xsd:string,
+        "PATTERNS"^^xsd:string,
+        "PROFESSIONAL FOOTBALL"^^xsd:string,
+        "Plyometric Exercise"^^xsd:string,
+        "RISK-FACTORS"^^xsd:string,
+        "SPORT"^^xsd:string,
+        "SWING PHASE"^^xsd:string,
+        "Soccer"^^xsd:string,
+        "Soft Tissue Injuries"^^xsd:string,
+        "Young Adult"^^xsd:string,
+        "bounding exercise"^^xsd:string,
+        "hamstring injuries"^^xsd:string,
+        "injury prevention"^^xsd:string,
+        "plyometric training"^^xsd:string,
+        "soccer"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> ;
+    sio:paperId "P29"^^xsd:string ;
+    sio:publicationYear 2018 ;
+    sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W2904890641> .
+
 <http://kg.sports-injuries.org/resource/topic/T03> a sio:Topic ;
     sio:topTerms "cpg, sports, physical, therapy, practice, evidence, clinical, orthopaedic, health, based"^^xsd:string ;
     sio:topicName "Cpg / Sports / Physical"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/paper/P28> a sio:Paper ;
+    sio:abstractText "CONTEXT: Although strength training is commonly used to rehabilitate ankle injuries, studies investigating the effects of strength training on proprioception have shown conflicting results. OBJECTIVE: To determine the effects of a 6-week strength-training protocol on force sense and strength development in participants with functional ankle instability. DESIGN: Randomized controlled clinical trial. SETTING: University athletic training research laboratory. PATIENTS OR OTHER PARTICIPANTS: A total of 40 participants with functional ankle instability were recruited. They were randomly placed into a training group (10 men, 10 women: age = 20.9 ± 2.2 years, height = 76.4 ± 16.1 cm, mass = 173.0 ± 7.9 kg) or control group (10 men, 10 women: age = 20.2 ± 2.1 years, height = 78.8 ± 24.5 cm, mass = 173.7 ± 8.2 kg). INTERVENTION(S): Participants in the training group performed strength exercises with the injured ankle 3 times per week for 6 weeks. The protocol consisted of a combination of rubber exercise bands and the Multiaxial Ankle Exerciser, both clinically accepted strengthening methods for ankle rehabilitation. The progression of this protocol provided increasingly resistive exercise as participants changed either the number of sets or resistance of the Thera-Band or Multiaxial Ankle Exerciser. Main Outcome Measure(s): A load cell was used to measure strength and force sense. Inversion and eversion strength was recorded to the nearest 0.01 N. Force-sense reproduction was measured at 2 loads: 20% and 30% of maximal voluntary isometric contraction. RESULTS: Increases in inversion (F(1,38) = 11.59, P < 0.01, η(p)(2) = 0.23, power = 0.91) and eversion (F(1,38) = 57.68, P < .01, η(p)(2) = 0.60, power = 0.99) strength were found in the training group at the posttest when compared with the control group. No significant improvements were noted in force-sense reproduction for either group. CONCLUSIONS: Strength training at the ankle increased strength but did not improve force sense."^^xsd:string ;
+    sio:doi "10.4085/1062-6050-47.3.06"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "16. Peace & justice"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Ankle"^^xsd:string,
+        "Ankle Injuries"^^xsd:string,
+        "Ankle Joint"^^xsd:string,
+        "Exercise"^^xsd:string,
+        "Exercise Therapy"^^xsd:string,
+        "Female"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Joint Instability"^^xsd:string,
+        "Male"^^xsd:string,
+        "Muscle Strength"^^xsd:string,
+        "Proprioception"^^xsd:string,
+        "Resistance Training"^^xsd:string,
+        "Young Adult"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> ;
+    sio:paperId "P28"^^xsd:string ;
+    sio:publicationYear 2012 ;
+    sio:title "Ankle Strength and Force Sense After a Progressive 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W1854658087> .
 
 <http://kg.sports-injuries.org/resource/topic/T04> a sio:Topic ;
     sio:topTerms "meniscus, injuries, patellar, strain, athletes, injury, therapy, return, tendon, risk"^^xsd:string ;
