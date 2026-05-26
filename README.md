@@ -159,6 +159,25 @@ The current version of the project implements the following pipeline:
 
 The NER step over acknowledgements will be integrated in the final version to extract acknowledged people, organizations and projects.
 
+## Similarity Modeling
+
+Semantic similarity between paper abstracts was computed using sentence embedding models from Hugging Face. Two candidate models were compared:
+
+- `sentence-transformers/all-MiniLM-L6-v2`
+- `intfloat/e5-small-v2`
+
+Both models were evaluated by computing cosine similarity between the abstract embeddings of the 30 papers. The `intfloat/e5-small-v2` model generally produced higher similarity scores, usually around `0.8-0.9`, while `sentence-transformers/all-MiniLM-L6-v2` produced lower and more conservative scores, usually around `0.6-0.75`.
+
+A manual review was performed over a sample of 10 papers. The evaluation criterion was whether the most similar papers were actually related either by anatomical focus, such as knee, ankle, foot or lower-limb muscles, or by similar recovery, rehabilitation or injury-management approaches.
+
+Although `e5-small-v2` produced higher numerical similarity values, the manual review showed that `all-MiniLM-L6-v2` generated more meaningful and interpretable connections according to these criteria. Therefore, `sentence-transformers/all-MiniLM-L6-v2` was selected as the final model for the demo and the Knowledge Graph similarity links.
+
+Cosine similarity was used as the comparison metric. A threshold of `0.6` was selected for creating similarity links between papers. This threshold was chosen because it provides a connected and explorable graph while still preserving meaningful relations under the selected MiniLM model.
+
+The resulting similarity matrices and top-3 most similar papers are stored in:
+
+```text
+results/similarity/
 ## Knowledge Graph
 
 The main RDF Knowledge Graph is available at:
