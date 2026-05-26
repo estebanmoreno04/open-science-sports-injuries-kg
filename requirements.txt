@@ -1,8 +1,16 @@
 pandas
 rdflib
 
-# --- Dependencias para abstract_similarity.py ---
+# --- Similarity (abstract_similarity.py) ---
 sentence-transformers
 scikit-learn
 numpy
 torch
+
+# --- Topic modeling (scripts/topic_modeling.py) ---
+bertopic
+umap-learn
+hdbscan
+
+# --- KG Explorer (app.py) ---
+flask

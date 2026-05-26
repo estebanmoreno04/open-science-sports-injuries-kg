@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Injuries KG Explorer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #242836;
+    --border: #2e3348;
+    --text: #e1e4ed;
+    --text-dim: #8b90a5;
+    --accent: #6c8cff;
+    --accent-glow: rgba(108,140,255,0.25);
+    --green: #4ade80;
+    --red: #f87171;
+    --orange: #fb923c;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  header h1 { font-size: 16px; font-weight: 600; letter-spacing: 0.3px; }
+  header h1 span { color: var(--accent); }
+  .header-controls { display: flex; gap: 14px; align-items: center; }
+
+  .toggle-group { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-dim); }
+  .toggle { position:relative; width:40px; height:22px; cursor:pointer; }
+  .toggle input { opacity:0; width:0; height:0; }
+  .toggle .slider {
+    position:absolute; inset:0; background:var(--border); border-radius:11px;
+    transition: background .25s;
+  }
+  .toggle .slider::before {
+    content:''; position:absolute; width:16px; height:16px; left:3px; top:3px;
+    background:#fff; border-radius:50%; transition: transform .25s;
+  }
+  .toggle input:checked + .slider { background: var(--accent); }
+  .toggle input:checked + .slider::before { transform: translateX(18px); }
+
+  .main-layout { display: flex; flex: 1; overflow: hidden; }
+
+  .left-panel {
+    width: 340px; min-width: 340px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .panel-section {
+    border-bottom: 1px solid var(--border);
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .panel-section.expandable { flex-shrink: 0; }
+  .panel-section.scrollable { flex: 1; overflow: hidden; }
+  .panel-header {
+    padding: 10px 16px; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim);
+    background: var(--surface2); display: flex; justify-content: space-between;
+    align-items: center; flex-shrink: 0;
+  }
+  .panel-body { padding: 12px 16px; font-size: 13px; overflow-y: auto; flex: 1; }
+
+  .prop-table { width: 100%; border-collapse: collapse; }
+  .prop-table td { padding: 5px 0; vertical-align: top; border-bottom: 1px solid var(--border); }
+  .prop-table td:first-child { color: var(--text-dim); width: 95px; font-size: 12px; padding-right: 10px; }
+  .prop-table td:last-child { word-break: break-word; }
+
+  .empty-state {
+    color: var(--text-dim); font-style: italic;
+    padding: 20px 16px; text-align: center; font-size: 13px;
+  }
+
+  .sim-btn {
+    background: var(--accent); color: #fff; border: none;
+    padding: 7px 14px; border-radius: 6px; font-size: 12px; font-weight: 600;
+    cursor: pointer; width: 100%; transition: opacity .2s;
+  }
+  .sim-btn:disabled { opacity: .35; cursor: default; }
+  .sim-btn:not(:disabled):hover { opacity: .85; }
+
+  .sim-list { margin-top: 10px; max-height: 280px; overflow-y: auto; }
+  .sim-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 10px; border-radius: 6px; cursor: pointer;
+    transition: background .15s; font-size: 12px;
+  }
+  .sim-item:hover { background: var(--surface2); }
+  .sim-item .rank { color: var(--text-dim); width: 20px; text-align: right; flex-shrink:0; }
+  .sim-item .score-bar-bg {
+    width: 60px; height: 6px; background: var(--border); border-radius: 3px; flex-shrink:0; overflow: hidden;
+  }
+  .sim-item .score-bar { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--green)); }
+  .sim-item .paper-label { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sim-item .score-val { color: var(--green); font-weight: 600; font-variant-numeric: tabular-nums; flex-shrink:0; }
+
+  .graph-container { flex: 1; position: relative; }
+  #cy { width: 100%; height: 100%; }
+
+  .legend {
+    position: absolute; bottom: 16px; right: 16px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 16px; font-size: 12px;
+    display: none; max-width: 220px;
+  }
+  .legend.visible { display: block; }
+  .legend-title {
+    font-weight: 700; text-transform: uppercase; font-size: 10px;
+    letter-spacing: 1px; color: var(--text-dim); margin-bottom: 8px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .legend-label { font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .stats-badge {
+    position: absolute; top: 12px; right: 16px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 14px; font-size: 11px;
+    color: var(--text-dim); display: flex; gap: 16px;
+  }
+  .stats-badge strong { color: var(--text); }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+  .topic-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 11px; font-weight: 600;
+  }
+
+  .method-toggle {
+    display: flex; gap: 0; margin-top: 8px; margin-bottom: 10px;
+    border-radius: 6px; overflow: hidden; border: 1px solid var(--border);
+  }
+  .method-btn {
+    flex: 1; padding: 6px 0; background: var(--surface2);
+    color: var(--text-dim); border: none; font-size: 11px; font-weight: 600;
+    cursor: pointer; transition: all .2s;
+  }
+  .method-btn.active { background: var(--accent); color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span>Sports Injuries</span> Knowledge Graph Explorer</h1>
+  <div class="header-controls">
+    <div class="toggle-group">
+      <span>Topics</span>
+      <label class="toggle"><input type="checkbox" id="topicToggle"><span class="slider"></span></label>
+    </div>
+    <div class="toggle-group">
+      <span>Edge labels</span>
+      <label class="toggle"><input type="checkbox" id="edgeLabelToggle"><span class="slider"></span></label>
+    </div>
+  </div>
+</header>
+
+<div class="main-layout">
+  <div class="left-panel">
+    <div class="panel-section scrollable">
+      <div class="panel-header">Properties</div>
+      <div class="panel-body" id="propsBody">
+        <div class="empty-state">Click a node or edge to inspect it</div>
+      </div>
+    </div>
+    <div class="panel-section expandable" style="max-height:50%;">
+      <div class="panel-header">
+        Similarity
+        <span id="simCount" style="font-size:10px; color:var(--accent);"></span>
+      </div>
+      <div class="panel-body" id="simBody" style="overflow-y:auto;">
+        <button class="sim-btn" id="simBtn" disabled>Select a paper first</button>
+        <div class="method-toggle" id="methodToggle" style="display:none;"></div>
+        <div class="sim-list" id="simList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-container">
+    <div id="cy"></div>
+    <div class="stats-badge" id="statsBadge">
+      <span>Nodes: <strong id="statNodes">0</strong></span>
+      <span>Edges: <strong id="statEdges">0</strong></span>
+      <span>Topics: <strong id="statTopics">0</strong></span>
+    </div>
+    <div class="legend" id="legend">
+      <div class="legend-title">Topic colors</div>
+      <div id="legendItems"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const PALETTE = [
+  '#6c8cff','#4ade80','#fb923c','#f87171','#a78bfa',
+  '#38bdf8','#facc15','#f472b6','#34d399','#e879f9',
+  '#60a5fa','#fbbf24','#c084fc',
+];
+const OUTLIER_COLOR = '#555e78';
+const DEFAULT_NODE = '#6c8cff';
+const DEFAULT_EDGE = '#2e3348';
+const HIGHLIGHT_EDGE = '#6c8cff';
+const DIM = 0.12;
+
+let DATA = null;
+let cy = null;
+let topicsOn = false;
+let selectedNode = null;
+let currentModel = null;
+
+// ── Load ─────────────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const resp = await fetch('/api/graph_data');
+    DATA = await resp.json();
+    currentModel = DATA.metadata.defaultModel;
+    initGraph();
+    buildModelToggle();
+  } catch (e) {
+    document.getElementById('cy').innerHTML =
+      `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-dim);flex-direction:column;gap:12px;">
+         <div style="font-size:42px;">&#9888;</div>
+         <div style="font-size:14px;">Could not load graph data from API.</div>
+       </div>`;
+  }
+}
+
+function topicColor(tid) { return tid === -1 ? OUTLIER_COLOR : PALETTE[tid % PALETTE.length]; }
+
+function initGraph() {
+  const el = DATA.elements;
+  cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements: [...el.nodes, ...el.edges],
+    minZoom: 0.2, maxZoom: 4, wheelSensitivity: 0.3,
+    style: [
+      { selector: 'node', style: {
+        'label':'data(label)', width:38, height:38, 'background-color':DEFAULT_NODE,
+        'border-width':2, 'border-color':'#0f1117', color:'#e1e4ed',
+        'font-size':'11px', 'font-weight':'600', 'text-valign':'bottom', 'text-margin-y':6,
+        'text-outline-width':2, 'text-outline-color':'#0f1117',
+        'transition-property':'background-color,opacity,border-color,border-width,width,height',
+        'transition-duration':'0.25s',
+      }},
+      { selector: 'edge', style: {
+        width:'mapData(score,0.75,1.0,1,5)', 'line-color':DEFAULT_EDGE,
+        'curve-style':'bezier', opacity:0.5,
+        'transition-property':'line-color,opacity,width', 'transition-duration':'0.25s',
+      }},
+      { selector: 'node.highlighted', style: {
+        'border-color':'#fff', 'border-width':3, width:48, height:48, 'z-index':999,
+      }},
+      { selector: 'node.dimmed', style: { opacity:DIM }},
+      { selector: 'edge.highlighted', style: {
+        'line-color':HIGHLIGHT_EDGE, opacity:1, width:4, 'z-index':998,
+      }},
+      { selector: 'edge.dimmed', style: { opacity:0.04 }},
+      { selector: 'node.sim-neighbor', style: {
+        'border-color':'#4ade80', 'border-width':3, width:44, height:44,
+      }},
+    ],
+    layout: {
+      name:'cose', idealEdgeLength:140, nodeRepulsion:8000,
+      nodeOverlap:30, gravity:0.6, numIter:800, animate:false,
+    },
+  });
+
+  document.getElementById('statNodes').textContent = el.nodes.length;
+  document.getElementById('statEdges').textContent = el.edges.length;
+  document.getElementById('statTopics').textContent = DATA.topics.filter(t=>t.id!==-1).length;
+
+  cy.on('tap','node', onNodeTap);
+  cy.on('tap','edge', onEdgeTap);
+  cy.on('tap', e => { if(e.target===cy) clearSelection(); });
+  buildLegend();
+}
+
+// ── Build model toggle buttons from actual available models ──────────────────
+function buildModelToggle() {
+  const container = document.getElementById('methodToggle');
+  container.innerHTML = '';
+  const models = DATA.metadata.availableModels || [];
+  models.forEach((m, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'method-btn' + (m === currentModel ? ' active' : '');
+    btn.dataset.model = m;
+    // Short display label
+    btn.textContent = m.includes('e5') ? 'E5-small-v2' : 'MiniLM-L6-v2';
+    btn.addEventListener('click', function() {
+      container.querySelectorAll('.method-btn').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      currentModel = this.dataset.model;
+      if (document.getElementById('simList').innerHTML) showSimilarities();
+    });
+    container.appendChild(btn);
+  });
+}
+
+// ── Node tap ─────────────────────────────────────────────────────────────────
+function onNodeTap(e) {
+  const node = e.target;
+  selectedNode = node;
+  clearHighlights();
+  node.addClass('highlighted');
+  const nb = node.neighborhood();
+  cy.elements().not(node).not(nb).addClass('dimmed');
+  nb.edges().addClass('highlighted');
+  nb.nodes().removeClass('dimmed');
+
+  const d = node.data();
+  let h = '<table class="prop-table">';
+  h += row('ID', d.id);
+  h += row('Type', tag(d.type, DEFAULT_NODE));
+  h += row('Title', d.title || '<em>No title</em>');
+  h += row('Year', d.year);
+  h += row('DOI', d.doi ? `<a href="https://doi.org/${d.doi}" target="_blank" style="color:var(--accent);">${d.doi}</a>` : '');
+  if (topicsOn) {
+    const tid = d.topicId;
+    const topic = DATA.topics.find(t=>t.id===tid);
+    if (topic) {
+      h += row('Topic', tag(topic.name, topicColor(tid)));
+      h += row('Terms', `<span style="font-size:11px;color:var(--text-dim);">${topic.terms}</span>`);
+    }
+  }
+  if (d.sameAs) h += row('sameAs', `<a href="${d.sameAs}" target="_blank" style="color:var(--accent);font-size:11px;">${d.sameAs}</a>`);
+  if (d.abstract) h += row('Abstract', `<span style="font-size:11px;line-height:1.5;">${d.abstract}</span>`);
+  h += '</table>';
+  document.getElementById('propsBody').innerHTML = h;
+
+  document.getElementById('simBtn').disabled = false;
+  document.getElementById('simBtn').textContent = `Show similar papers to ${d.id}`;
+  document.getElementById('simList').innerHTML = '';
+  document.getElementById('simCount').textContent = '';
+  document.getElementById('methodToggle').style.display = 'flex';
+}
+
+// ── Edge tap ─────────────────────────────────────────────────────────────────
+function onEdgeTap(e) {
+  const edge = e.target; selectedNode = null;
+  clearHighlights();
+  edge.addClass('highlighted');
+  const src = edge.source(), tgt = edge.target();
+  src.addClass('highlighted'); tgt.addClass('highlighted');
+  cy.elements().not(edge).not(src).not(tgt).addClass('dimmed');
+
+  const d = edge.data();
+  let h = '<table class="prop-table">';
+  h += row('Type', tag('SimilarityLink', HIGHLIGHT_EDGE));
+  h += row('Source', d.source);
+  h += row('Target', d.target);
+  h += row('Score', `<span style="color:var(--green);font-weight:700;">${d.score.toFixed(4)}</span>`);
+  h += row('Threshold', DATA.metadata.similarityThreshold);
+  h += '</table>';
+  document.getElementById('propsBody').innerHTML = h;
+  document.getElementById('simBtn').disabled = true;
+  document.getElementById('simBtn').textContent = 'Select a paper node';
+  document.getElementById('simList').innerHTML = '';
+  document.getElementById('simCount').textContent = '';
+}
+
+// ── Similarities ─────────────────────────────────────────────────────────────
+function showSimilarities() {
+  if (!selectedNode) return;
+  const pid = selectedNode.data('id');
+  const matrices = DATA.similarityMatrices || {};
+  const simRow = (matrices[currentModel] || {})[pid];
+  if (!simRow) { document.getElementById('simList').innerHTML = '<div class="empty-state">No similarity data for this model</div>'; return; }
+
+  let pairs = Object.entries(simRow).map(([id,score])=>({id,score})).sort((a,b)=>b.score-a.score);
+  const list = document.getElementById('simList');
+  let html = '';
+  pairs.forEach((p,i) => {
+    const pct = Math.max(0,Math.min(100,((p.score-0.3)/0.7)*100));
+    const nd = DATA.elements.nodes.find(n=>n.data.id===p.id);
+    const title = nd ? nd.data.title : p.id;
+    const above = p.score >= DATA.metadata.similarityThreshold;
+    html += `<div class="sim-item" onclick="highlightSimPair('${pid}','${p.id}')" title="${title}">
+      <span class="rank">${i+1}</span>
+      <span class="paper-label">${p.id} — ${title}</span>
+      <span class="score-bar-bg"><span class="score-bar" style="width:${pct}%;${above?'':'background:var(--border);'}"></span></span>
+      <span class="score-val" style="${above?'':'color:var(--text-dim);'}">${p.score.toFixed(3)}</span>
+    </div>`;
+  });
+  list.innerHTML = html;
+  document.getElementById('simCount').textContent = `${pairs.length} papers · ${currentModel}`;
+}
+
+function highlightSimPair(src, tgt) {
+  clearHighlights();
+  const s = cy.getElementById(src), t = cy.getElementById(tgt);
+  s.addClass('highlighted'); t.addClass('sim-neighbor');
+  cy.elements().not(s).not(t).addClass('dimmed');
+  const edge = cy.edges().filter(e =>
+    (e.data('source')===src&&e.data('target')===tgt)||(e.data('source')===tgt&&e.data('target')===src)
+  );
+  if(edge.length){ edge.addClass('highlighted'); edge.removeClass('dimmed'); }
+  cy.animate({ fit:{eles:s.union(t),padding:100}, duration:400, easing:'ease-out-cubic' });
+}
+
+function clearHighlights() { cy.elements().removeClass('highlighted dimmed sim-neighbor'); }
+
+function clearSelection() {
+  clearHighlights(); selectedNode = null;
+  document.getElementById('propsBody').innerHTML = '<div class="empty-state">Click a node or edge to inspect it</div>';
+  document.getElementById('simBtn').disabled = true;
+  document.getElementById('simBtn').textContent = 'Select a paper first';
+  document.getElementById('simList').innerHTML = '';
+  document.getElementById('simCount').textContent = '';
+  document.getElementById('methodToggle').style.display = 'none';
+}
+
+// ── Topic toggle ─────────────────────────────────────────────────────────────
+document.getElementById('topicToggle').addEventListener('change', function() {
+  topicsOn = this.checked;
+  if (topicsOn) {
+    cy.nodes().forEach(n => n.style('background-color', topicColor(n.data('topicId'))));
+    cy.edges().forEach(e => {
+      const st = cy.getElementById(e.data('source')).data('topicId');
+      const tt = cy.getElementById(e.data('target')).data('topicId');
+      if(st===tt&&st!==-1){ e.style({'line-color':topicColor(st),opacity:0.7}); }
+      else { e.style({'line-color':DEFAULT_EDGE,opacity:0.3}); }
+    });
+    document.getElementById('legend').classList.add('visible');
+  } else {
+    cy.nodes().style('background-color', DEFAULT_NODE);
+    cy.edges().style({'line-color':DEFAULT_EDGE,opacity:0.5});
+    document.getElementById('legend').classList.remove('visible');
+  }
+  if(selectedNode) onNodeTap({target:selectedNode});
+});
+
+document.getElementById('edgeLabelToggle').addEventListener('change', function() {
+  cy.edges().style('label', this.checked ? (e=>e.data('score').toFixed(2)) : '');
+});
+
+document.getElementById('simBtn').addEventListener('click', showSimilarities);
+
+function buildLegend() {
+  let html = '';
+  DATA.topics.forEach(t => {
+    html += `<div class="legend-item"><div class="legend-dot" style="background:${topicColor(t.id)};"></div><div class="legend-label">${t.name}</div></div>`;
+  });
+  document.getElementById('legendItems').innerHTML = html;
+}
+
+function row(l,v) { return `<tr><td>${l}</td><td>${v??''}</td></tr>`; }
+function tag(t,c) { return `<span class="topic-tag" style="background:${c}22;color:${c};border:1px solid ${c}44;">${t}</span>`; }
+
+loadData();
+</script>
+</body>
+</html>
