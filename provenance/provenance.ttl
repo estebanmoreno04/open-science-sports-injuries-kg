@@ -243,7 +243,7 @@
 :A01_paper_selection  a  prov:Activity ;
     rdfs:label    "A01 · Selección de 30 papers del dominio" ;
     dcterms:description
-        "Manual literature search of 30 open-access and subscription papers on sports injuries of the lower limb (knee, ankle, foot, muscles)." ;
+        "Manual literature search of 30 papers on sports injuries of the lower limb (knee, ankle, foot, muscles)." ;
     prov:wasAssociatedWith  :grupo_osai_rse ;
     prov:generated           :manifest_csv ;
     prov:generated           :pdf_collection .
