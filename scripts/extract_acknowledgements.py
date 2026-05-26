@@ -1,22 +1,24 @@
 """
 extract_acknowledgements.py
 ===========================
-Extracts the Acknowledgements section and funding information from
-scientific papers using the PMC OA API (structured XML).
+Extracts the Acknowledgements section from scientific papers using
+the NCBI Entrez API (efetch endpoint).
 
-Extracts:
-  - <ack> section (acknowledgements text)
-  - <funding-group> section (funding sources)
-  - <notes notes-type="funding-information"> (funding notes)
+This approach does not require PDFs or authentication.
+It uses the PMC numeric ID from the papers.csv pmc_url column.
 
-Output:
-    data/processed/acknowledgements.csv
+Why Entrez instead of PMC OAI:
+  The PMC OAI API applies aggressive rate limiting that blocks automated
+  requests. The Entrez efetch API is more tolerant and is the recommended
+  programmatic access method for PMC full-text content.
+
+Input:  data/metadata/papers.csv
+Output: data/processed/acknowledgements.csv
 
 Columns:
     paper_id | acknowledgements | extraction_method | source
 
 Usage:
-    pip install requests
     python scripts/extract_acknowledgements.py
 """
 
@@ -25,96 +27,103 @@ import os
 import re
 import time
 import requests
+from xml.etree import ElementTree as ET
 
-
+# ── Paths ─────────────────────────────────────────────────────────────────────
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_CSV  = os.path.join(BASE_DIR, "data/metadata/papers.csv")
 OUTPUT_CSV = os.path.join(BASE_DIR, "data/processed/acknowledgements.csv")
 
-PMC_OAI    = "https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi"
-SLEEP      = 0.5
+ENTREZ_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+SLEEP      = 0.4   # NCBI recommends max 3 requests/second without API key
+
+PARAMS_BASE = {
+    "db":      "pmc",
+    "rettype": "xml",
+    "tool":    "sports-injuries-kg",
+    "email":   "juanmanuel.novoa.guevara@alumnos.upm.es",
+}
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def pmc_numeric_id(pmc_url: str) -> str:
-    """Extract numeric PMC ID from URL. e.g. PMC8161930 → 8161930"""
+    """Extract numeric PMC ID from URL. e.g. .../PMC8161930/ → 8161930"""
     match = re.search(r"PMC(\d+)", pmc_url)
     return match.group(1) if match else ""
 
 
-def extract_text_between_tags(xml: str, tag: str) -> list[str]:
-    """
-    Extract all text content between opening and closing tags,
-    stripping inner XML tags. Works without namespace awareness.
-    """
-    # Match both <tag ...> and <tag>
-    pattern = rf"<{tag}(?:\s[^>]*)?>(.+?)</{tag}>"
-    matches = re.findall(pattern, xml, re.DOTALL)
-    results = []
-    for m in matches:
-        # Strip all XML tags to get plain text
-        text = re.sub(r"<[^>]+>", " ", m)
-        # Decode common XML entities
-        text = text.replace("&#8217;", "'").replace("&#8216;", "'")
-        text = text.replace("&#8220;", '"').replace("&#8221;", '"')
-        text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-        text = text.replace("&apos;", "'").replace("&quot;", '"')
-        # Collapse whitespace
-        text = " ".join(text.split())
-        if text.strip():
-            results.append(text.strip())
-    return results
+def extract_text_from_element(elem) -> str:
+    """Recursively extract all text from an XML element."""
+    texts = []
+    if elem.text and elem.text.strip():
+        texts.append(elem.text.strip())
+    for child in elem:
+        texts.append(extract_text_from_element(child))
+        if child.tail and child.tail.strip():
+            texts.append(child.tail.strip())
+    return " ".join(t for t in texts if t)
 
 
 def fetch_acknowledgements(pmc_numeric: str) -> str:
     """
-    Fetch full text XML from PMC OAI and extract:
-      1. <ack> section (acknowledgements)
-      2. <funding-group> institutions
-      3. <notes notes-type="funding-information"> text
-    Returns combined plain text.
+    Fetch full-text XML from NCBI Entrez and extract acknowledgements.
+
+    Entrez returns JATS XML. Acknowledgements appear in:
+      - <ack> element
+      - <notes notes-type="funding-information">
+      - <funding-group> with <institution> elements
     """
-    identifier = f"oai:pubmedcentral.nih.gov:{pmc_numeric}"
-    params = {
-        "verb": "GetRecord",
-        "identifier": identifier,
-        "metadataPrefix": "pmc",
-    }
+    params = {**PARAMS_BASE, "id": pmc_numeric}
+
     try:
-        resp = requests.get(
-    PMC_OAI,
-    params=params,
-    headers={"User-Agent": "sports-injuries-kg/1.0 (mailto:your_group_email@alumnos.upm.es)"},
-    timeout=30
-)
+        resp = requests.get(ENTREZ_URL, params=params, timeout=30)
         if resp.status_code != 200:
+            print(f"    [WARN] HTTP {resp.status_code}")
             return ""
 
         xml = resp.text
         parts = []
 
+        # Strategy 1: regex on <ack> element (most reliable across JATS versions)
+        ack_matches = re.findall(
+            r"<ack(?:\s[^>]*)?>(.+?)</ack>",
+            xml, re.DOTALL
+        )
+        for m in ack_matches:
+            text = re.sub(r"<[^>]+>", " ", m)
+            text = text.replace("&#8217;", "'").replace("&#8216;", "'")
+            text = text.replace("&#8220;", '"').replace("&#8221;", '"')
+            text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+            text = " ".join(text.split())
+            if text.strip():
+                parts.append(text.strip())
 
-        ack_texts = extract_text_between_tags(xml, "ack")
-        if ack_texts:
-            parts.extend(ack_texts)
-
-
-        funding_pattern = r'<notes[^>]*notes-type=["\']funding-information["\'][^>]*>(.+?)</notes>'
-        funding_matches = re.findall(funding_pattern, xml, re.DOTALL)
+        # Strategy 2: funding-information notes
+        funding_matches = re.findall(
+            r'<notes[^>]*notes-type=["\']funding-information["\'][^>]*>(.+?)</notes>',
+            xml, re.DOTALL
+        )
         for m in funding_matches:
             text = re.sub(r"<[^>]+>", " ", m)
             text = " ".join(text.split())
             if text.strip() and text not in parts:
                 parts.append(text.strip())
 
+        # Strategy 3: funding-group institutions (fallback)
         if not parts:
-            institution_texts = extract_text_between_tags(xml, "institution")
-            if institution_texts:
-                parts.append("Funding institutions: " + "; ".join(institution_texts))
+            inst_matches = re.findall(r"<institution>(.+?)</institution>", xml)
+            if inst_matches:
+                parts.append("Funding institutions: " + "; ".join(inst_matches))
 
         return " | ".join(parts) if parts else ""
 
     except Exception as e:
         print(f"    [ERROR] {e}")
         return ""
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
@@ -125,7 +134,7 @@ def main():
         papers = list(reader)
     print(f"  {len(papers)} papers loaded.\n")
 
-    rows = []
+    rows      = []
     found     = 0
     not_found = []
 
@@ -156,18 +165,18 @@ def main():
             not_found.append(paper_id)
             continue
 
-        print(f"  [{paper_id}] Fetching PMC{numeric_id}...")
+        print(f"  [{paper_id}] Fetching PMC{numeric_id} via Entrez...")
         ack_text = fetch_acknowledgements(numeric_id)
 
         if ack_text:
             preview = ack_text[:100] + "..." if len(ack_text) > 100 else ack_text
             print(f"    → Found ({len(ack_text)} chars): {preview}")
             found += 1
-            method = "PMC OAI API"
+            method = "NCBI Entrez API"
         else:
             print(f"    → No acknowledgements found.")
             not_found.append(paper_id)
-            method = "PMC OAI API (empty)"
+            method = "NCBI Entrez API (empty)"
 
         rows.append({
             "paper_id":          paper_id,
@@ -177,10 +186,20 @@ def main():
         })
         time.sleep(SLEEP)
 
+    # Safety: do not overwrite existing data if run returned nothing
+    if found == 0 and os.path.exists(OUTPUT_CSV):
+        with open(OUTPUT_CSV, encoding="utf-8") as f:
+            existing = list(csv.DictReader(f))
+        if any(r.get("acknowledgements") for r in existing):
+            print("\n[WARN] No acknowledgements found but existing CSV has data.")
+            print("       Keeping existing CSV to avoid data loss.")
+            return
+
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["paper_id", "acknowledgements", "extraction_method", "source"]
+            fieldnames=["paper_id", "acknowledgements", "extraction_method", "source"],
+            delimiter=";"
         )
         writer.writeheader()
         writer.writerows(rows)
@@ -191,13 +210,6 @@ def main():
     print(f"  Without acknowledgements: {len(not_found)}")
     if not_found:
         print(f"  Missing: {', '.join(not_found)}")
-    if found == 0 and os.path.exists(OUTPUT_CSV):
-        with open(OUTPUT_CSV, encoding="utf-8") as f:
-            existing = list(csv.DictReader(f))
-        if any(r.get("acknowledgements") for r in existing):
-            print("\n[WARN] API returned 0 results but existing CSV has data.")
-            print("       Keeping existing CSV to avoid data loss.")
-            return
     print(f"\n  Output → {OUTPUT_CSV}")
     print("Done.")
 
