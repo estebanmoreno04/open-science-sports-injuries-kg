@@ -20,7 +20,7 @@ KG_TTL     = PROJECT_ROOT / "kg" / "sports_injuries_kg.ttl"
 SIM_DIR    = PROJECT_ROOT / "results" / "similarity"
 TOPICS_DIR = PROJECT_ROOT / "data" / "processed"
 
-# Topic model files
+# Topic model files 
 TOPIC_MODELS = {
     "bertopic": TOPICS_DIR / "topics_bertopic.csv",
     "lda":      TOPICS_DIR / "topics_lda.csv",
@@ -41,7 +41,7 @@ SIM_MODELS = {
 
 SIMILARITY_THRESHOLD = 0.60
 
-# Flask app
+# Flask app 
 app = Flask(
     __name__,
     template_folder=str(PROJECT_ROOT / "templates"),
@@ -49,7 +49,7 @@ app = Flask(
 )
 
 
-# RDF parsing
+# RDF parsing 
 def parse_ttl(path: Path) -> list[dict]:
     """Extract paper metadata from the Turtle KG."""
     g = RDFGraph()
@@ -59,7 +59,6 @@ def parse_ttl(path: Path) -> list[dict]:
     for subj in g.subjects(RDF.type, ONT.Paper):
         uri = str(subj)
         paper = {"uri": uri}
-
         prop_map = {
             ONT.paperId:         "paperId",
             ONT.title:           "title",
@@ -67,7 +66,6 @@ def parse_ttl(path: Path) -> list[dict]:
             ONT.doi:             "doi",
             ONT.publicationYear: "year",
         }
-
         for prop, key in prop_map.items():
             vals = list(g.objects(subj, prop))
             if vals:
@@ -77,27 +75,6 @@ def parse_ttl(path: Path) -> list[dict]:
         same_as = list(g.objects(subj, OWL.sameAs))
         if same_as:
             paper["sameAs"] = str(same_as[0])
-
-        # NER / acknowledged entities
-        acknowledged_entities = []
-        for entity in g.objects(subj, ONT.acknowledges):
-            entity_types = [str(t).split("/")[-1] for t in g.objects(entity, RDF.type)]
-            entity_names = list(g.objects(entity, ONT.name))
-
-            entity_label = str(entity_names[0]) if entity_names else str(entity).split("/")[-1]
-            entity_label = entity_label.strip()
-
-            # Basic filter to avoid obvious extraction noise from section headers.
-            if entity_label.upper() in {"ACKNOWLED", "ACKNOWLEDGEMENT", "ACKNOWLEDGEMENTS"}:
-                continue
-
-            acknowledged_entities.append({
-                "name": entity_label,
-                "type": entity_types[0] if entity_types else "ExtractedEntity",
-                "uri": str(entity),
-            })
-
-        paper["acknowledgedEntities"] = acknowledged_entities
 
         papers.append(paper)
 
@@ -109,16 +86,12 @@ def parse_ttl(path: Path) -> list[dict]:
 def load_similarity_matrices() -> dict[str, dict[str, dict[str, float]]]:
     """Load pre-computed similarity matrices (one per model)."""
     result = {}
-
     for model_key, info in SIM_MODELS.items():
         path = info["matrix"]
-
         if not path.exists():
             log.warning("Similarity matrix not found: %s", path)
             continue
-
         df = pd.read_csv(path, index_col=0)
-
         matrix = {}
         for paper_id in df.index:
             row = {}
@@ -126,10 +99,8 @@ def load_similarity_matrices() -> dict[str, dict[str, dict[str, float]]]:
                 if paper_id != other_id:
                     row[other_id] = round(float(df.loc[paper_id, other_id]), 4)
             matrix[paper_id] = row
-
         result[model_key] = matrix
         log.info("Loaded similarity matrix: %s (%d papers)", model_key, len(df))
-
     return result
 
 
@@ -145,16 +116,13 @@ def _parse_topic_csv(path: Path) -> tuple[list[dict], dict[str, int]]:
         df = pd.read_csv(path)
 
     topic_groups = df.groupby("topic_id").first().reset_index()
-
     summaries = []
     for _, row in topic_groups.iterrows():
         tid_str = str(row["topic_id"])
-
         try:
             numeric_id = int(tid_str.replace("T", "").replace("_outlier", "-1"))
         except ValueError:
             numeric_id = -1
-
         summaries.append({
             "id": numeric_id,
             "name": str(row.get("topic_label", tid_str)),
@@ -165,14 +133,11 @@ def _parse_topic_csv(path: Path) -> tuple[list[dict], dict[str, int]]:
     for _, row in df.iterrows():
         pid = str(row["paper_id"])
         tid_str = str(row["topic_id"])
-
         try:
             numeric_id = int(tid_str.replace("T", "").replace("_outlier", "-1"))
         except ValueError:
             numeric_id = -1
-
         score = float(row.get("confidence_score", 0))
-
         if pid not in primary or score > primary[pid][1]:
             primary[pid] = (numeric_id, score)
 
@@ -182,8 +147,7 @@ def _parse_topic_csv(path: Path) -> tuple[list[dict], dict[str, int]]:
 
 def load_all_topics() -> dict[str, tuple[list[dict], dict[str, int]]]:
     """Load topic assignments for every available method.
-    Returns {method_name: (summaries, primary_map)}.
-    """
+    Returns {method_name: (summaries, primary_map)}."""
     result = {}
 
     for method, path in TOPIC_MODELS.items():
@@ -203,7 +167,7 @@ def load_all_topics() -> dict[str, tuple[list[dict], dict[str, int]]]:
     return result
 
 
-# Build Cytoscape payload
+# Build Cytoscape payload 
 def build_graph_data(papers, sim_matrices, all_topics):
     default_model = "all-MiniLM-L6-v2"
     default_matrix = sim_matrices.get(default_model, {})
@@ -217,7 +181,6 @@ def build_graph_data(papers, sim_matrices, all_topics):
     for p in papers:
         pid = p.get("paperId", "")
         abstract = p.get("abstract", "")
-
         nodes.append({"data": {
             "id": pid,
             "label": pid,
@@ -227,23 +190,18 @@ def build_graph_data(papers, sim_matrices, all_topics):
             "abstract": abstract[:300] + ("..." if len(abstract) > 300 else ""),
             "fullAbstract": abstract,
             "sameAs": p.get("sameAs", ""),
-            "acknowledgedEntities": p.get("acknowledgedEntities", []),
             "type": "Paper",
             "topicId": default_primary.get(pid, -1),
         }})
 
     edges = []
     seen = set()
-
     for src, row in default_matrix.items():
         for tgt, score in row.items():
             pair = tuple(sorted([src, tgt]))
-
             if pair in seen:
                 continue
-
             seen.add(pair)
-
             if score >= SIMILARITY_THRESHOLD:
                 edges.append({"data": {
                     "id": f"sim_{src}_{tgt}",
@@ -255,7 +213,6 @@ def build_graph_data(papers, sim_matrices, all_topics):
 
     # Build per-method topic data for the frontend toggle
     topic_models = {}
-
     for method, (summaries, primary_map) in all_topics.items():
         topic_models[method] = {
             "summaries": summaries,
@@ -277,7 +234,7 @@ def build_graph_data(papers, sim_matrices, all_topics):
     }
 
 
-# Global payload (loaded once)
+# Global payload (loaded once) 
 GRAPH_PAYLOAD: dict = {}
 
 
@@ -306,15 +263,13 @@ def init_data():
     all_topics = load_all_topics()
 
     GRAPH_PAYLOAD = build_graph_data(papers, sim_matrices, all_topics)
-    log.info(
-        "Graph payload ready: %d nodes, %d edges, topic methods: %s",
-        len(GRAPH_PAYLOAD["elements"]["nodes"]),
-        len(GRAPH_PAYLOAD["elements"]["edges"]),
-        list(all_topics.keys()),
-    )
+    log.info("Graph payload ready: %d nodes, %d edges, topic methods: %s",
+             len(GRAPH_PAYLOAD["elements"]["nodes"]),
+             len(GRAPH_PAYLOAD["elements"]["edges"]),
+             list(all_topics.keys()))
 
 
-# Routes
+# Routes 
 @app.route("/")
 def index():
     return render_template("kg_explorer.html")
@@ -325,7 +280,7 @@ def graph_data():
     return jsonify(GRAPH_PAYLOAD)
 
 
-# Main
+# Main 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 

@@ -161,27 +161,6 @@
     cursor: pointer; transition: all .2s;
   }
   .method-btn.active { background: var(--accent); color: #fff; }
-
-  .header-divider { width:1px; height:24px; background:var(--border); flex-shrink:0; }
-
-  .threshold-control {
-    display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-dim);
-  }
-  .threshold-slider {
-    -webkit-appearance:none; width:120px; height:4px; border-radius:2px;
-    background:var(--border); outline:none; cursor:pointer;
-  }
-  .threshold-slider::-webkit-slider-thumb {
-    -webkit-appearance:none; width:14px; height:14px; border-radius:50%;
-    background:var(--accent); cursor:pointer; border:2px solid var(--bg);
-  }
-  .threshold-slider::-moz-range-thumb {
-    width:14px; height:14px; border-radius:50%;
-    background:var(--accent); cursor:pointer; border:2px solid var(--bg);
-  }
-  .threshold-val {
-    color:var(--accent); font-weight:600; font-variant-numeric:tabular-nums; min-width:36px;
-  }
 </style>
 </head>
 <body>
@@ -193,16 +172,6 @@
       <span>Topics</span>
       <label class="toggle"><input type="checkbox" id="topicToggle"><span class="slider"></span></label>
     </div>
-    <div class="method-toggle" id="topicMethodToggle" style="display:none;"></div>
-    <div class="header-divider"></div>
-    <div class="method-toggle" id="simModelToggle" style="display:none;"></div>
-    <div class="threshold-control">
-      <span>Threshold</span>
-      <input type="range" class="threshold-slider" id="thresholdSlider"
-             min="0.50" max="1.00" step="0.01" value="0.75">
-      <span class="threshold-val" id="thresholdVal">0.75</span>
-    </div>
-    <div class="header-divider"></div>
     <div class="toggle-group">
       <span>Edge labels</span>
       <label class="toggle"><input type="checkbox" id="edgeLabelToggle"><span class="slider"></span></label>
@@ -225,6 +194,7 @@
       </div>
       <div class="panel-body" id="simBody" style="overflow-y:auto;">
         <button class="sim-btn" id="simBtn" disabled>Select a paper first</button>
+        <div class="method-toggle" id="methodToggle" style="display:none;"></div>
         <div class="sim-list" id="simList"></div>
       </div>
     </div>
@@ -260,31 +230,16 @@ let DATA = null;
 let cy = null;
 let topicsOn = false;
 let selectedNode = null;
-let currentSimModel = null;   // similarity model (MiniLM / E5)
-let currentTopicMethod = null; // topic method (bertopic / lda)
-let currentThreshold = 0.75;  // similarity threshold for edges
-
-// ── Helpers to read current topic data ───────────────────────────────────────
-function curTopicData() {
-  if (!currentTopicMethod || !DATA.topicModels) return null;
-  return DATA.topicModels[currentTopicMethod] || null;
-}
-function curSummaries() { const d = curTopicData(); return d ? d.summaries : []; }
-function curPrimary()   { const d = curTopicData(); return d ? d.primaryTopics : {}; }
+let currentModel = null;
 
 // ── Load ─────────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
     const resp = await fetch('/api/graph_data');
     DATA = await resp.json();
-    currentSimModel = DATA.metadata.defaultModel;
-    currentTopicMethod = DATA.metadata.defaultTopicMethod || null;
-    currentThreshold = DATA.metadata.similarityThreshold || 0.75;
-    document.getElementById('thresholdSlider').value = currentThreshold;
-    document.getElementById('thresholdVal').textContent = currentThreshold.toFixed(2);
+    currentModel = DATA.metadata.defaultModel;
     initGraph();
-    buildSimModelToggle();
-    buildTopicMethodToggle();
+    buildModelToggle();
   } catch (e) {
     document.getElementById('cy').innerHTML =
       `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-dim);flex-direction:column;gap:12px;">
@@ -312,7 +267,7 @@ function initGraph() {
         'transition-duration':'0.25s',
       }},
       { selector: 'edge', style: {
-        width:`mapData(score,${currentThreshold},1.0,1,5)`, 'line-color':DEFAULT_EDGE,
+        width:'mapData(score,0.75,1.0,1,5)', 'line-color':DEFAULT_EDGE,
         'curve-style':'bezier', opacity:0.5,
         'transition-property':'line-color,opacity,width', 'transition-duration':'0.25s',
       }},
@@ -336,8 +291,7 @@ function initGraph() {
 
   document.getElementById('statNodes').textContent = el.nodes.length;
   document.getElementById('statEdges').textContent = el.edges.length;
-  const nTopics = curSummaries().filter(t=>t.id!==-1).length;
-  document.getElementById('statTopics').textContent = nTopics;
+  document.getElementById('statTopics').textContent = DATA.topics.filter(t=>t.id!==-1).length;
 
   cy.on('tap','node', onNodeTap);
   cy.on('tap','edge', onEdgeTap);
@@ -345,101 +299,22 @@ function initGraph() {
   buildLegend();
 }
 
-// ── Similarity model toggle (MiniLM / E5) — header-level, controls graph edges
-function buildSimModelToggle() {
-  const container = document.getElementById('simModelToggle');
+// ── Build model toggle buttons from actual available models ──────────────────
+function buildModelToggle() {
+  const container = document.getElementById('methodToggle');
   container.innerHTML = '';
   const models = DATA.metadata.availableModels || [];
-  if (models.length < 2) return;
-  container.style.display = 'flex';
-  models.forEach(m => {
+  models.forEach((m, i) => {
     const btn = document.createElement('button');
-    btn.className = 'method-btn' + (m === currentSimModel ? ' active' : '');
+    btn.className = 'method-btn' + (m === currentModel ? ' active' : '');
     btn.dataset.model = m;
+    // Short display label
     btn.textContent = m.includes('e5') ? 'E5-small-v2' : 'MiniLM-L6-v2';
     btn.addEventListener('click', function() {
       container.querySelectorAll('.method-btn').forEach(b=>b.classList.remove('active'));
       this.classList.add('active');
-      currentSimModel = this.dataset.model;
-      rebuildEdges();
-    });
-    container.appendChild(btn);
-  });
-}
-
-// ── Rebuild edges from similarity matrix with current model + threshold ──────
-function rebuildEdges() {
-  // Remove all existing edges
-  cy.edges().remove();
-
-  // Get matrix for current model
-  const matrix = (DATA.similarityMatrices || {})[currentSimModel] || {};
-
-  // Add edges above threshold
-  const seen = new Set();
-  const newEdges = [];
-  for (const [src, row] of Object.entries(matrix)) {
-    for (const [tgt, score] of Object.entries(row)) {
-      const pair = [src, tgt].sort().join('|');
-      if (seen.has(pair)) continue;
-      seen.add(pair);
-      if (score >= currentThreshold) {
-        newEdges.push({ data: {
-          id: `sim_${src}_${tgt}`,
-          source: src,
-          target: tgt,
-          score: score,
-          type: 'SimilarityLink',
-        }});
-      }
-    }
-  }
-
-  cy.add(newEdges);
-
-  // Update edge width mapping to use dynamic threshold
-  const lo = currentThreshold;
-  cy.style()
-    .selector('edge')
-    .style({ 'width': `mapData(score,${lo},1.0,1,5)` })
-    .update();
-
-  // Re-apply topic colors if on
-  if (topicsOn) applyTopicColors();
-  else cy.edges().style({'line-color':DEFAULT_EDGE, opacity:0.5});
-
-  // Re-apply edge labels if on
-  const labelsOn = document.getElementById('edgeLabelToggle').checked;
-  if (labelsOn) cy.edges().style('label', e => e.data('score').toFixed(2));
-
-  // Update stats
-  document.getElementById('statEdges').textContent = newEdges.length;
-
-  // Refresh similarity list if showing
-  if (selectedNode && document.getElementById('simList').innerHTML) showSimilarities();
-}
-
-// ── Topic method toggle (BERTopic / LDA) ────────────────────────────────────
-function buildTopicMethodToggle() {
-  const container = document.getElementById('topicMethodToggle');
-  container.innerHTML = '';
-  const methods = DATA.metadata.availableTopicMethods || [];
-  if (methods.length < 2) return; // no toggle needed for 0-1 methods
-  methods.forEach(m => {
-    const btn = document.createElement('button');
-    btn.className = 'method-btn' + (m === currentTopicMethod ? ' active' : '');
-    btn.dataset.method = m;
-    btn.textContent = m === 'bertopic' ? 'BERTopic' : m === 'lda' ? 'LDA' : m;
-    btn.addEventListener('click', function() {
-      container.querySelectorAll('.method-btn').forEach(b=>b.classList.remove('active'));
-      this.classList.add('active');
-      currentTopicMethod = this.dataset.method;
-      // Re-apply topic colors if topics are on
-      if (topicsOn) applyTopicColors();
-      buildLegend();
-      const nTopics = curSummaries().filter(t=>t.id!==-1).length;
-      document.getElementById('statTopics').textContent = nTopics;
-      if (selectedNode) onNodeTap({target:selectedNode});
+      currentModel = this.dataset.model;
+      if (document.getElementById('simList').innerHTML) showSimilarities();
     });
     container.appendChild(btn);
   });
@@ -457,9 +332,6 @@ function onNodeTap(e) {
   nb.nodes().removeClass('dimmed');
 
   const d = node.data();
-  const primary = curPrimary();
-  const tid = primary[d.id] !== undefined ? primary[d.id] : d.topicId;
-
   let h = '<table class="prop-table">';
   h += row('ID', d.id);
   h += row('Type', tag(d.type, DEFAULT_NODE));
@@ -467,11 +339,10 @@ function onNodeTap(e) {
   h += row('Year', d.year);
   h += row('DOI', d.doi ? `<a href="https://doi.org/${d.doi}" target="_blank" style="color:var(--accent);">${d.doi}</a>` : '');
   if (topicsOn) {
-    const summaries = curSummaries();
-    const topic = summaries.find(t=>t.id===tid);
+    const tid = d.topicId;
+    const topic = DATA.topics.find(t=>t.id===tid);
     if (topic) {
       h += row('Topic', tag(topic.name, topicColor(tid)));
-      h += row('Method', `<span style="font-size:11px;color:var(--text-dim);">${currentTopicMethod}</span>`);
       h += row('Terms', `<span style="font-size:11px;color:var(--text-dim);">${topic.terms}</span>`);
     }
   }
@@ -484,6 +355,7 @@ function onNodeTap(e) {
   document.getElementById('simBtn').textContent = `Show similar papers to ${d.id}`;
   document.getElementById('simList').innerHTML = '';
   document.getElementById('simCount').textContent = '';
+  document.getElementById('methodToggle').style.display = 'flex';
 }
 
 // ── Edge tap ─────────────────────────────────────────────────────────────────
@@ -501,8 +373,7 @@ function onEdgeTap(e) {
   h += row('Source', d.source);
   h += row('Target', d.target);
   h += row('Score', `<span style="color:var(--green);font-weight:700;">${d.score.toFixed(4)}</span>`);
-  h += row('Threshold', currentThreshold.toFixed(2));
-  h += row('Model', `<span style="font-size:11px;color:var(--text-dim);">${currentSimModel}</span>`);
+  h += row('Threshold', DATA.metadata.similarityThreshold);
   h += '</table>';
   document.getElementById('propsBody').innerHTML = h;
   document.getElementById('simBtn').disabled = true;
@@ -516,7 +387,7 @@ function showSimilarities() {
   if (!selectedNode) return;
   const pid = selectedNode.data('id');
   const matrices = DATA.similarityMatrices || {};
-  const simRow = (matrices[currentSimModel] || {})[pid];
+  const simRow = (matrices[currentModel] || {})[pid];
   if (!simRow) { document.getElementById('simList').innerHTML = '<div class="empty-state">No similarity data for this model</div>'; return; }
 
   let pairs = Object.entries(simRow).map(([id,score])=>({id,score})).sort((a,b)=>b.score-a.score);
@@ -526,7 +397,7 @@ function showSimilarities() {
     const pct = Math.max(0,Math.min(100,((p.score-0.3)/0.7)*100));
     const nd = DATA.elements.nodes.find(n=>n.data.id===p.id);
     const title = nd ? nd.data.title : p.id;
-    const above = p.score >= currentThreshold;
+    const above = p.score >= DATA.metadata.similarityThreshold;
     html += `<div class="sim-item" onclick="highlightSimPair('${pid}','${p.id}')" title="${title}">
       <span class="rank">${i+1}</span>
       <span class="paper-label">${p.id} — ${title}</span>
@@ -535,7 +406,7 @@ function showSimilarities() {
     </div>`;
   });
   list.innerHTML = html;
-  document.getElementById('simCount').textContent = `${pairs.length} papers · ${currentSimModel}`;
+  document.getElementById('simCount').textContent = `${pairs.length} papers · ${currentModel}`;
 }
 
 function highlightSimPair(src, tgt) {
@@ -559,36 +430,25 @@ function clearSelection() {
   document.getElementById('simBtn').textContent = 'Select a paper first';
   document.getElementById('simList').innerHTML = '';
   document.getElementById('simCount').textContent = '';
-}
-
-// ── Apply topic colors using current method ─────────────────────────────────
-function applyTopicColors() {
-  const primary = curPrimary();
-  cy.nodes().forEach(n => {
-    const tid = primary[n.data('id')] !== undefined ? primary[n.data('id')] : -1;
-    n.style('background-color', topicColor(tid));
-  });
-  cy.edges().forEach(e => {
-    const st = primary[e.data('source')] ?? -1;
-    const tt = primary[e.data('target')] ?? -1;
-    if(st===tt&&st!==-1){ e.style({'line-color':topicColor(st),opacity:0.7}); }
-    else { e.style({'line-color':DEFAULT_EDGE,opacity:0.3}); }
-  });
+  document.getElementById('methodToggle').style.display = 'none';
 }
 
 // ── Topic toggle ─────────────────────────────────────────────────────────────
 document.getElementById('topicToggle').addEventListener('change', function() {
   topicsOn = this.checked;
-  const tmToggle = document.getElementById('topicMethodToggle');
   if (topicsOn) {
-    applyTopicColors();
+    cy.nodes().forEach(n => n.style('background-color', topicColor(n.data('topicId'))));
+    cy.edges().forEach(e => {
+      const st = cy.getElementById(e.data('source')).data('topicId');
+      const tt = cy.getElementById(e.data('target')).data('topicId');
+      if(st===tt&&st!==-1){ e.style({'line-color':topicColor(st),opacity:0.7}); }
+      else { e.style({'line-color':DEFAULT_EDGE,opacity:0.3}); }
+    });
     document.getElementById('legend').classList.add('visible');
-    tmToggle.style.display = 'flex';
   } else {
     cy.nodes().style('background-color', DEFAULT_NODE);
     cy.edges().style({'line-color':DEFAULT_EDGE,opacity:0.5});
     document.getElementById('legend').classList.remove('visible');
-    tmToggle.style.display = 'none';
   }
   if(selectedNode) onNodeTap({target:selectedNode});
 });
@@ -599,15 +459,9 @@ document.getElementById('edgeLabelToggle').addEventListener('change', function()
 
 document.getElementById('simBtn').addEventListener('click', showSimilarities);
 
-document.getElementById('thresholdSlider').addEventListener('input', function() {
-  currentThreshold = parseFloat(this.value);
-  document.getElementById('thresholdVal').textContent = currentThreshold.toFixed(2);
-  if (cy) rebuildEdges();
-});
-
 function buildLegend() {
   let html = '';
-  curSummaries().forEach(t => {
+  DATA.topics.forEach(t => {
     html += `<div class="legend-item"><div class="legend-dot" style="background:${topicColor(t.id)};"></div><div class="legend-label">${t.name}</div></div>`;
   });
   document.getElementById('legendItems').innerHTML = html;
