@@ -244,11 +244,6 @@
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "ACKNOWLED"^^xsd:string .
 
-<http://kg.sports-injuries.org/resource/entity/organization/Atlantique> a sio:Organization ;
-    sio:confidenceScore "0.8897"^^xsd:float ;
-    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
-    sio:name "Atlantique"^^xsd:string .
-
 <http://kg.sports-injuries.org/resource/entity/organization/Augustus_C__Long_Health_Sciences_Library> a sio:Organization ;
     sio:confidenceScore "0.8663"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
@@ -260,7 +255,7 @@
     sio:name "BEP"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/BP_802> a sio:Organization ;
-    sio:confidenceScore "0.7131"^^xsd:float ;
+    sio:confidenceScore "0.7225"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "BP 802"^^xsd:string .
 
@@ -284,33 +279,38 @@
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Department of Orthopaedics and Trauma Surgery"^^xsd:string .
 
+<http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopedic_Surgery> a sio:Organization ;
+    sio:confidenceScore "0.9982"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Department of Orthopedic Surgery"^^xsd:string .
+
 <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Sport_and_Exercise_Sciences> a sio:Organization ;
     sio:confidenceScore "0.9976"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Department of Sport and Exercise Sciences"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Faculty_of_Physical_Education_and_Physiotherapy> a sio:Organization ;
-    sio:confidenceScore "0.9928"^^xsd:float ;
+    sio:confidenceScore "0.9946"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Faculty of Physical Education and Physiotherapy"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/French_Handball_Federation> a sio:Organization ;
-    sio:confidenceScore "0.9926"^^xsd:float ;
+    sio:confidenceScore "0.9933"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "French Handball Federation"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/French_Society_of_Sports_Physical_Therapist> a sio:Organization ;
-    sio:confidenceScore "0.9969"^^xsd:float ;
+    sio:confidenceScore "0.9972"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "French Society of Sports Physical Therapist"^^xsd:string .
 
-<http://kg.sports-injuries.org/resource/entity/organization/Hospital> a sio:Organization ;
-    sio:confidenceScore "0.7998"^^xsd:float ;
+<http://kg.sports-injuries.org/resource/entity/organization/Hospital_for_Special_Surgery> a sio:Organization ;
+    sio:confidenceScore "0.8485"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
-    sio:name "Hospital"^^xsd:string .
+    sio:name "Hospital for Special Surgery"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Human_Physiology_and_Sports_Physiotherapy_Research_Group> a sio:Organization ;
-    sio:confidenceScore "0.9977"^^xsd:float ;
+    sio:confidenceScore "0.9979"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Human Physiology and Sports Physiotherapy Research Group"^^xsd:string .
 
@@ -320,12 +320,12 @@
     sio:name "KNVB"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/LIBM> a sio:Organization ;
-    sio:confidenceScore "0.9948"^^xsd:float ;
+    sio:confidenceScore "0.9954"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "LIBM"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/La_Tour_Hospital> a sio:Organization ;
-    sio:confidenceScore "0.9887"^^xsd:float ;
+    sio:confidenceScore "0.9886"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "La Tour Hospital"^^xsd:string .
 
@@ -354,13 +354,18 @@
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Manchester Metropolitan University"^^xsd:string .
 
+<http://kg.sports-injuries.org/resource/entity/organization/Mayo_Clinic_Florida> a sio:Organization ;
+    sio:confidenceScore "0.9862"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Mayo Clinic Florida"^^xsd:string .
+
 <http://kg.sports-injuries.org/resource/entity/organization/Metropolitan_University> a sio:Organization ;
     sio:confidenceScore "0.9977"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Metropolitan University"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Motion_Analysis_Lab> a sio:Organization ;
-    sio:confidenceScore "0.9966"^^xsd:float ;
+    sio:confidenceScore "0.9977"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Motion Analysis Lab"^^xsd:string .
 
@@ -375,12 +380,12 @@
     sio:name "North Sichuan Medical College"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Physiotherapy_Department> a sio:Organization ;
-    sio:confidenceScore "0.9391"^^xsd:float ;
+    sio:confidenceScore "0.8718"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Physiotherapy Department"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Pie> a sio:Organization ;
-    sio:confidenceScore "0.9528"^^xsd:float ;
+    sio:confidenceScore "0.9883"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Pie"^^xsd:string .
 
@@ -410,27 +415,27 @@
     sio:name "Royal Dutch Football Association"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/SARL_Whergo> a sio:Organization ;
-    sio:confidenceScore "0.9711"^^xsd:float ;
+    sio:confidenceScore "0.9789"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "SARL Whergo"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/SFMKS_Lab> a sio:Organization ;
-    sio:confidenceScore "0.9962"^^xsd:float ;
+    sio:confidenceScore "0.9967"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "SFMKS Lab"^^xsd:string .
 
-<http://kg.sports-injuries.org/resource/entity/organization/Sant____> a sio:Organization ;
-    sio:confidenceScore "0.8996"^^xsd:float ;
+<http://kg.sports-injuries.org/resource/entity/organization/Sant__Atlantique> a sio:Organization ;
+    sio:confidenceScore "0.998"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
-    sio:name "Sant & #"^^xsd:string .
+    sio:name "Santé Atlantique"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Mont_-_Blanc_University> a sio:Organization ;
-    sio:confidenceScore "0.9817"^^xsd:float ;
+    sio:confidenceScore "0.9815"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Savoie Mont - Blanc University"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Technolac> a sio:Organization ;
-    sio:confidenceScore "0.995"^^xsd:float ;
+    sio:confidenceScore "0.9954"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Savoie Technolac"^^xsd:string .
 
@@ -449,18 +454,33 @@
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Shanghai Pujiang"^^xsd:string .
 
+<http://kg.sports-injuries.org/resource/entity/organization/Special> a sio:Organization ;
+    sio:confidenceScore "0.7897"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Special"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Sports_Medicine_Institute> a sio:Organization ;
+    sio:confidenceScore "0.9162"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Sports Medicine Institute"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Sports_Rehabilitation___am> a sio:Organization ;
+    sio:confidenceScore "0.9136"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Sports Rehabilitation & am"^^xsd:string .
+
 <http://kg.sports-injuries.org/resource/entity/organization/Studio_Sterkenburg> a sio:Organization ;
     sio:confidenceScore "0.9947"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Studio Sterkenburg"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Swiss_Olympic_Medical_Center> a sio:Organization ;
-    sio:confidenceScore "0.8075"^^xsd:float ;
+    sio:confidenceScore "0.7646"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Swiss Olympic Medical Center"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Taiwan_Ministry_of_Education> a sio:Organization ;
-    sio:confidenceScore "0.9879"^^xsd:float ;
+    sio:confidenceScore "0.988"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Taiwan Ministry of Education"^^xsd:string .
 
@@ -480,17 +500,17 @@
     sio:name "University of Salford"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Vrije_Universiteit_Brussel> a sio:Organization ;
-    sio:confidenceScore "0.9394"^^xsd:float ;
+    sio:confidenceScore "0.9685"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Vrije Universiteit Brussel"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/__d_Cheville_Nantes_Atlantique> a sio:Organization ;
-    sio:confidenceScore "0.9305"^^xsd:float ;
+    sio:confidenceScore "0.9886"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "##d Cheville Nantes Atlantique"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/__linique_du_Sport_Paris> a sio:Organization ;
-    sio:confidenceScore "0.9626"^^xsd:float ;
+    sio:confidenceScore "0.9738"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "##linique du Sport Paris"^^xsd:string .
 
@@ -525,7 +545,7 @@
     sio:name "##ee de Jong"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/person/__ippert> a sio:Person ;
-    sio:confidenceScore "0.8834"^^xsd:float ;
+    sio:confidenceScore "0.9245"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "##ippert"^^xsd:string .
 
@@ -1237,14 +1257,20 @@
     sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
+<http://kg.sports-injuries.org/resource/entity/organization/Hospital> a sio:Organization ;
+    sio:confidenceScore "0.7998"^^xsd:float,
+        "0.9088"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Hospital"^^xsd:string .
+
 <http://kg.sports-injuries.org/resource/entity/organization/Inter_-_University_Laboratory_of_Human_Movement_Biology> a sio:Organization ;
     sio:confidenceScore "0.9874"^^xsd:float,
-        "0.9978"^^xsd:float ;
+        "0.9979"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Inter - University Laboratory of Human Movement Biology"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Projekt_DEAL> a sio:Organization ;
-    sio:confidenceScore "0.9763"^^xsd:float,
+    sio:confidenceScore "0.9797"^^xsd:float,
         "0.9938"^^xsd:float ;
     sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
     sio:name "Projekt DEAL"^^xsd:string .
@@ -1311,6 +1337,10 @@
 
 <http://kg.sports-injuries.org/resource/paper/P23> a sio:Paper ;
     sio:abstractText "Management of meniscal injuries in the elite athlete is a difficult problem secondary to the high demands of athletic competition, the need for a timely return to sport, and the desire to maximize performance over time. The purpose of this review is to provide an up-to-date summary on the current literature and trends regarding the management of meniscus injuries with a special consideration for elite athletes. Historically, partial meniscectomy has been the primary treatment option for meniscus injuries. However, in recent years there has been an increased emphasis on meniscus preservation due to the increased risk of cartilage degeneration over time. Moreover, while partial meniscectomy still provides a quicker return to sport, recent literature has demonstrated similar rates of RTS and return to pre-injury levels between partial meniscectomy and meniscus repair. In the setting of symptomatic meniscal deficiency, meniscus allograft transplantation has become an increasingly utilized salvage procedure with promising yet variable outcomes on the ability to withstand elite competition. Currently, there is no uniform approach to treating meniscal injuries in elite athletes. Therefore, an individualized approach is required with consideration of the meniscus tear type, location, concomitant injuries, athlete expectations, rehabilitation timeline, and desire to prevent or delay knee osteoarthritis. In athletes with anatomically repairable tears, meniscus repair should be performed given the ability to restore native anatomy, provide high rates of RTS, and mitigate long-term chondral damage. However, partial meniscectomy can be indicated for unrepairable tears."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopedic_Surgery>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Hospital>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Mayo_Clinic_Florida>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Special> ;
     sio:doi "10.1007/s12178-024-09907-w"^^xsd:string ;
     sio:externalKeyword "610"^^xsd:string,
         "617"^^xsd:string,
@@ -1336,8 +1366,7 @@
 
 <http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
     sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
-    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Atlantique>,
-        <http://kg.sports-injuries.org/resource/entity/organization/BP_802>,
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/BP_802>,
         <http://kg.sports-injuries.org/resource/entity/organization/Faculty_of_Physical_Education_and_Physiotherapy>,
         <http://kg.sports-injuries.org/resource/entity/organization/French_Handball_Federation>,
         <http://kg.sports-injuries.org/resource/entity/organization/French_Society_of_Sports_Physical_Therapist>,
@@ -1350,7 +1379,7 @@
         <http://kg.sports-injuries.org/resource/entity/organization/Pie>,
         <http://kg.sports-injuries.org/resource/entity/organization/SARL_Whergo>,
         <http://kg.sports-injuries.org/resource/entity/organization/SFMKS_Lab>,
-        <http://kg.sports-injuries.org/resource/entity/organization/Sant____>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Sant__Atlantique>,
         <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Mont_-_Blanc_University>,
         <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Technolac>,
         <http://kg.sports-injuries.org/resource/entity/organization/Swiss_Olympic_Medical_Center>,
@@ -1393,6 +1422,9 @@
 
 <http://kg.sports-injuries.org/resource/paper/P24> a sio:Paper ;
     sio:abstractText "Posterior cruciate ligament injuries can be treated conservatively with a structured rehabilitation program or with surgical reconstruction. Treatment algorithms are based on a variety of factors including the patient's presentation, physical exam, and desired level of activity. The goal is to return the patient to their athletic pursuits with a stable and pain-free knee. Return to play and activities should be individualized based on the patient's injury and progression through rehabilitation. This article provides a review of the current treatments for posterior cruciate ligament injuries and the respective rehabilitation protocols, outcomes after each treatment option, and specific return to play criteria. Current research shows excellent outcomes and return to play with conservative treatment of isolated posterior cruciate ligament injuries. Return to play algorithms stress the importance of quadriceps strengthening throughout the recovery process and emphasize inclusion of plyometrics and sport-specific training. Rehabilitation plays a critical role in the outcome after posterior cruciate ligament injury and the ability to return to athletics. The primary focus of post-injury or post-operative rehabilitation is to restore function, as it relates to range of motion, strength, and proprioception, while mitigating swelling and pain. The patients' desired sport and level of play dictate return to play timelines. The literature supports the use of non-operative management of isolated PCL injuries in athletes and non-athletes with excellent functional and patient-reported outcomes."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Hospital_for_Special_Surgery>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Sports_Medicine_Institute>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Sports_Rehabilitation___am> ;
     sio:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
