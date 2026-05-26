@@ -1,0 +1,68 @@
+paper_id,entity_text,entity_type,normalized_name,confidence_score,model_used,source_section
+P06,Department of Orthopaedics,ORGANIZATION,Department of Orthopaedics,0.9975,dslim/bert-base-NER,acknowledgements
+P06,Lanzhou University Second,ORGANIZATION,Lanzhou University Second,0.8071,dslim/bert-base-NER,acknowledgements
+P06,Hospital,ORGANIZATION,Hospital,0.7998,dslim/bert-base-NER,acknowledgements
+P06,Nanchong Central Hospital,ORGANIZATION,Nanchong Central Hospital,0.9742,dslim/bert-base-NER,acknowledgements
+P06,Second Clinical Institute of North Sichuan Medical College,ORGANIZATION,Second Clinical Institute of North Sichuan Medical College,0.8322,dslim/bert-base-NER,acknowledgements
+P06,North Sichuan Medical College,ORGANIZATION,North Sichuan Medical College,0.8904,dslim/bert-base-NER,acknowledgements
+P07,Projekt DEAL,ORGANIZATION,Projekt DEAL,0.9938,dslim/bert-base-NER,acknowledgements
+P09,Qatar National Library,ORGANIZATION,Qatar National Library,0.9989,dslim/bert-base-NER,acknowledgements
+P10,##ippert,PERSON,##ippert,0.8834,dslim/bert-base-NER,acknowledgements
+P10,Taiwan Ministry of Education,ORGANIZATION,Taiwan Ministry of Education,0.9879,dslim/bert-base-NER,acknowledgements
+P10,Projekt DEAL,ORGANIZATION,Projekt DEAL,0.9763,dslim/bert-base-NER,acknowledgements
+P11,French Handball Federation,ORGANIZATION,French Handball Federation,0.9926,dslim/bert-base-NER,acknowledgements
+P11,French Society of Sports Physical Therapist,ORGANIZATION,French Society of Sports Physical Therapist,0.9969,dslim/bert-base-NER,acknowledgements
+P11,SFMKS Lab,ORGANIZATION,SFMKS Lab,0.9962,dslim/bert-base-NER,acknowledgements
+P11,Inter - University Laboratory of Human Movement Biology,ORGANIZATION,Inter - University Laboratory of Human Movement Biology,0.9978,dslim/bert-base-NER,acknowledgements
+P11,LIBM,ORGANIZATION,LIBM,0.9948,dslim/bert-base-NER,acknowledgements
+P11,Savoie Mont - Blanc University,ORGANIZATION,Savoie Mont - Blanc University,0.9817,dslim/bert-base-NER,acknowledgements
+P11,##linique du Sport Paris,ORGANIZATION,##linique du Sport Paris,0.9626,dslim/bert-base-NER,acknowledgements
+P11,SARL Whergo,ORGANIZATION,SARL Whergo,0.9711,dslim/bert-base-NER,acknowledgements
+P11,Savoie Technolac,ORGANIZATION,Savoie Technolac,0.995,dslim/bert-base-NER,acknowledgements
+P11,BP 802,ORGANIZATION,BP 802,0.7131,dslim/bert-base-NER,acknowledgements
+P11,Human Physiology and Sports Physiotherapy Research Group,ORGANIZATION,Human Physiology and Sports Physiotherapy Research Group,0.9977,dslim/bert-base-NER,acknowledgements
+P11,Faculty of Physical Education and Physiotherapy,ORGANIZATION,Faculty of Physical Education and Physiotherapy,0.9928,dslim/bert-base-NER,acknowledgements
+P11,Vrije Universiteit Brussel,ORGANIZATION,Vrije Universiteit Brussel,0.9394,dslim/bert-base-NER,acknowledgements
+P11,Sant & #,ORGANIZATION,Sant & #,0.8996,dslim/bert-base-NER,acknowledgements
+P11,Atlantique,ORGANIZATION,Atlantique,0.8897,dslim/bert-base-NER,acknowledgements
+P11,Pie,ORGANIZATION,Pie,0.9528,dslim/bert-base-NER,acknowledgements
+P11,##d Cheville Nantes Atlantique,ORGANIZATION,##d Cheville Nantes Atlantique,0.9305,dslim/bert-base-NER,acknowledgements
+P11,Motion Analysis Lab,ORGANIZATION,Motion Analysis Lab,0.9966,dslim/bert-base-NER,acknowledgements
+P11,Physiotherapy Department,ORGANIZATION,Physiotherapy Department,0.9391,dslim/bert-base-NER,acknowledgements
+P11,La Tour Hospital,ORGANIZATION,La Tour Hospital,0.9887,dslim/bert-base-NER,acknowledgements
+P11,Swiss Olympic Medical Center,ORGANIZATION,Swiss Olympic Medical Center,0.8075,dslim/bert-base-NER,acknowledgements
+P13,School of Health and Society,ORGANIZATION,School of Health and Society,0.9982,dslim/bert-base-NER,acknowledgements
+P13,University of Salford,ORGANIZATION,University of Salford,0.9973,dslim/bert-base-NER,acknowledgements
+P13,Department of Sport and Exercise Sciences,ORGANIZATION,Department of Sport and Exercise Sciences,0.9976,dslim/bert-base-NER,acknowledgements
+P13,Manchester Metropolitan University,ORGANIZATION,Manchester Metropolitan University,0.9981,dslim/bert-base-NER,acknowledgements
+P13,Manchester Institute of Sport,ORGANIZATION,Manchester Institute of Sport,0.9983,dslim/bert-base-NER,acknowledgements
+P13,Metropolitan University,ORGANIZATION,Metropolitan University,0.9977,dslim/bert-base-NER,acknowledgements
+P13,University Jean Monnet Saint - Etienne,ORGANIZATION,University Jean Monnet Saint - Etienne,0.9372,dslim/bert-base-NER,acknowledgements
+P13,Lyon 1,ORGANIZATION,Lyon 1,0.9518,dslim/bert-base-NER,acknowledgements
+P13,University Savoie Mont - Blanc,ORGANIZATION,University Savoie Mont - Blanc,0.9888,dslim/bert-base-NER,acknowledgements
+P13,Inter - University Laboratory of Human Movement Biology,ORGANIZATION,Inter - University Laboratory of Human Movement Biology,0.9874,dslim/bert-base-NER,acknowledgements
+P18,Department of Orthopaedics and Trauma Surgery,ORGANIZATION,Department of Orthopaedics and Trauma Surgery,0.9948,dslim/bert-base-NER,acknowledgements
+P18,##rauma Training Center,ORGANIZATION,##rauma Training Center,0.907,dslim/bert-base-NER,acknowledgements
+P18,Department of Orthopaedic Surgery,ORGANIZATION,Department of Orthopaedic Surgery,0.9938,dslim/bert-base-NER,acknowledgements
+P18,Mailman School of Public Health,ORGANIZATION,Mailman School of Public Health,0.9746,dslim/bert-base-NER,acknowledgements
+P18,Augustus C. Long Health Sciences Library,ORGANIZATION,Augustus C. Long Health Sciences Library,0.8663,dslim/bert-base-NER,acknowledgements
+P21,CAUL,ORGANIZATION,CAUL,0.9649,dslim/bert-base-NER,acknowledgements
+P22,Ho,PERSON,Ho,0.9992,dslim/bert-base-NER,acknowledgements
+P22,##ssam Tharwat Ali,PERSON,##ssam Tharwat Ali,0.8781,dslim/bert-base-NER,acknowledgements
+P22,Research Yard,ORGANIZATION,Research Yard,0.9968,dslim/bert-base-NER,acknowledgements
+P22,Research and Academic Services,ORGANIZATION,Research and Academic Services,0.9984,dslim/bert-base-NER,acknowledgements
+P27,Shanghai Pujiang,ORGANIZATION,Shanghai Pujiang,0.8,dslim/bert-base-NER,acknowledgements
+P27,15PJ1407600,PROJECT,15PJ1407600,1.0,regex,acknowledgements
+P29,ACKNOWLED,ORGANIZATION,ACKNOWLED,0.8188,dslim/bert-base-NER,acknowledgements
+P29,Royal Dutch Football Association,ORGANIZATION,Royal Dutch Football Association,0.9988,dslim/bert-base-NER,acknowledgements
+P29,KNVB,ORGANIZATION,KNVB,0.9979,dslim/bert-base-NER,acknowledgements
+P29,Studio Sterkenburg,ORGANIZATION,Studio Sterkenburg,0.9947,dslim/bert-base-NER,acknowledgements
+P29,Richard Sterkenburg,ORGANIZATION,Richard Sterkenburg,0.9457,dslim/bert-base-NER,acknowledgements
+P29,BEP,ORGANIZATION,BEP,0.961,dslim/bert-base-NER,acknowledgements
+P29,Sven,PERSON,Sven,0.9938,dslim/bert-base-NER,acknowledgements
+P29,##rak,PERSON,##rak,0.8783,dslim/bert-base-NER,acknowledgements
+P29,Ju,PERSON,Ju,0.9989,dslim/bert-base-NER,acknowledgements
+P29,##r Brauers,PERSON,##r Brauers,0.9978,dslim/bert-base-NER,acknowledgements
+P29,##sm,PERSON,##sm,0.9908,dslim/bert-base-NER,acknowledgements
+P29,##ee de Jong,PERSON,##ee de Jong,0.9967,dslim/bert-base-NER,acknowledgements
+P29,Rick Nevels,PERSON,Rick Nevels,0.9986,dslim/bert-base-NER,acknowledgements
