@@ -2,10 +2,10 @@
         ABSTRACT SIMILARITY — RUN INFO
 ============================================================
 
-Fecha y hora de ejecución : 2026-05-25 23:17:14
+Fecha y hora de ejecución : 2026-05-26 19:04:50
 Modelo usado              : sentence-transformers/all-MiniLM-L6-v2
-Archivo de entrada        : /home/juanma/IA-Trabajo-Grupo/open-science-sports-injuries-kg/data/metadata/papers.csv
-Directorio de salida      : /home/juanma/IA-Trabajo-Grupo/open-science-sports-injuries-kg/results/similarity
+Archivo de entrada        : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\data\metadata\papers.csv
+Directorio de salida      : C:\Users\Mendo\Desktop\Mis Documentos\UPM\4º\Artificial Intelligence And Open Science\open-science-sports-injuries-kg\results\similarity
 Papers procesados (válidos): 30
 Top-K                     : 3
 

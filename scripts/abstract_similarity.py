@@ -29,10 +29,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =============================================================================
 
 # Ruta al CSV de entrada (con columnas: paper_id, title, abstract)
-INPUT_CSV = Path("data/metadata/papers.csv")
+INPUT_CSV = Path("../data/metadata/papers.csv")
 
 # Directorio de salida (se crea automáticamente si no existe)
-OUTPUT_DIR = Path("results/similarity")
+OUTPUT_DIR = Path("../results/similarity")
 
 # Número de papers similares a recuperar por cada paper (excluye autocomparación)
 TOP_K = 3
@@ -115,10 +115,10 @@ def prepare_texts(df: pd.DataFrame, model_name: str) -> list[str]:
 
     if is_e5:
         prefix = "passage: "
-        print(f"[INFO] Modelo E5 detectado → aplicando prefijo '{prefix}' a todos los abstracts.")
+        print(f"[INFO] Modelo E5 detectado -> aplicando prefijo '{prefix}' a todos los abstracts.")
         texts = [prefix + abstract for abstract in df["abstract"].tolist()]
     else:
-        print(f"[INFO] Modelo estándar → sin prefijo en los abstracts.")
+        print(f"[INFO] Modelo estándar -> sin prefijo en los abstracts.")
         texts = df["abstract"].tolist()
 
     return texts
@@ -278,6 +278,36 @@ def save_outputs(
         f.write(f"  - {top_k_path.name}\n")
         f.write(f"  - {run_info_path.name}\n")
     print(f"[OK] Log de ejecución guardado en: {run_info_path}")
+
+    # 4. Generar similarities.csv para la integración en RDF (build_rdf.py)
+    # Se filtran parejas con similitud coseno >= 0.75 (umbral ontológico definido)
+    sim_threshold = 0.6
+    processed_dir = Path("../data/processed")
+    processed_dir.mkdir(parents=True, exist_ok=True)
+    similarities_path = processed_dir / "similarities.csv"
+
+    sim_rows = []
+    n = len(df)
+    for i in range(n):
+        for j in range(i + 1, n):
+            score = float(sim_matrix[i, j])
+            if score >= sim_threshold:
+                sim_rows.append({
+                    "paper_id_source": df.loc[i, "paper_id"],
+                    "paper_id_target": df.loc[j, "paper_id"],
+                    "similarity_score": round(score, 6),
+                    "threshold": sim_threshold,
+                    "model_used": model_name
+                })
+
+    sim_df_processed = pd.DataFrame(sim_rows)
+    if sim_df_processed.empty:
+        sim_df_processed = pd.DataFrame(columns=["paper_id_source", "paper_id_target", "similarity_score", "threshold", "model_used"])
+
+    # Se guarda con sep=";" para alinearse estrictamente con build_rdf.py
+    sim_df_processed.to_csv(similarities_path, index=False, sep=";")
+    print(f"[OK] Fichero de integración en RDF guardado en: {similarities_path} (Parejas >= {sim_threshold}: {len(sim_rows)})")
+
 
 
 # =============================================================================

@@ -230,62 +230,24 @@
         "Review"^^xsd:string,
         "Sports injury"^^xsd:string,
         "Young Adult"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P10_P11> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> ;
     sio:paperId "P10"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "The epidemiology of chronic ankle instability with perceived ankle instability - a systematic review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3164001868> .
 
-<http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
-    sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
-    sio:doi "10.3389/fspor.2022.902886"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "GV557-1198.995"^^xsd:string,
-        "Sports"^^xsd:string,
-        "Sports and Active Living"^^xsd:string,
-        "ankle"^^xsd:string,
-        "instability"^^xsd:string,
-        "psychological readiness"^^xsd:string,
-        "return to sport (RTS)"^^xsd:string,
-        "review (article)"^^xsd:string,
-        "self-reported function"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> ;
-    sio:paperId "P11"^^xsd:string ;
-    sio:publicationYear 2022 ;
-    sio:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4281691142> .
-
 <http://kg.sports-injuries.org/resource/paper/P12> a sio:Paper ;
     sio:abstractText "Hamstring strain injury (HSI) may result in considerable impairment, activity limitation, and participation restriction, including time lost from competitive sports. This CPG includes sports-related overloading and overstretching injuries to myofascial or musculotendinous structures in any combination of the 3 hamstring muscles (the semitendinosus, semimembranosus, and biceps femoris). J Orthop Sports Phys Ther 2022;52(3):CPG1–CPG44. doi:10.2519/jospt.2022.0301"^^xsd:string ;
     sio:doi "10.2519/jospt.2022.0301"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P12_P13> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> ;
     sio:paperId "P12"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Hamstring Strain Injury in Athletes: Clinical Practice Guidelines Linked to the ICF"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4213258542> .
-
-<http://kg.sports-injuries.org/resource/paper/P13> a sio:Paper ;
-    sio:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
-    sio:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
-    sio:externalKeyword "0913 Mechanical Engineering"^^xsd:string,
-        "1106 Human Movement and Sports Sciences"^^xsd:string,
-        "1302 Curriculum and Pedagogy"^^xsd:string,
-        "Athletic Injuries"^^xsd:string,
-        "Biomechanical Phenomena"^^xsd:string,
-        "Current Opinion"^^xsd:string,
-        "Hamstring Muscles"^^xsd:string,
-        "Humans"^^xsd:string,
-        "Running"^^xsd:string,
-        "Sport Sciences"^^xsd:string,
-        "Sprains and Strains"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
-    sio:paperId "P13"^^xsd:string ;
-    sio:publicationYear 2024 ;
-    sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4386845470> .
 
 <http://kg.sports-injuries.org/resource/paper/P14> a sio:Paper ;
     sio:abstractText "»: Calf strain is a common condition. In high-performance athletes, calf strain contributes to a substantial absence from competition. »: Player age and history of a calf strain or other leg injury are the strongest risk factors for calf strain injury and reinjury. »: Although the diagnosis is often clinical, magnetic resonance imaging and ultrasound are valuable to confirm the location of the strain and the grade of injury. »: Nonoperative treatment is effective for most calf strain injuries. Operative management, although rarely indicated, may be appropriate for severe cases with grade-III rupture or complications. »: Further investigation is necessary to elucidate the benefits of blood flow restriction therapy, deep water running, lower-body positive pressure therapy, platelet-rich plasma, and stem cell therapy for calf strain rehabilitation."^^xsd:string ;
@@ -352,6 +314,7 @@
     sio:doi "10.2519/jospt.2024.0302"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P17_P20> ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> ;
     sio:paperId "P17"^^xsd:string ;
     sio:publicationYear 2024 ;
@@ -380,18 +343,6 @@
     sio:publicationYear 2023 ;
     sio:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4387859971> .
-
-<http://kg.sports-injuries.org/resource/paper/P20> a sio:Paper ;
-    sio:abstractText "The Orthopaedic Section of the American Physical Therapy Association (APTA) has an ongoing effort to create evidence-based practice guidelines for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization's International Classification of Functioning, Disability, and Health (ICF). The purpose of these revised clinical practice guidelines is to review recent peer-reviewed literature and make recommendations related to nonarthritic heel pain. J Orthop Sports Phys Ther 2023;53(12):CPG1–CPG39. doi:10.2519/jospt.2023.0303"^^xsd:string ;
-    sio:doi "10.2519/jospt.2023.0303"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
-    sio:paperId "P20"^^xsd:string ;
-    sio:publicationYear 2023 ;
-    sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W4389226948> .
 
 <http://kg.sports-injuries.org/resource/paper/P21> a sio:Paper ;
     sio:abstractText "Tibial bone stress injuries (BSIs) are common among long-distance runners. They have a high recurrence rate, and complexity emerges in the wider management and successful return to running. Following a tibial BSI, a critical component of complete rehabilitation is the successful return to running, and there is a lack of consistency or strong evidence to guide this process. The objectives of this review were to outline the criteria used in clinical decision-making prior to resuming running, and to establish evidence-based guidelines for the return to running process following a tibial BSI. Electronic databases including MEDLINE, CINAHL, Scopus, SPORTDiscus and AMED were searched for studies that stated criteria or provided guidelines on the objectives above. Fifty studies met the inclusion criteria and were included. Thirty-nine were reviews or clinical commentaries, three were retrospective cohort studies, two were randomised controlled trials, two were pilot studies, one was a prospective observational study, and three were case studies. Therefore, the recommendations that have been surmised are based on level IV evidence. Decisions on when an athlete should return to running should be shared between clinicians, coaches and the athlete. There are five important components to address prior to introducing running, which are: the resolution of bony tenderness, pain-free walking, evidence of radiological healing in high-risk BSIs, strength, functional and loading tests, and the identification of contributing factors. Effective return to running planning should address the athlete's risk profile and manage the risk by balancing the athlete's interests and reinjury prevention. An individualised graduated return to running programme should be initiated, often starting with walk-run intervals, progressing running distance ahead of speed and intensity, with symptom provocation a key consideration. Contributing factors to the initial injury should be addressed throughout the return to run process."^^xsd:string ;
@@ -573,44 +524,6 @@
     sio:title "Ankle Strength and Force Sense After a Progressive 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W1854658087> .
 
-<http://kg.sports-injuries.org/resource/paper/P29> a sio:Paper ;
-    sio:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
-    sio:doi "10.1111/sms.13353"^^xsd:string ;
-    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
-        "0302 clinical medicine"^^xsd:string,
-        "3. Good health"^^xsd:string,
-        "Adolescent"^^xsd:string,
-        "Adult"^^xsd:string,
-        "Athletes"^^xsd:string,
-        "ENDURANCE PERFORMANCE"^^xsd:string,
-        "Hamstring Muscles"^^xsd:string,
-        "Humans"^^xsd:string,
-        "JUMP"^^xsd:string,
-        "Leg Injuries"^^xsd:string,
-        "MECHANICS"^^xsd:string,
-        "MUSCLES"^^xsd:string,
-        "Male"^^xsd:string,
-        "Original Articles"^^xsd:string,
-        "PATTERNS"^^xsd:string,
-        "PROFESSIONAL FOOTBALL"^^xsd:string,
-        "Plyometric Exercise"^^xsd:string,
-        "RISK-FACTORS"^^xsd:string,
-        "SPORT"^^xsd:string,
-        "SWING PHASE"^^xsd:string,
-        "Soccer"^^xsd:string,
-        "Soft Tissue Injuries"^^xsd:string,
-        "Young Adult"^^xsd:string,
-        "bounding exercise"^^xsd:string,
-        "hamstring injuries"^^xsd:string,
-        "injury prevention"^^xsd:string,
-        "plyometric training"^^xsd:string,
-        "soccer"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> ;
-    sio:paperId "P29"^^xsd:string ;
-    sio:publicationYear 2018 ;
-    sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
-    owl:sameAs <https://semopenalex.org/work/W2904890641> .
-
 <http://kg.sports-injuries.org/resource/paper/P30> a sio:Paper ;
     sio:abstractText "CONTEXT: Predicting when an athlete can return to sport after muscle injury is a major concern. OBJECTIVE: To determine whether combining objective clinical and ultrasound findings at presentation accurately predicted time to sport resumption in athletes with muscle injuries. DESIGN: Cohort study. SETTING: Sports medicine clinic. PATIENTS OR OTHER PARTICIPANTS: A total of 93 consecutive patients, 87 male and 6 female, were seen over a 1-year period for sudden-onset muscle pain while engaging in a sporting activity within the last 5 days and inability to continue the training session or game. INTERVENTION(S): Standardized physical examination and sonogram. MAIN OUTCOME MEASURE(S): Statistical associations between clinical and sonographic features at presentation and time to sport resumption (<40 days or ≥ 40 days) were evaluated using multivariate models. Correlations between time to sport resumption predicted by a sports medicine specialist and actual time to sport resumption were evaluated using the Spearman rank correlation coefficient. RESULTS: The 93 patients had 95 injuries, caused by muscle contraction in 86 cases and impact in 9 cases. Only 7 injuries had normal sonogram findings. Late sport resumption was associated with 4 clinical criteria (bruising, tenderness to palpation, range-of-motion limitation compared with the other limb, and increased pain with isometric contraction during passive limb straightening) and 4 sonographic criteria (disorganized fibrous tissue, intramuscular hematoma, intermuscular hematoma, and power Doppler signal). The Spearman rank correlation coefficient between predicted and actual times was 0.669 (P < .0001) for mild exercise resumption and 0.804 (P < .0001) for full sport resumption. CONCLUSION: A combination of physical and sonographic data collected during the acute phase of sport-related muscle injury was effective in predicting time to sport resumption."^^xsd:string ;
     sio:doi "10.4085/1062-6050-46.5.500"^^xsd:string ;
@@ -659,6 +572,121 @@
     sio:publicationYear 2011 ;
     sio:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2109374215> .
+
+<http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
+    sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
+    sio:doi "10.3389/fspor.2022.902886"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "GV557-1198.995"^^xsd:string,
+        "Sports"^^xsd:string,
+        "Sports and Active Living"^^xsd:string,
+        "ankle"^^xsd:string,
+        "instability"^^xsd:string,
+        "psychological readiness"^^xsd:string,
+        "return to sport (RTS)"^^xsd:string,
+        "review (article)"^^xsd:string,
+        "self-reported function"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> ;
+    sio:paperId "P11"^^xsd:string ;
+    sio:publicationYear 2022 ;
+    sio:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4281691142> .
+
+<http://kg.sports-injuries.org/resource/paper/P13> a sio:Paper ;
+    sio:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
+    sio:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
+    sio:externalKeyword "0913 Mechanical Engineering"^^xsd:string,
+        "1106 Human Movement and Sports Sciences"^^xsd:string,
+        "1302 Curriculum and Pedagogy"^^xsd:string,
+        "Athletic Injuries"^^xsd:string,
+        "Biomechanical Phenomena"^^xsd:string,
+        "Current Opinion"^^xsd:string,
+        "Hamstring Muscles"^^xsd:string,
+        "Humans"^^xsd:string,
+        "Running"^^xsd:string,
+        "Sport Sciences"^^xsd:string,
+        "Sprains and Strains"^^xsd:string ;
+    sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P13_P29> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
+    sio:paperId "P13"^^xsd:string ;
+    sio:publicationYear 2024 ;
+    sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4386845470> .
+
+<http://kg.sports-injuries.org/resource/paper/P20> a sio:Paper ;
+    sio:abstractText "The Orthopaedic Section of the American Physical Therapy Association (APTA) has an ongoing effort to create evidence-based practice guidelines for orthopaedic physical therapy management of patients with musculoskeletal impairments described in the World Health Organization's International Classification of Functioning, Disability, and Health (ICF). The purpose of these revised clinical practice guidelines is to review recent peer-reviewed literature and make recommendations related to nonarthritic heel pain. J Orthop Sports Phys Ther 2023;53(12):CPG1–CPG39. doi:10.2519/jospt.2023.0303"^^xsd:string ;
+    sio:doi "10.2519/jospt.2023.0303"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
+    sio:paperId "P20"^^xsd:string ;
+    sio:publicationYear 2023 ;
+    sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W4389226948> .
+
+<http://kg.sports-injuries.org/resource/paper/P29> a sio:Paper ;
+    sio:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
+    sio:doi "10.1111/sms.13353"^^xsd:string ;
+    sio:externalKeyword "03 medical and health sciences"^^xsd:string,
+        "0302 clinical medicine"^^xsd:string,
+        "3. Good health"^^xsd:string,
+        "Adolescent"^^xsd:string,
+        "Adult"^^xsd:string,
+        "Athletes"^^xsd:string,
+        "ENDURANCE PERFORMANCE"^^xsd:string,
+        "Hamstring Muscles"^^xsd:string,
+        "Humans"^^xsd:string,
+        "JUMP"^^xsd:string,
+        "Leg Injuries"^^xsd:string,
+        "MECHANICS"^^xsd:string,
+        "MUSCLES"^^xsd:string,
+        "Male"^^xsd:string,
+        "Original Articles"^^xsd:string,
+        "PATTERNS"^^xsd:string,
+        "PROFESSIONAL FOOTBALL"^^xsd:string,
+        "Plyometric Exercise"^^xsd:string,
+        "RISK-FACTORS"^^xsd:string,
+        "SPORT"^^xsd:string,
+        "SWING PHASE"^^xsd:string,
+        "Soccer"^^xsd:string,
+        "Soft Tissue Injuries"^^xsd:string,
+        "Young Adult"^^xsd:string,
+        "bounding exercise"^^xsd:string,
+        "hamstring injuries"^^xsd:string,
+        "injury prevention"^^xsd:string,
+        "plyometric training"^^xsd:string,
+        "soccer"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> ;
+    sio:paperId "P29"^^xsd:string ;
+    sio:publicationYear 2018 ;
+    sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
+    owl:sameAs <https://semopenalex.org/work/W2904890641> .
+
+<http://kg.sports-injuries.org/resource/similarity/P10_P11> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P11> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.752022"^^xsd:float ;
+    sio:similarityThreshold "0.75"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P12_P13> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P13> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.786466"^^xsd:float ;
+    sio:similarityThreshold "0.75"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P13_P29> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P29> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.771141"^^xsd:float ;
+    sio:similarityThreshold "0.75"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/similarity/P17_P20> a sio:SimilarityLink ;
+    sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P20> ;
+    sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
+    sio:similarityScore "0.75886"^^xsd:float ;
+    sio:similarityThreshold "0.75"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
