@@ -1,0 +1,424 @@
+## ============================================================
+## PROV-O Provenance Trace — Sports Leg-Injury Scholarly KG
+## ============================================================
+##
+## This file records the full provenance of the research pipeline
+## using the W3C PROV Ontology (PROV-O).
+##
+## Vocabulary reference:
+##   https://www.w3.org/TR/prov-o/
+##
+## Each activity maps to one processing step described
+## in the project documentation.  Entities are the data artefacts
+## consumed and produced; agents are the people and software
+## responsible for each step.
+## ============================================================
+
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema:  <http://schema.org/> .
+@prefix :      <http://kg.sports-injuries.org/provenance/> .
+
+
+## ============================================================
+##  AGENTS
+## ============================================================
+
+:grupo_osai_rse  a  prov:Agent , prov:Person , foaf:Group ;
+    rdfs:label   "Grupo de estudiantes OSAI_RSE" ;
+    foaf:name    "Grupo de estudiantes OSAI_RSE" ;
+    dcterms:description
+        "Student team of the Open Science and AI course responsible for designing, executing and documenting the full pipeline." .
+
+:grobid  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "GROBID" ;
+    schema:version   "0.8.1" ;
+    schema:url       "https://github.com/kermitt2/grobid" ;
+    dcterms:description
+        "Machine-learning library for extracting structured data (TEI XML) from scholarly PDFs." .
+
+:semopenalex_sparql  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label   "SemOpenAlex SPARQL endpoint" ;
+    schema:url   "https://semopenalex.org/sparql" ;
+    dcterms:description
+        "SPARQL endpoint over the SemOpenAlex RDF dataset for bibliographic metadata retrieval." .
+
+:openaire_api  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label   "OpenAIRE Graph API" ;
+    schema:url   "https://graph.openaire.eu/" ;
+    dcterms:description
+        "REST API for enriching publications with keywords, funding, and linked research products." .
+
+:sentence_transformers  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "sentence-transformers (all-MiniLM-L6-v2)" ;
+    schema:version   "2.7+" ;
+    schema:url       "https://www.sbert.net/" ;
+    dcterms:description
+        "Library for computing dense sentence embeddings used for cosine-similarity computation." .
+
+:bertopic  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "BERTopic" ;
+    schema:version   "0.16+" ;
+    schema:url       "https://maartengr.github.io/BERTopic/" ;
+    dcterms:description
+        "Neural topic modeling library (UMAP + HDBSCAN + c-TF-IDF)." .
+
+:lda_sklearn  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "scikit-learn LatentDirichletAllocation" ;
+    schema:url       "https://scikit-learn.org/" ;
+    dcterms:description
+        "Classical LDA implementation used as alternative topic model." .
+
+:spacy_ner  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "spaCy NER pipeline" ;
+    schema:url       "https://spacy.io/" ;
+    dcterms:description
+        "Named Entity Recognition model applied to acknowledgement sections." .
+
+:ror_wikidata  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label   "ROR + Wikidata reconciliation" ;
+    dcterms:description
+        "Entity normalization against ROR (organizations) and Wikidata (cross-references) for persistent IDs." .
+
+:rdflib  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "rdflib" ;
+    schema:version   "7.0+" ;
+    schema:url       "https://rdflib.readthedocs.io/" ;
+    dcterms:description
+        "Python RDF library used to construct and serialise the Knowledge Graph in Turtle." .
+
+:ro_crate_py  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "ro-crate-py" ;
+    schema:url       "https://github.com/ResearchObject/ro-crate-py" ;
+    dcterms:description
+        "Library for packaging the experiment as an RO-Crate Research Object." .
+
+
+## ============================================================
+##  ENTITIES  
+## ============================================================
+
+## ---- E01 – Curated paper manifest --------------------------
+
+:manifest_csv  a  prov:Entity ;
+    rdfs:label    "manifest.csv" ;
+    prov:atLocation  "data/metadata/manifest.csv" ;
+    dcterms:description
+        "Curated list of 30 papers with DOIs, access URLs, body-part and injury annotations." ;
+    prov:wasAttributedTo  :grupo_osai_rse .
+
+## ---- E02 – PDF collection ----------------------------------
+
+:pdf_collection  a  prov:Entity ;
+    rdfs:label    "PDF collection (30 papers)" ;
+    prov:atLocation  "data/papers/" ;
+    dcterms:description
+        "Full-text PDFs downloaded from publisher sites / PMC following the manifest." ;
+    prov:wasDerivedFrom  :manifest_csv .
+
+## ---- E03 – SemOpenAlex bibliographic metadata --------------
+
+:openalex_metadata  a  prov:Entity ;
+    rdfs:label    "openalex_metadata.json" ;
+    dcterms:description
+        "Bibliographic metadata retrieved from SemOpenAlex: authors, affiliations, citations, venues, publication years." ;
+    prov:wasDerivedFrom  :manifest_csv .
+
+## ---- E04 – Enriched metadata (OpenAIRE) --------------------
+
+:enriched_metadata  a  prov:Entity ;
+    rdfs:label    "enriched_metadata.json" ;
+    dcterms:description
+        "Metadata enriched with OpenAIRE: keywords, funding information, linked datasets and software." ;
+    prov:wasDerivedFrom  :openalex_metadata .
+
+## ---- E05 – TEI XML files -----------------------------------
+
+:tei_xml_collection  a  prov:Entity ;
+    rdfs:label    "TEI XML collection (×30)" ;
+    prov:atLocation  "outputs/tei/" ;
+    dcterms:description
+        "Structured TEI XML files produced by GROBID from the PDFs." ;
+    prov:wasDerivedFrom  :pdf_collection .
+
+## ---- E06 – Extracted abstracts ------------------------------
+
+:abstracts  a  prov:Entity ;
+    rdfs:label    "abstracts (text)" ;
+    dcterms:description
+        "Plain-text abstracts extracted from the TEI XML via tei_utils.extract_abstract()." ;
+    prov:wasDerivedFrom  :tei_xml_collection .
+
+## ---- E07 – Extracted acknowledgements -----------------------
+
+:acknowledgements  a  prov:Entity ;
+    rdfs:label    "acknowledgements (text)" ;
+    dcterms:description
+        "Acknowledgement sections extracted from TEI XML for downstream NER." ;
+    prov:wasDerivedFrom  :tei_xml_collection .
+
+## ---- E08 – Sentence embeddings -----------------------------
+
+:embeddings  a  prov:Entity ;
+    rdfs:label    "sentence embeddings (numpy array)" ;
+    dcterms:description
+        "384-dimensional dense vectors for each abstract, computed with all-MiniLM-L6-v2." ;
+    prov:wasDerivedFrom  :abstracts .
+
+## ---- E09 – Similarity links --------------------------------
+
+:similarity_links_csv  a  prov:Entity ;
+    rdfs:label    "similarity_links.csv" ;
+    prov:atLocation  "reports/similarity_links.csv" ;
+    dcterms:description
+        "Paper-paper cosine similarity pairs above the 0.75 threshold." ;
+    prov:wasDerivedFrom  :embeddings .
+
+## ---- E10 – Topic assignments --------------------------------
+
+:topic_assignments_csv  a  prov:Entity ;
+    rdfs:label    "topic_assignments.csv" ;
+    prov:atLocation  "reports/topic_assignments.csv" ;
+    dcterms:description
+        "Per-paper topic assignments with confidence scores (BERTopic or LDA)." ;
+    prov:wasDerivedFrom  :abstracts .
+
+## ---- E11 – Topics summary ----------------------------------
+
+:topics_summary_csv  a  prov:Entity ;
+    rdfs:label    "topics_summary.csv" ;
+    prov:atLocation  "reports/topics_summary.csv" ;
+    dcterms:description
+        "Summary of discovered topics: id, label, and top-10 terms." ;
+    prov:wasDerivedFrom  :abstracts .
+
+## ---- E12 – Raw NER entities --------------------------------
+
+:raw_ner_entities  a  prov:Entity ;
+    rdfs:label    "raw_ner_entities.json" ;
+    dcterms:description
+        "Named entities (persons, organizations, grants) extracted from acknowledgements via spaCy." ;
+    prov:wasDerivedFrom  :acknowledgements .
+
+## ---- E13 – Normalized entities ------------------------------
+
+:normalized_entities  a  prov:Entity ;
+    rdfs:label    "normalized_entities.json" ;
+    dcterms:description
+        "Entities reconciled against ROR (organizations) and Wikidata (cross-references) with persistent URIs." ;
+    prov:wasDerivedFrom  :raw_ner_entities .
+
+## ---- E14 – Knowledge Graph (Turtle) ------------------------
+
+:sports_injuries_kg_ttl  a  prov:Entity ;
+    rdfs:label    "sports_injuries_kg.ttl" ;
+    prov:atLocation  "kg/sports_injuries_kg.ttl" ;
+    dcterms:description
+        "RDF/Turtle Knowledge Graph integrating all enriched metadata, similarity links, topics, and normalized entities." ;
+    prov:wasDerivedFrom
+        :enriched_metadata ,
+        :similarity_links_csv ,
+        :topic_assignments_csv ,
+        :normalized_entities .
+
+## ---- E15 – RO-Crate metadata --------------------------------
+
+:ro_crate_metadata  a  prov:Entity ;
+    rdfs:label    "ro-crate-metadata.json" ;
+    prov:atLocation  "ro-crate-metadata.json" ;
+    dcterms:description
+        "RO-Crate descriptor packaging the entire experiment as a FAIR Research Object." ;
+    prov:wasDerivedFrom  :sports_injuries_kg_ttl .
+
+
+## ============================================================
+##  ACTIVITIES  (pipeline steps A01 – A10)
+## ============================================================
+
+## ---- A01 – Paper selection ----------------------------------
+
+:A01_paper_selection  a  prov:Activity ;
+    rdfs:label    "A01 · Selección de 30 papers del dominio" ;
+    dcterms:description
+        "Manual literature search and curation of 30 open-access and subscription papers on sports injuries of the lower limb (knee, ankle, foot, muscles)." ;
+    prov:wasAssociatedWith  :grupo_osai_rse ;
+    prov:generated           :manifest_csv ;
+    prov:generated           :pdf_collection .
+
+:manifest_csv       prov:wasGeneratedBy  :A01_paper_selection .
+:pdf_collection     prov:wasGeneratedBy  :A01_paper_selection .
+
+## ---- A02 – SemOpenAlex metadata retrieval -------------------
+
+:A02_semopenalex_retrieval  a  prov:Activity ;
+    rdfs:label    "A02 · Descarga/extracción de metadatos desde SemOpenAlex" ;
+    dcterms:description
+        "SPARQL queries to SemOpenAlex retrieving authors, affiliations, citations, venues, and publication years for each DOI in the manifest." ;
+    prov:used                :manifest_csv ;
+    prov:wasAssociatedWith   :semopenalex_sparql ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :openalex_metadata .
+
+:openalex_metadata  prov:wasGeneratedBy  :A02_semopenalex_retrieval .
+
+## ---- A03 – OpenAIRE enrichment ------------------------------
+
+:A03_openaire_enrichment  a  prov:Activity ;
+    rdfs:label    "A03 · Enriquecimiento con OpenAIRE" ;
+    dcterms:description
+        "REST API calls to OpenAIRE Graph to add keywords, funding programmes, linked datasets, and software to each publication record." ;
+    prov:used                :openalex_metadata ;
+    prov:wasAssociatedWith   :openaire_api ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :enriched_metadata .
+
+:enriched_metadata  prov:wasGeneratedBy  :A03_openaire_enrichment .
+
+## ---- A04 – GROBID text extraction ---------------------------
+
+:A04_grobid_extraction  a  prov:Activity ;
+    rdfs:label    "A04 · Extracción de texto con GROBID (TEI XML)" ;
+    dcterms:description
+        "Processing of 30 PDFs through GROBID to produce structured TEI XML. Abstract and acknowledgement sections are then separated using tei_utils." ;
+    prov:used                :pdf_collection ;
+    prov:wasAssociatedWith   :grobid ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :tei_xml_collection ;
+    prov:generated           :abstracts ;
+    prov:generated           :acknowledgements .
+
+:tei_xml_collection  prov:wasGeneratedBy  :A04_grobid_extraction .
+:abstracts           prov:wasGeneratedBy  :A04_grobid_extraction .
+:acknowledgements    prov:wasGeneratedBy  :A04_grobid_extraction .
+
+## ---- A05 – Embeddings + Similarity -------------------------
+
+:A05_embeddings_similarity  a  prov:Activity ;
+    rdfs:label    "A05 · Cálculo de embeddings y similitud entre abstracts" ;
+    dcterms:description
+        "Sentence embeddings computed with all-MiniLM-L6-v2, followed by pairwise cosine similarity. Pairs above threshold (0.75) are kept as SimilarityLink instances." ;
+    prov:used                :abstracts ;
+    prov:wasAssociatedWith   :sentence_transformers ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :embeddings ;
+    prov:generated           :similarity_links_csv .
+
+:embeddings            prov:wasGeneratedBy  :A05_embeddings_similarity .
+:similarity_links_csv  prov:wasGeneratedBy  :A05_embeddings_similarity .
+
+## ---- A06 – Topic Modeling -----------------------------------
+
+:A06_topic_modeling  a  prov:Activity ;
+    rdfs:label    "A06 · Topic modeling para agrupar papers por tema" ;
+    dcterms:description
+        "Two alternative approaches: (1) BERTopic (UMAP + HDBSCAN + c-TF-IDF) via analysis_bert.py, (2) LDA (scikit-learn, K=5) via analysis_lda.py. Both use a confidence threshold of 0.4 for assignments." ;
+    prov:used                :abstracts ;
+    prov:used                :embeddings ;
+    prov:wasAssociatedWith   :bertopic ;
+    prov:wasAssociatedWith   :lda_sklearn ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :topic_assignments_csv ;
+    prov:generated           :topics_summary_csv .
+
+:topic_assignments_csv  prov:wasGeneratedBy  :A06_topic_modeling .
+:topics_summary_csv     prov:wasGeneratedBy  :A06_topic_modeling .
+
+## ---- A07 – NER on acknowledgements --------------------------
+
+:A07_ner_acknowledgements  a  prov:Activity ;
+    rdfs:label    "A07 · Aplicación de NER sobre acknowledgements" ;
+    dcterms:description
+        "Named Entity Recognition with spaCy over the acknowledgement sections to extract persons, organizations, and grant identifiers mentioned by the authors." ;
+    prov:used                :acknowledgements ;
+    prov:wasAssociatedWith   :spacy_ner ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :raw_ner_entities .
+
+:raw_ner_entities  prov:wasGeneratedBy  :A07_ner_acknowledgements .
+
+## ---- A08 – Entity normalization -----------------------------
+
+:A08_entity_normalization  a  prov:Activity ;
+    rdfs:label    "A08 · Normalización de entidades extraídas" ;
+    dcterms:description
+        "Reconciliation of raw NER mentions against ROR (for organizations) and Wikidata (for cross-references), assigning persistent URIs to each entity." ;
+    prov:used                :raw_ner_entities ;
+    prov:wasAssociatedWith   :ror_wikidata ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :normalized_entities .
+
+:normalized_entities  prov:wasGeneratedBy  :A08_entity_normalization .
+
+## ---- A09 – Knowledge Graph construction ---------------------
+
+:A09_kg_construction  a  prov:Activity ;
+    rdfs:label    "A09 · Construcción del Knowledge Graph" ;
+    dcterms:description
+        "Assembly of all enriched metadata, similarity links, topic assignments, and normalized entities into a single RDF/Turtle Knowledge Graph following the project ontology (Paper, Injury, BodyPart, TreatmentMethod, etc.)." ;
+    prov:used                :enriched_metadata ;
+    prov:used                :similarity_links_csv ;
+    prov:used                :topic_assignments_csv ;
+    prov:used                :normalized_entities ;
+    prov:wasAssociatedWith   :rdflib ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :sports_injuries_kg_ttl .
+
+:sports_injuries_kg_ttl  prov:wasGeneratedBy  :A09_kg_construction .
+
+## ---- A10 – Research Object export ---------------------------
+
+:A10_ro_crate_export  a  prov:Activity ;
+    rdfs:label    "A10 · Exportación y documentación como Research Object" ;
+    dcterms:description
+        "Packaging the KG, provenance trace, scripts, and documentation as an RO-Crate following the RO-Crate 1.1 specification for FAIR reproducibility." ;
+    prov:used                :sports_injuries_kg_ttl ;
+    prov:wasAssociatedWith   :ro_crate_py ;
+    prov:wasAssociatedWith   :grupo_osai_rse ;
+    prov:generated           :ro_crate_metadata .
+
+:ro_crate_metadata  prov:wasGeneratedBy  :A10_ro_crate_export .
+
+
+## ============================================================
+##  DELEGATION  (all software agents acted on behalf of the
+##               student group)
+## ============================================================
+
+:grobid                prov:actedOnBehalfOf  :grupo_osai_rse .
+:semopenalex_sparql    prov:actedOnBehalfOf  :grupo_osai_rse .
+:openaire_api          prov:actedOnBehalfOf  :grupo_osai_rse .
+:sentence_transformers prov:actedOnBehalfOf  :grupo_osai_rse .
+:bertopic              prov:actedOnBehalfOf  :grupo_osai_rse .
+:lda_sklearn           prov:actedOnBehalfOf  :grupo_osai_rse .
+:spacy_ner             prov:actedOnBehalfOf  :grupo_osai_rse .
+:ror_wikidata          prov:actedOnBehalfOf  :grupo_osai_rse .
+:rdflib                prov:actedOnBehalfOf  :grupo_osai_rse .
+:ro_crate_py           prov:actedOnBehalfOf  :grupo_osai_rse .
+
+
+## ============================================================
+##  PIPELINE PARAMETERS  (recorded as prov:Entity for
+##                         reproducibility)
+## ============================================================
+
+:params_similarity  a  prov:Entity ;
+    rdfs:label    "Similarity parameters" ;
+    dcterms:description
+        "embeddingModel = all-MiniLM-L6-v2 ; similarityThreshold = 0.75" .
+
+:params_topic_bert  a  prov:Entity ;
+    rdfs:label    "BERTopic parameters" ;
+    dcterms:description
+        "UMAP(n_neighbors=5, n_components=5, min_dist=0.0, metric=cosine) ; HDBSCAN(min_cluster_size=3, min_samples=1) ; topicThreshold = 0.4" .
+
+:params_topic_lda  a  prov:Entity ;
+    rdfs:label    "LDA parameters" ;
+    dcterms:description
+        "n_components = 5 ; max_iter = 30 ; learning_method = online ; max_df = 0.90 ; min_df = 2 ; topicThreshold = 0.4" .
+
+:A05_embeddings_similarity  prov:used  :params_similarity .
+:A06_topic_modeling          prov:used  :params_topic_bert .
+:A06_topic_modeling          prov:used  :params_topic_lda .
