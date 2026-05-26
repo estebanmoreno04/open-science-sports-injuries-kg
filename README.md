@@ -120,7 +120,6 @@ results/
 scripts/
   enrich_semOpenAlex.py
   enrich_openAire.py
-  fix_pmc_ids.py
   abstract_similarity.py
   topic_modeling.py
   extract_acknowledgements.py
