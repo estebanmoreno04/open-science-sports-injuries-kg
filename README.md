@@ -178,6 +178,8 @@ The resulting similarity matrices and top-3 most similar papers are stored in:
 
 ```text
 results/similarity/
+```
+
 ## Knowledge Graph
 
 The main RDF Knowledge Graph is available at:
