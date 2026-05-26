@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""
-Preprocess an RDF/Turtle Knowledge Graph for the Cytoscape.js explorer.
-
-Reads the .ttl file, computes sentence embeddings, runs topic modeling
-(BERTopic or LDA), calculates pairwise cosine similarity, and writes
-a single JSON file that kg_explorer.html can load.
-
-Usage:
-    python prepare_kg_demo.py --ttl sports_injuries_kg.ttl
-    python prepare_kg_demo.py --ttl sports_injuries_kg.ttl --method lda --num-topics 5
-"""
-
 from __future__ import annotations
 
 import argparse

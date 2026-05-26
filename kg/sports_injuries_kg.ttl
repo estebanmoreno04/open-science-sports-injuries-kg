@@ -20,6 +20,7 @@
         "Research"^^xsd:string,
         "Retrospective Studies"^^xsd:string,
         "Value"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> ;
     sio:paperId "P01"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "The accuracy of MRI in diagnosing and classifying acute traumatic multiple ligament knee injuries"^^xsd:string ;
@@ -57,6 +58,7 @@
         "Staged surgery"^^xsd:string,
         "Treatment Outcome"^^xsd:string,
         "Young Adult"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> ;
     sio:paperId "P02"^^xsd:string ;
     sio:publicationYear 2020 ;
     sio:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
@@ -66,6 +68,7 @@
     sio:abstractText "Acute knee injuries are commonly encountered in both the clinical and sideline setting and may be treated operatively or non-operatively. This article describes an evidence-based approach to non-operative acute knee injury. This includes history, physical exam, imaging, and initial management. In addition, the non-operative management of three such injuries—ligament injury, meniscus injury, and patellar dislocation injury—will be discussed via a case-based practical approach. Aside from grade III ACL tears, most acute knee ligament injuries, especially in the absence of other concurrent injuries, can be treated non-operatively. There is new evidence that acute traumatic meniscus tears in those younger than 40 can be successfully treated non-operatively and can do equally, as well as those that undergo surgery, at 1 year out from injury. Based on the current literature, a short period of knee bracing in extension with progression to weightbearing to tolerance is recommended after initial patellar dislocation. Many of the most common acute knee injuries, including MCL tears, meniscus tears, and patellar dislocations, can be managed non-operatively."^^xsd:string ;
     sio:doi "10.1007/s12178-023-09875-7"^^xsd:string ;
     sio:externalKeyword "3. Good health"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> ;
     sio:paperId "P03"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
@@ -87,6 +90,7 @@
         "meniscus"^^xsd:string,
         "patellar ligament"^^xsd:string,
         "volleyball"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> ;
     sio:paperId "P04"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
@@ -111,6 +115,7 @@
         "knee kinetics"^^xsd:string,
         "single-leg squat"^^xsd:string,
         "sport performance"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P05_T00> ;
     sio:paperId "P05"^^xsd:string ;
     sio:publicationYear 2020 ;
     sio:title "Dynamic Knee Valgus in Single-Leg Movement Tasks. Potentially Modifiable Factors and Exercise Training Options. A Literature Review"^^xsd:string ;
@@ -129,6 +134,7 @@
         "systematic review"^^xsd:string,
         "total knee arthroplasty"^^xsd:string,
         "varus knee"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P06_T02> ;
     sio:paperId "P06"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "Clinical and Radiological Changes of Ankle in Knee Osteoarthritis With Varus After Total Knee Arthroplasty: A Systematic Review"^^xsd:string ;
@@ -156,6 +162,7 @@
         "Talus"^^xsd:string,
         "Transplantation, Autologous"^^xsd:string,
         "Treatment Outcome"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P07_T02> ;
     sio:paperId "P07"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Prognostic factors for the management of chondral defects of the knee and ankle joint: a systematic review"^^xsd:string ;
@@ -176,6 +183,7 @@
         "Knee Joint"^^xsd:string,
         "Male"^^xsd:string,
         "Review"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> ;
     sio:paperId "P08"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented ACL Ruptures in Male and Female Athletes"^^xsd:string ;
@@ -189,6 +197,7 @@
         "3. Good health"^^xsd:string,
         "Clinical sciences"^^xsd:string,
         "Management of Ankle Instability (M Hogan, Section Editor)"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> ;
     sio:paperId "P09"^^xsd:string ;
     sio:publicationYear 2020 ;
     sio:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
@@ -221,6 +230,7 @@
         "Review"^^xsd:string,
         "Sports injury"^^xsd:string,
         "Young Adult"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> ;
     sio:paperId "P10"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "The epidemiology of chronic ankle instability with perceived ankle instability - a systematic review"^^xsd:string ;
@@ -240,6 +250,7 @@
         "return to sport (RTS)"^^xsd:string,
         "review (article)"^^xsd:string,
         "self-reported function"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> ;
     sio:paperId "P11"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
@@ -250,6 +261,7 @@
     sio:doi "10.2519/jospt.2022.0301"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> ;
     sio:paperId "P12"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Hamstring Strain Injury in Athletes: Clinical Practice Guidelines Linked to the ICF"^^xsd:string ;
@@ -269,6 +281,7 @@
         "Running"^^xsd:string,
         "Sport Sciences"^^xsd:string,
         "Sprains and Strains"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
     sio:paperId "P13"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
@@ -285,6 +298,7 @@
         "Magnetic Resonance Imaging"^^xsd:string,
         "Muscle, Skeletal"^^xsd:string,
         "Sprains and Strains"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P14_T04> ;
     sio:paperId "P14"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Calf Strain in Athletes"^^xsd:string ;
@@ -301,6 +315,7 @@
         "Quadriceps Muscle"^^xsd:string,
         "Risk Factors"^^xsd:string,
         "Sports"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> ;
     sio:paperId "P15"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
@@ -326,6 +341,7 @@
         "Tendon Injuries"^^xsd:string,
         "ta3126"^^xsd:string,
         "ta315"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P16_T01> ;
     sio:paperId "P16"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Indirect Rectus Femoris Injury Mechanisms in Professional Soccer Players: Video Analysis and Magnetic Resonance Imaging Findings"^^xsd:string ;
@@ -336,6 +352,7 @@
     sio:doi "10.2519/jospt.2024.0302"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> ;
     sio:paperId "P17"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024 - Clinical Practice Guidelines"^^xsd:string ;
@@ -348,6 +365,7 @@
         "0302 clinical medicine"^^xsd:string,
         "3. Good health"^^xsd:string,
         "Foot & Ankle"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> ;
     sio:paperId "P18"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
@@ -357,6 +375,7 @@
     sio:abstractText "This review article discusses the anatomy and histopathology of the patellar tendon, as well as the risk factors and common interventions for patellar tendinopathy (PT) with a view to guide clinicians in treating athletes with patellar tendon pain. PT, or jumper's knee, refers to a chronic injury to the patellar tendon that affects athletes who engage in jumping and explosive movements. The condition is characterized by degeneration and disorganization of the collagen fibers in the tendon, an increase in mucoid ground substance, and fibroblast proliferation. Risk factors for patellar tendinopathy include participation in jumping sports, a greater counter-movement jump height, and training on hard surfaces. Nonoperative treatments for patellar tendinopathy include relative rest, stretching and strengthening exercises, and correction of biomechanical abnormalities. Surgery and other procedures, such as extracorporeal shockwave therapy (ESWT) and injection therapies, may be considered for patients who do not respond to conservative measures."^^xsd:string ;
     sio:doi "10.7759/cureus.47459"^^xsd:string ;
     sio:externalKeyword "Orthopedics"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> ;
     sio:paperId "P19"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
@@ -368,6 +387,7 @@
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
         "3. Good health"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
     sio:paperId "P20"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
@@ -396,6 +416,7 @@
         "Sport Sciences"^^xsd:string,
         "Tibia"^^xsd:string,
         "Tibial Fractures"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P21_T01> ;
     sio:paperId "P21"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Criteria and Guidelines for Returning to Running Following a Tibial Bone Stress Injury: A Scoping Review"^^xsd:string ;
@@ -405,6 +426,7 @@
     sio:abstractText "Regular physical activity confers numerous health and social benefits; however, activity-related lower-limb overuse injuries are prevalent. Medial tibial stress syndrome (MTSS) is a common overuse injury of the lower extremity. It is frequently observed in athletes and in military personnel. It involves exercise-induced pain over the anterior tibia and is an early stress injury in the continuum of tibial stress fractures (TSF). This scoping review aims to synthesize and characterize the literature on MTSS, identify knowledge gaps, and propose future research directions. We conducted a scoping review of the literature, which was informed by the Joanna Briggs Institute and the Arksey and O'Malley methodology, by searching four databases until December 31, 2023. The references were screened by two authors based on their titles, abstracts, and full texts to ensure that they met the inclusion criteria. Data related to the research objectives were extracted, analyzed, and reported numerically and descriptively. Thirty-seven studies were included in the current review, most of which recruited athletes as the study participants (67.6%). This was followed by articles about military members (16.2%). The highest prevalence of MTSS has been reported among recreational marathon runners in India (69.5%). The highest incidence of MTSS was reported in a German study (35.7%). Two studies reported that participants with MTSS had a higher body mass index (BMI) than those without MTSS, and one study found a significant correlation between BMI and the time required for complete recovery. Two studies reported that individuals with greater experience in athletic activities were at a lower risk of developing MTSS later in their careers. In contrast, another study reported that ultramarathon running increases the incidence of MTSS overuse injuries. Traction theory as a cause of MTSS was examined in five studies, and the mean navicular drop test (NDT) score was assessed in three studies. Biomechanical evaluation of ankle disorders and MTSS was performed in five articles and hip abnormalities in four articles. This review identifies research areas on the influence of epidemiological, risk, and biomechanical factors on MTSS development. Such research could inform counseling for patients concerned about MTSS risk factors and curative measures, as well as optimize surveillance and subsequent management of MTSS outcomes."^^xsd:string ;
     sio:doi "10.7759/cureus.81463"^^xsd:string ;
     sio:externalKeyword "Physical Medicine & Rehabilitation"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> ;
     sio:paperId "P22"^^xsd:string ;
     sio:publicationYear 2025 ;
     sio:title "Medial Tibial Stress Syndrome: A Scoping Review of Epidemiology, Biomechanics, and Risk Factors"^^xsd:string ;
@@ -429,6 +451,7 @@
         "Musculoskeletal Diseases"^^xsd:string,
         "Oncology"^^xsd:string,
         "Partial meniscectomy"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> ;
     sio:paperId "P23"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
@@ -439,6 +462,7 @@
     sio:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> ;
     sio:paperId "P24"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
@@ -468,6 +492,7 @@
         "Soccer"^^xsd:string,
         "Soccer players"^^xsd:string,
         "Sports"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> ;
     sio:paperId "P25"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Plantar Fasciitis in Soccer Players - A Systematic Review"^^xsd:string ;
@@ -497,6 +522,7 @@
         "Ultrasonography, Doppler, Pulsed"^^xsd:string,
         "Young Adult"^^xsd:string,
         "adolescent; cumulative trauma disorders; dancing; diagnosis; diagnosis/therapy; doppler; early diagnosis; female; fractures; high-energy shock waves; humans; injuries; injuries/radiography; lithotripsy; magnetic field therapy; magnetic resonance imaging; male; metatarsal bones; methods; physiopathology/radiography; pulsed; stress; tarsal joints; therapeutic use; treatment outcome; ultrasonography; young adult"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P26_T04> ;
     sio:paperId "P26"^^xsd:string ;
     sio:publicationYear 2009 ;
     sio:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
@@ -515,6 +541,7 @@
         "Postural Balance"^^xsd:string,
         "Proprioception"^^xsd:string,
         "Review Article"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P27_T00> ;
     sio:paperId "P27"^^xsd:string ;
     sio:publicationYear 2015 ;
     sio:title "The Role of Ankle Proprioception for Balance Control in relation to Sports Performance and Injury"^^xsd:string ;
@@ -540,6 +567,7 @@
         "Proprioception"^^xsd:string,
         "Resistance Training"^^xsd:string,
         "Young Adult"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> ;
     sio:paperId "P28"^^xsd:string ;
     sio:publicationYear 2012 ;
     sio:title "Ankle Strength and Force Sense After a Progressive 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
@@ -577,6 +605,7 @@
         "injury prevention"^^xsd:string,
         "plyometric training"^^xsd:string,
         "soccer"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> ;
     sio:paperId "P29"^^xsd:string ;
     sio:publicationYear 2018 ;
     sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
@@ -625,8 +654,209 @@
         "Young Adult"^^xsd:string,
         "[SDV.IMM] Life Sciences [q-bio]/Immunology"^^xsd:string,
         "[SDV.IMM]Life Sciences [q-bio]/Immunology"^^xsd:string ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P30_T01> ;
     sio:paperId "P30"^^xsd:string ;
     sio:publicationYear 2011 ;
     sio:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2109374215> .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9946"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9939"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.7833"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.5982"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P05_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "0.9913"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P06_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9916"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P07_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9935"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9927"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9897"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9954"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9951"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
+    sio:confidenceScore "0.9761"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9865"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P14_T04> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
+    sio:confidenceScore "0.9874"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9931"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P16_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.994"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
+    sio:confidenceScore "0.9903"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9936"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
+    sio:confidenceScore "0.9872"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
+    sio:confidenceScore "0.9856"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P21_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9935"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9945"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
+    sio:confidenceScore "0.9919"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9935"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9922"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P26_T04> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
+    sio:confidenceScore "0.985"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P27_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "0.9866"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9937"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "0.9928"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P30_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "0.9933"^^xsd:float ;
+    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic/T00> a sio:Topic ;
+    sio:topTerms "ankle, balance, control, leg, single, proprioception, knee, important, training, valgus"^^xsd:string ;
+    sio:topicName "Ankle / Balance / Control"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/topic/T03> a sio:Topic ;
+    sio:topTerms "cpg, sports, physical, therapy, practice, evidence, clinical, orthopaedic, health, based"^^xsd:string ;
+    sio:topicName "Cpg / Sports / Physical"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/topic/T04> a sio:Topic ;
+    sio:topTerms "meniscus, injuries, patellar, strain, athletes, injury, therapy, return, tendon, risk"^^xsd:string ;
+    sio:topicName "Meniscus / Injuries / Patellar"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/topic/T02> a sio:Topic ;
+    sio:topTerms "group, ankle, knee, training, studies, results, patients, strength, repair, injuries"^^xsd:string ;
+    sio:topicName "Group / Ankle / Knee"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/topic/T01> a sio:Topic ;
+    sio:topTerms "injuries, injury, ankle, studies, return, risk, ligament, factors, sport, based"^^xsd:string ;
+    sio:topicName "Injuries / Injury / Ankle"^^xsd:string .
 
