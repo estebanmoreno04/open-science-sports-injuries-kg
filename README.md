@@ -11,13 +11,12 @@ The repository currently contains an integrated version of the project, includin
 - A corpus of 30 papers about lower-limb sports injuries.
 - Metadata extracted and enriched from SemOpenAlex.
 - External keyword enrichment using OpenAIRE.
-- Abstract similarity computation using embedding models.
-- Topic modeling over paper abstracts.
+- Abstract similarity computation using two embedding models from HuggingFace.
+- Topic modeling over paper abstracts using BERTopic and LDA.
+- Named Entity Recognition over acknowledgements sections using `dslim/bert-base-NER`.
 - RDF Knowledge Graph generation in Turtle format.
 - A Flask/Cytoscape.js demo for visual exploration.
 - Example SPARQL queries for consuming the generated Knowledge Graph.
-
-The Named Entity Recognition step over acknowledgements is planned as part of the final integration.
 
 ## Use Case
 
@@ -34,6 +33,7 @@ The application helps answer questions such as:
 - Which authors and organizations are most active in a specific injury area?
 - Which topics emerge from the selected corpus of scientific papers?
 - Which external keywords or projects are associated with each paper?
+- Which people and organizations are acknowledged in a paper?
 
 ## Scope
 
@@ -88,6 +88,9 @@ data/
     topics.csv
     topics_bertopic.csv
     topics_lda.csv
+    acknowledgements.csv
+    ner_entities.csv
+    similarities.csv
   rdf/
     semopenalex_enriched.ttl
     openaire_enriched.ttl
@@ -111,8 +114,11 @@ results/
 scripts/
   enrich_semOpenAlex.py
   enrich_openAire.py
+  fix_pmc_ids.py
   abstract_similarity.py
   topic_modeling.py
+  extract_acknowledgements.py
+  ner_acknowledgements.py
 
 src/
   build_rdf.py
@@ -147,21 +153,38 @@ The current version of the project implements the following pipeline:
 
 1. Selection of 30 papers about lower-limb sports injuries.
 2. Collection of basic bibliographic metadata.
-3. Metadata enrichment using SemOpenAlex.
-4. External keyword enrichment using OpenAIRE.
-5. Abstract embedding and semantic similarity computation using two models:
+3. Metadata enrichment using SemOpenAlex SPARQL queries.
+   - PMC IDs were verified and corrected using the NCBI ID Converter API
+     (`scripts/fix_pmc_ids.py`). 10 out of 23 PMC URLs required correction
+     due to differences between the PMC web interface and the OAI API identifiers.
+4. External keyword enrichment using OpenAIRE (`scripts/enrich_openAire.py`).
+   - Keywords were retrieved for all 30 papers.
+   - No funding projects were found, as the corpus is predominantly composed
+     of non-European publications not covered by OpenAIRE.
+5. Abstract embedding and semantic similarity computation using two models
+   (`scripts/abstract_similarity.py`):
    - `sentence-transformers/all-MiniLM-L6-v2`
    - `intfloat/e5-small-v2`
-6. Topic modeling over paper abstracts using BERTopic and LDA.
-7. RDF Knowledge Graph generation in Turtle format.
-8. Visual exploration through a Flask/Cytoscape.js demo.
-9. SPARQL query examples for inspecting and reusing the Knowledge Graph.
-
-The NER step over acknowledgements will be integrated in the final version to extract acknowledged people, organizations and projects.
+6. Topic modeling over paper abstracts using BERTopic and LDA
+   (`scripts/topic_modeling.py`).
+7. Acknowledgements extraction from the PMC OAI API
+   (`scripts/extract_acknowledgements.py`).
+   - Acknowledgements were retrieved for 13 out of 30 papers.
+   - Papers without a PMC URL or without an acknowledgements section
+     in their XML were not processed.
+8. Named Entity Recognition over acknowledgements using `dslim/bert-base-NER`
+   from HuggingFace (`scripts/ner_acknowledgements.py`).
+   - 67 entities extracted: 10 persons, 56 organizations, 1 grant ID.
+   - Grant IDs were detected using regex patterns as a complement to the
+     NER model, which does not reliably detect alphanumeric identifiers.
+9. RDF Knowledge Graph generation in Turtle format (`src/build_rdf.py`).
+10. Visual exploration through a Flask/Cytoscape.js demo (`app.py`).
+11. SPARQL query examples for inspecting and reusing the Knowledge Graph
+    (`kg/example_queries.sparql`).
 
 ## Similarity Modeling
 
-Semantic similarity between paper abstracts was computed using sentence embedding models from Hugging Face. Two candidate models were compared:
+Semantic similarity between paper abstracts was computed using sentence embedding models from HuggingFace. Two candidate models were compared:
 
 - `sentence-transformers/all-MiniLM-L6-v2`
 - `intfloat/e5-small-v2`
@@ -180,6 +203,20 @@ The resulting similarity matrices and top-3 most similar papers are stored in:
 results/similarity/
 ```
 
+## NER over Acknowledgements
+
+Named Entity Recognition was applied to the acknowledgements sections extracted from papers available in PubMed Central.
+
+**Extraction**: the PMC OAI API was used to retrieve the full-text XML of each paper with a valid PMC URL. The `<ack>` element and funding-related sections were extracted using regex-based parsing, which is more robust than namespace-aware XML parsing for the heterogeneous JATS XML structure used by PMC.
+
+**Model**: `dslim/bert-base-NER` from HuggingFace, fine-tuned on CoNLL-2003. This model was chosen over biomedical NER models because acknowledgements contain general named entities — people, institutions, funding bodies — rather than clinical terminology.
+
+**Grant ID detection**: a regex-based post-processing step complements the NER model to detect grant and award identifiers (e.g. `W911NF-18-1-0027`, `15PJ1407600`), which NER models do not reliably capture.
+
+**Results**: 67 entities extracted from 13 papers — 10 persons, 56 organizations, 1 grant ID.
+
+**Limitations**: 7 papers had no PMC URL (restricted-access journals such as JOSPT and JBJS Reviews). A further 10 papers had PMC URLs but no acknowledgements section in their XML. These cases are recorded in `data/processed/acknowledgements.csv` with an empty acknowledgements field.
+
 ## Knowledge Graph
 
 The main RDF Knowledge Graph is available at:
@@ -188,23 +225,61 @@ The main RDF Knowledge Graph is available at:
 kg/sports_injuries_kg.ttl
 ```
 
-The graph represents papers as RDF resources and includes information such as:
+The graph represents papers as RDF resources and includes:
 
-- Paper identifiers
-- Titles
-- Publication years
-- DOIs
-- Abstracts
+- Paper identifiers, titles, publication years, DOIs and abstracts
 - SemOpenAlex links using `owl:sameAs`
+- Author and affiliation information from SemOpenAlex
 - OpenAIRE external keywords
-- Topic assignments
-- Similarity links between papers
+- Topic assignments with confidence scores (BERTopic and LDA)
+- Semantic similarity links between papers
+- Acknowledged persons, organizations and grant IDs from NER
 
 The RDF generation script is:
 
 ```text
 src/build_rdf.py
 ```
+
+## Setup
+
+### Prerequisites
+
+- Python 3.9+
+- conda or venv
+- Docker (optional, for containerized execution)
+
+### Installation
+
+```bash
+git clone https://github.com/estebanmoreno04/open-science-sports-injuries-kg.git
+cd open-science-sports-injuries-kg
+pip install -r requirements.txt
+```
+
+### Credentials
+
+This project uses the OpenAIRE API, which requires a personal access token.
+To set up your credentials:
+
+1. Register a free account at https://develop.openaire.eu/
+2. Create a new service and select **Basic** security level
+3. Copy your `client_id` and `client_secret`
+4. Create a `.env` file in the root of the repository:
+
+```bash
+cp .env.example .env
+```
+
+5. Fill in your credentials in `.env`:
+
+```
+OPENAIRE_CLIENT_ID=your_client_id_here
+OPENAIRE_CLIENT_SECRET=your_client_secret_here
+```
+
+> **Note:** The `.env` file is listed in `.gitignore` and will never be
+> committed to the repository. Never share your credentials publicly.
 
 ## How to Run
 
@@ -214,9 +289,15 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-Generate or update the RDF Knowledge Graph:
+Run the full pipeline in order:
 
 ```bash
+python scripts/enrich_semOpenAlex.py
+python scripts/enrich_openAire.py
+python scripts/abstract_similarity.py
+python scripts/topic_modeling.py
+python scripts/extract_acknowledgements.py
+python scripts/ner_acknowledgements.py
 python src/build_rdf.py
 ```
 
@@ -234,13 +315,13 @@ http://127.0.0.1:5000
 
 The demo allows users to:
 
-- Explore the 30-paper corpus.
-- Visualize semantic similarity links between papers.
-- Switch between embedding models.
-- Adjust the similarity threshold.
-- Inspect paper metadata.
-- View topic assignments.
-- Access DOI and SemOpenAlex links.
+- Explore the 30-paper corpus as an interactive graph
+- Visualize semantic similarity links between papers
+- Switch between embedding models (MiniLM and E5)
+- Adjust the similarity threshold with a slider
+- Inspect paper metadata including title, year, DOI and abstract
+- View topic assignments from BERTopic and LDA
+- Access DOI and SemOpenAlex links directly
 
 ## SPARQL Queries
 
@@ -250,21 +331,14 @@ Example SPARQL queries are provided in:
 kg/example_queries.sparql
 ```
 
-These queries can be executed over:
+These queries cover:
 
-```text
-kg/sports_injuries_kg.ttl
-```
-
-They cover:
-
-- Listing papers by title and publication year.
-- Retrieving SemOpenAlex links.
-- Inspecting OpenAIRE external keywords.
-- Exploring topic assignments.
-- Retrieving paper similarity links.
-- Querying project/funding information when available.
-- Querying acknowledged entities once NER results are integrated.
+- Listing papers by title and publication year
+- Retrieving SemOpenAlex links
+- Inspecting OpenAIRE external keywords
+- Exploring topic assignments
+- Retrieving paper similarity links
+- Querying acknowledged entities
 
 Example query:
 
@@ -300,15 +374,13 @@ The expected intermediate files and their columns are documented in:
 docs/data_schema.md
 ```
 
-This file defines the common structure used to integrate metadata, external enrichment, similarity results, topic modeling outputs and NER entities into the final RDF Knowledge Graph.
-
 ## AI Usage Declaration
 
 In accordance with Open Science best practices and the requirements of this assignment, we declare the use of Artificial Intelligence tools during the development of this project:
 
 - **Conceptualization and Knowledge Engineering:** Large Language Models (LLMs) were used as an assistant to brainstorm domain-specific keywords, review ontology design decisions, debug code and assist in formatting documentation and Mermaid.js diagrams. All AI-generated suggestions were reviewed, contrasted with the course theory and manually modified by the group members.
-- **Data Processing and Machine Learning Support:** AI-assisted tools were used to support the development of scripts for metadata enrichment, semantic similarity computation, topic modeling and RDF generation. The final implementation, model choices, thresholds and outputs were manually reviewed by the group.
-- **Natural Language Processing Models:** Hugging Face models and related NLP libraries were used to compute semantic representations of abstracts, compare paper similarity and generate topic modeling outputs.
+- **Data Processing and Machine Learning Support:** AI-assisted tools were used to support the development of scripts for metadata enrichment, semantic similarity computation, topic modeling, NER and RDF generation. The final implementation, model choices, thresholds and outputs were manually reviewed by the group.
+- **Natural Language Processing Models:** HuggingFace models and related NLP libraries were used to compute semantic representations of abstracts, compare paper similarity, generate topic modeling outputs and perform named entity recognition over acknowledgements sections.
 
 ## Limitations and Future Work
 
@@ -317,16 +389,20 @@ Current limitations include:
 - The Knowledge Graph is focused on a relatively small corpus of 30 papers.
 - Topic modeling results depend on the size and thematic diversity of the selected corpus.
 - Similarity thresholds may need adjustment depending on the desired density of the graph.
-- NER over acknowledgements is still pending final integration.
-- Some external metadata may be incomplete depending on source availability.
+- PMC IDs in the initial corpus were partially incorrect due to differences between
+  the PMC web interface and the OAI API identifiers. These were corrected
+  programmatically using the NCBI ID Converter API (`scripts/fix_pmc_ids.py`).
+- NER coverage is limited to 13 papers due to the absence of PMC full-text access
+  for restricted-access journals and papers without acknowledgements sections.
+- OpenAIRE funding coverage is 0/30 as the corpus is predominantly composed of
+  non-European publications not indexed in OpenAIRE with project information.
 
 Future work includes:
 
-- Integrating NER results from acknowledgements.
 - Adding PROV metadata for workflow traceability.
 - Packaging the experiment as an RO-Crate.
-- Adding more detailed evaluation of similarity, topic modeling and NER outputs.
-- Creating a final release for long-term reproducibility.
+- Adding Docker support for full environment reproducibility.
+- Expanding the corpus to improve topic modeling quality.
 
 ## Group Members
 
