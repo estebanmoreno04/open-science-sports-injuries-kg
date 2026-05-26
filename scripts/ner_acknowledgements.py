@@ -212,9 +212,9 @@ def main():
     os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
     with open(OUTPUT_CSV, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            "paper_id", "entity_text", "entity_type", "normalized_name",
+            "paper_id", "entity_text", "entity_type", "normalized_name",    
             "confidence_score", "model_used", "source_section"
-        ])
+        ],delimiter=";")
         writer.writeheader()
         writer.writerows(all_rows)
  
