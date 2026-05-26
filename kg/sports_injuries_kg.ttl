@@ -55,6 +55,12 @@
 
 <http://kg.sports-injuries.org/resource/paper/P06> a sio:Paper ;
     sio:abstractText "Background: Arthritis with severe varus deformity remains a challenge in total knee arthroplasty (TKA). Until recently, surgeons aimed at a neutral lower limb alignment when performing a TKA. However, the impact of TKA on the ankle joint has been ignored. Therefore, we conducted a systematic review to assess the clinical and radiological changes in the ankle joint after TKA on knees with severe varus deformity. Methods: A systematic search was conducted in four English (PubMed, Embase, Cochrane Library, and Web of Science) and four Chinese (CBM, VIP, CNKI, and Wan Fang Database) databases. Screening of literature and extraction of data were independently performed by two researchers. The modified methodological index for non-randomized studies (MINORS) was used to assess the quality. Results: A total of eight studies were eligible, namely, four prospective and four retrospective studies. TKA resulted in a negative clinical effect in the ankle joint in patients with ankle osteoarthritis. Seven studies reported changes in the mechanical tibiofemoral angle, and four studies reported radiological changes in the hindfoot. The mean score of the MINORS was 9.8 out of eight (9–11). Conclusion: As a result of the correction of the knee osteoarthritis with severe varus deformity following mechanically aligned TKA, the radiological malalignment of the ankle joint was improved. However, some patients experience increased ankle pain after undergoing TKA, especially, if there was a residual knee varus deformity, a stiff hindfoot with varus deformity, or ankle arthritis."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedics>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Hospital>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Lanzhou_University_Second>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Nanchong_Central_Hospital>,
+        <http://kg.sports-injuries.org/resource/entity/organization/North_Sichuan_Medical_College>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Second_Clinical_Institute_of_North_Sichuan_Medical_College> ;
     sio:doi "10.3389/fsurg.2021.713055"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -74,6 +80,7 @@
 
 <http://kg.sports-injuries.org/resource/paper/P07> a sio:Paper ;
     sio:abstractText "PURPOSE: Different surgical techniques to manage cartilage defects are available, including microfracture (MFx), autologous chondrocyte implantation (ACI), osteoarticular auto- or allograft transplantation (OAT), autologous matrix-induced chondrogenesis (AMIC). This study investigated the patient-related prognostic factors on the clinical outcomes of surgically treated knee and ankle cartilage defects. METHODS: This study followed the PRISMA statement. In May 2022, the following databases were accessed: PubMed, Google Scholar, Embase, and Scopus. All the studies investigating the outcomes of surgical management for knee and/or talus chondral defects were accessed. Only studies performing mesenchymal stem cells transplantation, OAT, MFx, ACI, and AMIC were considered. A multiple linear model regression analysis through the Pearson Product-Moment Correlation Coefficient was used. RESULTS: Data from 184 articles (8905 procedures) were retrieved. Female sex showed a positive moderate association with visual analogue scale at last follow-up (P = 0.02). Patient age had a negative association with the American Orthopaedic Foot and Ankle Score (P = 0.04) and Lysholm Knee Scoring Scale (P = 0.03). BMI was strongly associated with graft hypertrophy (P = 0.01). Greater values of VAS at baseline negatively correlate with lower values of Tegner Activity Scale at last follow-up (P < 0.0001). CONCLUSION: The clinical outcomes were mostly related to the patients' performance status prior surgery. A greater BMI was associated with greater rate of hypertrophy. Female sex and older age evidenced fair influence, while symptom duration prior to the surgical intervention and cartilage defect size evidenced no association with the surgical outcome. Lesion size and symptom duration did not evidence any association with the surgical outcome."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Projekt_DEAL> ;
     sio:doi "10.1007/s00068-022-02155-y"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -173,6 +180,7 @@
 
 <http://kg.sports-injuries.org/resource/paper/P21> a sio:Paper ;
     sio:abstractText "Tibial bone stress injuries (BSIs) are common among long-distance runners. They have a high recurrence rate, and complexity emerges in the wider management and successful return to running. Following a tibial BSI, a critical component of complete rehabilitation is the successful return to running, and there is a lack of consistency or strong evidence to guide this process. The objectives of this review were to outline the criteria used in clinical decision-making prior to resuming running, and to establish evidence-based guidelines for the return to running process following a tibial BSI. Electronic databases including MEDLINE, CINAHL, Scopus, SPORTDiscus and AMED were searched for studies that stated criteria or provided guidelines on the objectives above. Fifty studies met the inclusion criteria and were included. Thirty-nine were reviews or clinical commentaries, three were retrospective cohort studies, two were randomised controlled trials, two were pilot studies, one was a prospective observational study, and three were case studies. Therefore, the recommendations that have been surmised are based on level IV evidence. Decisions on when an athlete should return to running should be shared between clinicians, coaches and the athlete. There are five important components to address prior to introducing running, which are: the resolution of bony tenderness, pain-free walking, evidence of radiological healing in high-risk BSIs, strength, functional and loading tests, and the identification of contributing factors. Effective return to running planning should address the athlete's risk profile and manage the risk by balancing the athlete's interests and reinjury prevention. An individualised graduated return to running programme should be initiated, often starting with walk-run intervals, progressing running distance ahead of speed and intensity, with symptom provocation a key consideration. Contributing factors to the initial injury should be addressed throughout the return to run process."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/CAUL> ;
     sio:doi "10.1007/s40279-024-02051-y"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -230,6 +238,321 @@
     sio:publicationYear 2009 ;
     sio:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2018934852> .
+
+<http://kg.sports-injuries.org/resource/entity/organization/ACKNOWLED> a sio:Organization ;
+    sio:confidenceScore "0.8188"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "ACKNOWLED"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Atlantique> a sio:Organization ;
+    sio:confidenceScore "0.8897"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Atlantique"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Augustus_C__Long_Health_Sciences_Library> a sio:Organization ;
+    sio:confidenceScore "0.8663"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Augustus C. Long Health Sciences Library"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/BEP> a sio:Organization ;
+    sio:confidenceScore "0.961"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "BEP"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/BP_802> a sio:Organization ;
+    sio:confidenceScore "0.7131"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "BP 802"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/CAUL> a sio:Organization ;
+    sio:confidenceScore "0.9649"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "CAUL"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedic_Surgery> a sio:Organization ;
+    sio:confidenceScore "0.9938"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Department of Orthopaedic Surgery"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedics> a sio:Organization ;
+    sio:confidenceScore "0.9975"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Department of Orthopaedics"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedics_and_Trauma_Surgery> a sio:Organization ;
+    sio:confidenceScore "0.9948"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Department of Orthopaedics and Trauma Surgery"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Department_of_Sport_and_Exercise_Sciences> a sio:Organization ;
+    sio:confidenceScore "0.9976"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Department of Sport and Exercise Sciences"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Faculty_of_Physical_Education_and_Physiotherapy> a sio:Organization ;
+    sio:confidenceScore "0.9928"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Faculty of Physical Education and Physiotherapy"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/French_Handball_Federation> a sio:Organization ;
+    sio:confidenceScore "0.9926"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "French Handball Federation"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/French_Society_of_Sports_Physical_Therapist> a sio:Organization ;
+    sio:confidenceScore "0.9969"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "French Society of Sports Physical Therapist"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Hospital> a sio:Organization ;
+    sio:confidenceScore "0.7998"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Hospital"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Human_Physiology_and_Sports_Physiotherapy_Research_Group> a sio:Organization ;
+    sio:confidenceScore "0.9977"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Human Physiology and Sports Physiotherapy Research Group"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/KNVB> a sio:Organization ;
+    sio:confidenceScore "0.9979"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "KNVB"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/LIBM> a sio:Organization ;
+    sio:confidenceScore "0.9948"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "LIBM"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/La_Tour_Hospital> a sio:Organization ;
+    sio:confidenceScore "0.9887"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "La Tour Hospital"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Lanzhou_University_Second> a sio:Organization ;
+    sio:confidenceScore "0.8071"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Lanzhou University Second"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Lyon_1> a sio:Organization ;
+    sio:confidenceScore "0.9518"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Lyon 1"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Mailman_School_of_Public_Health> a sio:Organization ;
+    sio:confidenceScore "0.9746"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Mailman School of Public Health"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Manchester_Institute_of_Sport> a sio:Organization ;
+    sio:confidenceScore "0.9983"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Manchester Institute of Sport"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Manchester_Metropolitan_University> a sio:Organization ;
+    sio:confidenceScore "0.9981"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Manchester Metropolitan University"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Metropolitan_University> a sio:Organization ;
+    sio:confidenceScore "0.9977"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Metropolitan University"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Motion_Analysis_Lab> a sio:Organization ;
+    sio:confidenceScore "0.9966"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Motion Analysis Lab"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Nanchong_Central_Hospital> a sio:Organization ;
+    sio:confidenceScore "0.9742"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Nanchong Central Hospital"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/North_Sichuan_Medical_College> a sio:Organization ;
+    sio:confidenceScore "0.8904"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "North Sichuan Medical College"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Physiotherapy_Department> a sio:Organization ;
+    sio:confidenceScore "0.9391"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Physiotherapy Department"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Pie> a sio:Organization ;
+    sio:confidenceScore "0.9528"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Pie"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Qatar_National_Library> a sio:Organization ;
+    sio:confidenceScore "0.9989"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Qatar National Library"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Research_Yard> a sio:Organization ;
+    sio:confidenceScore "0.9968"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Research Yard"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Research_and_Academic_Services> a sio:Organization ;
+    sio:confidenceScore "0.9984"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Research and Academic Services"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Richard_Sterkenburg> a sio:Organization ;
+    sio:confidenceScore "0.9457"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Richard Sterkenburg"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Royal_Dutch_Football_Association> a sio:Organization ;
+    sio:confidenceScore "0.9988"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Royal Dutch Football Association"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/SARL_Whergo> a sio:Organization ;
+    sio:confidenceScore "0.9711"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "SARL Whergo"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/SFMKS_Lab> a sio:Organization ;
+    sio:confidenceScore "0.9962"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "SFMKS Lab"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Sant____> a sio:Organization ;
+    sio:confidenceScore "0.8996"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Sant & #"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Savoie_Mont_-_Blanc_University> a sio:Organization ;
+    sio:confidenceScore "0.9817"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Savoie Mont - Blanc University"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Savoie_Technolac> a sio:Organization ;
+    sio:confidenceScore "0.995"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Savoie Technolac"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/School_of_Health_and_Society> a sio:Organization ;
+    sio:confidenceScore "0.9982"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "School of Health and Society"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Second_Clinical_Institute_of_North_Sichuan_Medical_College> a sio:Organization ;
+    sio:confidenceScore "0.8322"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Second Clinical Institute of North Sichuan Medical College"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Shanghai_Pujiang> a sio:Organization ;
+    sio:confidenceScore "0.8"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Shanghai Pujiang"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Studio_Sterkenburg> a sio:Organization ;
+    sio:confidenceScore "0.9947"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Studio Sterkenburg"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Swiss_Olympic_Medical_Center> a sio:Organization ;
+    sio:confidenceScore "0.8075"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Swiss Olympic Medical Center"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Taiwan_Ministry_of_Education> a sio:Organization ;
+    sio:confidenceScore "0.9879"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Taiwan Ministry of Education"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/University_Jean_Monnet_Saint_-_Etienne> a sio:Organization ;
+    sio:confidenceScore "0.9372"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "University Jean Monnet Saint - Etienne"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/University_Savoie_Mont_-_Blanc> a sio:Organization ;
+    sio:confidenceScore "0.9888"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "University Savoie Mont - Blanc"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/University_of_Salford> a sio:Organization ;
+    sio:confidenceScore "0.9973"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "University of Salford"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Vrije_Universiteit_Brussel> a sio:Organization ;
+    sio:confidenceScore "0.9394"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Vrije Universiteit Brussel"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/__d_Cheville_Nantes_Atlantique> a sio:Organization ;
+    sio:confidenceScore "0.9305"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##d Cheville Nantes Atlantique"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/__linique_du_Sport_Paris> a sio:Organization ;
+    sio:confidenceScore "0.9626"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##linique du Sport Paris"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/__rauma_Training_Center> a sio:Organization ;
+    sio:confidenceScore "0.907"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##rauma Training Center"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/Ho> a sio:Person ;
+    sio:confidenceScore "0.9992"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Ho"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/Ju> a sio:Person ;
+    sio:confidenceScore "0.9989"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Ju"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/Rick_Nevels> a sio:Person ;
+    sio:confidenceScore "0.9986"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Rick Nevels"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/Sven> a sio:Person ;
+    sio:confidenceScore "0.9938"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Sven"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__ee_de_Jong> a sio:Person ;
+    sio:confidenceScore "0.9967"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##ee de Jong"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__ippert> a sio:Person ;
+    sio:confidenceScore "0.8834"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##ippert"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__r_Brauers> a sio:Person ;
+    sio:confidenceScore "0.9978"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##r Brauers"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__rak> a sio:Person ;
+    sio:confidenceScore "0.8783"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##rak"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__sm> a sio:Person ;
+    sio:confidenceScore "0.9908"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##sm"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/person/__ssam_Tharwat_Ali> a sio:Person ;
+    sio:confidenceScore "0.8781"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "##ssam Tharwat Ali"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/project/15PJ1407600> a sio:Project ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "regex"^^xsd:string ;
+    sio:name "15PJ1407600"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/paper/P02> a sio:Paper ;
     sio:abstractText "BACKGROUND: The purpose of this study is to compare the outcomes of acute primary repair of extraarticular ligaments with staged surgery for acute knee dislocations (KDs) and multiligament knee injuries (MLKIs). MATERIALS AND METHODS: Between January 2005 and May 2018, 61 consecutive patients diagnosed with MLKI or KD were referred to or visited our institution. Of these, 31 patients who underwent acute repair of extraarticular ligaments within 3 weeks of injury were included in this study. These patients were retrospectively classified into two groups: those who underwent only primary repair (repair group) and those who underwent staged reconstructive surgery (staged group). Follow-up examination included range of motion (ROM), knee joint stability (Lachman test, posterior drawer test, and varus and valgus stress test), Lysholm knee score, Tegner activity scale, and Knee Injury and Osteoarthritis and Outcome Score (KOOS). RESULTS: Twelve of the 31 patients did not need or desire further surgery and were included in the repair group. No significant difference was observed in demographic data between the repair and staged groups. Although staged surgery decreased positive posterior drawer test results, no significant difference was observed between the two groups regarding ROM, other knee joint stability tests, Lysholm scores, Tegner scale, or KOOS. CONCLUSIONS: In this series, all patients returned to their activities of daily living and preinjury occupation levels. Acute primary repair of extraarticular ligaments provides essential knee stability without varus/valgus instability and may reduce the need for subsequent cruciate ligament reconstruction. LEVEL OF EVIDENCE: Level IV, retrospective observational study."^^xsd:string ;
@@ -312,6 +635,9 @@
 
 <http://kg.sports-injuries.org/resource/paper/P10> a sio:Paper ;
     sio:abstractText "BACKGROUND: Chronic ankle instability, developing from ankle sprain, is one of the most common sports injuries. Besides it being an ankle issue, chronic ankle instability can also cause additional injuries. Investigating the epidemiology of chronic ankle instability is an essential step to develop an adequate injury prevention strategy. However, the epidemiology of chronic ankle instability remains unknown. Therefore, the purpose of this study was to investigate the epidemiology of chronic ankle instability through valid and reliable self-reported tools in active populations. METHODS: An electronic search was performed on PubMed and Web of Science in July 2020. The inclusion criteria for articles were peer-reviewed, published between 2006 and 2020, using one of the valid and reliable tools to evaluate ankle instability, determining chronic ankle instability based on the criteria of the International Ankle Consortium, and including the outcome of epidemiology of chronic ankle instability. The risk of bias of the included studies was evaluated with an adapted tool for the sports injury review method. RESULTS: After removing duplicated studies, 593 articles were screened for eligibility. Twenty full-texts were screened and finally nine studies were included, assessing 3804 participants in total. The participants were between 15 and 32 years old and represented soldiers, students, athletes and active individuals with a history of ankle sprain. The prevalence of chronic ankle instability was 25%, ranging between 7 and 53%. The prevalence of chronic ankle instability within participants with a history of ankle sprains was 46%, ranging between 9 and 76%. Five included studies identified chronic ankle instability based on the standard criteria, and four studies applied adapted exclusion criteria to conduct the study. Five out of nine included studies showed a low risk of bias. CONCLUSIONS: The prevalence of chronic ankle instability shows a wide range. This could be due to the different exclusion criteria, age, sports discipline, or other factors among the included studies. For future studies, standardized criteria to investigate the epidemiology of chronic ankle instability are required. The epidemiology of CAI should be prospective. Factors affecting the prevalence of chronic ankle instability should be investigated and clearly described."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Projekt_DEAL>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Taiwan_Ministry_of_Education>,
+        <http://kg.sports-injuries.org/resource/entity/person/__ippert> ;
     sio:doi "10.1186/s13047-021-00480-w"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -349,6 +675,16 @@
 
 <http://kg.sports-injuries.org/resource/paper/P13> a sio:Paper ;
     sio:abstractText "Hamstring strain injuries are one of the most common injuries in sprint-based sports with the mechanism of injury considered the result of an interaction between applied mechanical strain and the capacity of the muscle to tolerate strain. To date, injury prevention and rehabilitation strategies have frequently focused on enhancing the capacity of the hamstrings to tolerate strain, with little consideration of factors directly influencing mechanical strain. Sprint running biomechanics are one factor proposed to influence the mechanical strain applied to the hamstrings that may be modified (towards reduced strain) within rehabilitation and injury prevention programs. This article aims to explore the theoretical mechanistic link between sprint running mechanics and hamstring strain injury, along with the available supporting evidence. In doing so, it hopes to provide practitioners with an understanding of mechanical parameters that may influence hamstring strain injury whilst also identifying areas for further research exploration."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Sport_and_Exercise_Sciences>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Inter_-_University_Laboratory_of_Human_Movement_Biology>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Lyon_1>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Manchester_Institute_of_Sport>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Manchester_Metropolitan_University>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Metropolitan_University>,
+        <http://kg.sports-injuries.org/resource/entity/organization/School_of_Health_and_Society>,
+        <http://kg.sports-injuries.org/resource/entity/organization/University_Jean_Monnet_Saint_-_Etienne>,
+        <http://kg.sports-injuries.org/resource/entity/organization/University_Savoie_Mont_-_Blanc>,
+        <http://kg.sports-injuries.org/resource/entity/organization/University_of_Salford> ;
     sio:doi "10.1007/s40279-023-01925-x"^^xsd:string ;
     sio:externalKeyword "0913 Mechanical Engineering"^^xsd:string,
         "1106 Human Movement and Sports Sciences"^^xsd:string,
@@ -371,6 +707,11 @@
 
 <http://kg.sports-injuries.org/resource/paper/P18> a sio:Paper ;
     sio:abstractText "Purpose: The aim of this systematic review and meta-analysis was to compare re-rupture rates, complication rates, functional outcomes, as well as return to work (RTW)/sport (RTS) among different rehabilitation protocols following operative treatment of acute Achilles tendon ruptures. Methods: Systematic review and meta-analysis was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines. Five databases were searched for randomized controlled trials (RCTs) comparing at least two rehabilitation protocols following surgical repair of acute Achilles tendon ruptures. Rehabilitation protocols were classified as a variation of either non-weightbearing (NWB) or weightbearing (WB) and immobilization (IM) or mobilization (M). The data collection consisted of re-ruptures, complications, and RTW/RTS. Results: Out of 2760 studies screened, 20 RCTs with 1007 patients were eligible. Fourteen studies included a group consisting of WB + M (Group 1), 11 of WB + IM (Group 2), 3 of NWB + M (Group 3), and 13 of NWB + IM (Group 4). Outcome parameters available for a meta-analysis were re-ruptures, complications, RTW, and RTS. Re-ruptures overall occurred in 2.7%, with prevalences ranging between 0.04 and 0.08. Major complications occurred in 2.6%, with prevalences ranging between 0.02 and 0.03. Minor complications occurred in 11.8% with prevalances ranging between 0.04 to 0.17. Comparing the odds-ratios between the four different groups revealed no significant differences with overall favourable results for group 1 (WB+M). Conclusion: Early functional rehabilitation protocols with early ankle M and WB following surgical repair of acute Achilles tendon ruptures are safe and they apparently allow for a quicker RTW and RTS and seem to lead to favourable results."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Augustus_C__Long_Health_Sciences_Library>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedic_Surgery>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Department_of_Orthopaedics_and_Trauma_Surgery>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Mailman_School_of_Public_Health>,
+        <http://kg.sports-injuries.org/resource/entity/organization/__rauma_Training_Center> ;
     sio:doi "10.1530/EOR-22-0072"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -437,6 +778,8 @@
 
 <http://kg.sports-injuries.org/resource/paper/P27> a sio:Paper ;
     sio:abstractText "Balance control improvement is one of the most important goals in sports and exercise. Better balance is strongly positively associated with enhanced athletic performance and negatively associated with lower limb sports injuries. Proprioception plays an essential role in balance control, and ankle proprioception is arguably the most important. This paper reviews ankle proprioception and explores synergies with balance control, specifically in a sporting context. Central processing of ankle proprioceptive information, along with other sensory information, enables integration for balance control. When assessing ankle proprioception, the most generalizable findings arise from methods that are ecologically valid, allow proprioceptive signals to be integrated with general vision in the central nervous system, and reflect the signal-in-noise nature of central processing. Ankle proprioceptive intervention concepts driven by such a central processing theory are further proposed and discussed for the improvement of balance control in sport."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Shanghai_Pujiang>,
+        <http://kg.sports-injuries.org/resource/entity/project/15PJ1407600> ;
     sio:doi "10.1155/2015/842804"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -894,6 +1237,18 @@
     sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
+<http://kg.sports-injuries.org/resource/entity/organization/Inter_-_University_Laboratory_of_Human_Movement_Biology> a sio:Organization ;
+    sio:confidenceScore "0.9874"^^xsd:float,
+        "0.9978"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Inter - University Laboratory of Human Movement Biology"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/entity/organization/Projekt_DEAL> a sio:Organization ;
+    sio:confidenceScore "0.9763"^^xsd:float,
+        "0.9938"^^xsd:float ;
+    sio:modelUsed "dslim/bert-base-NER"^^xsd:string ;
+    sio:name "Projekt DEAL"^^xsd:string .
+
 <http://kg.sports-injuries.org/resource/paper/P08> a sio:Paper ;
     sio:abstractText "Anterior cruciate ligament (ACL) injuries are the most common ligament injury of the knee, accounting for between 100,000 and 200,000 injuries among athletes per year. ACL injuries occur via contact and non-contact mechanisms, with the former being more common in males and the later being more common in females. These injuries typically require surgical repair and have relatively high re-rupture rates, resulting in a significant psychological burden for these individuals and long rehabilitation times. Numerous studies have attempted to determine risk factors for ACL rupture, including hormonal, biomechanical, and sport- and gender-specific factors. However, the incidence of ACL injuries continues to rise. Therefore, we performed a systematic review analyzing both ACL injury video analysis studies and studies on athletes who were pre-screened with eventual ACL injury. We investigated biomechanical mechanisms contributing to ACL injury and considered male and female differences. Factors such as hip angle and strength, knee movement, trunk stability, and ankle motion were considered to give a comprehensive, joint by joint analysis of injury risk and possible roles of prevention. Our review demonstrated that poor core stability, landing with heel strike, weak hip abduction strength, and increased knee valgus may contribute to increased ACL injury risk in young athletes."^^xsd:string ;
     sio:doi "10.3390/ijerph18073826"^^xsd:string ;
@@ -919,6 +1274,7 @@
 
 <http://kg.sports-injuries.org/resource/paper/P09> a sio:Paper ;
     sio:abstractText "PURPOSE OF REVIEW: The purpose of this review is to describe the current evidence on the most common sports-related ankle injuries. Joint anatomy, epidemiology, clinical findings, diagnostic approach, and treatment are presented with a specific focus on the available evidence towards return to play. RECENT FINDINGS: Recent findings show that ankle sprain is the most common injury in the world of sports. Bony fractures, cartilage defects, and syndesmotic lesions are frequently seen in association with the more severe type of ankle sprains. In summary, the majority of the athletes' ankle sprains are managed conservatively with excellent outcomes and full return to their pre-injury level of play. However, it is essential to differentiate the single ligament sprain from a more complex injury to the ankle joint. The evidence-based treatment and rehabilitation programmes are associated with a better prognosis and a faster time to return to sport participation."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Qatar_National_Library> ;
     sio:doi "10.1007/s12178-020-09631-1"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -984,6 +1340,27 @@
 
 <http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
     sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Atlantique>,
+        <http://kg.sports-injuries.org/resource/entity/organization/BP_802>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Faculty_of_Physical_Education_and_Physiotherapy>,
+        <http://kg.sports-injuries.org/resource/entity/organization/French_Handball_Federation>,
+        <http://kg.sports-injuries.org/resource/entity/organization/French_Society_of_Sports_Physical_Therapist>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Human_Physiology_and_Sports_Physiotherapy_Research_Group>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Inter_-_University_Laboratory_of_Human_Movement_Biology>,
+        <http://kg.sports-injuries.org/resource/entity/organization/LIBM>,
+        <http://kg.sports-injuries.org/resource/entity/organization/La_Tour_Hospital>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Motion_Analysis_Lab>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Physiotherapy_Department>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Pie>,
+        <http://kg.sports-injuries.org/resource/entity/organization/SARL_Whergo>,
+        <http://kg.sports-injuries.org/resource/entity/organization/SFMKS_Lab>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Sant____>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Mont_-_Blanc_University>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Savoie_Technolac>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Swiss_Olympic_Medical_Center>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Vrije_Universiteit_Brussel>,
+        <http://kg.sports-injuries.org/resource/entity/organization/__d_Cheville_Nantes_Atlantique>,
+        <http://kg.sports-injuries.org/resource/entity/organization/__linique_du_Sport_Paris> ;
     sio:doi "10.3389/fspor.2022.902886"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
@@ -1006,6 +1383,10 @@
 
 <http://kg.sports-injuries.org/resource/paper/P22> a sio:Paper ;
     sio:abstractText "Regular physical activity confers numerous health and social benefits; however, activity-related lower-limb overuse injuries are prevalent. Medial tibial stress syndrome (MTSS) is a common overuse injury of the lower extremity. It is frequently observed in athletes and in military personnel. It involves exercise-induced pain over the anterior tibia and is an early stress injury in the continuum of tibial stress fractures (TSF). This scoping review aims to synthesize and characterize the literature on MTSS, identify knowledge gaps, and propose future research directions. We conducted a scoping review of the literature, which was informed by the Joanna Briggs Institute and the Arksey and O'Malley methodology, by searching four databases until December 31, 2023. The references were screened by two authors based on their titles, abstracts, and full texts to ensure that they met the inclusion criteria. Data related to the research objectives were extracted, analyzed, and reported numerically and descriptively. Thirty-seven studies were included in the current review, most of which recruited athletes as the study participants (67.6%). This was followed by articles about military members (16.2%). The highest prevalence of MTSS has been reported among recreational marathon runners in India (69.5%). The highest incidence of MTSS was reported in a German study (35.7%). Two studies reported that participants with MTSS had a higher body mass index (BMI) than those without MTSS, and one study found a significant correlation between BMI and the time required for complete recovery. Two studies reported that individuals with greater experience in athletic activities were at a lower risk of developing MTSS later in their careers. In contrast, another study reported that ultramarathon running increases the incidence of MTSS overuse injuries. Traction theory as a cause of MTSS was examined in five studies, and the mean navicular drop test (NDT) score was assessed in three studies. Biomechanical evaluation of ankle disorders and MTSS was performed in five articles and hip abnormalities in four articles. This review identifies research areas on the influence of epidemiological, risk, and biomechanical factors on MTSS development. Such research could inform counseling for patients concerned about MTSS risk factors and curative measures, as well as optimize surveillance and subsequent management of MTSS outcomes."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/Research_Yard>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Research_and_Academic_Services>,
+        <http://kg.sports-injuries.org/resource/entity/person/Ho>,
+        <http://kg.sports-injuries.org/resource/entity/person/__ssam_Tharwat_Ali> ;
     sio:doi "10.7759/cureus.81463"^^xsd:string ;
     sio:externalKeyword "Physical Medicine & Rehabilitation"^^xsd:string ;
     sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> ;
@@ -1027,6 +1408,19 @@
 
 <http://kg.sports-injuries.org/resource/paper/P29> a sio:Paper ;
     sio:abstractText "BACKGROUND: Although the Nordic Hamstring Exercise (NHE) prevents hamstring injury in soccer players effectively, the annual incidence of these injuries still increases. This may be because of poor long-term compliance with the program. Furthermore, the timing and amplitude of gluteal and core muscle activation seem to play an important role in hamstring injury prevention, the NHE program was not designed to improve activation of these muscles. Therefore, we propose plyometric training as an alternative to reduce hamstring injuries in soccer players. PURPOSE: To determine the preventive effect of the Bounding Exercise Program (BEP) on hamstring injury incidence and severity in adult male amateur soccer players. STUDY DESIGN: A cluster-Randomized Controlled Trial. METHODS: Thirty-two soccer teams competing in the first-class amateur league were cluster-randomized into the intervention or control group. Both groups were instructed to perform their regular training program, and the intervention group additionally performed BEP. Information about player characteristics was gathered at baseline and exposure, hamstring injuries and BEP compliance were weekly registered during one season (2016-2017). RESULTS: The data of 400 players were analyzed. In total, 57 players sustained 65 hamstring injuries. The injury incidence was 1.12/1000 hours in the intervention group and 1.39/1000 hours in the control group. There were no statistically significant differences in hamstring injury incidence (OR = 0.89, 95% CI 0.46-1.75) or severity between the groups (P > 0.48). CONCLUSION: In this large cluster-randomized controlled trial, no evidence was found for plyometric training in its current form to reduce hamstring injuries in amateur soccer players."^^xsd:string ;
+    sio:acknowledges <http://kg.sports-injuries.org/resource/entity/organization/ACKNOWLED>,
+        <http://kg.sports-injuries.org/resource/entity/organization/BEP>,
+        <http://kg.sports-injuries.org/resource/entity/organization/KNVB>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Richard_Sterkenburg>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Royal_Dutch_Football_Association>,
+        <http://kg.sports-injuries.org/resource/entity/organization/Studio_Sterkenburg>,
+        <http://kg.sports-injuries.org/resource/entity/person/Ju>,
+        <http://kg.sports-injuries.org/resource/entity/person/Rick_Nevels>,
+        <http://kg.sports-injuries.org/resource/entity/person/Sven>,
+        <http://kg.sports-injuries.org/resource/entity/person/__ee_de_Jong>,
+        <http://kg.sports-injuries.org/resource/entity/person/__r_Brauers>,
+        <http://kg.sports-injuries.org/resource/entity/person/__rak>,
+        <http://kg.sports-injuries.org/resource/entity/person/__sm> ;
     sio:doi "10.1111/sms.13353"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,

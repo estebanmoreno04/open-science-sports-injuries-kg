@@ -23,11 +23,15 @@ def safe_uri(value: str) -> str:
 
 
 def read_csv_auto(path: Path) -> pd.DataFrame:
-    """Read CSV files using either comma or semicolon separator."""
+    """Read CSV files with automatic delimiter detection and clean column names."""
     try:
-        return pd.read_csv(path, sep=";")
+        df = pd.read_csv(path, sep=None, engine="python")
     except Exception:
-        return pd.read_csv(path)
+        df = pd.read_csv(path)
+
+    df.columns = [col.replace("\ufeff", "").strip() for col in df.columns]
+
+    return df
 
 
 def add_literal_if_present(graph: Graph, subject: URIRef, predicate: URIRef, value, datatype=None):
