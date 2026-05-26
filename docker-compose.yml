@@ -1,0 +1,61 @@
+version: "3.9"
+
+# ── Sports Injuries Knowledge Graph ─────────────────────────────────────────
+# Two services:
+#   pipeline: runs all scripts in order to generate the KG
+#   explorer: serves the Flask/Cytoscape.js demo on port 5000
+#
+# Usage:
+#   docker-compose up              # run pipeline then start explorer
+#   docker-compose up explorer     # start explorer only (KG already generated)
+#
+# Credentials:
+#   Copy .env.example to .env and fill in your OpenAIRE credentials
+#   before running docker-compose up
+
+services:
+
+  # ── Pipeline ───────────────────────────────────────────────────────────────
+  pipeline:
+    build: .
+    container_name: sports-injuries-pipeline
+    env_file:
+      - .env
+    volumes:
+      # Mount data directories so generated files persist on the host
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./kg:/app/kg
+    command: >
+      sh -c "
+        echo '=== Step 1: SemOpenAlex enrichment ===' &&
+        python scripts/enrich_semOpenAlex.py &&
+        echo '=== Step 2: OpenAIRE enrichment ===' &&
+        python scripts/enrich_openAire.py &&
+        echo '=== Step 3: Abstract similarity ===' &&
+        python scripts/abstract_similarity.py &&
+        echo '=== Step 4: Topic modeling ===' &&
+        python scripts/topic_modeling.py &&
+        echo '=== Step 5: Acknowledgements extraction ===' &&
+        python scripts/extract_acknowledgements.py &&
+        echo '=== Step 6: NER over acknowledgements ===' &&
+        python scripts/ner_acknowledgements.py &&
+        echo '=== Step 7: Build RDF Knowledge Graph ===' &&
+        python src/build_rdf.py &&
+        echo '=== Pipeline complete ==='
+      "
+
+  # ── Explorer ───────────────────────────────────────────────────────────────
+  explorer:
+    build: .
+    container_name: sports-injuries-explorer
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./kg:/app/kg
+    command: python app.py --host 0.0.0.0 --port 5000
+    depends_on:
+      pipeline:
+        condition: service_completed_successfully

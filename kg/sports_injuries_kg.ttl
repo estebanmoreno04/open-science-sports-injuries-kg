@@ -21,7 +21,7 @@
         "Retrospective Studies"^^xsd:string,
         "Value"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P01_P02> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P01_T00> ;
     sio:paperId "P01"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "The accuracy of MRI in diagnosing and classifying acute traumatic multiple ligament knee injuries"^^xsd:string ;
@@ -72,7 +72,7 @@
         "systematic review"^^xsd:string,
         "total knee arthroplasty"^^xsd:string,
         "varus knee"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P06_T02> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P06_T00> ;
     sio:paperId "P06"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "Clinical and Radiological Changes of Ankle in Knee Osteoarthritis With Varus After Total Knee Arthroplasty: A Systematic Review"^^xsd:string ;
@@ -101,7 +101,7 @@
         "Talus"^^xsd:string,
         "Transplantation, Autologous"^^xsd:string,
         "Treatment Outcome"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P07_T02> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P07_T00> ;
     sio:paperId "P07"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Prognostic factors for the management of chondral defects of the knee and ankle joint: a systematic review"^^xsd:string ;
@@ -114,7 +114,7 @@
         "0302 clinical medicine"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P12_P13>,
         <http://kg.sports-injuries.org/resource/similarity/P12_P29> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P12_T02> ;
     sio:paperId "P12"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Hamstring Strain Injury in Athletes: Clinical Practice Guidelines Linked to the ICF"^^xsd:string ;
@@ -131,7 +131,7 @@
         "Magnetic Resonance Imaging"^^xsd:string,
         "Muscle, Skeletal"^^xsd:string,
         "Sprains and Strains"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P14_T04> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P14_T01> ;
     sio:paperId "P14"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Calf Strain in Athletes"^^xsd:string ;
@@ -159,7 +159,7 @@
         "ta315"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P16_P25>,
         <http://kg.sports-injuries.org/resource/similarity/P16_P30> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P16_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P16_T02> ;
     sio:paperId "P16"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Indirect Rectus Femoris Injury Mechanisms in Professional Soccer Players: Video Analysis and Magnetic Resonance Imaging Findings"^^xsd:string ;
@@ -172,7 +172,7 @@
         "0302 clinical medicine"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P17_P18>,
         <http://kg.sports-injuries.org/resource/similarity/P17_P20> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P17_T01> ;
     sio:paperId "P17"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024 - Clinical Practice Guidelines"^^xsd:string ;
@@ -203,7 +203,7 @@
         "Tibia"^^xsd:string,
         "Tibial Fractures"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P21_P22> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P21_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P21_T02> ;
     sio:paperId "P21"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Criteria and Guidelines for Returning to Running Following a Tibial Bone Stress Injury: A Scoping Review"^^xsd:string ;
@@ -233,7 +233,7 @@
         "Ultrasonography, Doppler, Pulsed"^^xsd:string,
         "Young Adult"^^xsd:string,
         "adolescent; cumulative trauma disorders; dancing; diagnosis; diagnosis/therapy; doppler; early diagnosis; female; fractures; high-energy shock waves; humans; injuries; injuries/radiography; lithotripsy; magnetic field therapy; magnetic resonance imaging; male; metatarsal bones; methods; physiopathology/radiography; pulsed; stress; tarsal joints; therapeutic use; treatment outcome; ultrasonography; young adult"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P26_T04> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P26_T01> ;
     sio:paperId "P26"^^xsd:string ;
     sio:publicationYear 2009 ;
     sio:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
@@ -587,7 +587,7 @@
         "Treatment Outcome"^^xsd:string,
         "Young Adult"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P02_P03> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P02_T00> ;
     sio:paperId "P02"^^xsd:string ;
     sio:publicationYear 2020 ;
     sio:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
@@ -600,7 +600,7 @@
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P03_P04>,
         <http://kg.sports-injuries.org/resource/similarity/P03_P08>,
         <http://kg.sports-injuries.org/resource/similarity/P03_P23> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P03_T00> ;
     sio:paperId "P03"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
@@ -627,7 +627,7 @@
         <http://kg.sports-injuries.org/resource/similarity/P04_P19>,
         <http://kg.sports-injuries.org/resource/similarity/P04_P23>,
         <http://kg.sports-injuries.org/resource/similarity/P04_P24> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P04_T00> ;
     sio:paperId "P04"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
@@ -699,7 +699,7 @@
         "Sprains and Strains"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P13_P15>,
         <http://kg.sports-injuries.org/resource/similarity/P13_P29> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P13_T02> ;
     sio:paperId "P13"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
@@ -718,7 +718,7 @@
         "3. Good health"^^xsd:string,
         "Foot & Ankle"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P18_P28> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P18_T01> ;
     sio:paperId "P18"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
@@ -728,7 +728,7 @@
     sio:abstractText "This review article discusses the anatomy and histopathology of the patellar tendon, as well as the risk factors and common interventions for patellar tendinopathy (PT) with a view to guide clinicians in treating athletes with patellar tendon pain. PT, or jumper's knee, refers to a chronic injury to the patellar tendon that affects athletes who engage in jumping and explosive movements. The condition is characterized by degeneration and disorganization of the collagen fibers in the tendon, an increase in mucoid ground substance, and fibroblast proliferation. Risk factors for patellar tendinopathy include participation in jumping sports, a greater counter-movement jump height, and training on hard surfaces. Nonoperative treatments for patellar tendinopathy include relative rest, stretching and strengthening exercises, and correction of biomechanical abnormalities. Surgery and other procedures, such as extracorporeal shockwave therapy (ESWT) and injection therapies, may be considered for patients who do not respond to conservative measures."^^xsd:string ;
     sio:doi "10.7759/cureus.47459"^^xsd:string ;
     sio:externalKeyword "Orthopedics"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P19_T01> ;
     sio:paperId "P19"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
@@ -740,7 +740,7 @@
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string,
         "3. Good health"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P20_T01> ;
     sio:paperId "P20"^^xsd:string ;
     sio:publicationYear 2023 ;
     sio:title "Heel Pain - Plantar Fasciitis: Revision 2023 - Clinical Practice Guidelines"^^xsd:string ;
@@ -770,7 +770,7 @@
         "Soccer"^^xsd:string,
         "Soccer players"^^xsd:string,
         "Sports"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P25_T02> ;
     sio:paperId "P25"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Plantar Fasciitis in Soccer Players - A Systematic Review"^^xsd:string ;
@@ -792,7 +792,7 @@
         "Proprioception"^^xsd:string,
         "Review Article"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P27_P28> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P27_T00> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P27_T01> ;
     sio:paperId "P27"^^xsd:string ;
     sio:publicationYear 2015 ;
     sio:title "The Role of Ankle Proprioception for Balance Control in relation to Sports Performance and Injury"^^xsd:string ;
@@ -841,7 +841,7 @@
         "Young Adult"^^xsd:string,
         "[SDV.IMM] Life Sciences [q-bio]/Immunology"^^xsd:string,
         "[SDV.IMM]Life Sciences [q-bio]/Immunology"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P30_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P30_T02> ;
     sio:paperId "P30"^^xsd:string ;
     sio:publicationYear 2011 ;
     sio:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
@@ -904,7 +904,7 @@
 <http://kg.sports-injuries.org/resource/similarity/P04_P24> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P24> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.609514"^^xsd:float ;
+    sio:similarityScore "0.609515"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P05_P11> a sio:SimilarityLink ;
@@ -928,7 +928,7 @@
 <http://kg.sports-injuries.org/resource/similarity/P09_P10> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P10> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.665638"^^xsd:float ;
+    sio:similarityScore "0.665639"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P09_P11> a sio:SimilarityLink ;
@@ -964,13 +964,13 @@
 <http://kg.sports-injuries.org/resource/similarity/P10_P22> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P22> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.636476"^^xsd:float ;
+    sio:similarityScore "0.636475"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P10_P28> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.716946"^^xsd:float ;
+    sio:similarityScore "0.716947"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P11_P27> a sio:SimilarityLink ;
@@ -988,7 +988,7 @@
 <http://kg.sports-injuries.org/resource/similarity/P12_P13> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P13> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.786466"^^xsd:float ;
+    sio:similarityScore "0.786467"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P12_P29> a sio:SimilarityLink ;
@@ -1030,19 +1030,19 @@
 <http://kg.sports-injuries.org/resource/similarity/P17_P18> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P18> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.692125"^^xsd:float ;
+    sio:similarityScore "0.692124"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P17_P20> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P20> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.75886"^^xsd:float ;
+    sio:similarityScore "0.758861"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P18_P28> a sio:SimilarityLink ;
     sio:isSimilarToPaper <http://kg.sports-injuries.org/resource/paper/P28> ;
     sio:modelUsed "sentence-transformers/all-MiniLM-L6-v2"^^xsd:string ;
-    sio:similarityScore "0.669787"^^xsd:float ;
+    sio:similarityScore "0.669786"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/similarity/P21_P22> a sio:SimilarityLink ;
@@ -1057,184 +1057,184 @@
     sio:similarityScore "0.617202"^^xsd:float ;
     sio:similarityThreshold "0.6"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P01_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9946"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P01_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P02_T02> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9939"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P02_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P03_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.7833"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P03_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P04_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.5982"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P04_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P05_T00> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
-    sio:confidenceScore "0.9913"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P06_T02> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9916"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P06_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P07_T02> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9935"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P07_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9927"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P08_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9897"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P09_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P10_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9954"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P11_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9951"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P12_T03> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
-    sio:confidenceScore "0.9761"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P13_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9865"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P14_T04> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
-    sio:confidenceScore "0.9874"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9931"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P16_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.994"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P17_T03> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
-    sio:confidenceScore "0.9903"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P18_T02> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P12_T02> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9936"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P19_T04> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
-    sio:confidenceScore "0.9872"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P13_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P20_T03> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T03> ;
-    sio:confidenceScore "0.9856"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P21_T01> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P14_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9935"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P15_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P16_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P17_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9945"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
-    sio:confidenceScore "0.9919"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
-    sio:topicThreshold "0.4"^^xsd:float .
-
-<http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P18_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9935"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P25_T01> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P19_T01> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9922"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P26_T04> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T04> ;
-    sio:confidenceScore "0.985"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P20_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P27_T00> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P21_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P22_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P23_T00> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
-    sio:confidenceScore "0.9866"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> a sio:TopicAssignment ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P24_T00> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T00> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P25_T02> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9937"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P26_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P27_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
+    sio:topicThreshold "0.4"^^xsd:float .
+
+<http://kg.sports-injuries.org/resource/topic-assignment/P28_T01> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/topic-assignment/P29_T02> a sio:TopicAssignment ;
     sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
-    sio:confidenceScore "0.9928"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
-<http://kg.sports-injuries.org/resource/topic-assignment/P30_T01> a sio:TopicAssignment ;
-    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T01> ;
-    sio:confidenceScore "0.9933"^^xsd:float ;
-    sio:modelUsed "LDA (sklearn, K=5)"^^xsd:string ;
+<http://kg.sports-injuries.org/resource/topic-assignment/P30_T02> a sio:TopicAssignment ;
+    sio:assignedToTopic <http://kg.sports-injuries.org/resource/topic/T02> ;
+    sio:confidenceScore "1.0"^^xsd:float ;
+    sio:modelUsed "BERTopic (sentence-transformers/all-MiniLM-L6-v2)"^^xsd:string ;
     sio:topicThreshold "0.4"^^xsd:float .
 
 <http://kg.sports-injuries.org/resource/entity/organization/Inter_-_University_Laboratory_of_Human_Movement_Biology> a sio:Organization ;
@@ -1266,7 +1266,7 @@
         "Review"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P08_P09>,
         <http://kg.sports-injuries.org/resource/similarity/P08_P24> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P08_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P08_T00> ;
     sio:paperId "P08"^^xsd:string ;
     sio:publicationYear 2021 ;
     sio:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented ACL Ruptures in Male and Female Athletes"^^xsd:string ;
@@ -1285,7 +1285,7 @@
         <http://kg.sports-injuries.org/resource/similarity/P09_P11>,
         <http://kg.sports-injuries.org/resource/similarity/P09_P22>,
         <http://kg.sports-injuries.org/resource/similarity/P09_P24> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P09_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P09_T00> ;
     sio:paperId "P09"^^xsd:string ;
     sio:publicationYear 2020 ;
     sio:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
@@ -1303,7 +1303,7 @@
         "Risk Factors"^^xsd:string,
         "Sports"^^xsd:string ;
     sio:hasSimilarity <http://kg.sports-injuries.org/resource/similarity/P15_P29> ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P15_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P15_T02> ;
     sio:paperId "P15"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
@@ -1328,15 +1328,11 @@
         "Musculoskeletal Diseases"^^xsd:string,
         "Oncology"^^xsd:string,
         "Partial meniscectomy"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P23_T04> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P23_T00> ;
     sio:paperId "P23"^^xsd:string ;
     sio:publicationYear 2024 ;
     sio:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4399326598> .
-
-<http://kg.sports-injuries.org/resource/topic/T00> a sio:Topic ;
-    sio:topTerms "ankle, balance, control, leg, single, proprioception, knee, important, training, valgus"^^xsd:string ;
-    sio:topicName "Ankle / Balance / Control"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/paper/P11> a sio:Paper ;
     sio:abstractText "Lateral ankle sprain is the most common injury in sports, with up to 40% of patients developing chronic ankle instability (CAI). One possible cause underlying this high rate of recurrence or feeling of giving way may be a premature return to sport (RTS). Indeed, except for time-based parameters, there are no specific criteria to guide clinicians in their RTS decisions in patients with CAI. A recent international consensus highlighted the relevance and importance of including patient-reported ankle function questionnaires combined with functional tests targeting ankle impairments in this population. Thus, the aim of this narrative review and expert opinion was to identify the most relevant functional performance tests and self-reported questionnaires to help clinicians in their RTS decision-making process following recurrent ankle sprains or surgical ankle stabilization. The PubMed (MEDLINE), PEDro, Cochrane Library and ScienceDirect databases were searched to identify published articles. Results showed that the single leg stance test on firm surfaces, the modified version of the star excursion balance test, the side hop test and the figure-of-8 test appeared to be the most relevant functional performance tests to target ankle impairments in patients with CAI. A combination of the Foot and Ankle Ability Measure (FAAM) and the Ankle Ligament Reconstruction-Return to Sport after Injury (ALR-RSI) questionnaires were the most relevant self-reported questionnaires to assess patient function in the context of CAI. Although these functional tests and questionnaires provide a solid foundation for clinicians to validate their RTS decisions in patient with CAI, objective scientific criteria with cut-off scores are still lacking. In addition to the proposed test cluster, an analysis of the context, in particular characteristics related to sports (e.g., fatigue, cognitive constraints), to obtain more information about the patient's risk of recurrent injury could be of added value when making a RTS decision in patients with CAI. In order to evaluate the strength of evertors under ecological conditions, it would also be interesting to assess the ability to control weight-bearing ankle inversion in a unipodal stance. Further studies are needed to assess the relevance of this proposed test cluster in RTS decision-making following lateral ankle sprain injury and CAI."^^xsd:string ;
@@ -1389,7 +1385,7 @@
         <http://kg.sports-injuries.org/resource/entity/person/__ssam_Tharwat_Ali> ;
     sio:doi "10.7759/cureus.81463"^^xsd:string ;
     sio:externalKeyword "Physical Medicine & Rehabilitation"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P22_T02> ;
     sio:paperId "P22"^^xsd:string ;
     sio:publicationYear 2025 ;
     sio:title "Medial Tibial Stress Syndrome: A Scoping Review of Epidemiology, Biomechanics, and Risk Factors"^^xsd:string ;
@@ -1400,7 +1396,7 @@
     sio:doi "10.1007/s12178-022-09794-z"^^xsd:string ;
     sio:externalKeyword "03 medical and health sciences"^^xsd:string,
         "0302 clinical medicine"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P24_T01> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P24_T00> ;
     sio:paperId "P24"^^xsd:string ;
     sio:publicationYear 2022 ;
     sio:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
@@ -1457,10 +1453,6 @@
     sio:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? A cluster-RCT"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2904890641> .
 
-<http://kg.sports-injuries.org/resource/topic/T03> a sio:Topic ;
-    sio:topTerms "cpg, sports, physical, therapy, practice, evidence, clinical, orthopaedic, health, based"^^xsd:string ;
-    sio:topicName "Cpg / Sports / Physical"^^xsd:string .
-
 <http://kg.sports-injuries.org/resource/paper/P28> a sio:Paper ;
     sio:abstractText "CONTEXT: Although strength training is commonly used to rehabilitate ankle injuries, studies investigating the effects of strength training on proprioception have shown conflicting results. OBJECTIVE: To determine the effects of a 6-week strength-training protocol on force sense and strength development in participants with functional ankle instability. DESIGN: Randomized controlled clinical trial. SETTING: University athletic training research laboratory. PATIENTS OR OTHER PARTICIPANTS: A total of 40 participants with functional ankle instability were recruited. They were randomly placed into a training group (10 men, 10 women: age = 20.9 ± 2.2 years, height = 76.4 ± 16.1 cm, mass = 173.0 ± 7.9 kg) or control group (10 men, 10 women: age = 20.2 ± 2.1 years, height = 78.8 ± 24.5 cm, mass = 173.7 ± 8.2 kg). INTERVENTION(S): Participants in the training group performed strength exercises with the injured ankle 3 times per week for 6 weeks. The protocol consisted of a combination of rubber exercise bands and the Multiaxial Ankle Exerciser, both clinically accepted strengthening methods for ankle rehabilitation. The progression of this protocol provided increasingly resistive exercise as participants changed either the number of sets or resistance of the Thera-Band or Multiaxial Ankle Exerciser. Main Outcome Measure(s): A load cell was used to measure strength and force sense. Inversion and eversion strength was recorded to the nearest 0.01 N. Force-sense reproduction was measured at 2 loads: 20% and 30% of maximal voluntary isometric contraction. RESULTS: Increases in inversion (F(1,38) = 11.59, P < 0.01, η(p)(2) = 0.23, power = 0.91) and eversion (F(1,38) = 57.68, P < .01, η(p)(2) = 0.60, power = 0.99) strength were found in the training group at the posttest when compared with the control group. No significant improvements were noted in force-sense reproduction for either group. CONCLUSIONS: Strength training at the ankle increased strength but did not improve force sense."^^xsd:string ;
     sio:doi "10.4085/1062-6050-47.3.06"^^xsd:string ;
@@ -1481,21 +1473,21 @@
         "Proprioception"^^xsd:string,
         "Resistance Training"^^xsd:string,
         "Young Adult"^^xsd:string ;
-    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P28_T02> ;
+    sio:hasTopicAssignment <http://kg.sports-injuries.org/resource/topic-assignment/P28_T01> ;
     sio:paperId "P28"^^xsd:string ;
     sio:publicationYear 2012 ;
     sio:title "Ankle Strength and Force Sense After a Progressive 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W1854658087> .
 
-<http://kg.sports-injuries.org/resource/topic/T04> a sio:Topic ;
-    sio:topTerms "meniscus, injuries, patellar, strain, athletes, injury, therapy, return, tendon, risk"^^xsd:string ;
-    sio:topicName "Meniscus / Injuries / Patellar"^^xsd:string .
-
 <http://kg.sports-injuries.org/resource/topic/T02> a sio:Topic ;
-    sio:topTerms "group, ankle, knee, training, studies, results, patients, strength, repair, injuries"^^xsd:string ;
-    sio:topicName "Group / Ankle / Knee"^^xsd:string .
+    sio:topTerms "injuries, injury, soccer, hamstring, players, mtss, running, muscle, strain, studies"^^xsd:string ;
+    sio:topicName "Injuries / Injury / Soccer"^^xsd:string .
 
 <http://kg.sports-injuries.org/resource/topic/T01> a sio:Topic ;
-    sio:topTerms "injuries, injury, ankle, studies, return, risk, ligament, factors, sport, based"^^xsd:string ;
-    sio:topicName "Injuries / Injury / Ankle"^^xsd:string .
+    sio:topTerms "ankle, ankle instability, instability, chronic, chronic ankle, group, therapy, patients, strength, studies"^^xsd:string ;
+    sio:topicName "Ankle / Ankle Instability / Instability"^^xsd:string .
+
+<http://kg.sports-injuries.org/resource/topic/T00> a sio:Topic ;
+    sio:topTerms "knee, injuries, ligament, meniscus, acl, acute, injury, return, mri, treatment"^^xsd:string ;
+    sio:topicName "Knee / Injuries / Ligament"^^xsd:string .
 

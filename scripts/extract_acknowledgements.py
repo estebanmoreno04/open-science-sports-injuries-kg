@@ -26,16 +26,13 @@ import re
 import time
 import requests
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
+
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_CSV  = os.path.join(BASE_DIR, "data/metadata/papers.csv")
 OUTPUT_CSV = os.path.join(BASE_DIR, "data/processed/acknowledgements.csv")
 
 PMC_OAI    = "https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi"
 SLEEP      = 0.5
-
-
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def pmc_numeric_id(pmc_url: str) -> str:
     """Extract numeric PMC ID from URL. e.g. PMC8161930 → 8161930"""
@@ -82,20 +79,24 @@ def fetch_acknowledgements(pmc_numeric: str) -> str:
         "metadataPrefix": "pmc",
     }
     try:
-        resp = requests.get(PMC_OAI, params=params, timeout=30)
+        resp = requests.get(
+    PMC_OAI,
+    params=params,
+    headers={"User-Agent": "sports-injuries-kg/1.0 (mailto:your_group_email@alumnos.upm.es)"},
+    timeout=30
+)
         if resp.status_code != 200:
             return ""
 
         xml = resp.text
         parts = []
 
-        # 1. <ack> section — main acknowledgements
+
         ack_texts = extract_text_between_tags(xml, "ack")
         if ack_texts:
             parts.extend(ack_texts)
 
-        # 2. funding-information notes
-        # Find <notes notes-type="funding-information">...</notes>
+
         funding_pattern = r'<notes[^>]*notes-type=["\']funding-information["\'][^>]*>(.+?)</notes>'
         funding_matches = re.findall(funding_pattern, xml, re.DOTALL)
         for m in funding_matches:
@@ -104,7 +105,6 @@ def fetch_acknowledgements(pmc_numeric: str) -> str:
             if text.strip() and text not in parts:
                 parts.append(text.strip())
 
-        # 3. funding-group institutions (as fallback if no ack text)
         if not parts:
             institution_texts = extract_text_between_tags(xml, "institution")
             if institution_texts:
@@ -115,9 +115,6 @@ def fetch_acknowledgements(pmc_numeric: str) -> str:
     except Exception as e:
         print(f"    [ERROR] {e}")
         return ""
-
-
-# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
@@ -194,6 +191,13 @@ def main():
     print(f"  Without acknowledgements: {len(not_found)}")
     if not_found:
         print(f"  Missing: {', '.join(not_found)}")
+    if found == 0 and os.path.exists(OUTPUT_CSV):
+        with open(OUTPUT_CSV, encoding="utf-8") as f:
+            existing = list(csv.DictReader(f))
+        if any(r.get("acknowledgements") for r in existing):
+            print("\n[WARN] API returned 0 results but existing CSV has data.")
+            print("       Keeping existing CSV to avoid data loss.")
+            return
     print(f"\n  Output → {OUTPUT_CSV}")
     print("Done.")
 

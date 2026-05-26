@@ -1,0 +1,21 @@
+name: sports-injuries-kg
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - pandas
+    - rdflib
+    - requests
+    - python-dotenv
+    - sentence-transformers
+    - scikit-learn
+    - numpy
+    - torch
+    - bertopic
+    - umap-learn
+    - hdbscan
+    - transformers
+    - flask

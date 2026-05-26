@@ -1,16 +1,22 @@
+# Core data processing
 pandas
 rdflib
+requests
+python-dotenv
 
-# --- Similarity (abstract_similarity.py) ---
+# Similarity (scripts/abstract_similarity.py)
 sentence-transformers
 scikit-learn
 numpy
 torch
 
-# --- Topic modeling (scripts/topic_modeling.py) ---
+# Topic modeling (scripts/topic_modeling.py)
 bertopic
 umap-learn
 hdbscan
 
-# --- KG Explorer (app.py) ---
+# NER (scripts/ner_acknowledgements.py)
+transformers
+
+# KG Explorer (app.py)
 flask

@@ -209,7 +209,17 @@ def main():
         summary_df.to_csv(SUMMARY_DIR / f"topics_summary_{method}.csv", index=False, sep=CSV_SEP)
         log.info("Wrote topic summaries to %s", SUMMARY_DIR / f"topics_summary_{method}.csv")
 
-    if rows:
+     # if rows:
+       # out_df.to_csv(OUTPUT_CSV, index=False, sep=CSV_SEP)
+        #log.info("Default topics.csv → %s (from %s)", OUTPUT_CSV, method)
+    # Default topics.csv always uses BERTopic results
+    # BERTopic is the preferred method for semantic clustering
+    bertopic_path = OUTPUT_CSV.parent / "topics_bertopic.csv"
+    if bertopic_path.exists():
+        import shutil
+        shutil.copy(bertopic_path, OUTPUT_CSV)
+        log.info("Default topics.csv → %s (copied from topics_bertopic.csv)", OUTPUT_CSV)
+    elif rows:
         out_df.to_csv(OUTPUT_CSV, index=False, sep=CSV_SEP)
         log.info("Default topics.csv → %s (from %s)", OUTPUT_CSV, method)
 

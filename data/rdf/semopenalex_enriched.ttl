@@ -14,6 +14,45 @@
     ont:openAlexId "W4408976458"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4408976458> .
 
+<http://kg.sports-injuries.org/venue/BMC_Musculoskeletal_Disorders> a ont:Venue ;
+    ont:venueName "BMC Musculoskeletal Disorders"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/BioMed_Research_International> a ont:Venue ;
+    ont:venueName "BioMed Research International"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Clinical_Journal_of_Sport_Medicine> a ont:Venue ;
+    ont:venueName "Clinical Journal of Sport Medicine"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Cureus> a ont:Venue ;
+    ont:venueName "Cureus"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/EFORT_Open_Reviews> a ont:Venue ;
+    ont:venueName "EFORT Open Reviews"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/European_Journal_of_Trauma_and_Emergency_Surgery> a ont:Venue ;
+    ont:venueName "European Journal of Trauma and Emergency Surgery"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Frontiers_in_Sports_and_Active_Living> a ont:Venue ;
+    ont:venueName "Frontiers in Sports and Active Living"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Frontiers_in_Surgery> a ont:Venue ;
+    ont:venueName "Frontiers in Surgery"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/International_Orthopaedics> a ont:Venue ;
+    ont:venueName "International Orthopaedics"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Journal_of_Education_Health_and_Sport> a ont:Venue ;
+    ont:venueName "Journal of Education Health and Sport"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Journal_of_Foot_and_Ankle_Research> a ont:Venue ;
+    ont:venueName "Journal of Foot and Ankle Research"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Journal_of_Orthopaedics_and_Traumatology> a ont:Venue ;
+    ont:venueName "Journal of Orthopaedics and Traumatology"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Scandinavian_Journal_of_Medicine_and_Science_in_Sports> a ont:Venue ;
+    ont:venueName "Scandinavian Journal of Medicine and Science in Sports"^^xsd:string .
+
 <http://kg.sports-injuries.org/paper/P15> a ont:Paper ;
     ont:abstractText "OBJECTIVE: To identify risk factors for quadriceps muscle strain injury in sport. DESIGN: Risk factor systematic review. LITERATURE SEARCH: A systematic search was conducted in the MEDLINECINAHL, Embase, AMED, AUSPORT, SPORTDiscus, PEDro, and Cochrane Library databases (from inception to September 2021). STUDY SELECTION CRITERIA: Studies reporting prospective data to evaluate risk factors related to index and/or recurrent quadriceps muscle strain injury. DATA SYNTHESIS: A risk-of-bias assessment (using a modified Quality in Prognosis Studies tool) was performed, and we used best-evidence synthesis to qualitatively synthesize the data to quantify relationships between risk factors and quadriceps muscle injury. RESULTS: Sixteen studies were included, capturing 2408 quadriceps injuries in 11 719 athletes. Meta-analyses were not performed due to clinical heterogeneity. The dominant kicking leg (over 3154 individuals, 1055 injuries), a previous history of quadriceps muscle injury (6208 individuals, 975 injuries), and a recent history of hamstring strain (4087 individuals, 581 injuries) were intrinsic factors associated with quadriceps injury. Extrinsic factors relating to the preseason period and competitive match play increased quadriceps injury risk; participating at higher levels of competition decreased quadriceps injury risk. Age, weight, and flexibility (intrinsic factors) had no association with quadriceps injury. CONCLUSION: ."^^xsd:string ;
     ont:doi "10.2519/jospt.2022.10870"^^xsd:string ;
@@ -21,8 +60,15 @@
         <https://semopenalex.org/author/A5050986429> ;
     ont:openAlexId "W4281625619"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Orthopaedic_and_Sports_Physical_Therapy> ;
     ont:title "Risk Factors for Quadriceps Muscle Strain Injuries in Sport: A Systematic Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4281625619> .
+
+<http://kg.sports-injuries.org/venue/Journal_of_Athletic_Training> a ont:Venue ;
+    ont:venueName "Journal of Athletic Training"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Sports_Medicine> a ont:Venue ;
+    ont:venueName "Sports Medicine"^^xsd:string .
 
 <https://semopenalex.org/author/A5002727818> a ont:Person ;
     ont:affiliatedWith <https://semopenalex.org/institution/I108103353> ;
@@ -980,6 +1026,7 @@
         <https://semopenalex.org/author/A5072684185> ;
     ont:openAlexId "W3096828126"^^xsd:string ;
     ont:publicationYear 2020 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/International_Journal_of_Environmental_Research_and_Public_Health> ;
     ont:title "Dynamic Knee Valgus in Single-Leg Movement Tasks. Potentially Modifiable Factors and Exercise Training Options. A Literature Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3096828126> .
 
@@ -991,6 +1038,7 @@
         <https://semopenalex.org/author/A5104384198> ;
     ont:openAlexId "W3023690833"^^xsd:string ;
     ont:publicationYear 2020 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Current_Reviews_in_Musculoskeletal_Medicine> ;
     ont:title "Return to Play After a Lateral Ligament Ankle Sprain"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3023690833> .
 
@@ -1002,6 +1050,7 @@
         <https://semopenalex.org/author/A5081488709> ;
     ont:openAlexId "W4401591056"^^xsd:string ;
     ont:publicationYear 2024 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Sports_Medicine> ;
     ont:title "Criteria and Guidelines for Returning to Running Following a Tibial Bone Stress Injury: A Scoping Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4401591056> .
 
@@ -1013,8 +1062,12 @@
         <https://semopenalex.org/author/A5055446647> ;
     ont:openAlexId "W2109374215"^^xsd:string ;
     ont:publicationYear 2016 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Athletic_Training> ;
     ont:title "Value of Sonography Combined With Clinical Assessment to Evaluate Muscle Injury Severity in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2109374215> .
+
+<http://kg.sports-injuries.org/venue/International_Journal_of_Environmental_Research_and_Public_Health> a ont:Venue ;
+    ont:venueName "International Journal of Environmental Research and Public Health"^^xsd:string .
 
 <https://semopenalex.org/author/A5053622290> a ont:Person ;
     ont:affiliatedWith <https://semopenalex.org/institution/I2803053409> ;
@@ -1082,6 +1135,7 @@
         <https://semopenalex.org/author/A5065624546> ;
     ont:openAlexId "W4386845470"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Sports_Medicine> ;
     ont:title "Exploring the Role of Sprint Biomechanics in Hamstring Strain Injuries: A Current Opinion on Existing Concepts and Evidence"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4386845470> .
 
@@ -1094,6 +1148,7 @@
         <https://semopenalex.org/author/A5113029314> ;
     ont:openAlexId "W4387859971"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Cureus> ;
     ont:title "A Review of Patellar Tendinopathy in Athletes Involved in Jumping Sports"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4387859971> .
 
@@ -1106,8 +1161,15 @@
         <https://semopenalex.org/author/A5090977175> ;
     ont:openAlexId "W4310462146"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Current_Reviews_in_Musculoskeletal_Medicine> ;
     ont:title "Return to Play after Posterior Cruciate Ligament Injuries"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4310462146> .
+
+<http://kg.sports-injuries.org/venue/Current_Reviews_in_Musculoskeletal_Medicine> a ont:Venue ;
+    ont:venueName "Current Reviews in Musculoskeletal Medicine"^^xsd:string .
+
+<http://kg.sports-injuries.org/venue/Journal_of_Orthopaedic_and_Sports_Physical_Therapy> a ont:Venue ;
+    ont:venueName "Journal of Orthopaedic and Sports Physical Therapy"^^xsd:string .
 
 <https://semopenalex.org/institution/I100532134> a ont:Organization ;
     ont:name "Université Claude Bernard Lyon 1"^^xsd:string ;
@@ -1163,6 +1225,7 @@
         <https://semopenalex.org/author/A5083510059> ;
     ont:openAlexId "W4389738638"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Current_Reviews_in_Musculoskeletal_Medicine> ;
     ont:title "Non-operative Management of Acute Knee Injuries"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4389738638> .
 
@@ -1176,6 +1239,7 @@
         <https://semopenalex.org/author/A5089587833> ;
     ont:openAlexId "W3151246717"^^xsd:string ;
     ont:publicationYear 2021 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/International_Journal_of_Environmental_Research_and_Public_Health> ;
     ont:title "Stiff Landings, Core Stability, and Dynamic Knee Valgus: A Systematic Review on Documented Anterior Cruciate Ligament Ruptures in Male and Female Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3151246717> .
 
@@ -1189,6 +1253,7 @@
         <https://semopenalex.org/author/A5103974633> ;
     ont:openAlexId "W3164001868"^^xsd:string ;
     ont:publicationYear 2021 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Foot_and_Ankle_Research> ;
     ont:title "The epidemiology of chronic ankle instability with perceived ankle instability‐ a systematic review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3164001868> .
 
@@ -1202,6 +1267,7 @@
         <https://semopenalex.org/author/A5101538561> ;
     ont:openAlexId "W4399326598"^^xsd:string ;
     ont:publicationYear 2024 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Current_Reviews_in_Musculoskeletal_Medicine> ;
     ont:title "Meniscus Tears in Elite Athletes: Treatment Considerations, Clinical Outcomes, and Return to Play"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4399326598> .
 
@@ -1215,6 +1281,7 @@
         <https://semopenalex.org/author/A5100345615> ;
     ont:openAlexId "W1851010948"^^xsd:string ;
     ont:publicationYear 2016 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/BioMed_Research_International> ;
     ont:title "The Role of Ankle Proprioception for Balance Control in relation to Sports Performance and Injury"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W1851010948> .
 
@@ -1228,6 +1295,7 @@
         <https://semopenalex.org/author/A5050259451> ;
     ont:openAlexId "W1854658087"^^xsd:string ;
     ont:publicationYear 2016 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Athletic_Training> ;
     ont:title "Ankle Strength and Force Sense After a Progressive, 6-Week Strength-Training Program in People With Functional Ankle Instability"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W1854658087> .
 
@@ -1270,6 +1338,7 @@
         <https://semopenalex.org/author/A5113222206> ;
     ont:openAlexId "W4205961923"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/BMC_Musculoskeletal_Disorders> ;
     ont:title "The accuracy of MRI in diagnosing and classifying acute traumatic multiple ligament knee injuries"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4205961923> .
 
@@ -1284,6 +1353,7 @@
         <https://semopenalex.org/author/A5068313976> ;
     ont:openAlexId "W3092300428"^^xsd:string ;
     ont:publicationYear 2020 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Orthopaedics_and_Traumatology> ;
     ont:title "Acute primary repair of extraarticular ligaments and staged surgery in multiple ligament knee injuries"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3092300428> .
 
@@ -1298,6 +1368,7 @@
         <https://semopenalex.org/author/A5102896717> ;
     ont:openAlexId "W3198385968"^^xsd:string ;
     ont:publicationYear 2021 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Frontiers_in_Surgery> ;
     ont:title "Clinical and Radiological Changes of Ankle in Knee Osteoarthritis With Varus After Total Knee Arthroplasty: A Systematic Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W3198385968> .
 
@@ -1312,6 +1383,7 @@
         <https://semopenalex.org/author/A5108123737> ;
     ont:openAlexId "W4308462604"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/European_Journal_of_Trauma_and_Emergency_Surgery> ;
     ont:title "Prognostic factors for the management of chondral defects of the knee and ankle joint: a systematic review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4308462604> .
 
@@ -1326,6 +1398,7 @@
         <https://semopenalex.org/author/A5111285749> ;
     ont:openAlexId "W4281691142"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Frontiers_in_Sports_and_Active_Living> ;
     ont:title "Which Functional Tests and Self-Reported Questionnaires Can Help Clinicians Make Valid Return to Sport Decisions in Patients With Chronic Ankle Instability? A Narrative Review and Expert Opinion"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4281691142> .
 
@@ -1340,6 +1413,7 @@
         <https://semopenalex.org/author/A5104027065> ;
     ont:openAlexId "W4404768718"^^xsd:string ;
     ont:publicationYear 2024 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Orthopaedic_and_Sports_Physical_Therapy> ;
     ont:title "Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision – 2024"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4404768718> .
 
@@ -1354,6 +1428,7 @@
         <https://semopenalex.org/author/A5102715387> ;
     ont:openAlexId "W4389226948"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Orthopaedic_and_Sports_Physical_Therapy> ;
     ont:title "Heel Pain – Plantar Fasciitis: Revision 2023"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4389226948> .
 
@@ -1368,6 +1443,7 @@
         <https://semopenalex.org/author/A5057407374> ;
     ont:openAlexId "W4308331395"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/International_Journal_of_Environmental_Research_and_Public_Health> ;
     ont:title "Plantar Fasciitis in Soccer Players—A Systemic Review"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4308331395> .
 
@@ -1382,6 +1458,7 @@
         <https://semopenalex.org/author/A5091115783> ;
     ont:openAlexId "W2018934852"^^xsd:string ;
     ont:publicationYear 2016 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/International_Orthopaedics> ;
     ont:title "Stress fractures of the base of the metatarsal bones in young trainee ballet dancers"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2018934852> .
 
@@ -1414,6 +1491,7 @@
         <https://semopenalex.org/author/A5103234101> ;
     ont:openAlexId "W4379548885"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Education_Health_and_Sport> ;
     ont:title "Knee injuries in volleyball - a review of the articles"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4379548885> .
 
@@ -1430,6 +1508,7 @@
         <https://semopenalex.org/author/A5087514144> ;
     ont:openAlexId "W4307430674"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/EFORT_Open_Reviews> ;
     ont:title "Rehabilitation following operative treatment of acute Achilles tendon ruptures: a systematic review and meta-analysis"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4307430674> .
 
@@ -1446,6 +1525,7 @@
         <https://semopenalex.org/author/A5089820312> ;
     ont:openAlexId "W2904890641"^^xsd:string ;
     ont:publicationYear 2018 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Scandinavian_Journal_of_Medicine_and_Science_in_Sports> ;
     ont:title "Does a bounding exercise program prevent hamstring injuries in adult male soccer players? – A cluster‐RCT"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W2904890641> .
 
@@ -1467,6 +1547,7 @@
         <https://semopenalex.org/author/A5101577964> ;
     ont:openAlexId "W4213258542"^^xsd:string ;
     ont:publicationYear 2022 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Journal_of_Orthopaedic_and_Sports_Physical_Therapy> ;
     ont:title "Hamstring Strain Injury in Athletes"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4213258542> .
 
@@ -1487,6 +1568,7 @@
         <https://semopenalex.org/author/A5088828476> ;
     ont:openAlexId "W4322616850"^^xsd:string ;
     ont:publicationYear 2023 ;
+    ont:publishedIn <http://kg.sports-injuries.org/venue/Clinical_Journal_of_Sport_Medicine> ;
     ont:title "Indirect Rectus Femoris Injury Mechanisms in Professional Soccer Players: Video Analysis and Magnetic Resonance Imaging Findings"^^xsd:string ;
     owl:sameAs <https://semopenalex.org/work/W4322616850> .
 

@@ -46,6 +46,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX soa:     <https://semopenalex.org/ontology/>
 PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
  
 SELECT DISTINCT
     ?title
@@ -61,8 +62,9 @@ WHERE {{
     OPTIONAL {{ <{work_uri}> dcterms:title ?title }}
     OPTIONAL {{ <{work_uri}> dcterms:created ?year }}
     OPTIONAL {{
-        <{work_uri}> soa:hasHostVenue ?venue .
-        ?venue rdfs:label ?venueName
+        <{work_uri}> soa:hasPrimaryLocation ?location .
+        ?location soa:hasSource ?source .
+        ?source foaf:name ?venueName
     }}
     OPTIONAL {{
         <{work_uri}> soa:hasAuthorship ?authorship .
