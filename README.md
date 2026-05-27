@@ -1,6 +1,6 @@
 # Sports Injuries Scholarly Knowledge Graph
 
-https://doi.org/10.5281/zenodo.20413668
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20413668.svg)](https://doi.org/10.5281/zenodo.20413668)
 
 This repository contains the materials for the **Open Science and AI in Research Software Engineering** group assignment.
 
