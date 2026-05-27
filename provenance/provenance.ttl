@@ -47,13 +47,6 @@
 
 ## ---- Software agents ---------------------------------------
 
-:grobid  a  prov:Agent , prov:SoftwareAgent ;
-    rdfs:label       "GROBID" ;
-    schema:version   "0.8.1" ;
-    schema:url       "https://github.com/kermitt2/grobid" ;
-    dcterms:description
-        "Machine-learning library for extracting structured data (TEI XML) from scholarly PDFs." .
-
 :semopenalex_sparql  a  prov:Agent , prov:SoftwareAgent ;
     rdfs:label   "SemOpenAlex SPARQL endpoint" ;
     schema:url   "https://semopenalex.org/sparql" ;
@@ -155,7 +148,7 @@
     rdfs:label    "TEI XML collection (×30)" ;
     prov:atLocation  "outputs/tei/" ;
     dcterms:description
-        "Structured TEI XML files produced by GROBID from the PDFs." ;
+        "Structured TEI XML files produced by OpenAIRE from the PDFs." ;
     prov:wasDerivedFrom  :pdf_collection .
 
 ## ---- E06 – Extracted abstracts ------------------------------
@@ -291,22 +284,22 @@
 
 :enriched_metadata  prov:wasGeneratedBy  :A03_openaire_enrichment .
 
-## ---- A04 – GROBID text extraction ---------------------------
+## ---- A04 – OpenAIRE text extraction ---------------------------
 
-:A04_grobid_extraction  a  prov:Activity ;
-    rdfs:label    "A04 · Extracción de texto con GROBID (TEI XML)" ;
+:A04_openAIRE_extraction  a  prov:Activity ;
+    rdfs:label    "A04 · Extracción de texto con OpenAIRE (TEI XML)" ;
     dcterms:description
-        "Processing of 30 PDFs through GROBID to produce structured TEI XML. Abstract and acknowledgement sections are then separated: abstracts via tei_utils.extract_abstract(), acknowledgements via extract_acknowledgements.py into a dedicated CSV." ;
+        "Processing of 30 PDFs through OpenAIRE to produce structured TEI XML. Abstract and acknowledgement sections are then separated: abstracts via tei_utils.extract_abstract(), acknowledgements via extract_acknowledgements.py into a dedicated CSV." ;
     prov:used                :pdf_collection ;
-    prov:wasAssociatedWith   :grobid ;
+    prov:wasAssociatedWith   :openaire ;
     prov:wasAssociatedWith   :grupo_osai_rse ;
     prov:generated           :tei_xml_collection ;
     prov:generated           :abstracts ;
     prov:generated           :acknowledgements_csv .
 
-:tei_xml_collection   prov:wasGeneratedBy  :A04_grobid_extraction .
-:abstracts            prov:wasGeneratedBy  :A04_grobid_extraction .
-:acknowledgements_csv prov:wasGeneratedBy  :A04_grobid_extraction .
+:tei_xml_collection   prov:wasGeneratedBy  :A04_openAIRE_extraction .
+:abstracts            prov:wasGeneratedBy  :A04_openAIRE_extraction .
+:acknowledgements_csv prov:wasGeneratedBy  :A04_openAIRE_extraction .
 
 ## ---- A05 – Embeddings + Similarity -------------------------
 
@@ -397,7 +390,7 @@
 ##               student group)
 ## ============================================================
 
-:grobid                prov:actedOnBehalfOf  :grupo_osai_rse .
+:openaire                prov:actedOnBehalfOf  :grupo_osai_rse .
 :semopenalex_sparql    prov:actedOnBehalfOf  :grupo_osai_rse .
 :openaire_api          prov:actedOnBehalfOf  :grupo_osai_rse .
 :sentence_transformers prov:actedOnBehalfOf  :grupo_osai_rse .
