@@ -8,10 +8,20 @@
 ## Vocabulary reference:
 ##   https://www.w3.org/TR/prov-o/
 ##
-## Each activity maps to one processing step described
+## Each activity (A01–A10) maps to one processing step described
 ## in the project documentation.  Entities are the data artefacts
 ## consumed and produced; agents are the people and software
 ## responsible for each step.
+##
+## NOTE on A07/A08:
+##   The original 10-step plan included a separate "entity
+##   normalization" step (A08) using ROR + Wikidata reconciliation.
+##   In practice, ner_acknowledgements.py performs only lightweight
+##   text normalization (whitespace cleanup) inline.  Therefore A07
+##   and A08 have been **merged** into a single activity (A07) that
+##   covers NER + inline normalization.  If full ROR/Wikidata
+##   reconciliation is added later, it should be split back out as
+##   a separate activity.
 ## ============================================================
 
 @prefix prov:  <http://www.w3.org/ns/prov#> .
@@ -27,11 +37,15 @@
 ##  AGENTS
 ## ============================================================
 
+## ---- Human agents ------------------------------------------
+
 :grupo_osai_rse  a  prov:Agent , prov:Person , foaf:Group ;
     rdfs:label   "Grupo de estudiantes OSAI_RSE" ;
     foaf:name    "Grupo de estudiantes OSAI_RSE" ;
     dcterms:description
         "Student team of the Open Science and AI course responsible for designing, executing and documenting the full pipeline." .
+
+## ---- Software agents ---------------------------------------
 
 :grobid  a  prov:Agent , prov:SoftwareAgent ;
     rdfs:label       "GROBID" ;
@@ -72,16 +86,16 @@
     dcterms:description
         "Classical LDA implementation used as alternative topic model." .
 
-:spacy_ner  a  prov:Agent , prov:SoftwareAgent ;
-    rdfs:label       "spaCy NER pipeline" ;
-    schema:url       "https://spacy.io/" ;
+:bert_base_ner  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label       "dslim/bert-base-NER (HuggingFace)" ;
+    schema:url       "https://huggingface.co/dslim/bert-base-NER" ;
     dcterms:description
-        "Named Entity Recognition model applied to acknowledgement sections." .
+        "BERT model fine-tuned on CoNLL-2003 for general Named Entity Recognition (PER, ORG, LOC, MISC). Chosen over biomedical models because acknowledgements contain general named entities, not clinical terms." .
 
-:ror_wikidata  a  prov:Agent , prov:SoftwareAgent ;
-    rdfs:label   "ROR + Wikidata reconciliation" ;
+:grant_regex  a  prov:Agent , prov:SoftwareAgent ;
+    rdfs:label   "Regex-based grant ID extractor" ;
     dcterms:description
-        "Entity normalization against ROR (organizations) and Wikidata (cross-references) for persistent IDs." .
+        "Post-processing regex patterns for detecting grant and award identifiers (NIH, NSF, DOD, EU, ONR formats) that NER models do not reliably recognise." .
 
 :rdflib  a  prov:Agent , prov:SoftwareAgent ;
     rdfs:label       "rdflib" ;
@@ -98,7 +112,7 @@
 
 
 ## ============================================================
-##  ENTITIES  
+##  ENTITIES  (data artefacts)
 ## ============================================================
 
 ## ---- E01 – Curated paper manifest --------------------------
@@ -132,7 +146,7 @@
 :enriched_metadata  a  prov:Entity ;
     rdfs:label    "enriched_metadata.json" ;
     dcterms:description
-        "Metadata enriched with OpenAIRE: keywords, funding information, linked datasets and software." ;
+        "Metadata enriched with OpenAIRE: keywords, funding programmes, linked datasets and software." ;
     prov:wasDerivedFrom  :openalex_metadata .
 
 ## ---- E05 – TEI XML files -----------------------------------
@@ -154,10 +168,11 @@
 
 ## ---- E07 – Extracted acknowledgements -----------------------
 
-:acknowledgements  a  prov:Entity ;
-    rdfs:label    "acknowledgements (text)" ;
+:acknowledgements_csv  a  prov:Entity ;
+    rdfs:label    "acknowledgements.csv" ;
+    prov:atLocation  "data/processed/acknowledgements.csv" ;
     dcterms:description
-        "Acknowledgement sections extracted from TEI XML for downstream NER." ;
+        "Acknowledgement sections extracted from TEI XML, one row per paper (paper_id; acknowledgements). Produced by extract_acknowledgements.py." ;
     prov:wasDerivedFrom  :tei_xml_collection .
 
 ## ---- E08 – Sentence embeddings -----------------------------
@@ -195,36 +210,29 @@
         "Summary of discovered topics: id, label, and top-10 terms." ;
     prov:wasDerivedFrom  :abstracts .
 
-## ---- E12 – Raw NER entities --------------------------------
+## ---- E12 – NER entities (with inline normalization) ---------
 
-:raw_ner_entities  a  prov:Entity ;
-    rdfs:label    "raw_ner_entities.json" ;
+:ner_entities_csv  a  prov:Entity ;
+    rdfs:label    "ner_entities.csv" ;
+    prov:atLocation  "data/processed/ner_entities.csv" ;
     dcterms:description
-        "Named entities (persons, organizations, grants) extracted from acknowledgements via spaCy." ;
-    prov:wasDerivedFrom  :acknowledgements .
+        "Named entities extracted from acknowledgements: PERSON (via BERT NER), ORGANIZATION (via BERT NER), and PROJECT/grant IDs (via regex). Each entity includes a normalized_name field (whitespace-cleaned). CSV with semicolon delimiter." ;
+    prov:wasDerivedFrom  :acknowledgements_csv .
 
-## ---- E13 – Normalized entities ------------------------------
-
-:normalized_entities  a  prov:Entity ;
-    rdfs:label    "normalized_entities.json" ;
-    dcterms:description
-        "Entities reconciled against ROR (organizations) and Wikidata (cross-references) with persistent URIs." ;
-    prov:wasDerivedFrom  :raw_ner_entities .
-
-## ---- E14 – Knowledge Graph (Turtle) ------------------------
+## ---- E13 – Knowledge Graph (Turtle) ------------------------
 
 :sports_injuries_kg_ttl  a  prov:Entity ;
     rdfs:label    "sports_injuries_kg.ttl" ;
     prov:atLocation  "kg/sports_injuries_kg.ttl" ;
     dcterms:description
-        "RDF/Turtle Knowledge Graph integrating all enriched metadata, similarity links, topics, and normalized entities." ;
+        "RDF/Turtle Knowledge Graph integrating all enriched metadata, similarity links, topics, and NER entities." ;
     prov:wasDerivedFrom
         :enriched_metadata ,
         :similarity_links_csv ,
         :topic_assignments_csv ,
-        :normalized_entities .
+        :ner_entities_csv .
 
-## ---- E15 – RO-Crate metadata --------------------------------
+## ---- E14 – RO-Crate metadata --------------------------------
 
 :ro_crate_metadata  a  prov:Entity ;
     rdfs:label    "ro-crate-metadata.json" ;
@@ -235,15 +243,21 @@
 
 
 ## ============================================================
-##  ACTIVITIES  (pipeline steps A01 – A10)
+##  ACTIVITIES  (pipeline steps A01 – A09)
 ## ============================================================
+##
+##  Original plan had 10 steps.  A07 (NER) and A08 (entity
+##  normalization) have been merged because ner_acknowledgements.py
+##  performs both NER and inline normalization in a single script.
+##  Subsequent activities are renumbered accordingly.
+##
 
 ## ---- A01 – Paper selection ----------------------------------
 
 :A01_paper_selection  a  prov:Activity ;
     rdfs:label    "A01 · Selección de 30 papers del dominio" ;
     dcterms:description
-        "Manual literature search of 30 papers on sports injuries of the lower limb (knee, ankle, foot, muscles)." ;
+        "Manual literature search and curation of 30 open-access and subscription papers on sports injuries of the lower limb (knee, ankle, foot, muscles)." ;
     prov:wasAssociatedWith  :grupo_osai_rse ;
     prov:generated           :manifest_csv ;
     prov:generated           :pdf_collection .
@@ -282,17 +296,17 @@
 :A04_grobid_extraction  a  prov:Activity ;
     rdfs:label    "A04 · Extracción de texto con GROBID (TEI XML)" ;
     dcterms:description
-        "Processing of 30 PDFs through GROBID to produce structured TEI XML. Abstract and acknowledgement sections are then separated using tei_utils." ;
+        "Processing of 30 PDFs through GROBID to produce structured TEI XML. Abstract and acknowledgement sections are then separated: abstracts via tei_utils.extract_abstract(), acknowledgements via extract_acknowledgements.py into a dedicated CSV." ;
     prov:used                :pdf_collection ;
     prov:wasAssociatedWith   :grobid ;
     prov:wasAssociatedWith   :grupo_osai_rse ;
     prov:generated           :tei_xml_collection ;
     prov:generated           :abstracts ;
-    prov:generated           :acknowledgements .
+    prov:generated           :acknowledgements_csv .
 
-:tei_xml_collection  prov:wasGeneratedBy  :A04_grobid_extraction .
-:abstracts           prov:wasGeneratedBy  :A04_grobid_extraction .
-:acknowledgements    prov:wasGeneratedBy  :A04_grobid_extraction .
+:tei_xml_collection   prov:wasGeneratedBy  :A04_grobid_extraction .
+:abstracts            prov:wasGeneratedBy  :A04_grobid_extraction .
+:acknowledgements_csv prov:wasGeneratedBy  :A04_grobid_extraction .
 
 ## ---- A05 – Embeddings + Similarity -------------------------
 
@@ -326,52 +340,48 @@
 :topic_assignments_csv  prov:wasGeneratedBy  :A06_topic_modeling .
 :topics_summary_csv     prov:wasGeneratedBy  :A06_topic_modeling .
 
-## ---- A07 – NER on acknowledgements --------------------------
+## ---- A07 – NER + inline normalization on acknowledgements ---
+##
+##  Script: scripts/ner_acknowledgements.py
+##
+##  This activity merges what was originally planned as two steps
+##  (A07 NER + A08 normalization).  The script applies:
+##    1. Transformer-based NER (dslim/bert-base-NER) → PERSON, ORG
+##    2. Regex post-processing → PROJECT (grant IDs)
+##    3. Inline text normalization (whitespace cleanup)
 
 :A07_ner_acknowledgements  a  prov:Activity ;
-    rdfs:label    "A07 · Aplicación de NER sobre acknowledgements" ;
+    rdfs:label    "A07 · NER + normalización sobre acknowledgements" ;
     dcterms:description
-        "Named Entity Recognition with spaCy over the acknowledgement sections to extract persons, organizations, and grant identifiers mentioned by the authors." ;
-    prov:used                :acknowledgements ;
-    prov:wasAssociatedWith   :spacy_ner ;
+        "Named Entity Recognition on acknowledgement sections using two complementary methods: (1) dslim/bert-base-NER via HuggingFace transformers pipeline (aggregation_strategy=simple, confidence threshold=0.70) for PERSON and ORGANIZATION entities; (2) regex-based post-processing for PROJECT entities (grant/award IDs in NIH, NSF, DOD, EU, ONR formats). Entity names are normalized inline via whitespace cleanup. Output is a semicolon-delimited CSV with columns: paper_id, entity_text, entity_type, normalized_name, confidence_score, model_used, source_section." ;
+    prov:used                :acknowledgements_csv ;
+    prov:wasAssociatedWith   :bert_base_ner ;
+    prov:wasAssociatedWith   :grant_regex ;
     prov:wasAssociatedWith   :grupo_osai_rse ;
-    prov:generated           :raw_ner_entities .
+    prov:generated           :ner_entities_csv .
 
-:raw_ner_entities  prov:wasGeneratedBy  :A07_ner_acknowledgements .
+:ner_entities_csv  prov:wasGeneratedBy  :A07_ner_acknowledgements .
 
-## ---- A08 – Entity normalization -----------------------------
+## ---- A08 – Knowledge Graph construction ---------------------
 
-:A08_entity_normalization  a  prov:Activity ;
-    rdfs:label    "A08 · Normalización de entidades extraídas" ;
+:A08_kg_construction  a  prov:Activity ;
+    rdfs:label    "A08 · Construcción del Knowledge Graph" ;
     dcterms:description
-        "Reconciliation of raw NER mentions against ROR (for organizations) and Wikidata (for cross-references), assigning persistent URIs to each entity." ;
-    prov:used                :raw_ner_entities ;
-    prov:wasAssociatedWith   :ror_wikidata ;
-    prov:wasAssociatedWith   :grupo_osai_rse ;
-    prov:generated           :normalized_entities .
-
-:normalized_entities  prov:wasGeneratedBy  :A08_entity_normalization .
-
-## ---- A09 – Knowledge Graph construction ---------------------
-
-:A09_kg_construction  a  prov:Activity ;
-    rdfs:label    "A09 · Construcción del Knowledge Graph" ;
-    dcterms:description
-        "Assembly of all enriched metadata, similarity links, topic assignments, and normalized entities into a single RDF/Turtle Knowledge Graph following the project ontology (Paper, Injury, BodyPart, TreatmentMethod, etc.)." ;
+        "Assembly of all enriched metadata, similarity links, topic assignments, and NER entities into a single RDF/Turtle Knowledge Graph following the project ontology (Paper, Injury, BodyPart, TreatmentMethod, etc.)." ;
     prov:used                :enriched_metadata ;
     prov:used                :similarity_links_csv ;
     prov:used                :topic_assignments_csv ;
-    prov:used                :normalized_entities ;
+    prov:used                :ner_entities_csv ;
     prov:wasAssociatedWith   :rdflib ;
     prov:wasAssociatedWith   :grupo_osai_rse ;
     prov:generated           :sports_injuries_kg_ttl .
 
-:sports_injuries_kg_ttl  prov:wasGeneratedBy  :A09_kg_construction .
+:sports_injuries_kg_ttl  prov:wasGeneratedBy  :A08_kg_construction .
 
-## ---- A10 – Research Object export ---------------------------
+## ---- A09 – Research Object export ---------------------------
 
-:A10_ro_crate_export  a  prov:Activity ;
-    rdfs:label    "A10 · Exportación y documentación como Research Object" ;
+:A09_ro_crate_export  a  prov:Activity ;
+    rdfs:label    "A09 · Exportación y documentación como Research Object" ;
     dcterms:description
         "Packaging the KG, provenance trace, scripts, and documentation as an RO-Crate following the RO-Crate 1.1 specification for FAIR reproducibility." ;
     prov:used                :sports_injuries_kg_ttl ;
@@ -379,7 +389,7 @@
     prov:wasAssociatedWith   :grupo_osai_rse ;
     prov:generated           :ro_crate_metadata .
 
-:ro_crate_metadata  prov:wasGeneratedBy  :A10_ro_crate_export .
+:ro_crate_metadata  prov:wasGeneratedBy  :A09_ro_crate_export .
 
 
 ## ============================================================
@@ -393,8 +403,8 @@
 :sentence_transformers prov:actedOnBehalfOf  :grupo_osai_rse .
 :bertopic              prov:actedOnBehalfOf  :grupo_osai_rse .
 :lda_sklearn           prov:actedOnBehalfOf  :grupo_osai_rse .
-:spacy_ner             prov:actedOnBehalfOf  :grupo_osai_rse .
-:ror_wikidata          prov:actedOnBehalfOf  :grupo_osai_rse .
+:bert_base_ner         prov:actedOnBehalfOf  :grupo_osai_rse .
+:grant_regex           prov:actedOnBehalfOf  :grupo_osai_rse .
 :rdflib                prov:actedOnBehalfOf  :grupo_osai_rse .
 :ro_crate_py           prov:actedOnBehalfOf  :grupo_osai_rse .
 
@@ -419,6 +429,12 @@
     dcterms:description
         "n_components = 5 ; max_iter = 30 ; learning_method = online ; max_df = 0.90 ; min_df = 2 ; topicThreshold = 0.4" .
 
+:params_ner  a  prov:Entity ;
+    rdfs:label    "NER parameters" ;
+    dcterms:description
+        "model = dslim/bert-base-NER ; aggregation_strategy = simple ; device = cpu ; confidence_threshold = 0.70 ; min_entity_length = 2 chars ; grant_id_detection = regex (NIH, NSF, DOD, ONR, EU patterns)" .
+
 :A05_embeddings_similarity  prov:used  :params_similarity .
 :A06_topic_modeling          prov:used  :params_topic_bert .
 :A06_topic_modeling          prov:used  :params_topic_lda .
+:A07_ner_acknowledgements    prov:used  :params_ner .
