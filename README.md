@@ -137,6 +137,7 @@ templates/
 app.py
 requirements.txt
 environment.yml
+Presentacion.pdf
 Dockerfile
 docker-compose.yml
 .dockerignore
