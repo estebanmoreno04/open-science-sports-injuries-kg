@@ -1,5 +1,7 @@
 # Sports Injuries Scholarly Knowledge Graph
 
+https://doi.org/10.5281/zenodo.20413668
+
 This repository contains the materials for the **Open Science and AI in Research Software Engineering** group assignment.
 
 The project aims to build a **Scholarly Knowledge Graph** for exploring scientific literature about sports-related lower-limb injuries, including injuries affecting the foot, ankle, knee and lower-limb muscles.
